@@ -4,7 +4,7 @@
 # To build with these settings, see "scripts/build.sh" or "scripts/localbuild.sh"
 # Also see environment specific settings in "config/production" or "config/staging".
 
-title = "Docker Community"
+title = " "
 configDir = "config"
 canonifyURLs = "true"
 relativeURLs = "true"
