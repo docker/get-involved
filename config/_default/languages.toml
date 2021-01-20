@@ -4,8 +4,8 @@
 # <TODO Create branch for nls> https://github.com/knative/docs/tree/translations) </TODO>
 
 [en]
-  title = "Knative"
-  description = "Knative provides a set of components for building modern, source-centric, and container-based applications that can run anywhere."
+  title = "Docker Community "
+  description = "Docker Community"
   languageName = "English"
   contentDir = "content/en"
   # Weight used for sorting.
