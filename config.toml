@@ -1,5 +1,5 @@
-baseURL = "/Static-Website-Hugo-Docsy"
-title = "eLearning Hub"
+baseURL = "/dockercommunity"
+title = "Docker Community"
 
 enableRobotsTXT = true
 
@@ -54,12 +54,12 @@ id = "UA-00000000-0"
 [languages]
 [languages.en]
 title = "Goldydocs"
-description = "A Docsy example site"
+description = "Welcome to Docker Community"
 languageName ="English"
 # Weight used for sorting.
 weight = 1
 [languages.no]
-title = "Goldydocs"
+title = "Docker Community"
 description = "Docsy er operativsystem for skyen"
 languageName ="Norsk"
 contentDir = "content/no"
@@ -74,7 +74,7 @@ time_format_blog = "02.01.2006"
 # Everything below this are Site Params
 
 [params]
-copyright = "The Docsy Authors"
+copyright = "The Docker Community Leaders"
 privacy_policy = "https://policies.google.com/privacy"
 
 # First one is picked as the Twitter card image if not set on page.
@@ -96,12 +96,12 @@ version = "0.0"
 
 # A link to latest version of the docs. Used in the "version-banner" partial to
 # point people to the main doc site.
-url_latest_version = "https://example.com"
+url_latest_version = "https://docker-community-leaders.github.io"
 
 # Repository configuration (URLs for in-page links to opening issues and suggesting changes)
-github_repo = "https://github.com/eLearningHub/Static-Website-Hugo-Docsy"
+github_repo = "https://github.com/docker-community-leaders/dockercommunity"
 # An optional link to a related project repo. For example, the sibling repository where your product code lives.
-github_project_repo = "https://github.com/google/docsy"
+github_project_repo = "https://github.com/"
 
 # Specify a value here if your content directory is not in your repo's root directory
 # github_subdir = ""
