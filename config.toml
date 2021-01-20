@@ -1,5 +1,5 @@
-baseURL = "/Static-Website-Hugo-Docsy"
-title = "eLearning Hub"
+baseURL = "/dockercommunity"
+title = "Docker Community"
 
 enableRobotsTXT = true
 
@@ -53,7 +53,7 @@ id = "UA-00000000-0"
 
 [languages]
 [languages.en]
-title = "Goldydocs"
+title = "goldydocs"
 description = "A Docsy example site"
 languageName ="English"
 # Weight used for sorting.
@@ -99,7 +99,7 @@ version = "0.0"
 url_latest_version = "https://example.com"
 
 # Repository configuration (URLs for in-page links to opening issues and suggesting changes)
-github_repo = "https://github.com/eLearningHub/Static-Website-Hugo-Docsy"
+github_repo = "https://github.com/docker-community-leaders/dockercommunity"
 # An optional link to a related project repo. For example, the sibling repository where your product code lives.
 github_project_repo = "https://github.com/google/docsy"
 
