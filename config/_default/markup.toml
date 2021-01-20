@@ -1,0 +1,37 @@
+defaultMarkdownHandler = "goldmark"
+
+# Configuration for Goldmark markdown processor
+# https://gohugo.io/getting-started/configuration-markup/#configure-markup
+[goldmark]
+  [goldmark.extensions]
+    definitionList = true
+    footnote = true
+    linkify = true
+    strikethrough = true
+    table = true
+    taskList = true
+    typographer = true
+  [goldmark.parser]
+    attribute = true
+    autoHeadingID = true
+  [goldmark.renderer]
+    hardWraps = false
+    unsafe = true
+    xHTML = false
+
+# Configuration for the Chroma syntax highlighting
+# https://gohugo.io/getting-started/configuration-markup/#highlight
+[highlight]
+  codeFences = true
+  hl_Lines = ""
+  lineNoStart = 1
+  lineNos = false
+  lineNumbersInTable = true
+  noClasses = true
+  style = "tango"
+  tabWidth = 4
+
+# Specify which level of headings to show in the right-side TOC
+[tableOfContents]
+  endLevel = 2
+  startLevel = 1

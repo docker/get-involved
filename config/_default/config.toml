@@ -1,0 +1,70 @@
+# Knative "_default" Site Configuration
+
+# Usage notes:
+# To build with these settings, see "scripts/build.sh" or "scripts/localbuild.sh"
+# Also see environment specific settings in "config/production" or "config/staging".
+
+title = "Knative"
+configDir = "config"
+canonifyURLs = "true"
+relativeURLs = "true"
+
+# Ignore files when rendering/building site (to hide from Nav tree and sitemap)
+# Add files here that you "include" in other files using the 'readfile' shortcode
+# Examples:
+# Based on root path: {{% readfile file="docs/serving/README.md" markdown="true" %}}
+# Using relative path: {{% readfile file="README.md" relatative="true" markdown="true" %}}
+#
+# All README.md files are ignored because they are "included" into _index.md files
+# and we want the build to avoid blank nav entries and extra/duplicate sitemap entries.
+# (the README.md files are kept for GitHub repo users so a landing pages appears)
+ignoreFiles = [
+  "README.md$",
+  "/*/reference/api/serving.md",
+  "/*/reference/api/eventing/eventing.md",
+  "/*/reference/api/eventing/eventing-contrib.md",
+  "/*/reference/serving.md",
+  "/*/reference/eventing/eventing.md",
+  "/*/reference/eventing/eventing-contrib.md" ]
+
+# Hugo allows theme composition (and inheritance). The precedence is from left to right.
+theme = ["docsy"]
+
+# Language settings
+defaultContentLanguage = "en"
+# TODO: Investigate if this should be true when other nls exist?
+defaultContentLanguageInSubdir = false
+# Useful when translating.
+enableMissingTranslationPlaceholders = true
+
+# Will give values to .Lastmod etc.
+enableGitInfo = true
+
+disableKinds = ["taxonomy", "taxonomyTerm"]
+
+# Configure how URLs look like per section.
+[permalinks]
+blog = "/:section/:year/:month/:day/:slug/"
+
+# Image processing configuration.
+[imaging]
+resampleFilter = "CatmullRom"
+quality = 75
+anchor = "smart"
+
+[menu]
+
+  [[menu.main]]
+    name = "Documentation"
+    url = "/docs/"
+    weight = 10
+
+  [[menu.main]]
+    name = "Blog"
+    url = "/blog/"
+    weight = 30
+
+  [[menu.main]]
+    name = "Community"
+    url = "/community/"
+    weight = 40

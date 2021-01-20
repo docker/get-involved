@@ -1,0 +1,32 @@
+{{ if (in .File.Dir "releases") }}
+{{ $.Scratch.Set "blogsection" "Knative releases"}}
+{{ else if (in .File.Dir "articles") }}
+{{ $.Scratch.Set "blogsection" "Knative articles"}}
+{{ else if (in .File.Dir "events") }}
+{{ $.Scratch.Set "blogsection" "Knative social events"}}
+{{ else }}
+{{ $.Scratch.Set "blogsection" "Welcome to the Knative blog"}}
+{{ end }}
+
+<h1>{{ $.Scratch.Get "blogsection" }}</h1>
+{{ if eq .File.Dir "blog/" }}
+<p>Follow this blog to keep up-to-date with Knative.</p>
+<ul>
+<li><a href="./releases"><b>Release and feature announcements</b></a>: <br>{{ end }}
+{{ if or (in .File.Dir "releases") (eq .File.Dir "blog/") }}Learn about each Knative release, what's new and changed, and how to get started with the latest and greatest.{{ end }}
+
+{{ if eq .File.Dir "blog/" }}</li>
+<li><a href="./articles"><b>Articles</b></a>: <br>{{ end }}
+{{ if or (in .File.Dir "articles") (eq .File.Dir "blog/") }}Read about Knative-centric features, tools, and related topics.{{ end }}
+
+{{ if eq .File.Dir "blog/" }}</li>
+<li><a href="./events"><b>Future and past social events</b></a>: <br>{{ end }}
+{{ if or (in .File.Dir "events") (eq .File.Dir "blog/") }}Find out where the Knative team will be talking next, and where they've been.{{ end }}
+
+{{ if eq .File.Dir "blog/" }}</li>
+</ul>
+<hr>
+<p><b>Browse all Knative blog posts by date:</b></p>
+{{ else }}
+<hr>
+{{ end }}

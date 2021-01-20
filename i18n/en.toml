@@ -1,0 +1,68 @@
+# <DO NOT TRANSLATE THIS COMMENT/EXAMPLE>
+#
+# HUGO ref docs: https://gohugo.io/content-management/multilingual/
+#
+# This directory is where en and translated strings are maintained.
+# Example:
+#
+# Add to this en.toml file, any English strings that should be translated.
+# For example, hardcoded strings in your Hugo template(see example below).
+# Translate that 'en' file into the corresponding language and rename it:  [LANG].toml
+#
+# Usage example: The variable 'example_desc' can then be used elsewhere to replace the
+# inline string (so the nls are inserted during build). For example, if you have a
+# templating files like `layouts/partials/example.html`.
+#
+# And the following is defined in this file:
+# [example_desc]
+# other = "String that is translated."
+#
+# Then you can use the `example_desc` variable in `layouts/partials/example.html`:
+# <a title='{{ i18n "example_desc" }}' href="...." /a>
+#
+# Do not delete if file is empty (connected to dependent file: layouts/partials/navbar.html)
+#
+# </DO NOT TRANSLATE THIS COMMENT/EXAMPLE>
+
+
+# UI strings. Buttons and similar.
+
+[ui_pager_prev]
+other = "Previous"
+
+[ui_pager_next]
+other = "Next"
+
+[ui_read_more]
+other = "Read more"
+
+[ui_search]
+other = "Search this site…"
+
+# Used in sentences such as "Posted in News"
+[ui_in]
+other = "in"
+
+# Footer text
+[footer_all_rights_reserved]
+other = "All Rights Reserved"
+
+[footer_privacy_policy]
+other = "Privacy Policy"
+
+
+# Post (blog, articles etc.)
+[post_byline_by]
+other = "By"
+[post_created]
+other = "Created"
+[post_last_mod]
+other = "Last modified"
+[post_edit_this]
+other = "View/Edit this page"
+[post_create_issue]
+other = "Create documentation issue"
+[post_create_project_issue]
+other = "Create project issue"
+[post_posts_in]
+other = "Posts in"

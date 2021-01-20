@@ -1,0 +1,15 @@
+{{ define "main" }}
+
+<section class="row td-box">
+	<div class="col-md-1 order-md-1 hidden-xs hidden-sm hidden-md"></div>
+	<div class="col-md-3 col-lg-1 order-xs-first order-sm-first order-md-last text-center "></div>
+	<div class="col-md-7 col-lg-8 order-xs-2 order-sm-2 order-md-2">
+		<h1>Join the {{ .Site.Title }} community</h1>
+		<p class="lead mt-2">{{ .Site.Title }} is an open source project that anyone in the community can use, improve, and enjoy. We'd love ❣ you to join us! </p>
+		<p class="lead mt-2">Here are a few ways to find out what's happening and get involved.</p>
+	</div>
+</section>
+
+{{ partial "community_links.html" . }}
+
+{{ end }}

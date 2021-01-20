@@ -1,0 +1,110 @@
+[build]
+  publish = "public"
+
+[context.production.environment]
+  HUGO_VERSION = "0.74.3"
+  HUGO_ENV = "production"
+
+[context.deploy-preview.environment]
+  HUGO_VERSION = "0.74.3"
+  HUGO_ENV = "staging"
+
+[context.branch-deploy.environment]
+  HUGO_VERSION = "0.74.3"
+  HUGO_ENV = "staging"
+
+# Site redirects
+
+################
+# RELEASE-ITEM: For each release, add new/latest release and archive versions older than latest-3
+
+# Update to the latest version number
+# Enable permanent links to a new release (so links persist after release is archived)
+[[redirects]]
+  from = "/v0.20-docs/*"
+  to = "/docs/:splat"
+  status = 200
+
+# Update to include the recent versions that we take down off of knative.dev
+# We publish LATEST -3 versions to knative.dev, all older versions get redirect
+# back to the latest version in case old bookmarks or articles still point to
+# one of those "previously published" versions
+
+[[redirects]]
+  from = "/v0.16-docs/*"
+  to = "/docs/"
+  status = 301
+
+[[redirects]]
+  from = "/v0.15-docs/*"
+  to = "/docs/"
+  status = 301
+
+[[redirects]]
+  from = "/v0.14-docs/*"
+  to = "/docs/"
+  status = 301
+
+[[redirects]]
+  from = "/v0.13-docs/*"
+  to = "/docs/"
+  status = 301
+
+[[redirects]]
+  from = "/v0.12-docs/*"
+  to = "/docs/"
+  status = 301
+
+[[redirects]]
+  from = "/v0.11-docs/*"
+  to = "/docs/"
+  status = 301
+
+[[redirects]]
+  from = "/v0.10-docs/*"
+  to = "/docs/"
+  status = 301
+
+[[redirects]]
+  from = "/v0.9-docs/*"
+  to = "/docs/"
+  status = 301
+
+[[redirects]]
+  from = "/v0.8-docs/*"
+  to = "/docs/"
+  status = 301
+
+[[redirects]]
+  from = "/v0.7-docs/*"
+  to = "/docs/"
+  status = 301
+
+[[redirects]]
+  from = "/v0.6-docs/*"
+  to = "/docs/"
+  status = 301
+
+[[redirects]]
+  from = "/v0.5-docs/*"
+  to = "/docs/"
+  status = 301
+
+[[redirects]]
+  from = "/v0.4-docs/*"
+  to = "/docs/"
+  status = 301
+
+[[redirects]]
+  from = "/v0.3-docs/*"
+  to = "/docs/"
+  status = 301
+
+#################
+# Static redirects
+
+# Redirect all deprecated Knative Build component pages
+[[redirects]]
+  from = "/docs/build/*"
+  to = "/docs/"
+  status = 301

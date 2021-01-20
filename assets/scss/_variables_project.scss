@@ -1,0 +1,47 @@
+/*
+
+Add styles or override variables from the theme here.
+
+*/
+
+footer.py-5 {
+    padding-top: 1.5rem !important;
+    padding-bottom: 5rem !important;
+    z-index: 50;
+}
+
+p a {
+    word-break: break-word;
+}
+
+.link-on-dark {
+    color: #7db9ff !important;
+}
+
+.link-on-dark:hover {
+    color: #0290ff !important;
+}
+
+.fa-ul > li {
+    position: relative;
+    padding-bottom: 2px;
+}
+
+.main-docs h1 {
+    font-size:2.25rem;
+}
+.main-docs h2 {
+    font-size:2rem;
+}
+.main-docs h3 {
+    font-size:1.5rem;
+}
+.main-docs h4 {
+    font-size:1.35rem;
+}
+.main-docs h5 {
+    font-size:1.15rem;
+}
+.main-docs h6 {
+    font-size:1rem;
+}

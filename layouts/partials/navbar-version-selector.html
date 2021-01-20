@@ -1,0 +1,46 @@
+{{/* Prefix labels for menus */}}
+{{ $.Scratch.Set "docLabel" .Site.Params.doclabel }}
+{{ $.Scratch.Set "releaseLabel" .Site.Params.releaselabel }}
+{{ $preReleaseLabel := .Site.Params.prereleaselabel }}
+{{ $preReleaseDropLabel := .Site.Params.prereleasefolder }}
+
+{{/* set defaults for version and dropdown menu highlighting */}}
+{{ $.Scratch.Set "activeVersion" .Site.Params.version }}
+{{ $.Scratch.Set "docsVer" .Site.Params.version }}
+
+{{/* retrieve current page */}}
+{{ $curPage := .Page.Section }}
+
+{{/* generate menu from config/params.toml */}}
+<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+{{ range .Site.Params.versions }}
+  {{ if eq $curPage .dirpath }}
+
+    {{ if eq $curPage $preReleaseDropLabel }}
+      {{/* pre-release content */}}
+      {{ $.Scratch.Set "docLabel" $preReleaseLabel }}
+      {{ $.Scratch.Set "releaseLabel" $preReleaseLabel }}
+    {{ else }}
+      {{/* released version */}}
+      {{ $.Scratch.Add "docLabel" " " }}
+      {{ $.Scratch.Add "docLabel" .version }}
+      {{ $.Scratch.Set "docsVer" .version }}
+      {{ $.Scratch.Add "releaseLabel" " " }}
+      {{ $.Scratch.Add "releaseLabel" .version }}
+    {{ end }}
+
+    {{ $.Scratch.Set "activeVersion" .version }}
+  {{ end }}
+{{ end }}
+  {{/* set current version label */}}
+  <span class="d-none d-lg-inline d-xl-inline active">{{ printf "%s" ($.Scratch.Get "docLabel") }}</span>
+  <span class="d-sm-inline d-md-inline d-lg-none d-xl-none">{{ printf "%s" ($.Scratch.Get "releaseLabel") }}</span>
+</a>
+{{/* generate dropdown menu - make the Pre-release menu item gray */}}
+<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+  {{ range .Site.Params.versions }}
+  <a
+  class="dropdown-item{{ if eq ( $.Scratch.Get "activeVersion" ) ( printf "%s" .version ) }} active{{ end }}"
+  style="{{ if eq .version $preReleaseLabel }}color:#BCBCBC{{ end }}" href="{{ .url }}">{{ .version }}</a>
+  {{ end }}
+</div>

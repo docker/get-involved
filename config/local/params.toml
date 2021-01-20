@@ -1,0 +1,24 @@
+# Knative "local" Site Params (adds to (or can override) Site "config/_default")
+# Use for local content testing
+
+# Usage notes:
+# To build with these settings, you use the "scripts/localbuild.sh" build script.
+# The build uses every setting defined in "config/_default" and then merges or
+# overrides all the settings defined here.
+
+# Default docs params for "local" environment
+
+# Section labels for versions
+doclabel = "Local Preview Build: "
+releaselabel = "Local Preview Build: "
+
+# Local build version
+################
+# Set to "docs" path
+# RELEASE-ITEM: 'version' gets updated each release
+[[versions]]
+  version = "v0.20"
+  ghbranchname = "master"
+  url = "/docs/"
+  dirpath = "docs"
+

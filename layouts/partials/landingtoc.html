@@ -1,0 +1,38 @@
+{{/* In page TOC for landing pages (_index.md/.html) that exclude "readfile". */}}
+{{ $.Scratch.Set "showtoc" "false" }}
+{{ if (eq $.Page.Params.showlandingtoc "true") }}
+  {{ $.Scratch.Set "showtoc" "true" }}
+{{ else if (not (.HasShortcode "readfile")) | and (not (isset $.Page.Params "showlandingtoc")) }}
+  {{ $.Scratch.Set "showtoc" "true" }}
+{{ end }}
+{{ if eq ($.Scratch.Get "showtoc") "true" }}
+<div>
+  <b>Table of contents</b>
+  <div>
+    <ul class="td-sidebar-nav" style="margin-bottom: 0;">
+    {{ template "inpage-toc" (dict "page" . "section" .CurrentSection) }}
+    </ul>
+  </div>
+</div>
+{{ end }}
+{{ define "inpage-toc" }}
+{{ $s := .section }}
+{{ $p := .page }}
+{{ $active := eq $p.CurrentSection $s }}
+{{ if not $active }}
+  <li style="list-style: circle; padding-top:10px;">
+    <a href="{{ $s.RelPermalink }}">{{ $s.LinkTitle }}</a>
+  </li>
+  <ul>{{ end }}
+    {{ $pages := (union $s.Pages $s.Sections).ByWeight }}
+    {{ range $pages }}
+    {{ if .IsPage }}
+    <li style="list-style: circle; padding-top:10px;">
+      <a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a>
+    {{ else }}
+      {{ template "inpage-toc" (dict "page" $p "section" . ) }}
+    {{ end }}
+    </li>
+    {{ end }}
+  </ul>
+{{ end }}

@@ -1,0 +1,82 @@
+# Knative "production" Site Params (adds to (or can override) Site "config/_default")
+
+# Only add Google Custom Search and Feedback links to "production"
+
+# Create ID at https://cse.google.com/cse/
+# Google Custom Search Engine ID. Remove or comment out to disable search.
+gcs_engine_id = "008069654339966445896:nqydaxfpl7a"
+
+# Adds a H2 section titled "Feedback" to the bottom of each doc. The responses are sent to Google Analytics as events.
+# This feature depends on [services.googleAnalytics] and will be disabled if "services.googleAnalytics.id" is not set.
+# If you want this feature, but occasionally need to remove the "Feedback" section from a single page,
+# add "hide_feedback: true" to the page's front matter.
+[ui.feedback]
+enable = true
+# The responses that the user sees after clicking "yes" (the page was helpful) or "no" (the page was not helpful).
+yes = 'Glad to hear it! Please <a href="https://github.com/knative/docs/issues/new/?title=Page%20is%20helpful&labels=kind%2Fmeta">tell us how we can improve</a>.'
+no = 'Sorry to hear that. Please <a href="https://github.com/knative/docs/issues/new/?title=Page%20needs%20improvement&labels=kind%2Fmeta">tell us how we can improve</a>.'
+
+# Doc versions params
+# Create a separate [[versions]] set for every version / doc set branch
+# Use the ghbranchname param for specifying the GitHub branchname ->
+# Example:
+#   [thisisalink](https://github.com/.../tree/{{< params "ghbranchname" >}}/...)
+#
+# [[versions]] - Defines a single "version" of the Knative docs
+#   version - Intuitive version label (ie. visible in menus)
+#   ghbranchname - Name of branch of the doc version in GitHub
+#                  (https://github.com/knative/docs/branches)
+#   url - Fully qualified website URL to the doc version
+#         (ie. https://www.knative.dev/[dirpath])
+#   dirpath - The content folder name of the doc version
+#           - Latest release is always set to "docs"
+#           - Past/archived releases change to "v#.#-docs",
+#             where # is the MAJOR and MINOR semantic version values
+
+# Latest version
+# RELEASE-ITEM: 'version' and 'ghbranchname' get updated each release
+################
+# Set to "docs" path
+
+[[versions]]
+  version = "v0.20"
+  ghbranchname = "release-0.20"
+  url = "/docs/"
+  dirpath = "docs"
+
+# Archived versions
+# RELEASE-ITEM: All version #'s get updated each release
+###################
+# Prefix all past versions with release # "v#.#-docs"
+
+[[versions]]
+  version = "v0.19"
+  ghbranchname = "release-0.16"
+  url = "/v0.19-docs/"
+  dirpath = "v0.19-docs"
+[[versions]]
+  version = "v0.18"
+  ghbranchname = "release-0.18"
+  url = "/v0.18-docs/"
+  dirpath = "v0.18-docs"
+[[versions]]
+  version = "v0.17"
+  ghbranchname = "release-0.17"
+  url = "/v0.17-docs/"
+  dirpath = "v0.17-docs"
+
+[[versions]]
+  version = "Archives"
+  ghbranchname = ""
+  url = "https://github.com/knative/docs/branches"
+  dirpath = ""
+
+# Pre-release version
+###################
+# In-development (pre-release) content - "master" branch
+
+[[versions]]
+  version = "Pre-release"
+  ghbranchname = "master"
+  url = "/development/"
+  dirpath = "development"

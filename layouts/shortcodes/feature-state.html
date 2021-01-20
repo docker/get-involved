@@ -1,0 +1,26 @@
+{{/*
+
+Use this `feature-state` shortcode to include an indication of the stability of a feature and at what release that stability was reached.
+
+Parameters:
+* `state="alpha, beta, stable"`: REQUIRED.  The level of stability of the feature.
+* `version="0.12"`: REQUIRED.  The version at which the feature reached this level of stability.
+* `short="true"`: OPTIONAL, defaults to false.  Whether to emit a shortened form of the feature state.
+
+*/}}
+{{- $version := .Get "version" -}}
+{{- $state := .Get "state" -}}
+
+{{- $valid_states := "alpha, beta, deprecated, stable" -}}
+{{- $is_valid := strings.Contains $valid_states $state -}}
+{{- if not $is_valid -}}
+{{- errorf "%q is not a valid feature-state, use one of %q" $valid_states -}}
+{{- else -}}
+{{- if .Get "short" -}}
+<code style="border: 1px solid #d3d3d3; background: #e6e6e6; border-radius: 4px; padding: 5px;" href="#">{{ $state }} @ {{ $version }}</code>
+{{- else -}}
+<div style="margin-top:10px;margin-bottom:10px">
+  <b>FEATURE STATE:</b> <code style="border: 1px solid #d3d3d3; background: #e6e6e6; border-radius: 4px; padding: 5px;" href="#">{{ $state }} @ Knative {{ $version }}</code>
+</div>
+{{- end -}}
+{{- end -}}

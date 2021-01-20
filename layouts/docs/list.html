@@ -1,0 +1,12 @@
+{{ define "title"}} {{ .Title}} {{end}}
+{{ define "main" }}
+
+<div class="td-content">
+  <h1>{{ .Title }}</h1>
+
+{{ .Content }}
+
+{{ partial "landingtoc.html" . }}
+
+</div>
+{{ end }}

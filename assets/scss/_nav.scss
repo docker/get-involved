@@ -1,0 +1,141 @@
+//
+// Top navbar - copied from Docsy theme and additional styling included.
+//
+
+.td-navbar-cover {
+    background: $primary;
+
+    @include media-breakpoint-up(md) {
+
+        .nav-link {
+            text-shadow: 1px 1px 2px $dark;
+        }
+
+        /*.brand-name {
+            display: none;}*/
+
+    }
+
+    &.navbar-bg-onscroll .nav-link {
+        text-shadow: none;
+    }
+}
+
+.navbar-bg-onscroll {
+    background: $primary !important;
+    opacity: inherit;
+}
+
+.flip-nav .td-navbar {
+    background: $white;
+    border-bottom: 1px solid $knative-lighter;
+}
+
+.td-navbar {
+    background: $black;
+    border-bottom: 1px solid $black;
+
+    transition: .3s;
+
+    min-height: 4rem;
+    margin: 0;
+    z-index: 32;
+
+    @include media-breakpoint-up(md) {
+        position: fixed;
+        top: 0;
+        width: 100%;
+    }
+
+    @include media-breakpoint-down(md) {
+        .navbar-logo {
+            display: none;
+        }
+    }
+
+
+    .navbar-brand {
+        text-transform: none;
+        color: $knative-darker;
+
+        .nav-link {
+            display: inline-block;
+            margin-right: -30px;
+
+        }
+
+        .navbar-logo {
+            svg {
+                display: inline-block;
+                height: 50px;
+                width: auto;
+                margin-right: 10px;
+            }
+        }
+    }
+
+    .nav-link {
+        text-transform: none;
+        font-weight: $font-weight-bold;
+        .active {
+            border-top: 1px solid;
+            border-color: $knative-lighter;
+            padding-top: 5px;
+        }
+    }
+
+    .td-search-input {
+        border: none;
+
+        @include placeholder {
+            color: $navbar-dark-color;
+        }
+    }
+
+    .dropdown {
+        min-width: 100px;
+        margin-right: 1.5rem;
+    }
+
+    @include media-breakpoint-down(md) {
+        padding-right: .5rem;
+        padding-left: .75rem;
+
+        .td-navbar-nav-scroll {
+            max-width: 100%;
+            height: 2.5rem;
+            margin-top: -.5rem;
+            overflow: hidden;
+            font-size: .875rem;
+
+            .nav-link {
+                padding-right: .25rem;
+                padding-left: 0;
+            }
+
+            .navbar-nav {
+                padding-bottom: 2rem;
+                overflow-x: auto;
+                white-space: nowrap;
+                -webkit-overflow-scrolling: touch;
+
+            }
+        }
+        .navbar-logo {
+            display: none;
+        }
+    }
+}
+
+.tab-content > .active {
+    border: 1px solid lightgray;
+    border-top-style: hidden;
+    padding: 10px;
+}
+
+#announcement {
+    padding: 100px 25px 25px 25px;
+    color: $white;
+    background: $black;
+    text-align: center;
+}

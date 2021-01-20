@@ -1,0 +1,50 @@
+{{ $links := .Site.Params.links }}
+
+{{ partial "cookie-notice.html" . }}
+
+<footer class="bg-light py-5 row d-print-none">
+  <div class="container-fluid mx-sm-5">
+    <div class="row">
+      <div class="col-6 col-sm-4 text-xs-center order-sm-2">
+        {{ with $links }}
+        {{ with index . "user"}}
+        {{ template "footer-links-block"  . }}
+        {{ end }}
+        {{ end }}
+        <h6 class="text-white">Knative users</h6>
+      </div>
+      <div class="col-6 col-sm-4 text-right text-xs-center order-sm-3">
+        {{ with $links }}
+        {{ with index . "developer"}}
+        {{ template "footer-links-block"  . }}
+        {{ end }}
+        {{ end }}
+        <h6 class="text-white">Knative developers</h6>
+      </div>
+      <!-- Override for Knative licensing START -->
+      <div class="col-12 col-sm-4 text-center py-0 order-sm-2">
+        {{ if .Site.Params.commonsLicense }}<small class="text-white">
+          {{ if .Site.Params.knative_license }}
+          <p>&copy; {{ now.Year }} {{ .Site.Params.knativeAuthors }} | <b><a class="text-white" href="{{ .Site.Params.privacy_policy }}">{{ .Site.Params.privacyPolicy }}</a></b> | <b><a class="text-white" href="/about-analytics-cookies/">Cookie Usage</a></b> | <b><a class="text-white" href="{{ .Site.Params.knative_license }}">{{ .Site.Params.knativeLicense }}</a></b><br>
+          <span class="d-none d-lg-inline d-xl-inline" style="white-space:nowrap"><a class="text-white" href="{{ .Site.Params.commons_license }}">{{ .Site.Params.commonsLicense }}</a>, <a class="text-white" href="{{ .Site.Params.apache_license }}">{{ .Site.Params.apacheLicense }}</a></span></p>
+          {{ end }}
+        </small>
+        {{ end }}
+      </div>
+      <!-- END -->
+    </div>
+  </div>
+</footer>
+{{ define "footer-links-block" }}
+<ul class="list-inline mb-0">
+  {{ range . }}
+  <li class="list-inline-item mx-2 h4" data-toggle="tooltip" data-placement="top" title="{{ .name }}">
+    <a class="text-white" target="_blank" href="{{ .url }}" rel="noopener noreferrer">
+      <i class="{{ .icon }}"></i>
+    </a>
+  </li>
+  {{ end }}
+</ul>
+{{ end }}
+
+{{ partial "cookie-consent-modal.html" . }}
