@@ -9,7 +9,7 @@ menu:
 ---
 
 {{% pageinfo %}}
-Welcome to Docker Community Repository
+
 {{% /pageinfo %}}
 
 
