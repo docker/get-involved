@@ -1,0 +1,41 @@
+name: Hugo
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+jobs:
+
+  build:
+    name: Build
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@master
+    
+    - name: Checkout submodules
+      uses: textbook/git-checkout-submodule-action@master
+    
+    - name: install pandoc
+      run: |
+           wget https://github.com/jgm/pandoc/releases/download/2.10/pandoc-2.10-1-amd64.deb
+           sudo dpkg -i pandoc-2.10-1-amd64.deb
+ 
+    - name: Setup Hugo
+      uses: peaceiris/actions-hugo@v2
+      with:
+        hugo-version: '0.71.1'
+        extended: true
+          
+    - name: Build
+      run: |
+       npm install -D --save autoprefixer
+       npm install -D --save postcss-cli
+       hugo
+
+    - name: Deploy to GitHub Pages
+      uses: peaceiris/actions-gh-pages@v3
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_dir: ./public
