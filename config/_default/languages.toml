@@ -4,7 +4,7 @@
 # <TODO Create branch for nls> https://github.com/knative/docs/tree/translations) </TODO>
 
 [en]
-  title = "Docker Community "
+  title = ""
   description = "Docker Community"
   languageName = "English"
   contentDir = "content/en"
