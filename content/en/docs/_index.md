@@ -8,9 +8,6 @@ menu:
     weight: 20
 ---
 
-{{% pageinfo %}}
-
-{{% /pageinfo %}}
 
 
 # Get Involved
