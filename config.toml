@@ -1,5 +1,5 @@
 baseURL = "/dockercommunity"
-title = " "
+title = ""
 
 enableRobotsTXT = true
 
@@ -53,8 +53,8 @@ id = "UA-00000000-0"
 
 [languages]
 [languages.en]
-title = "goldydocs"
-description = "A Docsy example site"
+title = ""
+description = ""
 languageName ="English"
 # Weight used for sorting.
 weight = 1
