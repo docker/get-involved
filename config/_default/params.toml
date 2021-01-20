@@ -35,9 +35,9 @@ cookie_usage = "/about-analytics-cookies/"
 
 # GitHub repositories
 github_docsrepo = "https://github.com/knative/docs"
-github_communityrepo = "https://github.com/knative/community"
-github_eventingrepo = "https://github.com/knative/eventing"
-github_servingrepo = "https://github.com/knative/serving"
+github_communityrepo = "https://github.com/docker-community-leaders/dockercommunity/"
+github_eventingrepo = "https://github.com/docker-community-leaders/dockercommunity/"
+github_servingrepo = "https://github.com/docker-community-leaders/dockercommunity/"
 
 # User interface configuration
 [ui]
