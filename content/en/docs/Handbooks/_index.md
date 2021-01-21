@@ -1,9 +1,9 @@
 ---
-title: "Handbooks"
-linkTitle: "Handbooks"
+title: handbooks
+main_menu: true
+no_list: true
 weight: 2
-description: >
-  What does your user need to understand about your project in order to use it - or potentially contribute to it? 
+content_type: handbooks
 ---
 
 {{% pageinfo %}}
