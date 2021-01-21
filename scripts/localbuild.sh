@@ -18,19 +18,19 @@ set -e
 # 3. Install PostCSS. Needed to build the site locally.
 #    https://www.docsy.dev/docs/getting-started/#install-postcss
 #
-# 4. Clone the knative/docs repo:
-#    `git clone https://github.com/knative/docs.git`
+# 4. Clone the docker/docs repo:
+#    `git clone https://github.com/docker/docs.git`
 #
 # 5. Clone the knative/website repo, including the Docsy theme submodule:
-#    `git clone --recurse-submodules https://github.com/knative/website.git`
+#    `git clone --recurse-submodules https://github.com/docker/website.git`
 #
 #     Note: These repos must be cloned into the same folder and use the same
 #     names ('docs', 'website', 'community')
 #
-# 6. Optional: Clone the knative/community repo.
-#    `git clone https://github.com/knative/community.git`
+# 6. Optional: Clone the docker/community repo.
+#    `git clone https://github.com/docker/community.git`
 #
-# 7. From the root of the knative/website clone, run:
+# 7. From the root of the docker/website clone, run:
 #    `scripts/localbuild.sh`
 #
 #     See all command options below (ie. build from your remote fork, etc).
@@ -42,7 +42,7 @@ set -e
 # knative/docs clones (including any local changes).
 #
 # All files from you local knative/docs clone are copied into the 'content'
-# folder of your knative/website repo clone, and then they are processed in the
+# folder of your Docker/website repo clone, and then they are processed in the
 # same way that they are process on the Netlify host server.
 #
 # You can also build and preview changes from other remote Forks and Branches.
@@ -90,7 +90,7 @@ LIVERELOAD=" --watch=false --disableLiveReload"
 #  - Default: Build local clone to static HTML (output to 'public' folder):
 #    ./scripts/localbuild.sh
 #
-#  - Locally build knative.dev:
+#  - Locally build docker.dev:
 #      ./scripts/localbuild.sh -a true
 #
 #  - Run Hugo server (localhost):
