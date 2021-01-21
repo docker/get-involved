@@ -34,7 +34,7 @@ cookieUsage = "Cookie Usage"
 cookie_usage = "/about-analytics-cookies/"
 
 # GitHub repositories
-github_docsrepo = "https://github.com/knative/docs"
+github_docsrepo = "https://github.com/docker-community-leaders/dockercommunity/blob/master/content/en/docs/_index.md"
 github_communityrepo = "https://github.com/docker-community-leaders/dockercommunity/"
 github_eventingrepo = "https://github.com/docker-community-leaders/dockercommunity/"
 github_servingrepo = "https://github.com/docker-community-leaders/dockercommunity/"
@@ -56,33 +56,33 @@ breadcrumb_disable = false
         desc = "Discussion and help from your fellow users"
 [[links.user]]
   name ="Twitter"
-  url = "https://twitter.com/KnativeProject"
+  url = "https://twitter.com/dockercommunity"
   external = "true"
   icon = "fab fa-twitter"
         desc = "Follow us on Twitter to get the latest news!"
 [[links.user]]
   name = "Stack Overflow questions"
-  url = "https://stackoverflow.com/questions/tagged/*knative*"
+  url = "https://stackoverflow.com/questions/tagged/*docker*"
   external = "true"
   icon = "fab fa-stack-overflow"
-        desc = "Knative tagged questions and curated answers"
+        desc = "Docker tagged questions and curated answers"
 
 # Developer relevant links. These will show up on right side of footer and in the community page if you have one.
 [[links.developer]]
-  name = "Knative GitHub repo"
-  url = "https://github.com/knative"
+  name = "Docker GitHub repo"
+  url = "https://github.com/moby/moby"
   external = "true"
   icon = "fab fa-github"
         desc = "Development takes place here!"
 [[links.developer]]
-  name = "Knative Slack channels"
-  url = "https://slack.knative.dev/"
+  name = "Docker Slack channels"
+  url = "https://dockercommunity.slack.com/"
   external = "true"
   icon = "fab fa-slack"
         desc = "Chat with other project developers"
 [[links.developer]]
-  name = "Knative developers Group"
-  url = "https://groups.google.com/forum/#!forum/knative-dev"
+  name = "Docker developers Group"
+  url = "https://www.docker.com/products/developer-tools"
   external = "true"
   icon = "fa fa-users"
         desc = "Discuss development issues around the project"
@@ -123,5 +123,5 @@ breadcrumb_disable = false
   url = "../docs/samples/#external-code-samples"
   external = "false"
   icon = "fa fa-link"
-        desc = "Link to your Knative samples that live on another site"
+        desc = "Link to your Docker samples that live on another site"
 
