@@ -70,7 +70,7 @@ breadcrumb_disable = false
 # Developer relevant links. These will show up on right side of footer and in the community page if you have one.
 [[links.developer]]
   name = "Docker GitHub repo"
-  url = "https://github.com/moby/moby"
+  url = "https://github.com/docker-community-leaders/dockercommunity"
   external = "true"
   icon = "fab fa-github"
         desc = "Development takes place here!"
