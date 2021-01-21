@@ -1,120 +1,134 @@
 ---
-layout: default
-title: Beginners Track
-description: collabnix | DockerLab | Docker - Beginners Track
+title: "Docker101"
+linkTitle: "Docker for Beginners"
+weight: 1
+description: >-
+     Docker workshop for Beginners
 ---
 
-# Beginners Track
+# What is this handbook for?
 
-# Introduction to Docker 
+This is a community leader handbook to run Docker 101 workshop. This will cover every aspect of conducting workshop starting from setting up an event page till the completion of the successful workshop. 
 
-- [What is Docker?](./docker/what-is-docker.md)
-- [Difference between Docker & Container](./docker/docker-vs-container.md)
-- [What are Containers? What are they used for?](./linux-containers.md)
-- [Difference between VM and Docker](./difference-docker-vm.md)
-- [Similarity between VM and Docker](./similarity-vm-docker.md)
-- [How is Container different from Virtual Machine?](./difference-vm-containers.md)
-- [Top Reasons why to & why not to run Docker containers directly on Bare Metal System](./docker-on-bare-metal.md)
-- [How is Docker Networking different from VM Networking](./difference-vmnetwork-docker-networking.md)
-- [Understanding Docker Underlying Technologies](./understanding-docker-underlying-technology//README.md)
-- [What happen when Containers are Launched?](./container-runtime.md)
-- [Can container communication cross over to noncontainerized apps?](./linux-comm-containers.md)
-- [Architecture of Docker](./architecture-of-docker.md)
-   - [Docker Enterprise Edition](./architecture-dockeree.md)
-- [Docker Engine Release Features](./evolution-of-docker-platform.md)
-   - [18.09](./1809.md)
-   - [19.03 Community Edition](./install/from-source/README.md#how-to-install-latest-docker-19030-beta-1-test-build)
-     - [How to install latest Docker 19.03.0 Test Build](./install/from-source/README.md#how-to-install-latest-docker-19030-beta-1-test-build)<br>
-     - [Support for ```docker context```](./install/from-source/README.md#support-for-docker-context)<br>
-     - [Support for rootless Docker](./install/from-source/README.md#testing-rootless-docker-under-docker-19030-beta-1)<br>
-     - [Context Switching Made Simple for Swarm & Kubernetes in Docker 19.03.0](./install/from-source/README.md#support-for-docker-context)<br>
-     - [Test Drive --gpu option during docker CLI runtime on Docker 19.03.0 Beta 3](./install/from-source/README.md#support-for---gpu-runtime-option-in-docker-19030-beta3)
-    - [19.03 Enterprise Edition](./install/from-source/README.md#how-to-install-latest-docker-19030-enterprise-beta-4-test-build)
-   
-             
-# Installing, Upgrading & Maintaining Docker 
+### Features of this workshop
 
-- Installing Docker on 
-   - [Linux](./install/README.md)
-   - [Windows](./install/windows/docker-desktop-for-windows/README.md)
-   - [IoT Platform](./install/raspberrypi3/README.md)
-     - [How to install Docker 18.09.0 on Raspberry Pi 3?](./install/raspberrypi3/README.md)
-     - [How to setup Docker Swarm Cluster on Raspberry Pi](./install/raspberrypi3/setting-up-swarm-cluster.md)
-     - [How to install Docker 19.03 on NVIDIA Jetson Nano](https://github.com/collabnix/dockerlabs/tree/master/beginners/install/jetson-nano)
-     - [Building up K3s Cluster on Raspberry Pi 3 Nodes](./install/raspberrypi3/setting-up-k3s-cluster.md)
-     - [How to monitor a Docker Swarm with Blinkt! LED using Raspberry Pi 3](./install/raspberrypi3/monitor-docker-swarm-using-blinkt.md)
-     - [Docker on Arduino Uno & Johnny Five](./install/raspberrypi3/Docker-IOT_Using_Arduino_Uno_and_Johnny-Five.md)
-- [Compiling Your Own Docker Binary from Source](./install/from-source/README.md)
-- [Upgrading Docker from CE to EE](./upgrade-1809ce-1809ee/README.md)
+- Audience : 5 to 100
+- Technical Skills Required : Basic knowledge of Linux, Basic concepts of Docker
+- Length : 8 hours (including coffe and lunch breaks)
 
 
-# Docker Components
+## Checklists 
 
-- [Docker Client-Server Architecture](./components/server_client.md)
-- [Docker Daemon](./components/daemon/README.md)
-  - [How to open Docker Daemon to External world?](./components/daemon/access-daemon-externally.md)
-- [What is a Docker Image?](./imagelayers.md)
-  - [Building Your own Docker Image from Scratch](./building-docker-image-from-scratch.md)
-- [What is Docker Container?](./components/what-is-container.md)
-- [Difference between Docker Image Vs Docker Container?](./components/container-vs-image.md)
-- [What is Docker registry?](./dockertrustedregistry.md)
-  - [Building a Private Docker Registry](./build-private-docker-registry.md)
-  - [Building a Private Docker Registry using Portus](./portus/README.md)
+### Before the workshop
 
-  
-# Working with Docker Image & Container
+S.No. | Name of Objectives | Status | 
+:------------ | :-------------| :-------------|
+1 | [Getting Familiar with Bevy Virtual](/housekeeping/virtual/README.md) |  ☑️ |
+2 | [Planning an Event Agenda](/housekeeping/plan-an-event-agenda/README.md) |  ☑️ |
+3 | [Setting up Event Registration Page](/housekeeping/event/README.md) | ☑️ |
+4 | [Sending confirmation email for workshop](/housekeeping/email/README.md) |  ☑️ |
 
-- [Running Hello World Example](./helloworld/README.md)
-- [Working with Docker Image](./workingwithdockerimage.md) 
-  - [Saving Images and Containers as Tar Files for Sharing](./saving-images-as-tar/README.md) 
-  - [Versioning an Image with Tags](./versioning-an-image-with-tags.md)
-- [Building Your First Alpine Docker Image and Push it to DockerHub](./building-your-first-alpine-container.md)
-- [Building Docker Image from Scratch](./building-docker-image-from-scratch.md)
-- [Creating Docker Base Image](./create-base-image.md)
-- [Using ONBUILD Images](./using-onbuild-images/README.md)
+### During the workshop
 
+S.No. | Name of Objectives | Status | 
+:------------ | :-------------| :-------------|
+5 | [Conducting Attendee Survey](/housekeeping/attendeesurvey/README.md) |  ☑️ |
 
-  
- # Working with Dockerfile
- 
-- Building Docker Image from Dockerfile
-  - [Writing Your First DockerFile](./dockerfile/Writing-dockerfile.md)
-  - [Injecting files into your image using ADD](./dockerfile/ADD-command.md)
-  - [Rebuilding without Cache](./dockerfile/Rebuild-without-cache.md)
-  
-- [How is ENTRYPOINT instruction under Dockerfile different from RUN instruction?](./dockerfile/entrypoint-vs-run.md)
-- [Difference between Docker Compose Vs Dockerfile](./difference-compose-dockerfile.md)
-- [How to use ARG to pass enviornmental variable at runtime](./dockerfile/arg-dockerfile-runtime.md)
+### After the workshop
 
-# Accessing & Managing Docker Container
+S.No. | Name of Objectives | Status | 
+:------------ | :-------------| :-------------|
+6 | [Post-Event FollowUp](/housekeeping/postevent/README.md) |  ☑️ |
+7 | [Community Leader Survey](/housekeeping/clsurvey/README.md)  |  ☑️ |
+8 | [Attendee Survey](/housekeeping/attendeesurvey/README.md)  |  ☑️ |
 
-- [Accessing the Container Shell](./accessing-the-container.md)<br>
-- [Running a Command inside running Container](./running-command-inside-running-container.md)<br>
-- [Managing Docker Containers](./managing-containers.md)<br>
+## Recommended Agenda
 
-# Getting Started with Docker Volume
-
-[Creating Volume Mount from Dockerfile](./volume/create-a-volume-mount-from-dockerfile.md)<br>
-[Managing volumes through Docker CLI](./volume/managing-volumes-via-docker-cli.md)<br>
-[Creating Volume Mount from **docker run** command & sharing same Volume Mounts among multiple containers](./volume/creating-volume-mount-from-dockercli.md)<br>
-[Mounting host directory into container](./volume/bind-mounts.md)<br>
-[Creating Volume with Alpine OS](./volume/Creating-Volume-with-alphine.md)<br>
-
-# Docker Networking
-
- - [Using Docker Networks](./using-docker-network.md)<br>
+| Description | Timing |
+| --- | --- |
+| Welcome | 8:45 AM to 9:00 AM |
+| [Creating a DockerHub Account](dockerhub/dockerhub.md) | 9:00 AM to 9:15 AM |
+| [Getting Started with Docker Image](#getting-started-with-docker-image---1-hour) | 9:15 AM to 10:15 AM |
+| [Accessing & Managing Docker Container](#accessing--managing-docker-container---1-hour) | 10:15 AM to 11:15 AM |
+| Coffee/Tea Break | 11:15 AM to 11:30 AM |
+| [Getting Started with Dockerfile - Part 1](#getting-started-with-dockerfile---3-hours) | 11:30 AM to 1:00 PM|
+| Lunch | 1:00 PM to 2:00 PM |
+| [Getting Started with Dockerfile - Part 2](#getting-started-with-dockerfile---3-hours)| 2:00 PM to 3:30 PM |
+| [Creating Private Docker Registry](#creating-private-docker-registry---30-min) | 3:30 PM to 4:00 PM|
+| [Docker Volumes](#docker-volumes---30-min) | 4:00 PM to 4:30 PM |
+| Coffee/Tea Break | 4:00 PM to 4:30 PM |
+| [Docker Networking](#docker-networking---1-hour) | 4:45 PM to 5:45 PM |
+| Quiz/Prize/Certificate Distribution | 5:45 PM to 6:00 PM |
 
 
 
+## Pre-requisite:
+
+- [Creating Your DockerHub Account](dockerhub/dockerhub.md) - 15 min
+
+### Getting Started with Docker Image - 1 hour
+
+- [Running Hello World Example](/helloworld/README.md)  
+- [Working with Docker Image](/beginners/workingwithdockerimage/workingwithdockerimage.md) 
+- [Saving Images and Containers as Tar Files for Sharing](/beginners/saving-images-as-tar/README.md)
+- [Building Your First Alpine Docker Image and Push it to DockerHub](/building/building-your-first-alpine-container.md)
+- [Test Your Knowledge](/beginners/quiz1/README.md)
+
+###  Accessing & Managing Docker Container - 1 hour
+
+- [Accessing the Container Shell](/beginners/accessing-the-container/README.md)
+- [Running a Command inside running Container](/beginners/running-command-inside-running-container/README.md)
+- [Managing Docker Containers](/beginners/managing-containers/README.md)
+- [Test Your Knowledge](/beginners/quiz2/README.md)
+
+### Getting Started with Dockerfile - 3 hours
+
+- [What is a Dockerfile?](/beginners/dockerfile/what-is-dockerfile/README.md)
+- [Understanding Layering Concept with Dockerfile](/beginners/dockerfile/layering-dockerfile/README.md)
+- Creating Docker Image with
+   - [Installing GIT](/beginners/dockerfile/lab-create-image/01-with-git.md)
+   - [ADD instruction](/beginners/dockerfile/lab-create-image/02-with-ADD.md)
+   - [COPY instruction](/beginners/dockerfile/lab-create-image/03-with-COPY.md)
+   - [CMD instruction](/beginners/dockerfile/lab-create-image/04-with-CMD.md)
+   - [ENTRYPOINT instruction](/beginners/dockerfile/lab-create-image/05-with-ENTRYPOINT.md)
+   - [WORKDIR instruction](/beginners/dockerfile/lab-create-image/06-with-WORKDIR.md)
+   - [RUN instruction](/beginners/dockerfile/lab-create-image/07-with-EXPOSE.md)
+   - [ARG instruction](/beginners/dockerfile/lab-create-image/08-with-ARG.md)
+   - [ENV instruction](/beginners/dockerfile/lab-create-image/09-with-ENV.md)
+   - [VOLUME instruction](/beginners/dockerfile/lab-create-image/10-with-VOLUME.md)
+   - [EXPOSE instruction](/beginners/dockerfile/lab-create-image/11-with-EXPOSE.md)
+   - [LABEL instruction](/beginners/dockerfile/lab-create-image/12-with-LABEL.md)
+   - [ONBUILD instruction](/beginners/dockerfile/lab-create-image/13-with-ONBUILD.md)
+   - [HEALTHCHECK instruction](/beginners/dockerfile/lab-create-image/14-with-HEALTHCHECK.md)
+   - [SHELL instruction](/beginners/dockerfile/lab-create-image/15-with-SHELL.md)
+   - [USER instruction](/beginners/dockerfile/lab-create-image/16-with-USER.md)
+- [ENTRYPOINT vs RUN](/beginners/dockerfile/entrypoint-vs-run/)
+- [Writing Dockerfile with Hello Python Script Added](/beginners/dockerfile/lab_dockerfile_python/)
+- [Test Your Knowledge](/beginners/dockerfile/quiz3/README.md)
+
+### Creating Private Docker Registry - 30 min
+
+- [Building a Private Docker Registry](/beginners/docker-registry/README.md)
+- [Test Your Knowledge](/beginners/docker-registry/quiz4/README.md)
+
+### Docker Volumes - 30 min
+
+- [Managing volumes through Docker CLI](/beginners/volume/manage-via-cli/README.md)
+- [Creating Volume Mount from **docker run** command & sharing same Volume Mounts among multiple containers](/beginners/volume/with-docker-run/README.md)
+- [Test Your Knowledge](/beginners/volume/quiz5/README.md)
+
+### Docker Networking - 1 hour
+
+ - [The docker network Command](/beginners/networking/using-docker-network/README.md)
+ - [Lab #1: Listing the Networks](/beginners/networking/using-docker-network/A1-network-basics.md#step-2-list-networks)
+ - [Lab #2: Inspecting a Network](/beginners/networking/using-docker-network/A1-network-basics.md#step-3-inspect-a-network)
+ - [Lab #3: List network driver plugins](/beginners/networking/using-docker-network/A1-network-basics.md#step-4-list-network-driver-plugins)
+ - [Lab #4: Docker Bridge Networking](/beginners/networking/using-docker-network/A2-bridge-networking.md)
+   - [Lab #5: Basics of Docker Bridge Networking](/beginners/networking/using-docker-network/A2-bridge-networking.md#step-1-the-default-bridge-network)
+   - [Lab #6: Connect a Docker container to bridge network](/beginners/networking/using-docker-network/A2-bridge-networking.md#step-2-connect-a-container)
+   - [Lab #7: Test Network Connectivity](/beginners/networking/using-docker-network/A2-bridge-networking.md#step-3-test-network-connectivity)
+   - [Lab #8: Configure NAT for external connectivity](/beginners/networking/using-docker-network/A2-bridge-networking.md#step-4-configure-nat-for-external-connectivity)
+ - [Test Your Knowledge](/beginners/networking/quiz6/README.md)
 
 
 
- [Proceed >> What is Docker?](http://dockerlabs.collabnix.com/beginners/docker/what-is-docker.html)
-
-
-
-
-
-
-
-[back](http://dockerlabs.collabnix.com)
