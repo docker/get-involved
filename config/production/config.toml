@@ -5,7 +5,7 @@
 # Hugo build then uses every setting defined in "config/_default" and then merge
 # all settings defined here for "staging" on top of all those define for "_default".
 
-baseURL = "https://knative.dev/"
+baseURL = "https://docker-community-leaders.github.io/dockercommunity/"
 enableRobotsTXT = true
 
 [services]
