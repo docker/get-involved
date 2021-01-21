@@ -4,7 +4,7 @@
 
 # Create ID at https://cse.google.com/cse/
 # Google Custom Search Engine ID. Remove or comment out to disable search.
-gcs_engine_id = "008069654339966445896:nqydaxfpl7a"
+# gcs_engine_id = "008069654339966445896:nqydaxfpl7a"
 
 # Adds a H2 section titled "Feedback" to the bottom of each doc. The responses are sent to Google Analytics as events.
 # This feature depends on [services.googleAnalytics] and will be disabled if "services.googleAnalytics.id" is not set.
@@ -63,7 +63,7 @@ no = 'Sorry to hear that. Please <a href="https://github.com/docker-community-le
 #   version = "v0.17"
 #   ghbranchname = "release-0.17"
 #   url = "/v0.17-docs/"
-  dirpath = "v0.17-docs"
+# dirpath = "v0.17-docs"
 
 #  [[versions]]
 #   version = "Archives"
