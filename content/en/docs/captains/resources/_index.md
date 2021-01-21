@@ -1,10 +1,9 @@
---
+---
 title: "Resources"
 linkTitle: "Resources"
-weight: 100
+weight: 99
 description: >-
      Docker Captains Resources
 ---
 
 ## List of Resources
-
