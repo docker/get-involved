@@ -43,6 +43,10 @@ other = "Search this site…"
 [ui_in]
 other = "in"
 
+[note]
+other = "Note:"
+
+
 # Footer text
 [footer_all_rights_reserved]
 other = "All Rights Reserved"
