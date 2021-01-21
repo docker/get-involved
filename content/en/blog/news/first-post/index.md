@@ -1,9 +1,9 @@
 ---
-date: 2018-10-06
-title: "Easy documentation with Docsy"
+date: 2021-02-01
+title: "Docker Community Blog Posts"
 linkTitle: "Announcing Docker Community Page"
 description: "Docker Community Page is designed to get you involved with Docker Community"
-author: Docker Community  ([@rionam](https://twitter.com/dockercommunity))
+author: Docker Community  ([@dockercommunity](https://twitter.com/dockercommunity))
 resources:
 - src: "**.{png,jpg}"
   title: "Image #:counter"
