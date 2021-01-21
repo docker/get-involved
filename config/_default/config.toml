@@ -37,6 +37,9 @@ defaultContentLanguageInSubdir = false
 # Useful when translating.
 enableMissingTranslationPlaceholders = true
 
+# Enable Algolia DocSearch
+algolia_docsearch = true
+
 # Will give values to .Lastmod etc.
 enableGitInfo = true
 
