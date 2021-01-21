@@ -6,9 +6,7 @@ description: >
   A Docker Community Site
 ---
 
-{{% pageinfo %}}
-This is a placeholder page that shows you how to use this template site.
-{{% /pageinfo %}}
+
 
 
 🐳 🐳 🐳  <br> Welcome to the Docker Community repo! 
