@@ -1,4 +1,4 @@
-# Knative "_default" Site Configuration
+# "_default" Site Configuration
 
 # Usage notes:
 # To build with these settings, see "scripts/build.sh" or "scripts/localbuild.sh"

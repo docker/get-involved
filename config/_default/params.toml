@@ -1,4 +1,4 @@
-# Knative DEFAULT Site Params
+# DEFAULT Site Params
 # Default site parameters, see "config/production" "config/staging" and "config/local" for environment specific overrides
 
 ########################
