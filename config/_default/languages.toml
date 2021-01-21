@@ -10,8 +10,8 @@
   contentDir = "content/en"
   # Weight used for sorting.
   weight = 1
-  time_format_default = "02.01.2006"
-  time_format_blog = "02.01.2006"
+  time_format_default = "01.01.2021"
+  time_format_blog = "01.01.2021"
 
 # Template/example for additional NLs
 # (where translated source is "content/[LANG]" and config file is "il8n/[LANG].toml")
