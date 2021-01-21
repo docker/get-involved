@@ -68,6 +68,10 @@ S.No. | Name of Objectives | Status |
 
 ### Getting Started with Docker Image - 1 hour
 
+1. Click **Launch Terminal**
+
+    {{< kat-button >}}
+
 - [Running Hello World Example](/helloworld/README.md)  
 - [Working with Docker Image](/beginners/workingwithdockerimage/workingwithdockerimage.md) 
 - [Saving Images and Containers as Tar Files for Sharing](/beginners/saving-images-as-tar/README.md)
