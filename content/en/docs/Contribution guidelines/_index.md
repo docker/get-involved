@@ -7,7 +7,7 @@ description: >
 ---
 
 
-# How to contribute to Docker Community Site
+# How to contribute to this community site
 
 This page is intended for people who want to contribute content to this Docker Community repository docs and who don't use Git or GitHub often. The page is basically a quick guide to get going with a GitHub repository, using either Git on CLI or the GitHub web user interface (UI).
 
@@ -16,7 +16,7 @@ This page is intended for people who want to contribute content to this Docker C
 
 1. Fork/Clone the docker-community-leaders/community repository:
 
-    * Go to the [docker-community-leaders/community](https://github.com/docker-community-leaders/community) on GitHub.
+    * Go to the [docker-community-leaders/dockercommunity](https://github.com/docker-community-leaders/dockercommunity) on GitHub.
     * Click **Fork** to make your own copy of the repository. GitHub creates a 
       copy at `https://github.com/<your-github-username>/community`.
 
@@ -29,14 +29,14 @@ This page is intended for people who want to contribute content to this Docker C
     ```
     mkdir community
     cd community/
-    git clone git@github.com:<your-github-username>/community.git
-    cd community/
+    git clone git@github.com:<your-github-username>/dockercommunity.git
+    cd dockercommunity/
     ```
 
 1. Add the upstream repository as a Git remote repository:
 
     ```
-    git remote add upstream https://github.com/docker-community-leaders/community.git
+    git remote add upstream https://github.com/docker-community-leaders/dockercommunity.git
     ```
 
 1. Check your remotes:
@@ -111,7 +111,7 @@ Follow these steps to edit a page using the GitHub UI:
 1. Sign in to GitHub if you haven't yet done so.
 
 1. Go to the page that you want to edit on the
-  [Docker Community Site](https://docker-community-leaders.github.io/community).
+  [Docker Community Site](https://docker-community-leaders.github.io/dockercommunity).
 
 1. Click **Edit this page**.
 
