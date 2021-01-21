@@ -101,14 +101,15 @@ github_project_repo = "https://github.com/google/docsy"
 # Specify a value here if your content directory is not in your repo's root directory
 # github_subdir = ""
 
-# Google Custom Search Engine ID. Remove or comment out to disable search.
+# Google Custom Search Engine ID. Remove or comment out to disable search.# Google Custom Search Engine ID. 
+# Remove or comment out to disable search.
 gcs_engine_id = "011737558837375720776:fsdu1nryfng"
 
 # Enable Algolia DocSearch
-algolia_docsearch = true
+algolia_docsearch = false
 
 # Enable Lunr.js offline search
-offlineSearch = true 
+offlineSearch = false 
 
 # User interface configuration
 [params.ui]
