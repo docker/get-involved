@@ -3,34 +3,30 @@ title: "Getting Started"
 linkTitle: "Getting Started"
 weight: 2
 description: >
-  What does your user need to know to try your project?
+  A Docker Community Site
 ---
 
 {{% pageinfo %}}
 This is a placeholder page that shows you how to use this template site.
 {{% /pageinfo %}}
 
-Information in this section helps your user try your project themselves.
 
-* What do your users need to do to start using your project? This could include downloading/installation instructions, including any prerequisites or system requirements.
+🐳 🐳 🐳  <br> Welcome to the Docker Community repo! 
 
-* Introductory “Hello World” example, if appropriate. More complex tutorials should live in the Tutorials section.
+This repo aims to centralize content (HOW-TOs, scripts, slides, events etc) curated by Docker User Groups. The main objective is to help members of the Docker community who share similar interests to learn from & collaborate with each other during events. This is a community oriented and run repository, which is maintained by Docker community members. This is the perfect place to host projects, proofs of concept, documentation, and more...
 
-Consider using the headings below for your getting started page. You can delete any that are not applicable to your project.
+For more information about this project, visit https://docker.com/community
 
-## Prerequisites
 
-Are there any system requirements for using your project? What languages are supported (if any)? Do users need to already have any software or tools installed?
+[![Slack Chat](https://img.shields.io/badge/Chat-Slack-ff69b4.svg "Join us. You're welcome!")](http://dockr.ly/slack) ⇦ Join Docker Community Slack today!
 
-## Installation
 
-Where can your user find your project code? How can they install it (binaries, installable package, build from source)? Are there multiple options/versions they can install and how should they choose the right one for them?
+## Table of Contents
 
-## Setup
 
-Is there any initial setup users need to do after installation to try your project?
-
-## Try it out!
-
-Can your users test their installation, for example by running a commmand or deploying a Hello World example?
+-  👪 [Community Groups](#community-groups)
+-  ☎  [Communications](#communications)
+-  📆 [Community Events](#community-events)
+-  💬 [Community Engagements](#community-engagements)
+-  📚 [Community Resources](#community-resources)
 
