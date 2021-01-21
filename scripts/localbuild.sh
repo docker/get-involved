@@ -21,7 +21,7 @@ set -e
 # 4. Clone the docker/docs repo:
 #    `git clone https://github.com/docker/docs.git`
 #
-# 5. Clone the knative/website repo, including the Docsy theme submodule:
+# 5. Clone the docker/website repo, including the Docsy theme submodule:
 #    `git clone --recurse-submodules https://github.com/docker/website.git`
 #
 #     Note: These repos must be cloned into the same folder and use the same
@@ -35,13 +35,13 @@ set -e
 #
 #     See all command options below (ie. build from your remote fork, etc).
 #
-# 8. If you change content in your knative/docs repo clone, you rebuild your local
+# 8. If you change content in your docker/docs repo clone, you rebuild your local
 #    site by stopping the localhost (CTRL C) and running `scripts/localbuild.sh` again.
 #
-# By default, the command locally runs a Hugo build of using your local knative/website and
-# knative/docs clones (including any local changes).
+# By default, the command locally runs a Hugo build of using your local docker/website and
+# docker/docs clones (including any local changes).
 #
-# All files from you local knative/docs clone are copied into the 'content'
+# All files from you local docker/docs clone are copied into the 'content'
 # folder of your Docker/website repo clone, and then they are processed in the
 # same way that they are process on the Netlify host server.
 #
