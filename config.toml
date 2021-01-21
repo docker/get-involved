@@ -105,10 +105,10 @@ github_project_repo = "https://github.com/google/docsy"
 gcs_engine_id = "011737558837375720776:fsdu1nryfng"
 
 # Enable Algolia DocSearch
-algolia_docsearch = false
+algolia_docsearch = true
 
 # Enable Lunr.js offline search
-offlineSearch = false
+offlineSearch = true 
 
 # User interface configuration
 [params.ui]
