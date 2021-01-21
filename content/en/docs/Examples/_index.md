@@ -1,7 +1,7 @@
 
 ---
 title: "Docker Captains"
-linkTitle: "Docker Captains Page"
+linkTitle: "Docker Captains"
 weight: 3
 date: 2017-01-05
 description: >
