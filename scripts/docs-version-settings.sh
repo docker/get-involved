@@ -16,5 +16,5 @@ NUMOFVERSIONS="3"
 OLDESTVERSION=$((LATESTVERSION-NUMOFVERSIONS))
 
 # An optional value that you can locally override for local builds/testing
-DEFAULTORG="knative"
+DEFAULTORG="Docker-Community"
 DEFAULTREPO="$DEFAULTORG/docs"
