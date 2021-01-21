@@ -1,7 +1,4 @@
-# Knative Language Configuration
-# All nl configurations are set here.
-# Note: NL source is maintained in the translations branch of the knative/docs repo:
-# <TODO Create branch for nls> https://github.com/knative/docs/tree/translations) </TODO>
+# Language Configuration
 
 [en]
   title = ""
@@ -12,17 +9,3 @@
   weight = 1
   time_format_default = "01.01.2021"
   time_format_blog = "01.01.2021"
-
-# Template/example for additional NLs
-# (where translated source is "content/[LANG]" and config file is "il8n/[LANG].toml")
-#
-# Example: LANG = ja (Japanese):
-#
-# [ja]
-#   title = "Knative"
-#   description = "Knative [ja translation here]"
-#   languageName = "Japanese"
-#   contentDir = "content/ja"
-#   weight = 2
-#   time_format_default = "2006.02.01"
-#   time_format_blog = "2006.02.01"
