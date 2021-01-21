@@ -1,6 +1,6 @@
 ---
 title: "Captains Projects"
-linkTitle: "Docker Captains' Projects"
+linkTitle: "Projects"
 weight: 100
 description: >-
      Docker Captains Projects
