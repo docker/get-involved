@@ -21,13 +21,13 @@ prereleaselabel = "Pre-release"
 prereleasefolder = "development"
 
 # Footer content
-knativeAuthors = "The Knative Authors"
+knativeAuthors = "The Docker Community Authors"
 commonsLicense = "CC By 4.0"
 commons_license = "https://creativecommons.org/licenses/by/4.0/"
 apacheLicense = "Apache 2.0"
 apache_license = "https://www.apache.org/licenses/LICENSE-2.0"
 knativeLicense = "Knative Licensing"
-knative_license = "https://github.com/knative/docs/blob/master/LICENSE"
+knative_license = "https://github.com/docker/docs/blob/master/LICENSE"
 privacyPolicy = "Privacy Policy"
 privacy_policy = "https://policies.google.com/privacy"
 cookieUsage = "Cookie Usage"
@@ -49,8 +49,8 @@ breadcrumb_disable = false
 [links]
 # End user relevant links. These will show up on left side of footer and in the community page if you have one.
 [[links.user]]
-  name = "Knative users Group"
-  url = "https://groups.google.com/forum/#!forum/knative-users"
+  name = "Docker users Group"
+  url = "https://groups.google.com/g/docker-dev"
   external = "true"
   icon = "fa fa-users"
         desc = "Discussion and help from your fellow users"
