@@ -8,6 +8,7 @@ description: >
 
 {{% pageinfo %}}
 
+{{/% pageinfo %}}
 # How to contribute to Docker Community Site
 
 This page is intended for people who want to contribute content to this Docker Community repository docs and who don't use Git or GitHub often. The page is basically a quick guide to get going with a GitHub repository, using either Git on CLI or the GitHub web user interface (UI).
