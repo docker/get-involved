@@ -1,7 +1,8 @@
+
 ---
 title: "Java Handbook"
 linkTitle: "Java Handbook"
-weight: 80
+weight: 6
 description: >-
      Docker workshop for Java Developers
 ---
