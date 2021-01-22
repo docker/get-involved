@@ -1,6 +1,6 @@
 ---
-title: "Community Leaders"
-linkTitle: "Community Leaders"
+title: "Community Leaders Program"
+linkTitle: "Community Leaders Program"
 weight: 4
 description: >
   Community Leader's Program
