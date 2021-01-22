@@ -8,7 +8,7 @@ By using this website, you are confirming that you accept our use of cookies for
 the purposes of collecting anonymous usage data to improve the user experience and content
 on the website.
 
-Continue to sections below for details about knative.dev, or use the following resources to learn about cookies in general:
+Continue to sections below for details about docker.dev, or use the following resources to learn about cookies in general:
 
 - Learn about basic site analytics usuage at: [https://www.cookiechoices.org/](https://www.cookiechoices.org/)
 
@@ -29,14 +29,14 @@ don't pop-up over every page.
 Many sites use cookies and analytics. You might have agreed to their usage when you created an
 account, used their service, or viewed their webpage (cookie consent notice).
 
-However, you can choose to disable cookies on knative.dev, or any other website. The most
+However, you can choose to disable cookies on docker.dev, or any other website. The most
 effective way to do this is to disable cookies in your browser but you can loose some website
 behavior.
 
-## What cookies are used on knative.dev
+## What cookies are used on docker.dev
 
 We use [Google Analytics](https://marketingplatform.google.com/about/analytics/) tracking on
-knative.dev. These cookies are used to store information, such as what pages you visited and for
+docker.dev. These cookies are used to store information, such as what pages you visited and for
 how long, whether you have been to the site before, and what site referred you to the web page.
 We also learn about what types of content and topic areas you
 are interested in, including what content or sections never get viewed or used.
@@ -44,8 +44,8 @@ are interested in, including what content or sections never get viewed or used.
 These cookies contain no personally identifiable information (PII) but they will use your computer’s
 IP address. For more information about the data collected, [view our Privacy Policy](https://policies.google.com/privacy).
 
-If you prefer to view the Knative docs from within the [knative/docs
-](https://github.com/knative/docs/tree/master/docs) GitHub repository,
+If you prefer to view the Docker docs from within the [Docker/docs
+](https://github.com/docker/docs/tree/master/docs) GitHub repository,
 view details about their cookies and tracking at
 [GitHub Privacy Statement](https://help.github.com/en/github/site-policy/github-privacy-statement#what-information-github-collects).
 
