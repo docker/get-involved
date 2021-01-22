@@ -30,10 +30,6 @@ Joining the Community Leader program offers the following benefits:
 * Promotion of events on Docker social channels
 * Logo files + marketing materials
 * To be added: Link with logo files
-* Content for 4 events per year. Typically, 2 of the events are thematic around our global event series taking place in March for the Docker Birthday and generally October through December for a workshop. Content will be delivered via email and shared in this google folder.
-2020 Docker 7th Birthday Meetup Details 
- 2019 End of Year Workshop Series details. This #LearnDocker workshop was such a huge success with our meetup groups around the world, that we are extending it. Please feel free to use this content at any time. A number of our meetups are running the workshop multiple times to accommodate the demand!
-Feedback: Everyone had  a great time. Most if not all of the attendees had researched docker in some capacity but never got off the ground. The brief slideshow intro was good but the workshop and step by step instructions was the real hit. Walking around and seeing everyone excited to be actively using Docker was awesome. Nate and I had way more fun than we we're expecting sharing this with everyone… Biggest takeaway for us as community leaders was that people really want hands on content. A lot of technical meetups are just talks and not much in the way of active participation.
 * Guidance on running successful user group events
 * Amazing network of inspiring community leaders
 * Access to the Docker Community Team
