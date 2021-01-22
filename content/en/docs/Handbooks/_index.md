@@ -1,9 +1,9 @@
 ---
-title: handbooks
+title: Handbooks
 main_menu: true
 no_list: true
 weight: 2
-content_type: handbooks
+content_type: Handbooks
 ---
 
 {{% pageinfo %}}
