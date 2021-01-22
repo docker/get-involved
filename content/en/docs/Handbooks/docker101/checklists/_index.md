@@ -1,7 +1,7 @@
 ---
 title: "Checklists"
 linkTitle: "Checklists"
-weight: 90
+weight: 70
 description: >-
      Checklists
 ---
