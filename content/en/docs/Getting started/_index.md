@@ -16,15 +16,4 @@ This repo aims to centralize content (HOW-TOs, scripts, slides, events etc) cura
 For more information about this project, visit https://docker.com/community
 
 
-[![Slack Chat](https://img.shields.io/badge/Chat-Slack-ff69b4.svg "Join us. You're welcome!")](http://dockr.ly/slack) ⇦ Join Docker Community Slack today!
-
-
-## Table of Contents
-
-
--  👪 [Community Groups](#community-groups)
--  ☎  [Communications](#communications)
--  📆 [Community Events](#community-events)
--  💬 [Community Engagements](#community-engagements)
--  📚 [Community Resources](#community-resources)
 
