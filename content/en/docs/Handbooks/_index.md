@@ -2,7 +2,7 @@
 title: Handbooks
 main_menu: true
 no_list: true
-weight: 3
+weight: 4
 content_type: Handbooks
 description: >
  A Curated list of Community Leader Handbooks
