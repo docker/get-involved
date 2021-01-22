@@ -3,7 +3,7 @@ title: "Community Leaders"
 linkTitle: "Community Leaders"
 weight: 4
 description: >
-  Docker Community Leaders 
+  Community Leaders Program
 ---
 
 {{% pageinfo %}}
