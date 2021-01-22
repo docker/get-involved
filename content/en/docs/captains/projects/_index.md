@@ -3,7 +3,7 @@ title: "Projects"
 linkTitle: "Projects"
 weight: 98
 description: >-
-    Docker Captains Projects
+    Docker Captain's Projects
 ---
 
 ## Projects maintained by Docker Captains
