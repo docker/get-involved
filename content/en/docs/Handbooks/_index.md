@@ -2,7 +2,7 @@
 title: Handbooks
 main_menu: true
 no_list: true
-weight: 2
+weight: 3
 content_type: Handbooks
 ---
 
