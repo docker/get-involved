@@ -1,9 +1,9 @@
+
 ---
 title: Handbooks
-main_menu: true
-no_list: true
+linkTitle: "Handbooks"
+date: 2020-02-01
 weight: 4
-content_type: Handbooks
 description: >
  A Curated list of Community Leader Handbooks
 ---
