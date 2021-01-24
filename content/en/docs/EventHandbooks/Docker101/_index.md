@@ -1968,9 +1968,9 @@ The `ARG` directive in `Dockerfile` defines the parameter name and defines its d
 
 The build parameters have the same effect as `ENV`, which is to set the environment variables. The difference is that the environment variables of the build environment set by `ARG` will not exist in the future when the container is running. But don't use `ARG` to save passwords and the like, because `docker history` can still see all the values.
 
-## Pre-requisite:
+### Pre-requisite:
 
-## Tested Infrastructure
+### Tested Infrastructure
 
 <table class="tg">
   <tr>
@@ -1988,20 +1988,20 @@ The build parameters have the same effect as `ENV`, which is to set the environm
   
 </table>
 
-## Pre-requisite
+### Pre-requisite
 
 - Create an account with [DockerHub](https://hub.docker.com)
 - Open [PWD](https://labs.play-with-docker.com/) Platform on your browser 
 - Click on **Add New Instance** on the left side of the screen to bring up Alpine OS instance on the right side
 
-# Assignment
+### Assignment
 - Writing a Dockerfile with ARG instruction
 - Building Docker Image with default argument
 - Running container argv:v1
 - Passing the argument during image build time
 - Running container argv:v2
 
-## Writing a Dockerfile with ARG instruction
+### Writing a Dockerfile with ARG instruction
 We are writing a Dockerfile which echo "Welcome $WELCOME_USER, to Docker World!" where default argument value for <b>WELCOME_USER</b> as <b>Collabnix</b>.
 ```
 FROM alpine:3.9.3
@@ -2012,22 +2012,22 @@ ARG WELCOME_USER=Collabnix
 RUN echo "Welcome $WELCOME_USER, to Docker World!" > message.txt
 CMD cat message.txt
 ```
-## Building Docker Image with default argument
+### Building Docker Image with default argument
 ```
 $ docker image build -t arg:v1 .
 ```
-## Running container argv:v1
+### Running container argv:v1
 ```
 $ docker run arg:v1
 
 Welcome Collabnix, to Docker World!
 ```
 
-## Passing the argument(WELCOME_USER) during image build time using <b>--build-arg</b> flag 
+### Passing the argument(WELCOME_USER) during image build time using <b>--build-arg</b> flag 
 ```
 $ docker image build -t arg:v2 --build-arg WELCOME_USER=Savio .
 ```
-## Running container argv:v2
+### Running container argv:v2
 ```
 $ docker run arg:v2
 
@@ -2040,9 +2040,9 @@ Welcome Savio, to Docker World!
 
 The `ENV` instruction in Dockerfile sets the environment variable for your container when you start. The default value can be overridden by passing `--env <key>=<value>` when you start the container.
 
-## Pre-requisite:
+### Pre-requisite:
 
-## Tested Infrastructure
+### Tested Infrastructure
 
 <table class="tg">
   <tr>
@@ -2057,13 +2057,13 @@ The `ENV` instruction in Dockerfile sets the environment variable for your conta
   </tr>
 </table>
 
-## Pre-requisite
+### Pre-requisite
 
 - Create an account with [DockerHub](https://hub.docker.com)
 - Open [PWD](https://labs.play-with-docker.com/) Platform on your browser 
 - Click on **Add New Instance** on the left side of the screen to bring up Alpine OS instance on the right side
 
-# Assignment
+### Assignment
 - Writing a Dockerfile with ENV instruction
 - Building Docker Image
 - Running container env:v1
@@ -2099,9 +2099,9 @@ Welcome to Docker Workshop
 
 ## Lab #10: Create an image with VOLUME instruction
 
-## Pre-requisite:
+### Pre-requisite:
 
-## Tested Infrastructure
+### Tested Infrastructure
 
 <table class="tg">
   <tr>
@@ -2117,13 +2117,13 @@ Welcome to Docker Workshop
   
 </table>
 
-## Pre-requisite
+### Pre-requisite
 
 - Create an account with [DockerHub](https://hub.docker.com)
 - Open [PWD](https://labs.play-with-docker.com/) Platform on your browser 
 - Click on **Add New Instance** on the left side of the screen to bring up Alpine OS instance on the right side
 
-# Assignment
+## Assignment
 - Create an image with VOLUME instruction
 - Finding the volume created on the host
 - Testing mount working as exepected
@@ -2181,9 +2181,9 @@ $ docker container exec -it volume-test ls myvol
 
 The `EXPOSE` instruction expose a port, the protocol can be UDP or TCP associated with the indicated port, default is TCP with no specification. The EXPOSE won't be able to map the ports on the host machine. Regardless of the EXPOSE settings, EXPOSE port can be override using <b>-p</b> flag while starting the container.
 
-## Pre-requisite:
+### Pre-requisite:
 
-## Tested Infrastructure
+### Tested Infrastructure
 
 <table class="tg">
   <tr>
@@ -2199,13 +2199,13 @@ The `EXPOSE` instruction expose a port, the protocol can be UDP or TCP associate
   
 </table>
 
-## Pre-requisite
+### Pre-requisite
 
 - Create an account with [DockerHub](https://hub.docker.com)
 - Open [PWD](https://labs.play-with-docker.com/) Platform on your browser 
 - Click on **Add New Instance** on the left side of the screen to bring up Alpine OS instance on the right side
 
-# Assignment
+### Assignment
 - Create an image with EXPOSE instruction
 - Inspecting the EXPOSE port in the image
 - Publish all exposed port
@@ -2348,13 +2348,13 @@ FROM my-node
 Yes, there is only one such line. When constructing a mirror with this one-line `Dockerfile` in each project directory, the three lines of the previous base image `ONBUILD` will start executing, successfully copy the current project code into the image, and execute for this project. `npm install`, generate an application image.
 
 
-# Lab 
+### Lab 
 ```
 # Dockerfile
 FROM busybox
 ONBUILD RUN echo "You won't see me until later"
 ```
-# Docker build 
+### Docker build 
 ```
 docker build -t me/no_echo_here .
 
@@ -2382,7 +2382,7 @@ Uploading context  2.56 kB
 Uploading context
 Step 0 : FROM cpuguy83/no_echo_here
 
-# Executing 1 build triggers
+### Executing 1 build triggers
 ```
 Step onbuild-0 : RUN echo "You won't see me until later"
  ---&gt; Running in ebfede7e39c8
@@ -2392,7 +2392,7 @@ You won't see me until later
 Successfully built ca6f025712d4
 ```
 
-## Ubutu Rails 
+### Ubutu Rails 
 
 ```
 FROM ubuntu:12.04
@@ -2506,11 +2506,11 @@ The syntax look like:
 
 The above syntax set the command to check the health of the container
 
-## How does it work?
+### How does it work?
 
 When a HEALTHCHECK instruction is specified in an image, the container is started with it, the initial state will be starting, and will become healthy after the HEALTHCHECK instruction is checked successfully. If it fails for a certain number of times, it will become unhealthy.
 
-## What options does HEALTHCHECK support?
+### What options does HEALTHCHECK support?
 
 `--interval=<interval>`: interval between two health checks, the default is 30 seconds;
 `--timeout=<time length>`: The health check command runs the timeout period. If this time is exceeded, the health check is regarded as a failure. The default is 30 seconds.
@@ -2518,9 +2518,9 @@ When a HEALTHCHECK instruction is specified in an image, the container is starte
 Like CMD, ENTRYPOINT, HEALTHCHECK can only appear once. If more than one is written, only the last one will take effect.
 
 
-## Pre-requisite:
+### Pre-requisite:
 
-## Tested Infrastructure
+### Tested Infrastructure
 
 <table class="tg">
   <tr>
@@ -2538,14 +2538,14 @@ Like CMD, ENTRYPOINT, HEALTHCHECK can only appear once. If more than one is writ
   
 </table>
 
-## Pre-requisite
+### Pre-requisite
 
 - Create an account with [DockerHub](https://hub.docker.com)
 - Open [PWD](https://labs.play-with-docker.com/) Platform on your browser 
 - Click on **Add New Instance** on the left side of the screen to bring up Alpine OS instance on the right side
 
 
-## Assignment:
+### Assignment:
 
 - Writing a Dockerfile with HEALTHCHECK instruction
 - Build a Docker Image
@@ -2556,7 +2556,7 @@ Like CMD, ENTRYPOINT, HEALTHCHECK can only appear once. If more than one is writ
 
 
 
-## Writing a Dockerfile with HEALTHCHECK instruction
+### Writing a Dockerfile with HEALTHCHECK instruction
 
 Suppose we have a simple Web service. We want to add a health check to determine if its Web service is working. We can use curl to help determine the HEALTHCHECK of its Dockerfile:
 
@@ -2569,13 +2569,13 @@ EXPOSE 80
 
 Here we set a check every 3 seconds (here the interval is very short for the test, it should be relatively long), if the health check command does not respond for more than 3 seconds, it is considered a failure, and use curl -fs http://localhost/ || exit 1 As a health check command.
 
-## Building Docker Image
+### Building Docker Image
 
 ```
 docker image build -t nginx:1.13 .
 ```
 
-## Check that the nginx config file exists
+### Check that the nginx config file exists
 
 ```
 docker run --name=nginx-proxy -d \
@@ -2583,25 +2583,25 @@ docker run --name=nginx-proxy -d \
         nginx:1.13
 ```
 
-## Check if nginx is healthy
+### Check if nginx is healthy
 
 ```
 docker inspect --format='{{.State.Health.Status}}' nginx-proxy
 ```
 
-## Make Docker container Unhealthy and check
+### Make Docker container Unhealthy and check
 
 ```
 docker exec nginx-proxy rm /etc/nginx/nginx.conf
 ```
 
-## Check if nginx is healthy
+### Check if nginx is healthy
 
 ```
 sleep 5; docker inspect --format='{{.State.Health.Status}}' nginx-proxy
 ```
 
-## Creating the nginx.conf file and Making the container go healthy
+### Creating the nginx.conf file and Making the container go healthy
 
 ```
 docker exec nginx-proxy touch /etc/nginx/nginx.conf
@@ -2615,7 +2615,7 @@ healthy
 
 ## Lab #15: Create an image with SHELL instruction
 
-## Pre-requisite:
+### Pre-requisite:
 
   - Create an account with [DockerHub](https://hub.docker.com)
   - Open [PWD](https://labs.play-with-docker.com/) Platform on your browser 
@@ -2636,7 +2636,7 @@ healthy
   </tr>
 </table>
 
-## How does it work?
+### How does it work?
 
 Format: `SHELL ["executable", "parameters"]`
 
@@ -2647,7 +2647,7 @@ Format: `SHELL ["executable", "parameters"]`
   - The SHELL instruction can appear multiple times.
   Each SHELL instruction overrides all previous SHELL instructions, and affects all subsequent instructions. 
 
-## Create a Dockerfile
+### Create a Dockerfile
 
 ```
 FROM windowsservercore
@@ -2704,7 +2704,7 @@ ADD Execute-MyCmdlet.ps1 c:\example\
 RUN c:\example\Execute-MyCmdlet -sample 'hello world'
 ```
 
-## Build an image
+### Build an image
 
 ```
 PS E:\docker\build\shell> docker build -t shell .
@@ -2774,9 +2774,9 @@ RUN wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/downloa
 CMD [ "exec", "gosu", "redis", "redis-server" ]
 ```
 
-## Pre-requisite:
+### Pre-requisite:
 
-## Tested Infrastructure
+### Tested Infrastructure
 
 <table class="tg">
   <tr>
@@ -2794,7 +2794,7 @@ CMD [ "exec", "gosu", "redis", "redis-server" ]
   
 </table>
 
-## Pre-requisite
+### Pre-requisite
 
 - Create an account with [DockerHub](https://hub.docker.com)
 - Open [PWD](https://labs.play-with-docker.com/) Platform on your browser 
@@ -2802,7 +2802,7 @@ CMD [ "exec", "gosu", "redis", "redis-server" ]
 
 ## How is ENTRYPOINT different from the RUN instruction?
 
-## Tested Infrastructure
+### Tested Infrastructure
 
 <table class="tg">
   <tr>
@@ -2820,14 +2820,14 @@ CMD [ "exec", "gosu", "redis", "redis-server" ]
   
 </table>
 
-## Pre-requisite
+### Pre-requisite
 
 - Create an account with [DockerHub](https://hub.docker.com)
 - Open [PWD](https://labs.play-with-docker.com/) Platform on your browser 
 - Click on **Add New Instance** on the left side of the screen to bring up Alpine OS instance on the right side
 
 
-## What is ENTRYPOINT meant for?
+### What is ENTRYPOINT meant for?
 
 ENTRYPOINT is meant to provide the executable while CMD is to pass the default arguments to the executable.
 To understand it clearly, let us consider the below Dockerfile:
@@ -2850,13 +2850,13 @@ This clearly state that ENTRYPOINT is meant to provide the executable while CMD 
 
 ## Writing Dockerfile with Hello Python Script Added
 
-## Pre-requisite:
+### Pre-requisite:
 
 - Create an account with [DockerHub](https://hub.docker.com)
 - Open [PWD](https://labs.play-with-docker.com/) Platform on your browser 
 - Click on **Add New Instance** on the left side of the screen to bring up Alpine OS instance on the right side
 
-## Tested Infrastructure
+### Tested Infrastructure
 
 <table class="tg">
   <tr>
