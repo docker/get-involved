@@ -40,7 +40,7 @@ S.No. | Name of Objectives | Status |
 :------------ | :-------------| :-------------|
 6 | [Post-Event FollowUp](#post-event-followup) |  ☑️ |
 7 | [Community Leader Survey](#community-leader-survey)  |  ☑️ |
-8 | [Attendee Survey]#attendee-survey)  |  ☑️ |
+8 | [Attendee Survey](#attendee-survey)  |  ☑️ |
 
 ## Recommended Agenda
 
