@@ -49,6 +49,9 @@ other = "Note:"
 [examples_heading]
 other = "Examples"
 
+[Expand-title]
+other = "Expand me..."
+
 
 # Footer text
 [footer_all_rights_reserved]
