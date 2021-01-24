@@ -3315,7 +3315,7 @@ You will need all of the following to complete this lab:
 
 - A Linux-based Docker Host running Docker 1.12 or higher
 
-# <a name="docker_network"></a>Step 1: The `docker network` command
+### <a name="docker_network"></a>Step 1: The `docker network` command
 
 The `docker network` command is the main command for configuring and managing container networks.
 
@@ -3433,7 +3433,6 @@ The output above shows the **bridge**, **host**, **null**, and **overlay** drive
 
 ## Bridge networking
 
-# Lab Meta
 
 In this lab you'll learn how to build, manage, and use **bridge** networks.
 
