@@ -23,10 +23,10 @@ This handbook will help you run a Docker 101 workshop from A to Z. This will cov
 
 S.No. | Name of Objectives | Status | 
 :------------ | :-------------| :-------------|
-1 | [Getting Familiar with Bevy Virtual](/housekeeping/virtual/README.md) |  ☑️ |
-2 | [Planning an Event Agenda](/housekeeping/plan-an-event-agenda/README.md) |  ☑️ |
-3 | [Setting up Event Registration Page](/housekeeping/event/README.md) | ☑️ |
-4 | [Sending confirmation email for workshop](/housekeeping/email/README.md) |  ☑️ |
+1 | [Getting Familiar with Bevy Virtual](#getting-familiar-with-bevy-virtual) |  ☑️ |
+2 | [Planning an Event Agenda](#planning-an-event-agenda) |  ☑️ |
+3 | [Setting up Event Registration Page](#setting-up-event-registration-page) | ☑️ |
+4 | [Sending confirmation email for workshop](#sending-confirmation-email-for-workshop) |  ☑️ |
 
 ### During the workshop
 
@@ -130,4 +130,6 @@ S.No. | Name of Objectives | Status |
    - [Lab #8: Configure NAT for external connectivity](/beginners/networking/using-docker-network/A2-bridge-networking.md#step-4-configure-nat-for-external-connectivity)
  - [Test Your Knowledge](/beginners/networking/quiz6/README.md)
 
+
+## Getting Familiar with Bevy Virtual
 
