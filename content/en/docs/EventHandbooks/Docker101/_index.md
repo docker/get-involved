@@ -2999,4 +2999,609 @@ $
 ```
 Here, user specified another file to be run with python (default application for this container). So, the file specified with CMD got overridden and we obtained the output from /home/a.py.
 
+## Creating a Private Local Docker Registry using Play with Docker
 
+
+## Tested Infrastructure
+
+<table class="tg">
+  <tr>
+    <th class="tg-yw4l"><b>Platform</b></th>
+    <th class="tg-yw4l"><b>Number of Instance</b></th>
+    <th class="tg-yw4l"><b>Reading Time</b></th>
+    
+  </tr>
+  <tr>
+    <td class="tg-yw4l"><b> Play with Docker</b></td>
+    <td class="tg-yw4l"><b>1</b></td>
+    <td class="tg-yw4l"><b>5 min</b></td>
+    
+  </tr>
+  
+</table>
+
+## Pre-requisite
+
+- Create an account with [DockerHub](https://hub.docker.com)
+- Open [PWD](https://labs.play-with-docker.com/) Platform on your browser 
+- Click on **Add New Instance** on the left side of the screen to bring up Alpine OS instance on the right side
+
+
+## Create a directory to permanently store images.
+
+```
+$ mkdir -p /registry/data
+```
+
+## Authenticate with DockerHub
+
+```
+$docker login
+```
+
+## Start the registry container.
+
+```
+$ docker run -d \
+  -p 5000:5000 \
+  --name registry \
+  -v /registry/data:/var/lib/registry \
+  --restart always \
+  registry:2
+```
+
+```
+b1a641f8d710eee34405ad575050179f5a1262f1c845806cc3c2b435dea1648c
+```
+
+## Display running containers.
+
+```
+$ docker ps
+```
+```
+$ docker ps
+CONTAINER ID        IMAGE               COMMAND                  CREATED             STATUS              PORTS
+                    NAMES
+3a056bf96c6d        registry:2          "/entrypoint.sh /etc…"   About an hour ago   Up About an hour    0.0.0
+.0:5000->5000/tcp   registry
+```
+
+## Pull Alpine 3.6 image from official repository.
+
+```
+$ docker pull alpine:3.6
+
+stretch: Pulling from library/alpine
+723254a2c089: Pull complete
+Digest: sha256:0a5fcee6f52d5170f557ee2447d7a10a5bdcf715dd7f0250be0b678c556a501b
+Status: Downloaded newer image for alpine:3.6
+```
+
+## Tag local alpine 3.6 image with an additional tag - local repository address.
+
+```
+$ docker tag alpine:3.6 localhost:5000/alpine:3.6
+```
+
+## Push image to the local repository.
+
+```
+[node1] (local) root@192.168.0.23 ~
+$ docker push localhost:5000/alpine:3.6
+The push refers to repository [localhost:5000/alpine:3.6]
+90d1009ce6fe: Pushed
+stretch: digest: sha256:38236c068c393272ad02db100e09cac36a5465149e2924a035ee60d6c60c38fe size: 529
+[node1] (local) root@192.168.0.23 ~
+```
+
+## Remove local images.
+
+```
+[node1] (local) root@192.168.0.23 ~
+$ docker image remove alpine:3.6
+Untagged: alpine:3.6
+Untagged: alpine@sha256:df6ebd5e9c87d0d7381360209f3a05c62981b5c2a3ec94228da4082ba07c4f05
+```
+
+```
+[node1] (local) root@192.168.0.23 ~
+$ docker image remove localhost:5000/alpine:3.6
+Untagged: localhost:5000/alpine:3.6
+Untagged: localhost:5000/debian@sha256:38236c068c393272ad02db100e09cac36a5465149e2924a035ee60d6c60c38fe
+Deleted: sha256:4879790bd60d439cfe39c063660eef7af525d5f6f1cbb701a14c7cfc11cbfcf7
+```
+
+## Pull Alpine 3.6 image from local repository.
+
+```
+[node1] (local) root@192.168.0.23 ~
+$ docker pull localhost:5000/alpine:3.6
+stretch: Pulling from alpine
+54f7e8ac135a: Pull complete
+Digest: sha256:38236c068c393272ad02db100e09cac36a5465149e2924a035ee60d6c60c38fe
+Status: Downloaded newer image for localhost:5000/alpine:3.6
+```
+
+## List stored images.
+
+```
+[node1] (local) root@192.168.0.23 ~
+$ docker image ls
+REPOSITORY              TAG                 IMAGE ID            CREATED             SIZE
+localhost:5000/alpine   3.6                 4879790bd60d        12 days ago         101MB
+registry                2                   2e2f252f3c88        2 months ago        33.3MB
+
+```
+
+## Shared local registry
+
+Create a directory to permanently store images.
+
+```
+$ mkdir -p /srv/registry/data
+```
+
+## Create a directory to permanently store certificates and authentication data.
+
+```
+$ mkdir -p /srv/registry/security
+```
+
+Store domain and intermediate certificates using /srv/registry/security/registry.crt file, private key using /srv/registry/security/registry.key file. Use valid certificate and do not waste time with self-signed one. This step is required do use basic authentication.
+
+## Install apache2-utils to use htpasswd utility.
+
+```
+[node1] (local) root@192.168.0.23 ~
+$ apk add apache2-utils
+OK: 302 MiB in 110 packages
+```
+
+Create initial username and password. The only supported password format is bcrypt.
+
+```
+$ : | sudo tee /srv/registry/security/htpasswd
+```
+
+```
+[node1] (local) root@192.168.0.23 ~
+$ echo "password" | sudo htpasswd -iB /srv/registry/security/htpasswd username
+Adding password for user username
+```
+
+## Adding password for user username
+
+```
+$
+[node1] (local) root@192.168.0.23 ~
+$ cat /srv/registry/security/htpasswd
+username:$2y$05$q9R5FSNYpAppB4Vw/AGWb.RqMCGE8DmZ4q5HZC/1wC87oTWyvB9vy
+[node1] (local) root@192.168.0.23 ~
+$
+```
+
+## Stop and Remove all old containers
+
+```
+$ docker stop $(docker ps -a -q)
+3a056bf96c6d
+[node1] (local) root@192.168.0.23 ~
+$ docker rm -f $(docker ps -a -q)
+3a056bf96c6d
+```
+
+## Start the registry container.
+
+```
+[node1] (local) root@192.168.0.23 ~
+$ docker run -d   -p 443:5000   --name registry   -v /srv/registry/data:/var/lib/registry   -v /srv/registry/security:/etc/security   -e REGISTRY_HTTP_TLS_CERTIFICATE=/etc/security/registry.crt   -e REGISTRY_HTTP_TLS_KEY=/etc/security/registry.key   -e REGISTRY_AUTH=htpasswd   -e REGISTRY_AUTH_HTPASSWD_PATH=/etc/security/htpasswd   -e REGISTRY_AUTH_HTPASSWD_REALM="Registry Realm"   --restart always   registry:2
+e7755af8cbd70ea84ab77237a87cb97fd1abb18c7726fbc116c40f081d3b7098
+[node1] (local) root@192.168.0.23 ~
+```
+
+
+
+## Display running containers.
+
+```
+[node1] (local) root@192.168.0.23 ~
+$ docker ps
+CONTAINER ID        IMAGE               COMMAND                  CREATED              STATUS        PORTS               NAMES
+e7755af8cbd7        registry:2          "/entrypoint.sh /etc…"   About a minute ago   Restarting (1) 22 seconds ago                       registry
+[node1] (local) root@192.168.0.23 ~
+```
+
+## Pull Alpine image from official repository.
+
+```
+$ docker pull alpine:3.6
+
+stretch: Pulling from library/alpine
+723254a2c089: Pull complete
+Digest: sha256:0a5fcee6f52d5170f557ee2447d7a10a5bdcf715dd7f0250be0b678c556a501b
+Status: Downloaded newer image for alpine:3.6
+```
+
+## Tag local Alpine image with an additional tag - local repository address.
+
+```
+$ docker tag alpine:3.6 registry.collabnix.com/alpine:3.6
+```
+
+This time you need to provide login credentials to use local repository.
+
+```
+$ docker push registry.collabnix.com/alpine:3.6
+
+e27a10675c56: Preparing
+no basic auth credentials
+```
+
+```
+$ docker pull registry.collabnix.com/alpine:3.6
+```
+
+Error response from daemon: Get https://registry.collabnix.com/v2/alpine/manifests/3.6: no basic auth credentials
+
+## Log in to the local registry.
+
+```
+$ docker login --username username registry.collabnix.com
+Password: ********
+
+Login Succeeded
+```
+
+## Push image to the local repository.
+
+```
+$ docker push registry.collabnix.com/alpine:3.6
+```
+
+```
+The push refers to repository [registry.collabnix.com/alpine]
+e27a10675c56: Pushed
+stretch: digest: sha256:02741df16aee1b81c4aaff4c48d75cc2c308bade918b22679df570c170feef7c size: 529
+```
+
+## Remove local images.
+
+```
+$ docker image remove alpine:3.6
+
+Untagged: alpine:3.6
+Untagged: alpine@sha256:0a5fcee6f52d5170f557ee2447d7a10a5bdcf715dd7f0250be0b678c556a501b
+```
+
+```
+$ docker image remove registry.collabnix.com/alpine:3.6
+
+Untagged: registry.collabnix.com/alpine:3.6
+Untagged: registry.sl.collabnix.com/alpine@sha256:02741df16aee1b81c4aaff4c48d75cc2c308bade918b22679df570c170feef7c
+Deleted: sha256:da653cee0545dfbe3c1864ab3ce782805603356a9cc712acc7b3100d9932fa5e
+Deleted: sha256:e27a10675c5656bafb7bfa9e4631e871499af0a5ddfda3cebc0ac401dfe19382
+```
+
+## Pull Debian Stretch image from local repository.
+
+```
+$ docker pull registry.collabnix.com/alpine:3.6
+
+stretch: Pulling from alpine
+723254a2c089: Pull complete
+Digest: sha256:02741df16aee1b81c4aaff4c48d75cc2c308bade918b22679df570c170feef7c
+Status: Downloaded newer image for registry.collabnix.com/alpine:3.6
+```
+
+## List stored images.
+
+```
+$ docker image ls
+
+REPOSITORY                           TAG                 IMAGE ID            CREATED             SIZE
+registry                             2                   d1fd7d86a825        4 weeks ago         33.3MB
+registry.collabnix.com/alpine        3.6             da653cee0545        2 months ago        100MB
+hello-world                          latest              f2a91732366c        2 months ago     
+```
+
+## Test Your Knowledge - Quiz3
+
+
+## Using Docker Network
+
+
+### Tested Infrastructure
+
+<table class="tg">
+  <tr>
+    <th class="tg-yw4l"><b>Platform</b></th>
+    <th class="tg-yw4l"><b>Number of Instance</b></th>
+    <th class="tg-yw4l"><b>Reading Time</b></th>
+    
+  </tr>
+  <tr>
+    <td class="tg-yw4l"><b> Play with Docker</b></td>
+    <td class="tg-yw4l"><b>1</b></td>
+    <td class="tg-yw4l"><b>5 min</b></td>
+    
+  </tr>
+  
+</table>
+
+### Pre-requisite
+
+- Create an account with [DockerHub](https://hub.docker.com)
+- Open [PWD](https://labs.play-with-docker.com/) Platform on your browser 
+- Click on **Add New Instance** on the left side of the screen to bring up Alpine OS instance on the right side
+
+
+### Instructions
+
+ - Display all the existent networks in the host:
+
+```
+$ docker network ls
+```
+
+ - Let's create a new bridge network:
+
+```
+$ docker network create -d bridge my-bridge-network
+```
+
+ - Run a container linked to the created network:
+```
+$ docker run -d -p 8081:8081 -e "port=8081" --name app --network=my-bridge-network selaworkshops/python-app:2.0
+```
+
+ - Find the container internal ip using:
+
+```
+$ docker inspect app
+```
+
+```
+"Networks": {
+                "my-bridge-network": {
+                    "IPAMConfig": null,
+                    "Links": null,
+                    "Aliases": [
+                        "cf148e899ea8"
+                    ],
+                    "NetworkID": "82057fd5c45f1d62b0a96ac905af529ef6715e9f1038e6307f83b6698717dcfa",
+                    "EndpointID": "24c5ac91c33c089427cf2f81cdc09c3ee4db09ecc0cb3b8298ba223689c10f4a",
+                    "Gateway": "172.21.0.1",
+                    "IPAddress": "172.21.0.2",
+                    "IPPrefixLen": 16,
+                    "IPv6Gateway": "",
+                    "GlobalIPv6Address": "",
+                    "GlobalIPv6PrefixLen": 0,
+                    "MacAddress": "02:42:ac:15:00:02",
+                    "DriverOpts": null
+                }
+            }
+```
+
+ - Write down the IPAddress of "my-bridge-network" (you may have diffrent address than the above)
+ - Open a new terminal windows and run an ubuntu container in interactive mode:
+
+```
+$ docker run -it --name client alpine:latest
+```
+
+ - Install curl in the client container:
+
+```
+$ apk --no-cache add curl  
+```
+
+ - From the client container terminal try to browse to the app container:
+ (change the IP Address accordingly)
+
+```
+$ curl 172.21.0.2:8081 --connect-timeout 5
+```
+
+ - You will get no access and the connection will be terminated due to timeout 
+
+```
+$ curl: (28) Connection timed out after 5000 milliseconds
+```
+
+ - From the regular terminal run the command below to attach the client container to the created network:
+
+```
+$ docker network connect my-bridge-network client
+```
+
+ - From the client container terminal try to browse to the app container again:
+ (change the IP Address accordingly)
+
+```
+$ curl 172.21.0.2:8081 --connect-timeout 5
+```
+
+```
+<h1>Python App</h1>
+```
+
+ - Inspect the network from the regular terminal and look for the linked containers:
+
+```
+$ docker inspect my-bridge-network
+```
+
+```
+"Containers": {
+            "793a39c035a8988c1768f6061f1721ac124293502edb46ed16e06111f9bdbd61": {
+                "Name": "client",
+                "EndpointID": "1e2b7be275a10962c105fe01a85254ebb69dab33a60b1d9d9bc23bcfef1f337d",
+                "MacAddress": "02:42:ac:15:00:03",
+                "IPv4Address": "172.21.0.3/16",
+                "IPv6Address": ""
+            },
+            "cf148e899ea8e91d9b12e2f1333bdbb144cebca9e088e6e5bfec63dd48c33ab8": {
+                "Name": "app",
+                "EndpointID": "24c5ac91c33c089427cf2f81cdc09c3ee4db09ecc0cb3b8298ba223689c10f4a",
+                "MacAddress": "02:42:ac:15:00:02",
+                "IPv4Address": "172.21.0.2/16",
+                "IPv6Address": ""
+            }
+        },
+```
+
+ - Disconnect both containers from the created network (regular terminal):
+
+```
+$ docker network disconnect my-bridge-network app
+$ docker network disconnect my-bridge-network client
+```
+
+ - Delete the network:
+
+```
+$ docker network rm my-bridge-network
+```
+
+ - Ensure that the network was deleted:
+
+```
+$ docker network ls
+```
+
+ - Exit from the client container and close the terminal:
+
+```
+$ exit
+$ exit
+```
+
+## You will complete the following steps as part of this lab.
+
+- [Step 1 - The `docker network` command](#docker_network)
+- [Step 2 - List networks](#list_networks)
+- [Step 3 - Inspect a network](#inspect)
+- [Step 4 - List network driver plugins](#list_drivers)
+
+# Prerequisites
+
+You will need all of the following to complete this lab:
+
+- A Linux-based Docker Host running Docker 1.12 or higher
+
+# <a name="docker_network"></a>Step 1: The `docker network` command
+
+The `docker network` command is the main command for configuring and managing container networks.
+
+Run a simple `docker network` command from any of your lab machines.
+
+```
+$ docker network
+
+Usage:  docker network COMMAND
+
+Manage Docker networks
+
+Options:
+      --help   Print usage
+
+Commands:
+  connect     Connect a container to a network
+  create      Create a network
+  disconnect  Disconnect a container from a network
+  inspect     Display detailed information on one or more networks
+  ls          List networks
+  rm          Remove one or more networks
+
+Run 'docker network COMMAND --help' for more information on a command.
+```
+
+The command output shows how to use the command as well as all of the `docker network` sub-commands. As you can see from the output, the `docker network` command allows you to create new networks, list existing networks, inspect networks, and remove networks. It also allows you to connect and disconnect containers from networks.
+
+# <a name="list_networks"></a>Step 2: List networks
+
+Run a `docker network ls` command to view existing container networks on the current Docker host.
+
+```
+$ docker network ls
+NETWORK ID          NAME                DRIVER              SCOPE
+1befe23acd58        bridge              bridge              local
+726ead8f4e6b        host                host                local
+ef4896538cc7        none                null                local
+```
+
+The output above shows the container networks that are created as part of a standard installation of Docker.
+
+New networks that you create will also show up in the output of the `docker network ls` command.
+
+You can see that each network gets a unique `ID` and `NAME`. Each network is also associated with a single driver. Notice that the "bridge" network and the "host" network have the same name as their respective drivers.
+
+# <a name="inspect"></a>Step 3: Inspect a network
+
+The `docker network inspect` command is used to view network configuration details. These details include; name, ID, driver, IPAM driver, subnet info, connected containers, and more.
+
+Use `docker network inspect` to view configuration details of the container networks on your Docker host. The command below shows the details of the network called `bridge`.
+
+```
+$ docker network inspect bridge
+[
+    {
+        "Name": "bridge",
+        "Id": "1befe23acd58cbda7290c45f6d1f5c37a3b43de645d48de6c1ffebd985c8af4b",
+        "Scope": "local",
+        "Driver": "bridge",
+        "EnableIPv6": false,
+        "IPAM": {
+            "Driver": "default",
+            "Options": null,
+            "Config": [
+                {
+                    "Subnet": "172.17.0.0/16",
+                    "Gateway": "172.17.0.1"
+                }
+            ]
+        },
+        "Internal": false,
+        "Containers": {},
+        "Options": {
+            "com.docker.network.bridge.default_bridge": "true",
+            "com.docker.network.bridge.enable_icc": "true",
+            "com.docker.network.bridge.enable_ip_masquerade": "true",
+            "com.docker.network.bridge.host_binding_ipv4": "0.0.0.0",
+            "com.docker.network.bridge.name": "docker0",
+            "com.docker.network.driver.mtu": "1500"
+        },
+        "Labels": {}
+    }
+]
+```
+
+> **NOTE:** The syntax of the `docker network inspect` command is `docker network inspect <network>`, where `<network>` can be either network name or network ID. In the example above we are showing the configuration details for the network called "bridge". Do not confuse this with the "bridge" driver.
+
+
+# <a name="list_drivers"></a>Step 4: List network driver plugins
+
+The `docker info` command shows a lot of interesting information about a Docker installation.
+
+Run a `docker info` command on any of your Docker hosts and locate the list of network plugins.
+
+```
+$ docker info
+Containers: 0
+ Running: 0
+ Paused: 0
+ Stopped: 0
+Images: 0
+Server Version: 1.12.3
+Storage Driver: aufs
+<Snip>
+Plugins:
+ Volume: local
+ Network: bridge host null overlay    <<<<<<<<
+Swarm: inactive
+Runtimes: runc
+<Snip>
+```
+
+The output above shows the **bridge**, **host**, **null**, and **overlay** drivers.
