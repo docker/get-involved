@@ -26,5 +26,4 @@ println "This is tab 2."
 
 
 
-{{% panel %}}this is a panel text{{% /panel %}}
 
