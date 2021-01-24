@@ -193,7 +193,7 @@ Every Community leader is expected to set up event registration page. While buil
    - Job Function
    - Country
    
-## Sending confirmation email for the workshop
+## Sending confirmation email for workshop
 
 Once the user register for the event, Community Leaders need to ensure that the interested users should receive a confirmation email.
 
