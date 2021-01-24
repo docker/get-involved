@@ -22,7 +22,7 @@
     <div class="copy-code-icon" style="text-align:right">
     {{ with $ghlink }}<a href="{{ . }}" download="{{ $file }}">{{ end }}<code>{{ $file }}</code>
     {{ if $ghlink }}</a>{{ end }}
-    <img src="{{ "images/copycode.svg" | relURL }}" style="max-height:24px; cursor: pointer" onclick="copyCode('{{ $file | anchorize }}')" title="Copy {{ $file }} to clipboard">
+    <img src="{{ "https://raw.githubusercontent.com/docker-community-leaders/dockercommunity/master/static/images/copycode.svg" | relURL }}" style="max-height:24px; cursor: pointer" onclick="copyCode('{{ $file | anchorize }}')" title="Copy {{ $file }} to clipboard">
     </img>
     </div>
     <div class="includecode" id="{{ $file | anchorize }}">
