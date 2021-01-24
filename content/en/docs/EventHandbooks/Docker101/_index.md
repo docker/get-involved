@@ -1,5 +1,5 @@
 ---
-title: "Docker101"
+title: "Docker for Beginners"
 linkTitle: "Docker101"
 weight: 30
 description: >-
