@@ -32,22 +32,22 @@ S.No. | Name of Objectives | Status |
 
 S.No. | Name of Objectives | Status | 
 :------------ | :-------------| :-------------|
-5 | [Conducting Attendee Survey](/housekeeping/attendeesurvey/README.md) |  ☑️ |
+5 | [Conducting Attendee Survey](#conducting-attendee-survey) |  ☑️ |
 
 ### After the workshop
 
 S.No. | Name of Objectives | Status | 
 :------------ | :-------------| :-------------|
 6 | [Post-Event FollowUp](#post-event-followup) |  ☑️ |
-7 | [Community Leader Survey](/housekeeping/clsurvey/README.md)  |  ☑️ |
-8 | [Attendee Survey](/housekeeping/attendeesurvey/README.md)  |  ☑️ |
+7 | [Community Leader Survey](#community-leader-survey)  |  ☑️ |
+8 | [Attendee Survey]#attendee-survey)  |  ☑️ |
 
 ## Recommended Agenda
 
 | Description | Timing |
 | --- | --- |
 | Welcome | 8:45 AM to 9:00 AM |
-| [Creating a DockerHub Account](dockerhub/dockerhub.md) | 9:00 AM to 9:15 AM |
+| [Creating a DockerHub Account](#creating-a-dockerhub-account) | 9:00 AM to 9:15 AM |
 | [Getting Started with Docker Image](#getting-started-with-docker-image---1-hour) | 9:15 AM to 10:15 AM |
 | [Accessing & Managing Docker Container](#accessing--managing-docker-container---1-hour) | 10:15 AM to 11:15 AM |
 | Coffee/Tea Break | 11:15 AM to 11:30 AM |
@@ -64,22 +64,22 @@ S.No. | Name of Objectives | Status |
 
 ## Pre-requisite:
 
-- [Creating Your DockerHub Account](dockerhub/dockerhub.md) - 15 min
+- [Creating Your DockerHub Account](#creating-your-dockerhub-account) - 15 min
 
 ### Getting Started with Docker Image - 1 hour
 
-- [Running Hello World Example](/helloworld/README.md)  
-- [Working with Docker Image](/beginners/workingwithdockerimage/workingwithdockerimage.md) 
-- [Saving Images and Containers as Tar Files for Sharing](/beginners/saving-images-as-tar/README.md)
-- [Building Your First Alpine Docker Image and Push it to DockerHub](/building/building-your-first-alpine-container.md)
-- [Test Your Knowledge](/beginners/quiz1/README.md)
+- [Running Hello World Example](#running-hello-world-example)  
+- [Working with Docker Image](#working-with-docker-image) 
+- [Saving Images and Containers as Tar Files for Sharing](#saving-images-and-containers-as-tar-files-for-sharing)
+- [Building Your First Alpine Docker Image and Push it to DockerHub](#building-your-first-alpine-docker-image-and-push-it-to-dockerhub)
+- [Test Your Knowledge](#test-your-knowledge-quiz1)
 
 ###  Accessing & Managing Docker Container - 1 hour
 
-- [Accessing the Container Shell](/beginners/accessing-the-container/README.md)
-- [Running a Command inside running Container](/beginners/running-command-inside-running-container/README.md)
-- [Managing Docker Containers](/beginners/managing-containers/README.md)
-- [Test Your Knowledge](/beginners/quiz2/README.md)
+- [Accessing the Container Shell](#accessing-the-container-shell)
+- [Running a Command inside running Container](#running-a-command-inside-running-container)
+- [Managing Docker Containers](#managing-docker-containers)
+- [Test Your Knowledge](#test-your-knowledge-quiz12)
 
 ### Getting Started with Dockerfile - 3 hours
 
