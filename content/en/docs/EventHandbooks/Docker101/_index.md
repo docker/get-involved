@@ -260,11 +260,11 @@ S.No. | Name of Objectives | Status |
 
 Open https://hub.docker.com and click on "Sign Up" for DockerHub
 
-![My image](/images/beginners/dockerhub1.png)
+![My image](/images/dockerhub1.png)
 
 Enter your username as DockerID and provide your email address( I would suggest you to provide your Gmail ID)
 
-![My image](/images/beginners/dockerhub2.png)
+![My image](/images/dockerhub2.png)
 
 ### Example:
 
@@ -316,7 +316,7 @@ $ docker run hello-world
 
 ```
 
-![alt text](../images/beginners/helloworld.png)
+![alt text](../images/helloworld.png)
 
 
 
