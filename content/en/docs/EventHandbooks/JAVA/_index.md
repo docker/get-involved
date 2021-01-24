@@ -1,7 +1,7 @@
 ---
 title: "JAVA "
 linkTitle: "JAVA"
-weight: 100
+weight: 40
 description: >-
      Docker Workshop for JAVA Developers
 ---
