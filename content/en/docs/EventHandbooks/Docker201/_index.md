@@ -24,3 +24,21 @@ println "This is tab 2."
 {{< /tab >}}}
 {{< /tabs >}}
 
+
+## Expand
+
+{{< expand "Expand me" >}}
+
+### Title
+
+contents
+
+{{< /expand >}}
+
+{{< expand "Expand me2" >}}
+
+### Title2
+
+contents2
+
+{{< /expand >}}
