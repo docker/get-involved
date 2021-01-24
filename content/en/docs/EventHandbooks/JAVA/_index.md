@@ -1,6 +1,6 @@
 ---
-title: "JAVA Workshop"
-linkTitle: "JAVA Workshop"
+title: "JAVA "
+linkTitle: "JAVA"
 weight: 100
 description: >-
      Docker Workshop for JAVA Developers
