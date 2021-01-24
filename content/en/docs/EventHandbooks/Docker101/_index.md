@@ -79,7 +79,7 @@ S.No. | Name of Objectives | Status |
 - [Accessing the Container Shell](#accessing-the-container-shell)
 - [Running a Command inside running Container](#running-a-command-inside-running-container)
 - [Managing Docker Containers](#managing-docker-containers)
-- [Test Your Knowledge](#test-your-knowledge-quiz12)
+- [Test Your Knowledge](#test-your-knowledge-quiz1)
 
 ### Getting Started with Dockerfile - 3 hours
 
