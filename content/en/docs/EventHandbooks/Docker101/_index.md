@@ -38,7 +38,7 @@ S.No. | Name of Objectives | Status |
 
 S.No. | Name of Objectives | Status | 
 :------------ | :-------------| :-------------|
-6 | [Post-Event FollowUp](/housekeeping/postevent/README.md) |  ☑️ |
+6 | [Post-Event FollowUp](#post-event-followup) |  ☑️ |
 7 | [Community Leader Survey](/housekeeping/clsurvey/README.md)  |  ☑️ |
 8 | [Attendee Survey](/housekeeping/attendeesurvey/README.md)  |  ☑️ |
 
@@ -204,7 +204,7 @@ Once the user register for the event, Community Leaders need to ensure that the 
 
 ### Sample Confirmation email for the workshop
 
-## Post-Event Follow-up
+## Post-Event Followup
 
 ### #1  Send a Thank You email 
 
