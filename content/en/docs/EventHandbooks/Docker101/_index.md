@@ -317,7 +317,7 @@ $ docker run hello-world
 
 ```
 
-![alt text](../beginners/images/b301_helloworld.png)
+![alt text](../images/beginners/helloworld.png)
 
 
 
