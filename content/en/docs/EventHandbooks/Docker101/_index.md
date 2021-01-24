@@ -267,7 +267,7 @@ Enter your username as DockerID and provide your email address( I would suggest 
 
 ![My image](/images/beginners/dockerhub2.png)
 
-## Example
+### Example:
 
 I have added ajeetraina as my userID as shown below. Please note that we will require this userID at the later point of time during the workshop. Hence, do keep it handy.
 
@@ -283,7 +283,7 @@ That's it. Head over to your Email account to validate this account.
  Demonstrating Hello World Example
 
 
-## Tested Infrastructure
+### Tested Infrastructure
 
 <table class="tg">
   <tr>
@@ -301,7 +301,7 @@ That's it. Head over to your Email account to validate this account.
   
 </table>
 
-## Pre-requisite
+### Pre-requisite
 
 - Create an account with [DockerHub](https://hub.docker.com)
 - Open [PWD](https://labs.play-with-docker.com/) Platform on your browser 
@@ -323,7 +323,7 @@ $ docker run hello-world
 
 
 
-## Explanation
+### Explanation
 
 
 This image is a prime example of using the scratch image effectively. See hello.c in https://github.com/docker-library/hello-world for the source code of the hello binary included in this image.
@@ -334,7 +334,7 @@ The argument hello-world is the name of the image someone created on dockerhub f
 
 Once the image has been downloaded, Docker turns the image into a running container and executes it. 
 
-## Did you Know?
+### Did you Know?
 
 1. The Hello World Docker Image is only 1.84 KB size.
 
@@ -450,7 +450,7 @@ $ docker inspect 4ab
 
 ## Working with Docker Images
 
-## Tested Infrastructure
+### Tested Infrastructure
 
 <table class="tg">
   <tr>
@@ -468,7 +468,7 @@ $ docker inspect 4ab
   
 </table>
 
-## Pre-requisite
+### Pre-requisite
 
 - Create an account with [DockerHub](https://hub.docker.com)
 - Open [PWD](https://labs.play-with-docker.com/) Platform on your browser 
