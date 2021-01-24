@@ -929,20 +929,20 @@ docker attach <container-id>
   
 </table>
 
-## Pre-requisite
+### Pre-requisite
 
 - Create an account with [DockerHub](https://hub.docker.com)
 - Open [PWD](https://labs.play-with-docker.com/) Platform on your browser 
 - Click on **Add New Instance** on the left side of the screen to bring up Alpine OS instance on the right side
 
 
-## Create Ubuntu Container
+### Create Ubuntu Container
 
 ```
 docker run -dit ubuntu
 ```
 
-## Opening up the bash shell
+### Opening up the bash shell
 
 ```
 docker exec -t <container-id> bash
@@ -950,7 +950,7 @@ docker exec -t <container-id> bash
 
 ## Managing Docker containers
 
-## Tested Infrastructure
+### Tested Infrastructure
 
 <table class="tg">
   <tr>
@@ -968,7 +968,7 @@ docker exec -t <container-id> bash
   
 </table>
 
-## Pre-requisite
+### Pre-requisite
 
 - Create an account with [DockerHub](https://hub.docker.com)
 - Open [PWD](https://labs.play-with-docker.com/) Platform on your browser 
@@ -976,7 +976,7 @@ docker exec -t <container-id> bash
 
 
 
-## Preparations
+### Preparations
 
  - Clean your docker host using the commands (in bash):
 
@@ -984,7 +984,7 @@ docker exec -t <container-id> bash
 $ docker rm -f $(docker ps -a -q)
 ```
 
-## Instructions
+### Instructions
 
  - Run the following containers from the dockerhub:
 ```
@@ -1108,7 +1108,7 @@ $ CTRL + C
 - On building the Dockerfile, the successive actions form a new image from the base parent image.
 
 
-## Understanding Image Layering Concept with Dockerfile
+### Understanding Image Layering Concept with Dockerfile
 
 Docker container is a runnable instance of an image, which is actually made by writing a readable/writable layer on top of some read-only layers. 
 
@@ -1244,7 +1244,7 @@ To see more information about the Docker image and the layers use 'docker inspec
 
 ```
 
-# Do you want to visualize layers of Docker Image?
+### Do you want to visualize layers of Docker Image?
 
 ```
 docker run --rm -it -v /var/run/docker.sock:/var/run/docker.sock  wagoodman/dive testimage
@@ -1293,9 +1293,9 @@ Count   Total Space  Path                                                       
 
 ## Lab #1: Create an image with GIT installed
 
-## Pre-requisite:
+### Pre-requisite:
 
-## Tested Infrastructure
+### Tested Infrastructure
 
 <table class="tg">
   <tr>
@@ -1313,20 +1313,20 @@ Count   Total Space  Path                                                       
   
 </table>
 
-## Pre-requisite
+### Pre-requisite
 
 - Create an account with [DockerHub](https://hub.docker.com)
 - Open [PWD](https://labs.play-with-docker.com/) Platform on your browser 
 - Click on **Add New Instance** on the left side of the screen to bring up Alpine OS instance on the right side
 
 
-## Assignment:
+### Assignment:
 
 - Create an image with GIT installed
 - Tag your image as labs-git:v1.0
 - Create a container based on that image, and run git --version to check that it is installed correctly
 
-## Creating Dockerfile
+### Creating Dockerfile
 
 ```
 FROM alpine:3.5
@@ -1334,19 +1334,19 @@ RUN apk update
 RUN apk add git
 ```
 
-## Build Docker Image
+### Build Docker Image
 
 ```
 docker build -t ajeetraina/alpine-git .
 ```
 
-## Tagging image as labs-git
+### Tagging image as labs-git
 
 ```
 docker tag ajeetraina/alpine-git ajeetraina/labs-git:v1.0
 ```
 
-## Verify the Images
+### Verify the Images
 
 
 ```
@@ -1357,7 +1357,7 @@ ajeetraina/labs-git     v1.0                cb913e37a593        16 seconds ago  
 ```
 
 
-##  Create a container
+###  Create a container
 
 ```
 docker run -itd ajeetraina/labs-git:v1.0 /bin/sh
@@ -1369,7 +1369,7 @@ CONTAINER ID        IMAGE                      COMMAND             CREATED      
 3e26a5268f55        ajeetraina/labs-git:v1.0   "/bin/sh"           4 seconds ago       Up 2 seconds                            elated_neumann
 ```
 
-## Enter into Container Shell
+### Enter into Container Shell
 
 ```
 docker attach 3e26
@@ -1378,7 +1378,7 @@ docker attach 3e26
 Please press "Enter" key twice so as to enter into container shell
 
 
-## Verify if GIT is installed 
+### Verify if GIT is installed 
 
 ```
 / # git --version
@@ -1393,9 +1393,9 @@ COPY takes in a src and destination. It only lets you copy in a local file or di
 
 ADD lets you do that too, but it also supports 2 other sources. First, you can use a URL instead of a local file / directory. Secondly, you can extract a tar file from the source directly into the destination.
 
-## Pre-requisite:
+### Pre-requisite:
 
-## Tested Infrastructure
+### Tested Infrastructure
 
 <table class="tg">
   <tr>
@@ -1413,20 +1413,20 @@ ADD lets you do that too, but it also supports 2 other sources. First, you can u
   
 </table>
 
-## Pre-requisite
+### Pre-requisite
 
 - Create an account with [DockerHub](https://hub.docker.com)
 - Open [PWD](https://labs.play-with-docker.com/) Platform on your browser 
 - Click on **Add New Instance** on the left side of the screen to bring up Alpine OS instance on the right side
 
 
-## Assignment:
+### Assignment:
 
 - Create an image with ADD instruction
 - Tag your image as labs-add:v1.0
 - Create a container based on that image, and see the extracted tar file.
 
-## Creating Dockerfile
+### Creating Dockerfile
 
 ```
 FROM alpine:3.5
@@ -1434,19 +1434,19 @@ RUN apk update
 ADD http://www.vlsitechnology.org/pharosc_8.4.tar.gz .
 ```
 
-## Build Docker Image
+### Build Docker Image
 
 ```
 docker build -t saiyam911/alpine-add . -f <name of dockerfile>
 ```
 
-## Tagging image as labs-git
+### Tagging image as labs-git
 
 ```
 docker tag saiyam911/alpine-add saiyam911/labs-add:v1.0
 ```
 
-## Verify the Images
+### Verify the Images
 
 
 ```
@@ -1457,7 +1457,7 @@ saiyam911/labs-add          v1.0                cdf97cb49d48        38 minutes a
 ```
 
 
-##  Create a container
+###  Create a container
 
 ```
 docker run -itd saiyam911/labs-add:v1.0 /bin/sh
@@ -1469,7 +1469,7 @@ CONTAINER ID        IMAGE                      COMMAND             CREATED      
 f0940750f61a        saiyam911/labs-add:v1.0   "/bin/sh"           20 seconds ago      Up 18 seconds                           distracted_darwin
 ```
 
-## Enter into Container Shell
+### Enter into Container Shell
 
 ```
 docker attach f094
@@ -1478,7 +1478,7 @@ docker attach f094
 Please press "Enter" key twice so as to enter into container shell
 
 
-## Verify if the link has been extracted onto the container
+### Verify if the link has been extracted onto the container
 
 ```
 / # ls -ltr
@@ -1497,9 +1497,8 @@ COPY [--chown=<user>:<group>] <src>... <dest>
 COPY [--chown=<user>:<group>] ["<src>",... "<dest>"] (this form is required for paths containing whitespace)
 ```
 
-## Pre-requisite:
 
-## Tested Infrastructure
+### Tested Infrastructure
 
 <table class="tg">
   <tr>
@@ -1517,13 +1516,13 @@ COPY [--chown=<user>:<group>] ["<src>",... "<dest>"] (this form is required for 
   
 </table>
 
-## Pre-requisite
+### Pre-requisite
 
 - Create an account with [DockerHub](https://hub.docker.com)
 - Open [PWD](https://labs.play-with-docker.com/) Platform on your browser 
 - Click on **Add New Instance** on the left side of the screen to bring up Alpine OS instance on the right side
 
-## Assignment:
+### Assignment:
 
 - Create an image with COPY instruction
 - COPY instruction in Multi-stage Builds
@@ -1590,9 +1589,8 @@ COPY --from=nginx:latest /etc/nginx/nginx.conf /nginx.conf
 
 ## Lab #4: Create an image with CMD instruction
 
-## Pre-requisite:
 
-## Tested Infrastructure
+### Tested Infrastructure
 
 <table class="tg">
   <tr>
@@ -1607,13 +1605,13 @@ COPY --from=nginx:latest /etc/nginx/nginx.conf /nginx.conf
   </tr>
 </table>
 
-## Pre-requisite
+### Pre-requisite
 
 - Create an account with [DockerHub](https://hub.docker.com)
 - Open [PWD](https://labs.play-with-docker.com/) Platform on your browser 
 - Click on **Add New Instance** on the left side of the screen to bring up Alpine OS instance on the right side
 
-## Creating Dockerfile
+### Creating Dockerfile
 
 ```
 FROM alpine:3.6
@@ -1622,13 +1620,13 @@ RUN apk update
 CMD ["top"]
 ```
 
-## Building Docker Container
+### Building Docker Container
 
 ```
 docker build -t ajeetraina/lab3_cmd . -f Dockerfile_cmd
 ```
 
-## Running the Docker container
+### Running the Docker container
 
 ```
 docker run ajeetraina/lab3_cmd:latest
@@ -1645,7 +1643,6 @@ ENTRYPOINT can be configured in two forms:
       
 If an image has an ENTRYPOINT if you pass an argument it, while running container it wont override the existing entrypoint, it will append what you passed with the entrypoint.To override the existing ENTRYPOINT you should user <b>--entrypoint</b> flag when running container.
 
-## Pre-requisite:
 
 ## Tested Infrastructure
 
@@ -1665,14 +1662,14 @@ If an image has an ENTRYPOINT if you pass an argument it, while running containe
   
 </table>
 
-## Pre-requisite
+### Pre-requisite
 
 - Create an account with [DockerHub](https://hub.docker.com)
 - Open [PWD](https://labs.play-with-docker.com/) Platform on your browser 
 - Click on **Add New Instance** on the left side of the screen to bring up Alpine OS instance on the right side
 
 
-## Assignment:
+### Assignment:
 - Create an image with ENTRYPOINT instruction(Exec Form)
 - ENTRYPOINT instruction in Shell Form
 - Override the existing ENTRYPOINT
@@ -1746,9 +1743,8 @@ WORKDIR /path/to/workdir
 
 If no WORKDIR is specified in the Dockerfile then the default path is `/`. The WORKDIR instruction can resolve environment variables previously set in Dockerfile using ENV.
 
-## Pre-requisite:
 
-## Tested Infrastructure
+### Tested Infrastructure
 
 <table class="tg">
   <tr>
@@ -1764,13 +1760,13 @@ If no WORKDIR is specified in the Dockerfile then the default path is `/`. The W
   
 </table>
 
-## Pre-requisite
+### Pre-requisite
 
 - Create an account with [DockerHub](https://hub.docker.com)
 - Open [PWD](https://labs.play-with-docker.com/) Platform on your browser 
 - Click on **Add New Instance** on the left side of the screen to bring up Alpine OS instance on the right side
 
-# Assignment
+### Assignment
 - Dockerfile with WORKDIR instruction
 - WORKDIR with Relative path
 - WORKDIR with Absolute path
@@ -1859,9 +1855,9 @@ RUN instruction can be wrote in two forms:
 - RUN <command> (shell form)
 - RUN ["executable", "param1", "param2"] (exec form)
 
-## Pre-requisite:
 
-## Tested Infrastructure
+
+### Tested Infrastructure
 
 <table class="tg">
   <tr>
@@ -1879,13 +1875,13 @@ RUN instruction can be wrote in two forms:
   
 </table>
 
-## Pre-requisite
+### Pre-requisite
 
 - Create an account with [DockerHub](https://hub.docker.com)
 - Open [PWD](https://labs.play-with-docker.com/) Platform on your browser 
 - Click on **Add New Instance** on the left side of the screen to bring up Alpine OS instance on the right side
 
-## Assignment:
+### Assignment:
 
 - Create an image with RUN instruction
 - Combining multiple RUN instruction to one
@@ -1967,7 +1963,6 @@ The `ARG` directive in `Dockerfile` defines the parameter name and defines its d
 
 The build parameters have the same effect as `ENV`, which is to set the environment variables. The difference is that the environment variables of the build environment set by `ARG` will not exist in the future when the container is running. But don't use `ARG` to save passwords and the like, because `docker history` can still see all the values.
 
-### Pre-requisite:
 
 ### Tested Infrastructure
 
@@ -2039,7 +2034,6 @@ Welcome Savio, to Docker World!
 
 The `ENV` instruction in Dockerfile sets the environment variable for your container when you start. The default value can be overridden by passing `--env <key>=<value>` when you start the container.
 
-### Pre-requisite:
 
 ### Tested Infrastructure
 
