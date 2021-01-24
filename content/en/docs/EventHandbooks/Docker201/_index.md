@@ -26,3 +26,9 @@ println "This is tab 2."
 
 
 {{%expand "Is this docker community  rocks ?" %}}Yes !.{{% /expand%}}
+
+
+{{% notice info %}}
+An information disclaimer
+{{% /notice %}}
+
