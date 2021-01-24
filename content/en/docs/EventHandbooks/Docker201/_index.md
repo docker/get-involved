@@ -7,3 +7,7 @@ description: >-
 ---
 
 ## Docker Handbook for Intermediate
+
+
+{{< codenew file="dockerfile/Dockerfile.add" >}}
+
