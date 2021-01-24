@@ -46,6 +46,9 @@ other = "in"
 [note]
 other = "Note:"
 
+[examples_heading]
+other = "Examples"
+
 
 # Footer text
 [footer_all_rights_reserved]
