@@ -475,7 +475,7 @@ $ docker inspect 4ab
 - Click on **Add New Instance** on the left side of the screen to bring up Alpine OS instance on the right side
 
 
-## Listing the Docker Images
+### Listing the Docker Images
 
 ```
 $ docker images
@@ -486,7 +486,7 @@ REPOSITORY          TAG                 IMAGE ID            CREATED             
 hello-world         latest              4ab4c602aa5e        6 weeks ago         1.84kB
 ```
 
-## Show all images (default hides intermediate images)
+### Show all images (default hides intermediate images)
 
 ```
 docker images -a
@@ -495,7 +495,7 @@ hello-world         latest              4ab4c602aa5e        6 weeks ago         
 ```
 
 
-# List images by name and tag
+### List images by name and tag
 
 The docker images command takes an optional [REPOSITORY[:TAG]] argument that restricts the list to images that match the argument. If you specify REPOSITORY but no TAG, the docker images command lists all images in the given repository.
 
@@ -525,7 +525,7 @@ REPOSITORY          TAG                 IMAGE ID            CREATED             
 alpine              3.7                 6d1ef012b567        7 days ago          4.21MB
 ```
 
-## List the full length image IDs
+### List the full length image IDs
 
 ```
 $ docker images --no-trunc
@@ -541,7 +541,7 @@ alpine              3.9                 sha256:5cb3aa00f89934411ffba5c063a9bc98a
      5.53MB
 ```
 
-# Listing out images with filter
+### Listing out images with filter
 
 ```
 $ docker images
@@ -564,7 +564,7 @@ alpine              3.8                 dac705114996        7 days ago          
 alpine              3.9                 5cb3aa00f899        7 days ago          5.53MB
 ```
 
-## Saving Images and Containers as Tar Files for Sharing
+### Saving Images and Containers as Tar Files for Sharing
 
 Imagine a scenario where you have built Docker images and containers that you would be interested to keep and share it with your other collaborators or colleagues. The below methods shall help you achieve it.
 
@@ -576,7 +576,7 @@ Four basic Docker CLI comes into action:
 - The `docker load` - Load an image from a tar archive or STDIN
 
 
-## Tested Infrastructure
+### Tested Infrastructure
 
 <table class="tg">
   <tr>
@@ -594,14 +594,14 @@ Four basic Docker CLI comes into action:
   
 </table>
 
-## Pre-requisite
+### Pre-requisite
 
 - Create an account with [DockerHub](https://hub.docker.com)
 - Open [PWD](https://labs.play-with-docker.com/) Platform on your browser 
 - Click on **Add New Instance** on the left side of the screen to bring up Alpine OS instance on the right side
 
 
-## Create Nginx Container
+### Create Nginx Container
 
 ```
 $ docker run -d -p 80:80 nginx
@@ -616,7 +616,7 @@ df2caf9283e84a15bb2321a17aabe84e3e0762ec82fc180e2a4c15fcf0f96588
 [node1] (local) root@192.168.0.33 ~
 ```
 
-## Displaying Running Container
+### Displaying Running Container
 ```
 $ docker ps -a
 CONTAINER ID        IMAGE               COMMAND                  CREATED             STATUS              PORTS                NAMES
@@ -690,7 +690,7 @@ $
 How to build Your First Alpine Docker Image and Push it to DockerHub
 
 
-## Tested Infrastructure
+### Tested Infrastructure
 
 <table class="tg">
   <tr>
@@ -708,7 +708,7 @@ How to build Your First Alpine Docker Image and Push it to DockerHub
   
 </table>
 
-## Pre-requisite
+### Pre-requisite
 
 - Create an account with [DockerHub](https://hub.docker.com)
 - Open [PWD](https://labs.play-with-docker.com/) Platform on your browser 
@@ -744,7 +744,7 @@ BUG_REPORT_URL="https://bugs.alpinelinux.org/"
 / #
 ```
 
-# Updating APK Packages
+### Updating APK Packages
 
 ```
 / # apk update
@@ -771,7 +771,7 @@ OK: 20 MiB in 21 packages
 / #
 ```
 
-# Now lets come out of it by Ctrl+P+Q and commit the changes
+### Now lets come out of it by Ctrl+P+Q and commit the changes
 
 ```
 $ docker ps
@@ -795,7 +795,7 @@ alpine                  latest              5cb3aa00f899        7 days ago      
 
 There you see a new image just created.
 
-# Time to tag the image
+### Time to tag the image
 
 ```
 $ docker tag --help
@@ -820,7 +820,7 @@ alpine                  3.9                 5cb3aa00f899        7 days ago      
 alpine                  latest              5cb3aa00f899        7 days ago          5.53MB
 ```
 
-# Pushing it to DockerHub
+### Pushing it to DockerHub
 
 ```
 $ docker login
@@ -865,7 +865,7 @@ Test Your Knowledge
 ## Accessing the Container Shell
 
 
-## Tested Infrastructure
+### Tested Infrastructure
 
 <table class="tg">
   <tr>
@@ -912,7 +912,7 @@ docker attach <container-id>
 ## Running a command inside running Container
 
 
-## Tested Infrastructure
+### Tested Infrastructure
 
 <table class="tg">
   <tr>
