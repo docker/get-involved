@@ -55,7 +55,7 @@ $ go version
 ```
 4. Confirm that the command prints the installed version of Go.
 
-{{% /tab %}}
+
 
 {{< tab name="Mac" >}}
 
@@ -69,7 +69,6 @@ $ go version
 ```
 3. Confirm that the command prints the installed version of Go.
 
-{{% /tab %}}
 
 {{< tab name="Windows" >}}
 
