@@ -69,6 +69,8 @@ $ go version
 ```
 3. Confirm that the command prints the installed version of Go.
 
+{{% /tab %}}
+
 {{< tab name="Windows" >}}
 
 - 1. Open the MSI file you downloaded and follow the prompts to install Go.
@@ -86,6 +88,7 @@ $ go version
 
 ```
 - 3. Confirm that the command prints the installed version of Go.
+{{% /tab %}}
 
 {{< /tab >}}
 {{< /tabs >}}
