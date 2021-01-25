@@ -79,8 +79,8 @@ S.No. | Name of Objectives | Status |
 
 ### [Building and Running a Docker Container](#building-and-running-a-docker-container) - 1 hour
  - [Build a Docker Image](#build-a-docker-image)
- - [Running a Docker Container](#running-a-docker-container)
- - [Running a JAVA 11 Docker Container](#running-a-JAVA11-Docker-Container)
+ - [Running a Docker Container](#run-a-docker-container)
+ - [Running a JAVA 11 Docker Container](#run-a-JAVA11-Docker-Container)
 
 
 
