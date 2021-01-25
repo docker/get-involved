@@ -98,3 +98,14 @@ $ go version
 
 {{< /tabs >}}
 
+
+
+# Dockerize your first Golang Application 
+
+
+Create the main.go file with the following content:
+{{< codenew file="https://raw.githubusercontent.com/docker-community-leaders/dockercommunity/master/content/en/examples/Golang/simple-app/main.go" >}}
+
+
+create dockerfile with following content:
+{{< codenew file="https://raw.githubusercontent.com/docker-community-leaders/dockercommunity/master/content/en/examples/Golang/simple-app/Dockerfile" >}}
