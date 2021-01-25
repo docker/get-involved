@@ -67,61 +67,61 @@ S.No. | Name of Objectives | Status |
 
 ### [Setting up Infrastructure](#setting-up-infrastructure) - 30 min
 
-- [Setup a Docker Environment](/chapters/chap01/setup.md)
+- [Setup a Docker Environment](#setup-a-docker-environment)
 
 
 
 ### [Basics of Docker](#basics-of-docker) - 30 min
-- [Main Components of Docker System](/docker/components/README.md)
-- [Test Your Knowledge](/docker/quiz2/README.md)
+- [Main Components of Docker System](#main-components-of-docker-system)
+- [Test Your Knowledge](#test-your-knowledge-quiz1)
 
 
 
 ### [Building and Running a Docker Container](#building-and-running-a-docker-container) - 1 hour
- - [Build a Docker Image](/docker/docker-image/README.md)
- - [Running a Docker Container](/docker/docker-run-container/README.md)
- - [Running a JAVA 11 Docker Container](/docker/docker-image-java/README.md)
+ - [Build a Docker Image](#builda-docker-image)
+ - [Running a Docker Container](#running-a-docker-container)
+ - [Running a JAVA 11 Docker Container](#running-a-JAVA11-Docker-Container)
 
 
 
 ### [Multi-Container Application using Docker Compose](#multi-container-application-using-docker-compose) - 1 hour
-- [What is Docker Compose](/compose/what-is-docker-compose/README.md)
-- [Configuration file](compose/what-is-docker-compose/README.md#configuration-file)
-- [Start application](/compose/what-is-docker-compose/README.md#start-application)
-- [Verify application](/compose/what-is-docker-compose/README.md#verify-application)
-- [Shutdown application](/compose/what-is-docker-compose/README.md#shutdown-application)
+- [What is Docker Compose](#what-is-docker-compose)
+- [Configuration file](#configuration-file)
+- [Start application](#start-application)
+- [Verify application](#verify-application)
+- [Shutdown application](#shutdown-application)
 
 ### [Deploy Application using Docker Swarm Mode](#deploy-application-using-docker-swarm-mode) - 1 hour
-- [Initialize Swarm](/swarm/initialize-swarm/README.md)
-- [Multi-container application](/swarm/multicontainer/README.md)
-- [Verify service and containers in application](/swarm/verify//README.md)
-- [Access application](/swarm/access/README.md)
-- [Stop application](/swarm/stop-/README.md)
-- [Remove application completely](/swarm/remove/README.md)
+- [Initialize Swarm](#initialize-swarm)
+- [Multi-container application](#multi-container-application)
+- [Verify service and containers in application](#verify-service-and-containers-in-application)
+- [Access application](#access-application)
+- [Stop application](#stop-application)
+- [Remove application completely](#remove-application-completely)
 
 
 
 ### [Docker & Netbeans](#docker-and-netbeans)- 1 hour
-- [Configure Docker Host](/netbeans/README.md#configure-docker-host)
-- [Pull an Image](/netbeans/README.md#pull-an-image)
-- [Run a Container](/netbeans/README.md#run-a-container)
-- [Build an Image](/netbeans/README.md#build-an-image)
+- [Configure Docker Host](#configure-docker-host)
+- [Pull an Image](#pull-an-image)
+- [Run a Container](#run-a-container)
+- [Build an Image](#build-an-image)
  
 
 
-### [Docker and IntelliJ IDEA](docker-and-intelliJ) - 1 hour
-- [Install Docker Plugin in IDEA](/intellij/README.md)
-- [Pull an Image](/intellij/README.md#pull-an-image)
-- [Run a Container](/intellij/README.md#run-a-container)
-- [Build an Image](/intellij/README.md#build-an-image)
+### [Docker and IntelliJ IDEA](#docker-and-intelliJ) - 1 hour
+- [Install Docker Plugin in IDEA](#install-docker-plugin-in-idea)
+- [Pull an Image](#pull-an-image)
+- [Run a Container](#run-a-container)
+- [Build an Image](#build-an-image)
 
 
 ### [Docker & Eclipse](#docker-and-eclipse) - 1 hour
-- [Install Docker Tooling in Eclipse](/eclipse/README.md)
-- [Docker Perspective and View](/eclipse/README.md#docker-perspective-and-view)
-- [Pull an Image](/eclipse/README.md#pull-an-image)
-- [Run a Container](/eclipse/README.md#run-a-container)
-- [Build an Image](/eclipse/README.md#build-an-image)
+- [Install Docker Tooling in Eclipse](#install-docker-tooling-in-eclipse)
+- [Docker Perspective and View](#docker-perspective-and-view)
+- [Pull an Image](#pull-an-image)
+- [Run a Container](#run-a-container)
+- [Build an Image](#build-an-image)
 
 
 ## Getting Familiar with Bevy Virtual
