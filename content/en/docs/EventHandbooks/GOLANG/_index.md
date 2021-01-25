@@ -104,8 +104,8 @@ $ go version
 
 
 Create the main.go file with the following content:
-{{< codenew file="https://raw.githubusercontent.com/docker-community-leaders/dockercommunity/master/content/en/examples/Golang/simple-app/main.go" >}}
+{{< codenew file="/Golang/simple-app/main.go" >}}
 
 
 create dockerfile with following content:
-{{< codenew file="https://raw.githubusercontent.com/docker-community-leaders/dockercommunity/master/content/en/examples/Golang/simple-app/Dockerfile" >}}
+{{< codenew file="/Golang/simple-app/Dockerfile" >}}
