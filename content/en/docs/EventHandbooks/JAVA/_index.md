@@ -1,5 +1,5 @@
 ---
-title: "JAVA "
+title: "JAVA"
 linkTitle: "JAVA"
 weight: 40
 description: >-
