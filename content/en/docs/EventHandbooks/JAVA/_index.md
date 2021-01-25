@@ -78,7 +78,7 @@ S.No. | Name of Objectives | Status |
 
 
 ### [Building and Running a Docker Container](#building-and-running-a-docker-container) - 1 hour
- - [Build a Docker Image](#builda-docker-image)
+ - [Build a Docker Image](#build-a-docker-image)
  - [Running a Docker Container](#running-a-docker-container)
  - [Running a JAVA 11 Docker Container](#running-a-JAVA11-Docker-Container)
 
@@ -250,7 +250,7 @@ S.No. | Name of Objectives | Status |
 1 |Start putting all of that to good use and begin jotting down ideas for your next fantastic event |  ☑️ |
 
 
-## Setup Docker Environments
+## Setup a Docker Environment
 
 This section describes the hardware and software needed for this workshop, and how to configure them.
 This workshop is designed for a BYOL (Bring Your Own Laptop) style hands-on-lab.
@@ -318,7 +318,7 @@ S.No. | Name of Software | Link to Follow |
 5 |  JDK 15 for Linux x64 | [Link](https://download.java.net/java/GA/jdk15.0.1/51f4f36ad4ef43e39d0dfdbaf6549e32/9/GPL/openjdk-15.0.1_linux-x64_bin.tar.gz)  |
 
 
-##  Docker Basic Concepts
+##  Basics of Docker
 
 This section introduces the basic terminology of Docker.
 
@@ -333,7 +333,7 @@ Your application typically requires specific versions for your operating system,
 
 You can certainly provide an installation script that will download and install these components. Docker simplifies this process by allowing to create an image that contains your application and infrastructure together, managed as one component. These images are then used to create Docker containers which run on the container virtualization platform, provided by Docker.
 
-## Main Components
+## Main Components of Docker System
 
 Docker has three main components:
 
