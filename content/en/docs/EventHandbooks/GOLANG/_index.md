@@ -55,9 +55,9 @@ $ go version
 ```
 4. Confirm that the command prints the installed version of Go.
 
+{{% /tab %}}
+{{% tab name="Mac" %}}
 
-
-{{< tab name="Mac" >}}
 
 1.Open the package file you downloaded and follow the prompts to install Go.
 
@@ -68,9 +68,10 @@ The package installs the Go distribution to /usr/local/go. The package should pu
 $ go version
 ```
 3. Confirm that the command prints the installed version of Go.
+{{% /tab %}}
 
+{{% tab name="Windows" %}}
 
-{{< tab name="Windows" >}}
 
 - 1. Open the MSI file you downloaded and follow the prompts to install Go.
      By default, the installer will install Go to C:\Go. You can change the location as needed. After installing, you will need to close and reopen any open command prompts so that changes to the environment made by the installer are reflected at the command prompt.
