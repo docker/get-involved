@@ -57,7 +57,9 @@ $ go version
 
 {{% /tab %}}
 
-{{< tab name="Mac" >}}
+{{% tab name="Mac" %}}
+
+
 
 1.Open the package file you downloaded and follow the prompts to install Go.
 
@@ -70,8 +72,10 @@ $ go version
 3. Confirm that the command prints the installed version of Go.
 
 
+{{% /tab %}}
 
-{{< tab name="Windows" >%}}
+{{% tab name="Windows" %}}
+
 
 
 - 1. Open the MSI file you downloaded and follow the prompts to install Go.
@@ -90,8 +94,8 @@ $ go version
 ```
 - 3. Confirm that the command prints the installed version of Go.
 
-{{< /tab >}}
-{{< /tab >}}
+{{% /tab %}}
+
 {{< /tab >}}
 {{< /tabs >}}
 
