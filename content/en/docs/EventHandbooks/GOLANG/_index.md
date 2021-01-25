@@ -9,7 +9,7 @@ description: >-
 
 
 
-# Downlaod Golang ( latest version Golang 15.7 )
+# Download Golang ( latest version Golang 15.7 )
 
 - [Windows](https://golang.org/dl/go1.15.7.windows-amd64.msi)
 - [Apple Macos ](https://golang.org/dl/go1.15.7.darwin-amd64.pkg)
