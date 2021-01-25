@@ -90,7 +90,8 @@ $ go version
 - 3. Confirm that the command prints the installed version of Go.
 
 {{% /tab %}}
-
+{{< /tab >}}
+{{< /tab >}}
 {{< /tab >}}
 {{< /tabs >}}
 
