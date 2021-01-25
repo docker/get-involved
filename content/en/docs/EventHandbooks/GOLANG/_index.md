@@ -58,7 +58,6 @@ $ go version
 {{% /tab %}}
 {{% tab name="Mac" %}}
 
-
 1.Open the package file you downloaded and follow the prompts to install Go.
 
 The package installs the Go distribution to /usr/local/go. The package should put the /usr/local/go/bin directory in your PATH environment variable. You may need to restart any open Terminal sessions for the change to take effect.
@@ -68,6 +67,7 @@ The package installs the Go distribution to /usr/local/go. The package should pu
 $ go version
 ```
 3. Confirm that the command prints the installed version of Go.
+
 {{% /tab %}}
 
 {{% tab name="Windows" %}}
@@ -88,6 +88,7 @@ $ go version
 
 ```
 - 3. Confirm that the command prints the installed version of Go.
+
 {{% /tab %}}
 
 {{< /tab >}}
