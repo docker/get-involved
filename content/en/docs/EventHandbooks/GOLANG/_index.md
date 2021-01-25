@@ -96,6 +96,5 @@ $ go version
 
 {{% /tab %}}
 
-{{< /tab >}}
 {{< /tabs >}}
 
