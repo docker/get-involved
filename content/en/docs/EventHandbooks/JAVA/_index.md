@@ -1107,7 +1107,7 @@ docker container ps -a -f "exited=-1"
 
 Remove a specific container by id or name:
 
-``
+```
 docker container rm <CONTAINER_ID>
 docker container rm <NAME>
 ```
