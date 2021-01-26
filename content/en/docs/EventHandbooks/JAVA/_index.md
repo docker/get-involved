@@ -143,7 +143,6 @@ It's important for all community leaders to be familiar with this tool to conduc
 ### Chapters | Events |  Analytics
 
 
-- [Create a Chapter](https://help.bevylabs.com/article/454-create-a-chapter)
 - [Create a new event](https://help.bevylabs.com/article/344-create-a-new-event)
 - [Virtual Event Type](https://help.bevylabs.com/article/428-virtual-event-type)
 - [Manage chapter members](https://help.bevylabs.com/article/389-manage-chapter-members)
