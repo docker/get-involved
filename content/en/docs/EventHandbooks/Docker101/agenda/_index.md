@@ -1,7 +1,7 @@
 ---
 title: "Agenda"
 linkTitle: "Recommended Agenda"
-weight: 100
+weight: 70
 description: >-
      Recommended Agenda
 ---
