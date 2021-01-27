@@ -9,7 +9,7 @@ description: >-
 ## Creating Private Docker Registry - 30 min
 
 - [Building a Private Docker Registry](#building-a-private-docker-registry)
-- [Test Your Knowledge](test-your-knowledge-quiz4)
+- [Test Your Knowledge](test-your-knowledge)
 
 
 ## Building a Private Docker Registry
@@ -317,4 +317,4 @@ registry.collabnix.com/alpine        3.6             da653cee0545        2 month
 hello-world                          latest              f2a91732366c        2 months ago     
 ```
 
-### Test Your Knowledge - Quiz4
+### Test Your Knowledge 
