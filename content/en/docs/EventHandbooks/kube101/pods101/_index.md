@@ -39,9 +39,10 @@ So if an application needs several containers running on the same host, why not 
 
 ## Steps
 
+{{< codenew file="/k8s/Pods101/pods01.yaml" >}}
+
+
 ```
-git clone https://github.com/collabnix/kubelabs
-cd kubelabs/pods101
 kubectl apply -f pods01.yaml
 ```
 
@@ -236,6 +237,9 @@ spec:
 
 Run the following command:
 
+
+{{< codenew file="/k8s/Pods101/pods02.yaml" >}}
+
 ```
 $ kubectl apply -f pods02.yaml
 ```
@@ -346,6 +350,8 @@ In Kubernetes, you can use a shared Kubernetes Volume as a simple and efficient 
 Kubernetes Volumes enables data to survive container restarts, but these volumes have the same lifetime as the Pod. That means that the volume (and the data it holds) exists exactly as long as that Pod exists. If that Pod is deleted for any reason, even if an identical replacement is created, the shared Volume is also destroyed and created anew.
 
 A standard use case for a multi-container Pod with a shared Volume is when one container writes logs or other files to the shared directory, and the other container reads from the shared directory. For example, we can create a Pod like so ([pods03.yaml](pods03.yaml)):
+
+{{< codenew file="/k8s/Pods101/pods03.yaml" >}}
 
 ```
 apiVersion: v1
@@ -493,7 +499,6 @@ kubectl delete -f pods03.yaml
 
 
 
-[Next >>](https://collabnix.github.io/kubelabs/replicaset101/index.html#how-does-replicaset-manage-pods)
 
 
 
