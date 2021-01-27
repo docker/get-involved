@@ -491,13 +491,7 @@ Wed Jan  8 08:59:16 UTC 2020
 kubectl delete -f pods03.yaml
 ```
 
-# Contributor
 
-[Ajeet S Raina](https://twitter.com/ajeetsraina)
-
-# Reviewers
-
-[vinay agarwal](https://twitter.com/vnyagarwal)
 
 [Next >>](https://collabnix.github.io/kubelabs/replicaset101/index.html#how-does-replicaset-manage-pods)
 
