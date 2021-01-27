@@ -8,9 +8,9 @@ description: >-
 
 ## Getting Started with Dockerfile - 3 hours
 
-- [What is a Dockerfile?](#lab-1-create-an-image-with-git-installed)
-- [Understanding Layering Concept with Dockerfile](/beginners/dockerfile/layering-dockerfile/README.md)
-- Creating Docker Image with
+- [What is a Dockerfile?](#what-is-dockerfile)
+- [Understanding Layering Concept with Dockerfile](#understanding-image-layering-concept-with-dockerfile)
+- Creating Docker Image 
    - [Installing GIT](#lab-1-create-an-image-with-git-installed))
    - [ADD instruction](#lab-2-create-an-image-with-add-instruction)
    - [COPY instruction](#lab-3-create-an-image-with-copy-instruction)
@@ -38,7 +38,7 @@ description: >-
 - On building the Dockerfile, the successive actions form a new image from the base parent image.
 
 
-### Understanding Image Layering Concept with Dockerfile
+## Understanding Image Layering Concept with Dockerfile
 
 Docker container is a runnable instance of an image, which is actually made by writing a readable/writable layer on top of some read-only layers. 
 
@@ -174,7 +174,7 @@ To see more information about the Docker image and the layers use 'docker inspec
 
 ```
 
-### Do you want to visualize layers of Docker Image?
+### Visualizing layers of Docker Image
 
 ```
 docker run --rm -it -v /var/run/docker.sock:/var/run/docker.sock  wagoodman/dive testimage
