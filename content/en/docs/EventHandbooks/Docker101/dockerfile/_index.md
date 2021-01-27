@@ -11,7 +11,7 @@ description: >-
 - [What is a Dockerfile?](#what-is-a-dockerfile)
 - [Understanding Layering Concept with Dockerfile](#understanding-image-layering-concept-with-dockerfile)
 - Creating Docker Image 
-   - [Installing GIT](#lab-1-create-an-image-with-git-installed))
+   - [Installing GIT](#lab-1-create-an-image-with-git-installed)
    - [ADD instruction](#lab-2-create-an-image-with-add-instruction)
    - [COPY instruction](#lab-3-create-an-image-with-copy-instruction)
    - [CMD instruction](#lab-4-create-an-image-with-cmd-instruction-ENTRYPOINT.md)
