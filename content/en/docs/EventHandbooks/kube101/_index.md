@@ -1,9 +1,9 @@
 ---
-title: "Kubernetes 101"
-linkTitle: "Kubernetes 101"
+title: "Kubernetes"
+linkTitle: "Kubernetes"
 weight: 130
 description: >-
-     Kubernetes 101 for Beginners
+     Kubernetes for Beginners
 ---
 
 ## Kubernetes
