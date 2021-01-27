@@ -9,7 +9,7 @@ description: >-
 ## Docker Networking - 1 hour
 
  - [The docker network Command](#using-docker-network/README.md)
- - [Lab #1: Listing the Networks](#step-1-list-networks)
+ - [Lab #1: Listing the Networks](#step-2-list-networks)
  - [Lab #2: Inspecting a Network](#step-3-inspect-a-network)
  - [Lab #3: List network driver plugins](#step-4-list-network-driver-plugins)
  - [Lab #4: Docker Bridge Networking](#A2-bridge-networking.md)
