@@ -8,7 +8,7 @@ description: >-
      Docker Workshop for Go Developers
 ---
 
-<h2> <details><summary>   What is this handbook for? </h2> </summary>
+ <details>  <summary> <h2>  What is this handbook for? </h2> </summary>
 
 This is a community leader handbook to run "Dockerizing Your Application for Go" workshop. This will cover every aspect of conducting workshop starting from setting up an event page till the completion of the successful workshop. 
 </details>
