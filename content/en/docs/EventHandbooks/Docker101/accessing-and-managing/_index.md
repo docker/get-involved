@@ -14,7 +14,55 @@ description: >-
 - [Test Your Knowledge](#test-your-knowledge-quiz1)
 
 
-## Working with Docker Images
+## Accessing the Container Shell
+
+
+### Tested Infrastructure
+
+<table class="tg">
+  <tr>
+    <th class="tg-yw4l"><b>Platform</b></th>
+    <th class="tg-yw4l"><b>Number of Instance</b></th>
+    <th class="tg-yw4l"><b>Reading Time</b></th>
+    
+  </tr>
+  <tr>
+    <td class="tg-yw4l"><b> Play with Docker</b></td>
+    <td class="tg-yw4l"><b>1</b></td>
+    <td class="tg-yw4l"><b>5 min</b></td>
+    
+  </tr>
+  
+</table>
+
+## Pre-requisite
+
+- Create an account with [DockerHub](https://hub.docker.com)
+- Open [PWD](https://labs.play-with-docker.com/) Platform on your browser 
+- Click on **Add New Instance** on the left side of the screen to bring up Alpine OS instance on the right side
+
+
+## Create Ubuntu Container
+
+```
+docker run -dit ubuntu 
+```
+
+## Accessing the container shell
+
+```
+docker exec -t <container-id> bash
+```
+
+## Accesssing the container shell
+
+```
+docker attach <container-id>
+
+```
+
+## Running a command inside running Container
+
 
 ### Tested Infrastructure
 
@@ -41,91 +89,166 @@ description: >-
 - Click on **Add New Instance** on the left side of the screen to bring up Alpine OS instance on the right side
 
 
-### Listing the Docker Images
+### Create Ubuntu Container
 
 ```
-$ docker images
+docker run -dit ubuntu
 ```
 
-```
-REPOSITORY          TAG                 IMAGE ID            CREATED             SIZE
-hello-world         latest              4ab4c602aa5e        6 weeks ago         1.84kB
-```
-
-### Show all images (default hides intermediate images)
+### Opening up the bash shell
 
 ```
-docker images -a
-REPOSITORY          TAG                 IMAGE ID            CREATED             SIZE
-hello-world         latest              4ab4c602aa5e        6 weeks ago         1.84kB
+docker exec -t <container-id> bash
 ```
 
+## Managing Docker containers
 
-### List images by name and tag
+### Tested Infrastructure
 
-The docker images command takes an optional [REPOSITORY[:TAG]] argument that restricts the list to images that match the argument. If you specify REPOSITORY but no TAG, the docker images command lists all images in the given repository.
+<table class="tg">
+  <tr>
+    <th class="tg-yw4l"><b>Platform</b></th>
+    <th class="tg-yw4l"><b>Number of Instance</b></th>
+    <th class="tg-yw4l"><b>Reading Time</b></th>
+    
+  </tr>
+  <tr>
+    <td class="tg-yw4l"><b> Play with Docker</b></td>
+    <td class="tg-yw4l"><b>1</b></td>
+    <td class="tg-yw4l"><b>5 min</b></td>
+    
+  </tr>
+  
+</table>
 
-To demo this, let us pull all various versions of alpine OS
+### Pre-requisite
 
-```
-docker pull alpine:3.6
-docker pull alpine:3.7
-docker pull alpine:3.8
-docker pull alpine:3.9
-```
+- Create an account with [DockerHub](https://hub.docker.com)
+- Open [PWD](https://labs.play-with-docker.com/) Platform on your browser 
+- Click on **Add New Instance** on the left side of the screen to bring up Alpine OS instance on the right side
 
-```
-[node4] (local) root@192.168.0.20 ~
-$ docker images
-REPOSITORY          TAG                 IMAGE ID            CREATED             SIZE
-alpine              3.6                 43773d1dba76        7 days ago          4.03MB
-alpine              3.7                 6d1ef012b567        7 days ago          4.21MB
-alpine              3.8                 dac705114996        7 days ago          4.41MB
-alpine              3.9                 5cb3aa00f899        7 days ago          5.53MB
-```
 
-```
-[node4] (local) root@192.168.0.20 ~
-$ docker images alpine:3.7
-REPOSITORY          TAG                 IMAGE ID            CREATED             SIZE
-alpine              3.7                 6d1ef012b567        7 days ago          4.21MB
-```
 
-### List the full length image IDs
+### Preparations
 
-```
-$ docker images --no-trunc
-REPOSITORY          TAG                 IMAGE ID                                                                  CREATED
-     SIZE
-alpine              3.6                 sha256:43773d1dba76c4d537b494a8454558a41729b92aa2ad0feb23521c3e58cd0440   7 days ago
-     4.03MB
-alpine              3.7                 sha256:6d1ef012b5674ad8a127ecfa9b5e6f5178d171b90ee462846974177fd9bdd39f   7 days ago
-     4.21MB
-alpine              3.8                 sha256:dac7051149965716b0acdcab16380b5f4ab6f2a1565c86ed5f651e954d1e615c   7 days ago
-     4.41MB
-alpine              3.9                 sha256:5cb3aa00f89934411ffba5c063a9bc98ace875d8f92e77d0029543d9f2ef4ad0   7 days ago
-     5.53MB
-```
-
-### Listing out images with filter
+ - Clean your docker host using the commands (in bash):
 
 ```
-$ docker images
-REPOSITORY          TAG                 IMAGE ID            CREATED             SIZE
-ubuntu              latest              94e814e2efa8        3 days ago          88.9MB
-alpine              3.6                 43773d1dba76        7 days ago          4.03MB
-alpine              3.7                 6d1ef012b567        7 days ago          4.21MB
-alpine              3.8                 dac705114996        7 days ago          4.41MB
-alpine              3.9                 5cb3aa00f899        7 days ago          5.53MB
+$ docker rm -f $(docker ps -a -q)
 ```
 
-If you want to filter out just alpine
+### Instructions
 
+ - Run the following containers from the dockerhub:
 ```
-$ docker images --filter=reference='alpine'
-REPOSITORY          TAG                 IMAGE ID            CREATED             SIZE
-alpine              3.6                 43773d1dba76        7 days ago          4.03MB
-alpine              3.7                 6d1ef012b567        7 days ago          4.21MB
-alpine              3.8                 dac705114996        7 days ago          4.41MB
-alpine              3.9                 5cb3aa00f899        7 days ago          5.53MB
+$ docker run -d -p 5000:5000 --name app1 selaworkshops/python-app:1.0
 ```
+```
+$ docker run -d -p 5001:5001 -e "port=5001" --name app2 selaworkshops/python-app:2.0
+```
+
+ - Ensure the containers are running:
+```
+$ docker ps
+```
+
+ - Stop the first container:
+```
+$ docker stop app1
+```
+
+ - Kill the second container:
+```
+$ docker kill app2
+```
+
+ - Display running containers:
+```
+$ docker ps
+```
+
+ - Show all the containers (includind non running containers):
+```
+$ docker ps -a
+```
+
+ - Let's start both containers again:
+```
+$ docker start app1 app2
+```
+
+ - Restart the second container:
+```
+$ docker restart app2
+```
+
+ - Display the docker host information with:
+```
+$ docker info
+```
+
+ - Show the running processes in the first container using:
+```
+$ docker top app1
+```
+
+ - Retrieve the history of the second container:
+```
+$ docker history selaworkshops/python-app:2.0
+```
+
+ - Inspect the second container image:
+```
+$ docker inspect selaworkshops/python-app:2.0
+```
+
+ - Inspect the first container and look for the internal ip:
+```
+$ docker inspect app1
+```
+```
+"Networks": {
+                "bridge": {
+                    "IPAMConfig": null,
+                    "Links": null,
+                    "Aliases": null,
+                    "NetworkID": "822cb66790c6358d9decab874916120f3bdeff7193a4375c94ca54d50832303d",
+                    "EndpointID": "9aa96dc29be08eddc6d8f429ebecd2285c064fda288681a3611812413cbdfc1f",
+                    "Gateway": "172.17.0.1",
+                    "IPAddress": "172.17.0.3",
+                    "IPPrefixLen": 16,
+                    "IPv6Gateway": "",
+                    "GlobalIPv6Address": "",
+                    "GlobalIPv6PrefixLen": 0,
+                    "MacAddress": "02:42:ac:11:00:03",
+                    "DriverOpts": null
+                }
+            }
+```
+
+ - Show the logs of the second container using the flag --follow:
+```
+$ docker logs --follow app2
+```
+
+ - Browse to the application and see the containers logs from the terminal:
+```
+http://localhost:5001
+```
+
+ - Stop to tracking logs:
+ ```
+$ CTRL + C
+```
+
+## Test Your Knowledge - Quiz2
+
+
+| S. No.   |    Question. |      Response
+:--------| :--------------|:---------------|
+| 1   | What are different ways to access container shell? | |
+| 2   | How to run a command inside a Docker container | |
+| 3   | Is it possible to stop overall Docker containers in a single shot? | |
+| 4   | How do you remove all dangling images in Docker?| |
+| 5   | How do you access services ports under Docker? | |
+
