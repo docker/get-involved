@@ -6,25 +6,14 @@ description: >-
      Docker Networking
 ---
 
-## Docker Networking - 1 hour
 
- - [The docker network Command](#using-docker-network/README.md)
- - [Lab #1: Listing the Networks](#step-2-list-networks)
- - [Lab #2: Inspecting a Network](#step-3-inspect-a-network)
- - [Lab #3: List network driver plugins](#step-4-list-network-driver-plugins)
- - [Lab #4: Docker Bridge Networking](#A2-bridge-networking.md)
-   - [Lab #5: Basics of Docker Bridge Networking](#step-1-the-default-bridge-network)
-   - [Lab #6: Connect a Docker container to bridge network](step-2-connect-a-container)
-   - [Lab #7: Test Network Connectivity](#step-3-test-network-connectivity)
-   - [Lab #8: Configure NAT for external connectivity](#step-4-configure-nat-for-external-connectivity)
- - [Test Your Knowledge](#test-your-knowledge-quiz4)
-
-## Using Docker Network
+## Using Docker Network - 1 hour
 
 - [Step 1 - The `docker network` command](#docker_network)
 - [Step 2 - List networks](#list_networks)
 - [Step 3 - Inspect a network](#inspect)
 - [Step 4 - List network driver plugins](#list_drivers)
+- [Test Your Knowledge](#test-your-knowledge-quiz4)
 
 ### Prerequisites
 
