@@ -10,8 +10,7 @@ import (
 	"os/signal"
 	"syscall"
 	"time"
-
-	"github.com/callicoder/go-docker-compose/model"
+        "github.com/docker-community-leaders/dockercommunity/content/en/examples/Golang/go-docker-compose/model"
 	"github.com/go-redis/redis"
 	"github.com/gorilla/mux"
 )
