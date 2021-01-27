@@ -12,7 +12,7 @@ description: >-
 - [Working with Docker Image](#working-with-docker-image) 
 - [Saving Images and Containers as Tar Files for Sharing](#saving-images-and-containers-as-tar-files-for-sharing)
 - [Building Your First Alpine Docker Image and Push it to DockerHub](#building-your-first-alpine-docker-image-and-push-it-to-dockerhub)
-- [Test Your Knowledge](#test-your-knowledge-quiz1)
+- [Test Your Knowledge](#test-your-knowledge--quiz1)
 
 
 ## Getting Started with Docker Image
