@@ -8,11 +8,11 @@ description: >-
 
 ## Creating Private Docker Registry - 30 min
 
-- [Building a Private Docker Registry](/beginners/docker-registry/README.md)
-- [Test Your Knowledge](/beginners/docker-registry/quiz4/README.md)
+- [Building a Private Docker Registry](#building-a-private-docker-registry)
+- [Test Your Knowledge](test-your-knowledge-quiz4)
 
-## Creating a Private Local Docker Registry using Play with Docker
 
+## Building a Private Docker Registry
 
 ### Tested Infrastructure
 
