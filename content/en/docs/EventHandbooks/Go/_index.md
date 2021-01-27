@@ -478,7 +478,7 @@ The free soul is rare, but you know it when you see it - basically because you f
 # Dockerize above go application 
 
 
- {{< codenew file="/examples/Golang/go-docker-compose/Dockerfile" >}}
+ {{< codenew file="/Golang/go-docker-compose/Dockerfile" >}}
 
 
 # application;s services via Docker Compose 
@@ -490,7 +490,7 @@ Our application consists of two services -
 
 Let’s define both the services in a `docker-compose.yml` file 
 
- {{< codenew file="/examples/Golang/go-docker-compose/docker-compose.yml" >}}
+ {{< codenew file="/Golang/go-docker-compose/docker-compose.yml" >}}
  
  # Running the application with docker compose
 
