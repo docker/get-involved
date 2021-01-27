@@ -8,7 +8,7 @@ description: >-
 
 ## Getting Started with Dockerfile - 3 hours
 
-- [What is a Dockerfile?](#what-is-dockerfile)
+- [What is a Dockerfile?](#what-is-a-dockerfile)
 - [Understanding Layering Concept with Dockerfile](#understanding-image-layering-concept-with-dockerfile)
 - Creating Docker Image 
    - [Installing GIT](#lab-1-create-an-image-with-git-installed))
