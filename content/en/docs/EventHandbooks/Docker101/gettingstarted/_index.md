@@ -185,7 +185,7 @@ $ docker inspect 4ab
 ]
 ```
 
-## Working with Docker Images
+## Working with Docker Image
 
 ### Tested Infrastructure
 
