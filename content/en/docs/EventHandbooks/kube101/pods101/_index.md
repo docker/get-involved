@@ -35,7 +35,7 @@ So if an application needs several containers running on the same host, why not 
 
 ## Pre-requisite:
 
-    {{< kat-button >}}
+{{< kat-button >}}
 
 ## Steps
 
