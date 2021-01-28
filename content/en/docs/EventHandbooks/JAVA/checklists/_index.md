@@ -6,7 +6,6 @@ description: >-
      Checklists
 ---
 
-## Checklists
 
 ## Before the workshop
 
