@@ -1,12 +1,13 @@
 ---
-title: "Long Page Title"
-linkTitle: "Short Nav Title"
+title: "Docker and IntelliJ"
+linkTitle: "Docker and IntelliJ"
 weight: 308
 description: >-
-     Page description for heading and indexes.
+     Docker and IntelliJ IDEA.
 ---
 
-## Docker and IntelliJ IDEA](#docker-and-intelliJ
+## Docker and IntelliJ IDEA
+
 - [Install Docker Plugin in IDEA](#install-docker-plugin-in-idea)
 - [Pull an Image](#pull-an-image)
 - [Run a Container](#run-a-container)
