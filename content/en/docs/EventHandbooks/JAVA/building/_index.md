@@ -6,7 +6,6 @@ description: >-
      Building and Running a Docker Container
 ---
 
-# Building and Running a Docker Container
 
  - [Build a Docker Image](#build-a-docker-image)
  - [Running a Docker Container](#run-a-docker-container)
