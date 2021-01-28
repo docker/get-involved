@@ -6,7 +6,7 @@ description: >-
      Docker and IntelliJ IDEA.
 ---
 
-## Docker and IntelliJ IDEA
+
 
 - [Install Docker Plugin in IDEA](#install-docker-plugin-in-idea)
 - [Pull an Image](#pull-an-image)
