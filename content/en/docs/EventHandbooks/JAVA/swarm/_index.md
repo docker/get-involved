@@ -6,7 +6,7 @@ description: >-
      Deploy Application using Docker Swarm Mode
 ---
 
-Deploy Application using Docker Swarm Mode]
+
 
 - [Initialize Swarm](#initialize-swarm)
 - [Multi-container application](#multi-container-application)
