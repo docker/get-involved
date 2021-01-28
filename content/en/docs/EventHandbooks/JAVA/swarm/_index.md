@@ -1,7 +1,7 @@
 ---
 title: "Deploy Application using Docker Swarm Mode"
 linkTitle: "Deploy Application using Docker Swarm Mode"
-weight: 130
+weight: 306
 description: >-
      Deploy Application using Docker Swarm Mode
 ---
