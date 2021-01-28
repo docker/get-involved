@@ -6,7 +6,7 @@ description: >-
      Pre-requisite
 ---
 
-## Pre-requisite:
+
 
 ### [Setting up Infrastructure](#setting-up-infrastructure) - 30 min
 
