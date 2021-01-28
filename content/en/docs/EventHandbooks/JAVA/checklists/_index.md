@@ -9,7 +9,7 @@ description: >-
 
 ## Before the workshop
 
-Step No. | Name of Objectives | Status | 
+Step # | Name of Objectives | Status | 
 :------------ | :-------------| :-------------|
 1 | [Getting Familiar with Bevy Virtual](#getting-familiar-with-bevy-virtual) |  ☑️ |
 2 | [Planning an Event Agenda](#planning-an-event-agenda) |  ☑️ |
@@ -18,13 +18,13 @@ Step No. | Name of Objectives | Status |
 
 ### During the workshop
 
-Step No. | Name of Objectives | Status | 
+Step # | Name of Objectives | Status | 
 :------------ | :-------------| :-------------|
 5 | [Conducting Attendee Survey](#conducting-attendee-survey) |  ☑️ |
 
 ### After the workshop
 
-Step No. | Name of Objectives | Status | 
+Step # | Name of Objectives | Status | 
 :------------ | :-------------| :-------------|
 6 | [Post-Event FollowUp](#post-event-followup) |  ☑️ |
 7 | [Community Leader Survey](#community-leader-survey)  |  ☑️ |
