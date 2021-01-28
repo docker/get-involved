@@ -6,7 +6,6 @@ description: >-
      Multi-Container Application using Docker Compose
 ---
 
-# Multi-Container Application using Docker Compose
 
 - [What is Docker Compose](#what-is-docker-compose)
 - [Configuration file](#configuration-file)
