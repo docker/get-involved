@@ -1,7 +1,7 @@
 ---
 title: "Long Page Title"
 linkTitle: "Short Nav Title"
-weight: 100
+weight: 308
 description: >-
      Page description for heading and indexes.
 ---
