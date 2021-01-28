@@ -6,12 +6,13 @@ description: >-
      Building and Running a Docker Container
 ---
 
-### [Building and Running a Docker Container](#building-and-running-a-docker-container) - 1 hour
+# Building and Running a Docker Container
+
  - [Build a Docker Image](#build-a-docker-image)
  - [Running a Docker Container](#run-a-docker-container)
  - [Running a JAVA 11 Docker Container](#run-a-JAVA11-Docker-Container)
  
- ## Build a Docker Image
+## Build a Docker Image
 
 This section explains how to create a Docker image.
 
