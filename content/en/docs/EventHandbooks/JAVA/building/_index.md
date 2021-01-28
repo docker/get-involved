@@ -1,8 +1,8 @@
 ---
 title: "Building and Running a Docker Container"
-linkTitle: "Building and Running a Docker Container""
-weight: 110
-description: >
+linkTitle: "Building and Running a Docker Container"
+weight: 304
+description: >-
      Building and Running a Docker Container
 ---
 
