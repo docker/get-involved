@@ -1,9 +1,9 @@
 ---
-title: "Long Page Title"
-linkTitle: "Short Nav Title"
+title: "Basics of Docker"
+linkTitle: "Basics of Docker"
 weight: 100
 description: >-
-     Page description for heading and indexes.
+     Basics of Docker
 ---
 
 ### [Basics of Docker](#basics-of-docker) - 30 min
