@@ -6,7 +6,6 @@ description: >-
      Docker & Eclipse
 ---
 
-## Docker & Eclipse
 
 - [Install Docker Tooling in Eclipse](#install-docker-tooling-in-eclipse)
 - [Docker Perspective and View](#docker-perspective-and-view)
