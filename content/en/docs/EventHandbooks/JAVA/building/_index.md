@@ -711,7 +711,7 @@ Port mapping can be also be found using `docker inspect` command:
 docker container inspect --format='{{(index (index .NetworkSettings.Ports "8080/tcp") 0).HostPort}}' <CONTAINER ID>
 ```
 
-## Build a Docker Image with JDK 15
+## Build and Run a Docker Image with JDK 15
 
 This chapter explains how to create a Docker image with JDK 9.
 
