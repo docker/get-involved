@@ -19,8 +19,8 @@ jobs:
     
     - name: install pandoc
       run: |
-           wget https://github.com/jgm/pandoc/releases/download/2.10/pandoc-2.10-1-amd64.deb
-           sudo dpkg -i pandoc-2.10-1-amd64.deb
+           wget https://github.com/jgm/pandoc/releases/download/2.11.4/pandoc-2.11.4-1-amd64.deb
+           sudo dpkg -i pandoc-2.11.4-1-amd64.deb
  
     - name: Setup Hugo
       uses: peaceiris/actions-hugo@v2
