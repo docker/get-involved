@@ -726,46 +726,127 @@ docker container inspect --format='{{(index (index .NetworkSettings.Ports "8080/
 
 This chapter explains how to create a Docker image with JDK 15.
 
-This chapter expands on this topic and focuses on JDK 9 features.
-
 ## Create a Docker Image using JDK 15
 
-Create a new directory, for example `docker-jdk9`.
+Create a new directory, for example `docker-jdk15`.
 
 In that directory, create a new text file `jdk-15-debian-slim.Dockerfile`.
 Use the following contents:
 
 ```
 # A JDK 15 with Debian slim
-FROM debian:stable-slim
-# Download from http://jdk.java.net/15/
-# ADD http://download.java.net/java/GA/jdk15/15/binaries/openjdk-15_linux-x64_bin.tar.gz /opt
-ADD https://download.java.net/java/GA/jdk15.0.2/0d1cfde4252546c6931946de8db48ee2/7/GPL/openjdk-15.0.2_linux-x64_bin.tar.gz /opt
-# ADD openjdk-15_linux-x64_bin.tar.gz /opt
-# Set up env variables
-ENV JAVA_HOME=/opt/jdk-15.0.2
-ENV PATH=$PATH:$JAVA_HOME/bin
-CMD ["jshell", "-J-XX:+UnlockExperimentalVMOptions", \
-               "-J-XX:+UseCGroupMemoryLimitForHeap", \
-               "-R-XX:+UnlockExperimentalVMOptions", \
-               "-R-XX:+UseCGroupMemoryLimitForHeap"]
+FROM buildpack-deps:buster-scm
+
+RUN set -eux; \
+	apt-get update; \
+	apt-get install -y --no-install-recommends \
+		bzip2 \
+		unzip \
+		xz-utils \
+		\
+# utilities for keeping Debian and OpenJDK CA certificates in sync
+		ca-certificates p11-kit \
+		\
+# jlink --strip-debug on 13+ needs objcopy: https://github.com/docker-library/openjdk/issues/351
+# Error: java.io.IOException: Cannot run program "objcopy": error=2, No such file or directory
+		binutils \
+# java.lang.UnsatisfiedLinkError: /usr/local/openjdk-11/lib/libfontmanager.so: libfreetype.so.6: cannot open shared object file: No such file or directory
+# java.lang.NoClassDefFoundError: Could not initialize class sun.awt.X11FontManager
+# https://github.com/docker-library/openjdk/pull/235#issuecomment-424466077
+		fontconfig libfreetype6 \
+	; \
+	rm -rf /var/lib/apt/lists/*
+
+# Default to UTF-8 file.encoding
+ENV LANG C.UTF-8
+
+ENV JAVA_HOME /usr/local/openjdk-15
+ENV PATH $JAVA_HOME/bin:$PATH
+
+# backwards compatibility shim
+RUN { echo '#/bin/sh'; echo 'echo "$JAVA_HOME"'; } > /usr/local/bin/docker-java-home && chmod +x /usr/local/bin/docker-java-home && [ "$JAVA_HOME" = "$(docker-java-home)" ]
+
+# https://jdk.java.net/
+# >
+# > Java Development Kit builds, from Oracle
+# >
+ENV JAVA_VERSION 15.0.2
+
+RUN set -eux; \
+	\
+	arch="$(dpkg --print-architecture)"; \
+# this "case" statement is generated via "update.sh"
+	case "$arch" in \
+# arm64v8
+		arm64 | aarch64) \
+			downloadUrl=https://download.java.net/java/GA/jdk15.0.2/0d1cfde4252546c6931946de8db48ee2/7/GPL/openjdk-15.0.2_linux-aarch64_bin.tar.gz; \
+			downloadSha256=3958f01858f9290c48c23e7804a0af3624e8eca6749b085c425df4c4f2f7dcbc; \
+			;; \
+# amd64
+		amd64 | i386:x86-64) \
+			downloadUrl=https://download.java.net/java/GA/jdk15.0.2/0d1cfde4252546c6931946de8db48ee2/7/GPL/openjdk-15.0.2_linux-x64_bin.tar.gz; \
+			downloadSha256=91ac6fc353b6bf39d995572b700e37a20e119a87034eeb939a6f24356fbcd207; \
+			;; \
+# fallback
+		*) echo >&2 "error: unsupported architecture: '$arch'"; exit 1 ;; \
+	esac; \
+	\
+	wget -O openjdk.tgz "$downloadUrl" --progress=dot:giga; \
+	echo "$downloadSha256 *openjdk.tgz" | sha256sum --strict --check -; \
+	\
+	mkdir -p "$JAVA_HOME"; \
+	tar --extract \
+		--file openjdk.tgz \
+		--directory "$JAVA_HOME" \
+		--strip-components 1 \
+		--no-same-owner \
+	; \
+	rm openjdk.tgz; \
+	\
+# update "cacerts" bundle to use Debian's CA certificates (and make sure it stays up-to-date with changes to Debian's store)
+# see https://github.com/docker-library/openjdk/issues/327
+#     http://rabexc.org/posts/certificates-not-working-java#comment-4099504075
+#     https://salsa.debian.org/java-team/ca-certificates-java/blob/3e51a84e9104823319abeb31f880580e46f45a98/debian/jks-keystore.hook.in
+#     https://git.alpinelinux.org/aports/tree/community/java-cacerts/APKBUILD?id=761af65f38b4570093461e6546dcf6b179d2b624#n29
+	{ \
+		echo '#!/usr/bin/env bash'; \
+		echo 'set -Eeuo pipefail'; \
+		echo 'if ! [ -d "$JAVA_HOME" ]; then echo >&2 "error: missing JAVA_HOME environment variable"; exit 1; fi'; \
+# 8-jdk uses "$JAVA_HOME/jre/lib/security/cacerts" and 8-jre and 11+ uses "$JAVA_HOME/lib/security/cacerts" directly (no "jre" directory)
+		echo 'cacertsFile=; for f in "$JAVA_HOME/lib/security/cacerts" "$JAVA_HOME/jre/lib/security/cacerts"; do if [ -e "$f" ]; then cacertsFile="$f"; break; fi; done'; \
+		echo 'if [ -z "$cacertsFile" ] || ! [ -f "$cacertsFile" ]; then echo >&2 "error: failed to find cacerts file in $JAVA_HOME"; exit 1; fi'; \
+		echo 'trust extract --overwrite --format=java-cacerts --filter=ca-anchors --purpose=server-auth "$cacertsFile"'; \
+	} > /etc/ca-certificates/update.d/docker-openjdk; \
+	chmod +x /etc/ca-certificates/update.d/docker-openjdk; \
+	/etc/ca-certificates/update.d/docker-openjdk; \
+	\
+# https://github.com/docker-library/openjdk/issues/331#issuecomment-498834472
+	find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf; \
+	ldconfig; \
+	\
+# https://github.com/docker-library/openjdk/issues/212#issuecomment-420979840
+# https://openjdk.java.net/jeps/341
+	java -Xshare:dump; \
+	\
+# basic smoke test
+	fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java; \
+	javac --version; \
+	java --version
+
+# "jshell" is an interactive REPL for Java (see https://en.wikipedia.org/wiki/JShell)
+CMD ["jshell"]
                                                    
 ```
 
 This image uses `debian` slim as the base image and installs the OpenJDK build
-of JDK for linux x64 (see the link:ch01-setup.adoc[setup section] for how to download this into the
-current directory).
+of JDK for linux x64 
 
-The image is configured by default to run `jshell` the Java REPL. Read more JShell at link:https://docs.oracle.com/javase/9/jshell/introduction-jshell.htm[Introduction to JShell]. The
-experimental flag `-XX:+UseCGroupMemoryLimitForHeap` is passed to the REPL
-process (the frontend Java process managing user input and the backend Java
-process managing compilation).  This option will ensure container memory
-constraints are honored.
+The image is configured by default to run `jshell` the Java REPL. Read more JShell at link:https://docs.oracle.com/javase/9/jshell/introduction-jshell.htm[Introduction to JShell]. 
 
 ## Build the image using the command:
 
 ```
-docker image build -t jdk-9-debian-slim -f jdk-9-debian-slim.Dockerfile .
+docker image build -t jdk-15-debian-slim -f jdk-9-debian-slim.Dockerfile .
 ```
 
 
@@ -773,26 +854,24 @@ docker image build -t jdk-9-debian-slim -f jdk-9-debian-slim.Dockerfile .
 
 ```
 REPOSITORY              TAG                 IMAGE ID            CREATED             SIZE
-jdk-9-debian-slim       latest              023f6999d94a        4 hours ago         400MB
+jdk-15-debian-slim      latest              0b9c1935cd20        9 hours ago         669MB
 debian                  stable-slim         d30525fb4ed2        4 days ago          55.3MB
 ```
 
-Other images may be shown as well but we are interested in these two images for
-now.  The large difference in size is attributed to JDK 9, which is larger
-in size than JDK 8 because it also explicitly provides Java modules that we
-shall see more of later on in this chapter.
+
 
 ## Run the container using the command:
 
 ```
-docker container run -m=200M -it --rm jdk-9-debian-slim
+docker container run -m=200M -it --rm jdk-15-debian-slim
 ```
 
 to see the output:
 
 ```
+Jan 29, 2021 9:08:17 PM java.util.prefs.FileSystemPreferences$1 run
 INFO: Created user preferences directory.
-|  Welcome to JShell -- Version 9
+|  Welcome to JShell -- Version 15.0.2
 |  For an introduction type: /help intro
 
 jshell>
@@ -807,21 +886,13 @@ to see the output:
 
 ```
 jshell> Runtime.getRuntime().maxMemory() / (1 << 20)
-$1 ==> 100
+$1 ==> 96
 ```
 
 Notice that the Java process is honoring memory constraints (see the `--memory`
 of `docker container run`) and will not allocate memory beyond that specified for the
 container.
 
-In a future release of the JDK it will no longer be necessary to specify an
-experimental flag (`-XX:+UnlockExperimentalVMOptions`) once the mechanism by
-which memory constraints are efficiently detected is stable.
-
-JDK 9 supports the set CPUs constraint (see the `--cpuset-cpus` of
-`docker container run`) but does not currently support other CPU constraints such as
-CPU shares.  This is ongoing work http://openjdk.java.net/jeps/8182070[tracked]
-in the OpenJDK project.
 
 Note: the support for CPU sets and memory constraints have also been backported
 to JDK 8 release 8u131 and above.
@@ -837,103 +908,60 @@ docker container run -m=200M -it --rm jdk-9-debian-slim java --list-modules
 This will show an output:
 
 ```
-java.activation@9
-java.base@9
-java.compiler@9
-java.corba@9
-java.datatransfer@9
-java.desktop@9
-java.instrument@9
-java.logging@9
-java.management@9
-java.management.rmi@9
-java.naming@9
-java.prefs@9
-java.rmi@9
-java.scripting@9
-java.se@9
-java.se.ee@9
-java.security.jgss@9
-java.security.sasl@9
-java.smartcardio@9
-java.sql@9
-java.sql.rowset@9
-java.transaction@9
-java.xml@9
-java.xml.bind@9
-java.xml.crypto@9
-java.xml.ws@9
-java.xml.ws.annotation@9
-jdk.accessibility@9
-jdk.aot@9
-jdk.attach@9
-jdk.charsets@9
-jdk.compiler@9
-jdk.crypto.cryptoki@9
-jdk.crypto.ec@9
-jdk.dynalink@9
-jdk.editpad@9
-jdk.hotspot.agent@9
-jdk.httpserver@9
-jdk.incubator.httpclient@9
-jdk.internal.ed@9
-jdk.internal.jvmstat@9
-jdk.internal.le@9
-jdk.internal.opt@9
-jdk.internal.vm.ci@9
-jdk.internal.vm.compiler@9
-jdk.jartool@9
-jdk.javadoc@9
-jdk.jcmd@9
-jdk.jconsole@9
-jdk.jdeps@9
-jdk.jdi@9
-jdk.jdwp.agent@9
-jdk.jlink@9
-jdk.jshell@9
-jdk.jsobject@9
-jdk.jstatd@9
-jdk.localedata@9
-jdk.management@9
-jdk.management.agent@9
-jdk.naming.dns@9
-jdk.naming.rmi@9
-jdk.net@9
-jdk.pack@9
-jdk.policytool@9
-jdk.rmic@9
-jdk.scripting.nashorn@9
-jdk.scripting.nashorn.shell@9
-jdk.sctp@9
-jdk.security.auth@9
-jdk.security.jgss@9
-jdk.unsupported@9
-jdk.xml.bind@9
-jdk.xml.dom@9
-jdk.xml.ws@9
-jdk.zipfs@9
+ docker container run -m=200M -it --rm jdk-15-debian-slim java --list-modules
+java.base@15.0.2
+java.compiler@15.0.2
+java.datatransfer@15.0.2
+java.desktop@15.0.2
+java.instrument@15.0.2
+java.logging@15.0.2
+java.management@15.0.2
+java.management.rmi@15.0.2
+java.naming@15.0.2
+java.net.http@15.0.2
+java.prefs@15.0.2
+java.rmi@15.0.2
+java.scripting@15.0.2
+...
+jdk.internal.vm.ci@15.0.2
+jdk.internal.vm.compiler@15.0.2
+jdk.internal.vm.compiler.management@15.0.2
+jdk.jartool@15.0.2
+jdk.javadoc@15.0.2
+jdk.jcmd@15.0.2
+jdk.jconsole@15.0.2
+jdk.jdeps@15.0.2
+jdk.jdi@15.0.2
+jdk.jdwp.agent@15.0.2
+jdk.jfr@15.0.2
+jdk.jlink@15.0.2
+jdk.jshell@15.0.2
+jdk.jsobject@15.0.2
+jdk.jstatd@15.0.2
+...
+..
 ```
 
-In total there should be 75 modules:
+In total there should be 69 modules:
 
 ```
 $ docker container run -m=200M -it --rm jdk-9-debian-slim java --list-modules | wc -l
-      75
+      69
 ```
 
-##  Create a Docker Image using JDK 9 and Alpine Linux
+##  Create a Docker Image using JDK 15 and Alpine Linux
 
 Instead of `debian` as the base image it is possible to use Alpine Linux
-with an early access build of JDK 9 that is compatible with the muslc library
+with an early access build of JDK 15 that is compatible with the muslc library
 shipped with Alpine Linux.
 
 Create a new text file `jdk-9-alpine.Dockerfile`.
 Use the following contents:
 
 ```
-# A JDK 9 with Alpine Linux
+# A JDK 15 with Alpine Linux
 FROM alpine:3.6
-# Add the musl-based JDK 9 distribution
+# Add the musl-based JDK 15 distribution
 RUN mkdir /opt
 # Download from http://jdk.java.net/9/
 # ADD http://download.java.net/java/jdk9-alpine/archive/181/binaries/jdk-9-ea+181_linux-x64-musl_bin.tar.gz
