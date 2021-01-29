@@ -1,9 +1,9 @@
 ---
-title: "Getting Started"
-linkTitle: "Getting Started"
+title: "Get Involved"
+linkTitle: "Get Involved"
 weight: 2
 description: >
-  A Docker Community Site
+  Get Involved with Docker Community
 ---
 
 
