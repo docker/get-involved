@@ -7,7 +7,7 @@ description: >-
 ---
 
 
- - [Build a Docker Image](#build-a-docker-image)
+- [Build a Docker Image](#build-a-docker-image)
  - [Running a Docker Container](#run-a-docker-container)
  - [Running a JAVA 11 Docker Container](#run-a-JAVA11-Docker-Container)
  
@@ -1126,4 +1126,4 @@ Alpine Linux was used instead of Debian Slim.
 
 A realistic application will depend on more JDK modules but it's still possible
 to significantly reduce the Java runtime to only the required modules (for
-example many applications will not require Corba or RMI nor the compiler tools).
+example many applications will not require Corba or RMI nor the compiler tools)
