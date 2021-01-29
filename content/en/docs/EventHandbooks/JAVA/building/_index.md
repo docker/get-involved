@@ -711,33 +711,34 @@ Port mapping can be also be found using `docker inspect` command:
 docker container inspect --format='{{(index (index .NetworkSettings.Ports "8080/tcp") 0).HostPort}}' <CONTAINER ID>
 ```
 
-## Build and Run a Docker Image with JDK 15
+## Build and Run a Docker Container with JDK 15
 
-This chapter explains how to create a Docker image with JDK 9.
+This chapter explains how to create a Docker image with JDK 15.
 
-The link:ch03-build-image.adoc[prior chapter] explained how, in general, to build a Docker image with Java.
 This chapter expands on this topic and focuses on JDK 9 features.
 
-## Create a Docker Image using JDK 9
+## Create a Docker Image using JDK 15
 
 Create a new directory, for example `docker-jdk9`.
 
-In that directory, create a new text file `jdk-9-debian-slim.Dockerfile`.
+In that directory, create a new text file `jdk-15-debian-slim.Dockerfile`.
 Use the following contents:
 
 ```
-# A JDK 9 with Debian slim
+# A JDK 15 with Debian slim
 FROM debian:stable-slim
-# Download from http://jdk.java.net/9/
-# ADD http://download.java.net/java/GA/jdk9/9/binaries/openjdk-9_linux-x64_bin.tar.gz /opt
-ADD openjdk-9_linux-x64_bin.tar.gz /opt
+# Download from http://jdk.java.net/15/
+# ADD http://download.java.net/java/GA/jdk15/15/binaries/openjdk-15_linux-x64_bin.tar.gz /opt
+ADD https://download.java.net/java/GA/jdk15.0.2/0d1cfde4252546c6931946de8db48ee2/7/GPL/openjdk-15.0.2_linux-x64_bin.tar.gz /opt
+# ADD openjdk-15_linux-x64_bin.tar.gz /opt
 # Set up env variables
-ENV JAVA_HOME=/opt/jdk-9
+ENV JAVA_HOME=/opt/jdk-15.0.2
 ENV PATH=$PATH:$JAVA_HOME/bin
 CMD ["jshell", "-J-XX:+UnlockExperimentalVMOptions", \
                "-J-XX:+UseCGroupMemoryLimitForHeap", \
                "-R-XX:+UnlockExperimentalVMOptions", \
                "-R-XX:+UseCGroupMemoryLimitForHeap"]
+                                                   
 ```
 
 This image uses `debian` slim as the base image and installs the OpenJDK build
