@@ -122,37 +122,48 @@ busybox             latest              54511612f1c4        9 days ago          
 
 `helloworld:2` is the format that allows to specify the image name and assign a tag/version to it separated by `:`.
 
-## Create your first image using Java
 
-### Create a simple Java application
 
-Please Note: If you are running OpenJDK 9, `mvn package` may fail with
+## Create a simple Java application
 
-```
-[ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.1:compile (default-compile) on project helloworld: Compilation failure: Compilation failure:
-[ERROR] Source option 1.5 is no longer supported. Use 1.6 or later.
-[ERROR] Target option 1.5 is no longer supported. Use 1.6 or later.
-```
 
-because support for Java 5 http://openjdk.java.net/jeps/182[was dropped in JDK9].
 
-You can add
+### Create a new Java project:
+
+Ensure that you have maven package installed in your system
 
 ```
-  <properties>
-    <maven.compiler.source>1.6</maven.compiler.source>
-    <maven.compiler.target>1.6</maven.compiler.target>
-  </properties>
+brew install maven
 ```
 
-to the generated `pom.xml` to target 1.6 instead. See also the link:chapters/ch03-build-image-java-9.adoc[Build a Docker Image for Java 9] chapter.
-
-
-## Create a new Java project:
 
 ```
 mvn archetype:generate -DgroupId=org.examples.java -DartifactId=helloworld -DinteractiveMode=false
 ```
+
+Wait for 40 seconds till you get the below results:
+
+```
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/archetypes/maven-archetype-quickstart/1.0/maven-archetype-quickstart-1.0.jar (4.3 kB at 17 kB/s)
+[INFO] ----------------------------------------------------------------------------
+[INFO] Using following parameters for creating project from Old (1.x) Archetype: maven-archetype-quickstart:1.0
+[INFO] ----------------------------------------------------------------------------
+[INFO] Parameter: basedir, Value: /Users/ajeetraina/dockercommunity/jdk15
+[INFO] Parameter: package, Value: org.examples.java
+[INFO] Parameter: groupId, Value: org.examples.java
+[INFO] Parameter: artifactId, Value: helloworld
+[INFO] Parameter: packageName, Value: org.examples.java
+[INFO] Parameter: version, Value: 1.0-SNAPSHOT
+[INFO] project created from Old (1.x) Archetype in dir: /Users/ajeetraina/dockercommunity/jdk15/helloworld
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  01:11 min
+[INFO] Finished at: 2021-01-30T03:18:41+05:30
+```
+
+
+
 
 ## Build the project:
 
