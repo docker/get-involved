@@ -208,10 +208,10 @@ INFO: Created user preferences directory.
 This will open a terminal in the container. Check the version of Java:
 
 ```
-root@8d0af9da5258:/# java -version
-openjdk version "1.8.0_141"
-OpenJDK Runtime Environment (build 1.8.0_141-8u141-b15-1~deb9u1-b15)
-OpenJDK 64-Bit Server VM (build 25.141-b15, mixed mode)
+root@8d0af9da5258:/# java --version
+openjdk 15.0.2 2021-01-19
+OpenJDK Runtime Environment (build 15.0.2+7-27)
+OpenJDK 64-Bit Server VM (build 15.0.2+7-27, mixed mode, sharing)
 ```
 
 A different JDK version may be shown in your case. 
@@ -264,9 +264,6 @@ This shows the exactly same output that was printed when the Java class was invo
 |==================
 
 
-
-
-Complete set of goals are listed at https://github.com/fabric8io/docker-maven-plugin.
 
 Clone the sample code from https://github.com/arun-gupta/docker-java-sample/.
 
