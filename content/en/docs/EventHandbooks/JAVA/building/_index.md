@@ -9,7 +9,7 @@ description: >-
 
 - [Build a Docker Image](#build-a-docker-image)
  - [Running a Docker Container](#run-a-docker-container)
-- [Build and Run a Docker Image with JDK 15](##build-a-docker-image-with-jdk-15)
+- [Build and Run a Docker Container with JDK 15](##build-a-docker-image-with-jdk-15)
  
 ## Build a Docker Image
 
