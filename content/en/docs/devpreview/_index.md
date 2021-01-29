@@ -3,7 +3,7 @@ title: "Dev Preview Program"
 linkTitle: "Dev Preview Program"
 weight: 100
 description: >-
-     Dev Preview Program
+     Get early access to Docker releases
 ---
 
 The Docker Developer Program was set up to enable Docker users to get early access to unreleased features of our products and interact with the Docker team to help shape and improve the experience of millions of Docker users around the world.
