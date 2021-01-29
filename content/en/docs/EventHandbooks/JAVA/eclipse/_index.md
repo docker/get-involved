@@ -21,11 +21,10 @@ This chapter will show you basic Docker tooling with Eclipse:
 - Run/Start/Stop/Kill Docker containers
 - Customize views
 
-Watch a quick video explaining the key steps in https://www.youtube.com/watch?v=XmhEZiS26os.
 
 ## Install Docker Tooling in Eclipse
 
-Download http://www.eclipse.org/downloads/eclipse-packages/[Eclipse IDE for Java EE Developers] and install.
+Downlaod [Eclipse for Java Developer](https://www.eclipse.org/downloads/packages/) and Install. 
 
 Go to "`Help`" menu, "`Install New Software...`".
 
