@@ -894,12 +894,9 @@ of `docker container run`) and will not allocate memory beyond that specified fo
 container.
 
 
-Note: the support for CPU sets and memory constraints have also been backported
-to JDK 8 release 8u131 and above.
-
 Type `Ctrl` + `D` to exit out of `jshell`.
 
-To list all the Java modules distributed with JDK 9 run the following command:
+To list all the Java modules distributed with JDK 15 run the following command:
 
 ```
 docker container run -m=200M -it --rm jdk-9-debian-slim java --list-modules
@@ -955,57 +952,94 @@ Instead of `debian` as the base image it is possible to use Alpine Linux
 with an early access build of JDK 15 that is compatible with the muslc library
 shipped with Alpine Linux.
 
-Create a new text file `jdk-9-alpine.Dockerfile`.
+Create a new text file `jdk-15-alpine.Dockerfile`.
 Use the following contents:
 
 ```
 # A JDK 15 with Alpine Linux
-FROM alpine:3.6
-# Add the musl-based JDK 15 distribution
-RUN mkdir /opt
-# Download from http://jdk.java.net/9/
-# ADD http://download.java.net/java/jdk9-alpine/archive/181/binaries/jdk-9-ea+181_linux-x64-musl_bin.tar.gz
-ADD jdk-9-ea+181_linux-x64-musl_bin.tar.gz /opt
-# Set up env variables
-ENV JAVA_HOME=/opt/jdk-9
-ENV PATH=$PATH:$JAVA_HOME/bin
-CMD ["jshell", "-J-XX:+UnlockExperimentalVMOptions", \
-               "-J-XX:+UseCGroupMemoryLimitForHeap", \
-               "-R-XX:+UnlockExperimentalVMOptions", \
-               "-R-XX:+UseCGroupMemoryLimitForHeap"]
+FROM alpine:3.12
+
+RUN apk add --no-cache java-cacerts
+
+ENV JAVA_HOME /opt/openjdk-16
+ENV PATH $JAVA_HOME/bin:$PATH
+
+# https://jdk.java.net/
+# >
+# > Java Development Kit builds, from Oracle
+# >
+ENV JAVA_VERSION 16-ea+32
+# "For Alpine Linux, builds are produced on a reduced schedule and may not be in sync with the other platforms."
+
+RUN set -eux; \
+	\
+	arch="$(apk --print-arch)"; \
+# this "case" statement is generated via "update.sh"
+	case "$arch" in \
+# amd64
+		x86_64) \
+			downloadUrl=https://download.java.net/java/early_access/alpine/32/binaries/openjdk-16-ea+32_linux-x64-musl_bin.tar.gz; \
+			downloadSha256=f9ec3071fdea08ca5be7b149d6c2f2689814e3ee86ee15b7981f5eed76280985; \
+			;; \
+# fallback
+		*) echo >&2 "error: unsupported architecture: '$arch'"; exit 1 ;; \
+	esac; \
+	\
+	wget -O openjdk.tgz "$downloadUrl"; \
+	echo "$downloadSha256 *openjdk.tgz" | sha256sum -c -; \
+	\
+	mkdir -p "$JAVA_HOME"; \
+	tar --extract \
+		--file openjdk.tgz \
+		--directory "$JAVA_HOME" \
+		--strip-components 1 \
+		--no-same-owner \
+	; \
+	rm openjdk.tgz; \
+	\
+# see "java-cacerts" package installed above (which maintains "/etc/ssl/certs/java/cacerts" for us)
+	rm -rf "$JAVA_HOME/lib/security/cacerts"; \
+	ln -sT /etc/ssl/certs/java/cacerts "$JAVA_HOME/lib/security/cacerts"; \
+	\
+# https://github.com/docker-library/openjdk/issues/212#issuecomment-420979840
+# https://openjdk.java.net/jeps/341
+	java -Xshare:dump; \
+	\
+# basic smoke test
+	fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java; \
+	javac --version; \
+	java --version
+
+# "jshell" is an interactive REPL for Java (see https://en.wikipedia.org/wiki/JShell)
+CMD ["jshell"]
 ```
 
-This image uses `alpine` 3.6 as the base image and installs the OpenJDK build
-of JDK for Alpine Linux x64 (see the link:ch01-setup.adoc[Setup Environments]
-chapter for how to download this into the current directory).
+This image uses `alpine` 3.12 as the base image and installs the OpenJDK build
+of JDK for Alpine Linux x64.
 
 The image is configured in the same manner as for the `debian`-based image.
 
 ## Build the image using the command:
 
 ```
-docker image build -t jdk-9-alpine -f jdk-9-alpine.Dockerfile .
+docker image build -t jdk-15-alpine -f jdk-15-alpine.Dockerfile .
 ```
 
 ## List the images available using `docker image ls`:
 
 ```
 REPOSITORY              TAG                 IMAGE ID            CREATED             SIZE
-jdk-9-debian-slim       latest              023f6999d94a        4 hours ago         400MB
-jdk-9-alpine            latest              f5a57382f240        4 hours ago         356MB
+jdk-15-debian-slim      latest              0b9c1935cd20        9 hours ago         669MB
+jdk-15-alpine           latest              5d4557f836aa        6 minutes ago       324MB
 debian                  stable-slim         d30525fb4ed2        4 days ago          55.3MB
 alpine                  3.6                 7328f6f8b418        3 months ago        3.97MB
 ```
 
 Notice the difference in image sizes.  Alpine Linux by design has been carefully
-crafted to produce a minimal running OS image. A cost of such a design is
-an alternative standard library https://www.musl-libc.org/[musl libc] that is
-not compatible with the C standard library (libc).  As a result the JDK requires
-modifications to run on Alpine Linux.  Such modifications have been proposed
-by the OpenJDK http://openjdk.java.net/projects/portola/[Portola Project].
+crafted to produce a minimal running OS image. 
 
 
-##  Create a Docker Image using JDK 9 and a Java application
+##  Create a Docker Image using JDK 15 and a Java application
 
 Clone the GitHib project https://github.com/PaulSandoz/helloworld-java-9 that
 contains a simple Java 9-based project:
