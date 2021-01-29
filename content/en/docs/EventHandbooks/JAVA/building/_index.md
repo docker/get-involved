@@ -180,7 +180,18 @@ Let's package this application as a Docker image.
 Run the OpenJDK container in an interactive manner:
 
 ```
-docker container run -it openjdk
+$ docker container run -it openjdk 
+Unable to find image 'openjdk:latest' locally
+latest: Pulling from library/openjdk
+a73adebe9317: Pull complete 
+8b73bcd34cfe: Pull complete 
+1227243b28c4: Pull complete 
+Digest: sha256:7ada0d840136690ac1099ce3172fb02787bbed83462597e0e2c9472a0a63dea5
+Status: Downloaded newer image for openjdk:latest
+Jan 29, 2021 12:24:47 PM java.util.prefs.FileSystemPreferences$1 run
+INFO: Created user preferences directory.
+|  Welcome to JShell -- Version 15.0.2
+|  For an introduction type: /help intro
 ```
 
 This will open a terminal in the container. Check the version of Java:
