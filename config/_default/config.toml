@@ -58,7 +58,7 @@ anchor = "smart"
 [menu]
 
   [[menu.main]]
-    name = "Documentation"
+    name = "Home"
     url = "/docs/"
     weight = 10
 
