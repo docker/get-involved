@@ -9,7 +9,7 @@ description: >-
 
 - [Build a Docker Image](#build-a-docker-image)
  - [Running a Docker Container](#run-a-docker-container)
- - [Running a JAVA 11 Docker Container](#run-a-JAVA11-Docker-Container)
+- [Build and Run a Docker Image with JDK 15](##build-a-docker-image-with-jdk-15)
  
 ## Build a Docker Image
 
