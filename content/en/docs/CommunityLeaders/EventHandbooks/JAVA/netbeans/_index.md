@@ -15,7 +15,7 @@ description: >-
 
 ## Docker and NetBeans
 
-This chapter will show you basic Docker tooling with NetBeans:
+This section shows you basic Docker tooling with NetBeans:
 
 - Pull/Build Docker images
 - Run/Start/Stop Docker containers
