@@ -1,7 +1,7 @@
 ---
 title: "Docker for Advanced Users"
 linkTitle: "Docker for Advanced Users"
-weight: 40
+weight: 50
 description: >-
      Docker for Advanced Users
 ---
