@@ -107,7 +107,7 @@ Live Restore Enabled: false
 
 This cluster has 1 node, and that is a manager. By default, the manager node is also a worker node. This means the containers can run on this node.
 
-== Multi-container application
+## Multi-container application
 
 This section describes how to deploy a multi-container application using Docker Compose to Swarm mode use Docker CLI. 
 
@@ -138,7 +138,7 @@ WildFly Swarm and MySQL services are started on this node. Each service has a si
 
 A new overlay network is created. This can be verified using the command `docker network ls`. This network allows multiple containers on different hosts to communicate with each other.
 
-== Verify service and containers in application
+## Verify service and containers in application
 
 Verify that the WildFly and MySQL services are running using `docker service ls`:
 
@@ -353,7 +353,7 @@ In a future release, --detach=false will become the default.
 
 This is especially useful if the stack contains volumes and you want to keep the data. It allows you to simply start the stack again with setting the replicas to a number higher than 0.
 
-== Remove application completely
+## Remove application completely
 
 Shutdown the application using `docker stack rm webapp`:
 
