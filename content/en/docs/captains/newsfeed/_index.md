@@ -7,3 +7,5 @@ description: >-
 ---
 
 ## Docker Captain's NewsFeed
+
+This page will be integrated with Feedly. Stay tuned !
