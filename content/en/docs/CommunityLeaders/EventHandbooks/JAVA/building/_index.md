@@ -510,7 +510,7 @@ By default, Docker runs in the foreground. `-i` allows to interact with the STDI
 
 Hit Ctrl+C to stop the container.
 
-=== Detached container
+### Detached container
 
 Restart the container in detached mode:
 
@@ -532,7 +532,7 @@ CONTAINER ID        IMAGE               COMMAND                  CREATED        
 
 Also try `docker container ls -a` to see all the containers on this machine.
 
-=== With default port
+###  With default port
 
 If you want the container to accept incoming connections, you will need to provide special options when invoking `docker run`. The container, we just started, can't be accessed by our browser. We need to stop it again and restart with different options.
 
