@@ -1,8 +1,6 @@
 ---
 title: hub tool 
 date: 2021-01-31
-spelling: cSpell:ignore creds Jiang Zhenli
-author: { name: Silvin Lubecki  } 
 ---
 
 At Docker, we are committed to making developer’s lives easier, and maintaining and extending our commitment to the Open Source community and open standards for many of our projects. We believe building new capabilities into the Docker Platform in partnership with our developer community and in full transparency leads to much better software.
