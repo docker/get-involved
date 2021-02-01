@@ -3,10 +3,9 @@ title: "Conduct a Virtual Meetup"
 linkTitle: "Conduct a Virtual Meetup"
 weight: 100
 description: >-
-     Description useful for Community Leaders to conduct a virtual meetup successfully
+     How to conduct a Docker Chapter/Virtual Meetup event
 ---
 
-## How to conduct a Docker Chapter/Virtual Meetup event
 
 
 Docker Chapter events and meetups are social events organized by community members who are interested in talking and learning about Docker.
@@ -17,7 +16,7 @@ The first step is to read and understand our [Code of Conduct](https://github.co
 This guide helps you to successfully organize Docker Chapter Events. It provides tips, checklists, and concepts to do your planning effectively.
 
 
-# Preparation
+## Preparation
 At first, make sure you answer the following questions:
 
   - **Bootstrap or contribute:** Anyone can start a Docker Chapter as long as there is not an existing Docker user group in your city. Check out the [Docker community page](https://events.docker.com/chapters/) to make sure a group does not already exist in your city. If one does exist and you would like to help out please click the contact us button on the chapter page to email the local team.
@@ -26,7 +25,7 @@ At first, make sure you answer the following questions:
   - **Check: Commitment**: Ask yourself: Are you willing to make a long term commitment to your community? Starting a chapter is a long term responsibility and goes far beyond your first event. Organizing events is very rewarding in several aspects but building and maintaining a community requires a commitment. We set a goal of 1 event per quarter. Can you commit to that? 
 
 
-# Structure Your Meetup Project
+## Structure Your Meetup Project
 If you decided to start, [apply to the program here](https://community.docker.com/registrations/groups/1865) and a member of the Community Team will be in touch. The Community Team can help with things like finding venues, sponsors and speakers and can provide swag for your event.
 
 Once the group is launched, we recommend scheduling the first meetup with enough lead time for successful promotion.
@@ -74,7 +73,7 @@ See the following as example:
 
 
 
-### Plan each category
+## Plan each category
 
 Next, see the following tips for each category:
 
@@ -182,7 +181,7 @@ Don't forget to distribute the slides for attendees.
 If applicable, write a blog post about the meetup with pictures and its highlights. If Docker retweets it or includes this post in the Docker weekly, you meetup receives attention bonus points.
 
 
-# Online Resources available to Meetup organizers
+## Online Resources available to Meetup organizers
 
 #### [The Docker Community Directory](tps://community.docker.com)
 The Docker Community Directory is a simple communication & directory tool for us to share events, activities, and programs with groups of active community members. All our members can easily reach one another. You can open discussions among selected members, send direct messages, share ideas and experiences, get help finding sponsors and speakers and help other members succeed and run great meetup events. When the community supports each other, everyone wins!
