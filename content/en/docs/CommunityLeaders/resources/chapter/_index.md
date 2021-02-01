@@ -1,7 +1,7 @@
 ---
 title: "Quickstart Your Own Meetup Chapter"
 linkTitle: "Quickstart Your Own Meetup Chapter"
-weight: 100
+weight: 90
 description: >-
      How to Quickstart your own Docker Meetup Chapter?
 ---
