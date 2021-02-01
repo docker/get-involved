@@ -1,10 +1,8 @@
 ---
-title: Open Sourcing the Docker Hub CLI Tool
+title: How to use Docker Security Scan Locally
 date: 2021-01-28
 ---
 
-At Docker, we are committed to making developer’s lives easier, and maintaining and extending our commitment to the Open Source community and open standards for many of our projects. We believe building new capabilities into the Docker Platform in partnership with our developer community and in full transparency leads to much better software.
+Docker and Snyk recently entered into a partnership to provide container vulnerability scanning. What does this mean for you? Snyk is now integrated with Docker Hub to scan official images. Additionally, Docker has integrated the Snyk scanning directly into Docker Desktop clients. Under this blog post, Docker Captain Brian Christner walkthrough how Docker Scan works, How to initiate a Docker Scan on an Image and reference a Dockerfile and so on..
 
-Last December, we announced the release of a new experimental Docker Hub CLI tool, also known as hub-tool. This new CLI lets you explore, inspect and manage your content on Docker Hub as well as work with your teams and manage your account. We demonstrated it during the last Docker Community All Hands in December 2020.
-
-[Read the Complete Story](https://www.docker.com/blog/open-sourcing-the-docker-hub-cli-tool/)
+[Read the Complete Story](https://brianchristner.io/how-to-use-docker-scan/)
