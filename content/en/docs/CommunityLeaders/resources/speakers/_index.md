@@ -6,7 +6,6 @@ description: >-
      A Quick Guidelines for Meetup speakers
 ---
 
-# Speaker Guidelines
 
 Thank you for volunteering to speak at a Docker Meetup! To make your talk a success, we offer some guidelines.  Please let the local Docker Community Leadership Team know of any other requirements you may have. We look forward to your talk.
 
