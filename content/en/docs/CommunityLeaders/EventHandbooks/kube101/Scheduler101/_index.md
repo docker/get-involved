@@ -41,12 +41,10 @@ The scheduler is a kind of controller. There are lots of different controllers a
 - The initial node affinity mechanism in early versions of Kubernetes was the nodeSelector field in the pod specification. The node had to include all the labels specified in that field to be eligible to become the target for the pod.
 ## nodeSelector
 ## Steps
-
+{{< codenew file="/k8s/scheduler101/pod-nginx.yaml" >}}
 ```
-git clone https://github.com/collabnix/dockerlabs
-cd dockerlabs/kubernetes/workshop/Scheduler101/
-kubectl label nodes node2 mynode=worker-1
-kubectl apply -f pod-nginx.yaml
+$ kubectl label nodes node2 mynode=worker-1
+$ kubectl apply -f pod-nginx.yaml
 ```
 
 - We have label on the node with node name,in this case i have given node2 as mynode=worker-1 label. 
@@ -54,10 +52,10 @@ kubectl apply -f pod-nginx.yaml
 ## Viewing Your Pods
 
 ```
-kubectl get pods --output=wide
+$ kubectl get pods --output=wide
 ```
 ```
-[node1 Scheduler101]$ kubectl describe po nginx
+$ kubectl describe po nginx
 Name:               nginx
 Namespace:          default
 Priority:           0
@@ -110,7 +108,7 @@ Events:
 
 ## Deleting the Pod
 ```
-kubectl delete -f pod-nginx.yaml
+$ kubectl delete -f pod-nginx.yaml
 pod "nginx" deleted
 ```
 
@@ -124,27 +122,24 @@ pod "nginx" deleted
 2. preferredDuringSchedulingIgnoredDuringExecution  (Required during scheduling, ignored during execution; we are also known as "soft" requirements)
 
 ## Steps
-
+{{< codenew file="/k8s/scheduler101/pod-with-node-affinity.yaml" >}}
 ```
-git clone https://github.com/collabnix/dockerlabs
-cd dockerlabs/kubernetes/workshop/Scheduler101/
-kubectl label nodes node2 mynode=worker-1
-kubectl label nodes node3 mynode=worker-3
-kubectl apply -f pod-with-node-affinity.yaml
+$ kubectl label nodes node2 mynode=worker-1
+$ kubectl label nodes node3 mynode=worker-3
+$ kubectl apply -f pod-with-node-affinity.yaml
 ```
  
 
 ## Viewing Your Pods
 
 ```
-
-kubectl get pods --output=wide
+$ kubectl get pods --output=wide
 NAME                 READY   STATUS    RESTARTS   AGE     IP          NODE          NOMINATED NODE   READINESS GATES
 with-node-affinity   1/1     Running   0          9m46s   10.44.0.1   kube-slave1   <none>           <none>
 
 ```
 ```
-[node1 Scheduler101]$ kubectl describe po
+$ kubectl describe po
 Name:               with-node-affinity
 Namespace:          default
 Priority:           0
@@ -198,7 +193,7 @@ Events:
 
 Finally you can clean up the resources you created in your cluster:
 ```
-kubectl delete -f pod-with-node-affinity.yaml
+$ kubectl delete -f pod-with-node-affinity.yaml
 ```
 
 # Anti-Node Affinity ?
@@ -208,31 +203,30 @@ kubectl delete -f pod-with-node-affinity.yaml
 - In such a case, you need to use node anti-affinity to keep pods away from a set of nodes.
 
 ## Steps
+{{< codenew file="/k8s/scheduler101/pod-anti-node-affinity.yaml" >}}
 ```
-git clone https://github.com/collabnix/dockerlabs
-cd dockerlabs/kubernetes/workshop/Scheduler101/
-kubectl label nodes node2 mynode=worker-1
-kubectl label nodes node3 mynode=worker-3
-kubectl apply -f pod-anti-node-affinity.yaml
+$ kubectl label nodes node2 mynode=worker-1
+$ kubectl label nodes node3 mynode=worker-3
+$ kubectl apply -f pod-anti-node-affinity.yaml
 ```
 ## Viewing Your Pods
 
 ```
-[node1 Scheduler101]$ kubectl get pods --output=wide
+$ kubectl get pods --output=wide
 NAME    READY   STATUS    RESTARTS   AGE     IP          NODE    NOMINATED NODE   READINESS GATES
 nginx   1/1     Running   0          2m37s   10.44.0.1   node2   <none>           <none>
 
 ```
 ## Get nodes label detail
 ```
-[node1 Scheduler101]$ kubectl get nodes --show-labels | grep mynode
+$ kubectl get nodes --show-labels | grep mynode
 node2   Ready    <none>   166m   v1.14.9   beta.kubernetes.io/arch=amd64,beta.kubernetes.io/os=linux,kubernetes.io/arch=amd64,kubernetes.io/hostname=node2,kubernetes.io/os=linux,mynode=worker-1,role=dev
 node3   Ready    <none>   165m   v1.14.9   beta.kubernetes.io/arch=amd64,beta.kubernetes.io/os=linux,kubernetes.io/arch=amd64,kubernetes.io/hostname=node3,kubernetes.io/os=linux,mynode=worker-3
 
 ```
 ## Get pod describe 
 ```
-[node1 Scheduler101]$ kubectl describe pods nginx
+$ kubectl describe pods nginx
 Name:               nginx
 Namespace:          default
 Priority:           0
@@ -291,7 +285,7 @@ Events:
 
 Finally you can clean up the resources you created in your cluster:
 ```
-kubectl delete -f pod-anti-node-affinity.yaml
+$ kubectl delete -f pod-anti-node-affinity.yaml
 ```
 
 # What is Node taints and tolerations ?
@@ -302,25 +296,20 @@ kubectl delete -f pod-anti-node-affinity.yaml
 - Like last monitoring example: Let assume  new member joins the development team, writes a Deployment for her application, but forgets to exclude the monitoring nodes from the target nodes? Kubernetes administrators need a way to repel pods from nodes without having to modify every pod definition. 
 
 ## Steps
-
+{{< codenew file="/k8s/scheduler101/pod-taint-node.yaml" >}}
 ```
-git clone https://github.com/collabnix/dockerlabs
-cd dockerlabs/kubernetes/workshop/Scheduler101/
-kubectl label nodes node2 role=dev
-kubectl label nodes node3 role=dev
+$ kubectl label nodes node2 role=dev
+$ kubectl label nodes node3 role=dev
 
-[node1 Scheduler101]$ kubectl taint nodes node2 role=dev:NoSchedule
+$ kubectl taint nodes node2 role=dev:NoSchedule
 node/node2 tainted
-[node1 Scheduler101]$
-
-
-kubectl apply -f pod-taint-node.yaml
+$ kubectl apply -f pod-taint-node.yaml
 ```
 
 ## Viewing Your Pods
 
 ```
-kubectl get pods --output=wide
+$ kubectl get pods --output=wide
 ```
 
 ## Get nodes label detail
@@ -333,7 +322,7 @@ node3   Ready    <none>   175m   v1.14.9   beta.kubernetes.io/arch=amd64,beta.ku
 ```
 ## Get pod describe 
 ```
-[node1 Scheduler101]$ kubectl describe pods nginx
+$ kubectl describe pods nginx
 Name:               nginx
 Namespace:          default
 Priority:           0
@@ -389,7 +378,7 @@ Events:
 
 Finally you can clean up the resources you created in your cluster:
 ```
-kubectl delete -f pod-tain-node.yaml
+$ kubectl delete -f pod-tain-node.yaml
 ```
 
 ## Tolerations 
@@ -397,21 +386,19 @@ kubectl delete -f pod-tain-node.yaml
 - A toleration is a way of ignoring a taint during scheduling. Tolerations aren’t applied to nodes, but rather the pods. So, in the example above, if we apply a toleration to the PodSpec, we could “tolerate” the slow disks on that node and still use it.
 
 ## Steps
-
+{{< codenew file="/k8s/scheduler101/pod-tolerations-node.yaml" >}}
 ```
-git clone https://github.com/collabnix/dockerlabs
-cd dockerlabs/kubernetes/workshop/Scheduler101/
-kubectl apply -f pod-tolerations-node.yaml
+$ kubectl apply -f pod-tolerations-node.yaml
 ```
 ## Viewing Your Pods
 
 ```
-kubectl get pods --output=wide
+$ kubectl get pods --output=wide
 ```
 
 ## Which Node Is This Pod Running On?
 ```
-[node1 Scheduler101]$ kubectl describe pods nginx
+$ kubectl describe pods nginx
 Name:               nginx
 Namespace:          default
 Priority:           0
@@ -465,13 +452,8 @@ Events:
 
 Finally you can clean up the resources you created in your cluster:
 ```
-kubectl delete -f pod-tolerations-node.yaml
+$ kubectl delete -f pod-tolerations-node.yaml
 ```
 
 - An important thing to notice, though, is that tolerations may enable a tainted node to accept a pod but it does not guarantee that this pod runs on that specific node.
 - In other words, the tainted node  will be considered as one of the candidates for running our pod. However, if another node has a higher priority score, it will be chosen instead. For situations like this, you need to combine the toleration with nodeSelector or node affinity parameters.
-
-
-[ Next >>]()
-
-
