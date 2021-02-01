@@ -6,7 +6,7 @@ description: >-
      Basics of Docker
 ---
 
-### [Basics of Docker](#basics-of-docker) - 30 min
+
 - [Main Components of Docker System](#main-components-of-docker-system)
 - [Test Your Knowledge](#test-your-knowledge)
 
