@@ -6,7 +6,6 @@ description: >-
      Recommended Agenda
 ---
 
-## Recommended Agenda
 
 | Description | Timing |
 | --- | --- |
