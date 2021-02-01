@@ -7,7 +7,6 @@ description: >-
 ---
 
 
-## Using Docker Network - 1 hour
 
 - [Step 1 - The `docker network` command](#docker_network)
 - [Step 2 - List networks](#list_networks)
