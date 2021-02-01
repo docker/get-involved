@@ -6,4 +6,4 @@ description: >-
      List of Community Leaders Resources - Guidelines, Sponsorships, Events etc.
 ---
 
-## tbd
+
