@@ -6,7 +6,7 @@ description: >-
      Creating Private Docker Registry 
 ---
 
-## Creating Private Docker Registry - 30 min
+
 
 - [Building a Private Docker Registry](#building-a-private-docker-registry)
 - [Test Your Knowledge](test-your-knowledge)
