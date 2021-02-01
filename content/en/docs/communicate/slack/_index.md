@@ -3,7 +3,7 @@ title: "Slack"
 linkTitle: "Slack"
 weight: 100
 description: >-
-     Page description for Docker Community Slack
+     A Slack for a Docker Enthusiast
 ---
 
 There is a dedicated Slack channel for both Docker Captains as well as Docker Community Leaders. 
