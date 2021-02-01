@@ -3,10 +3,9 @@ title: "Projects"
 linkTitle: "Projects"
 weight: 98
 description: >-
-    Docker Captain's Projects
+    Projects maintained by Captains 
 ---
 
-## Projects maintained by Docker Captains
 
   - [**Node.js Good Defaults**](https://github.com/BretFisher/node-docker-good-defaults) - Default sample
   project for Node.js using Docker, Compose, and many best practices for local development, CI, and production deploy
