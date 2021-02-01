@@ -1,7 +1,7 @@
 ---
 title: "Community Leaders Guidelines"
 linkTitle: "Community Leaders Guidelines"
-weight: 100
+weight: 80
 description: >-
      General Guidelines for Community Leaders
 ---
