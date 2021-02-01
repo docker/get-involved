@@ -6,7 +6,7 @@ description: >-
      List of Captain's Resources - Briefings, CFP Schedules, Swim Lanes etc.
 ---
 
-This is a private page dedicated to Docker Captains. Click the below link to access
+Please Note: This is a private page accessible by Captains only.
 
 [Main Page](https://github.com/docker/captains) <br>
 [Getting Started](https://github.com/docker/captains/blob/master/getting-started.md)<br>
