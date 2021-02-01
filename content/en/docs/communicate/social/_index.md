@@ -6,7 +6,6 @@ description: >-
      Follow Docker via Social Media
 ---
 
-Follow us on:
 
 - [Twitter](https://twitter.com/docker)
 - [Facebook](https://www.facebook.com/docker.run) 
