@@ -1,9 +1,9 @@
 ---
-title: "JAVA"
-linkTitle: "JAVA"
+title: "Java"
+linkTitle: "Java"
 weight: 60
 description: >-
-     Docker Workshop for JAVA Developers
+     Docker Workshop for Java Developers
 ---
 
 
