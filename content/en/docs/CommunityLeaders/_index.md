@@ -3,7 +3,7 @@ title: "Community Leaders Program"
 linkTitle: "Community Leaders Program"
 weight: 4
 description: >
-  Community Leader's Program
+  A Brief about Community Leader's Program
 ---
 
 At Docker, we believe that developers have the opportunity to change the world, through innovation AND community. We’ve seen amazing examples of this in the more than 7 years since Docker’s introduction, and we are so excited for what is still to come. Community Leaders are an incredible group of individuals passioante about engaging and supporting the Docker community in their part of the world.
