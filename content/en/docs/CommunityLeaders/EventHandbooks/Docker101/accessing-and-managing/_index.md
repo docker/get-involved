@@ -6,7 +6,6 @@ description: >-
      Accessing & Managing Docker Image
 ---
 
-###  Accessing & Managing Docker Container - 1 hour
 
 - [Accessing the Container Shell](#accessing-the-container-shell)
 - [Running a Command inside running Container](#running-a-command-inside-running-container)
