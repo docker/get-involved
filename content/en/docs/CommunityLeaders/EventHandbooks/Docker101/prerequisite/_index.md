@@ -6,7 +6,7 @@ description: >-
      Pre-requisite
 ---
 
-## Pre-requisite:
+
 
 - [Creating Your DockerHub Account](#creating-your-dockerhub-account) - 15 min
 
