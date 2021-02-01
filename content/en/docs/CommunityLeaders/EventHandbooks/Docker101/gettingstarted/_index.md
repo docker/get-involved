@@ -6,7 +6,6 @@ description: >-
      Getting Started with Docker Image
 ---
 
-### Getting Started with Docker Image - 1 hour
 
 - [Running Hello World Example](#running-hello-world-example)  
 - [Working with Docker Image](#working-with-docker-image) 
