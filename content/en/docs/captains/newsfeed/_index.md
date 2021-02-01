@@ -3,7 +3,7 @@ title: "NewsFeed"
 linkTitle: "NewsFeed"
 weight: 100
 description: >-
-     Docker Captain's NewsFeed
+     Follow all the Captain's Feeds right here 
 ---
 
 ## Docker Captain's NewsFeed
