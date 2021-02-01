@@ -3,7 +3,7 @@ title: "Resources"
 linkTitle: "Resources"
 weight: 95
 description: >-
-     Docker Community Leader's Resources
+     List of Community Leaders Resources - Guidelines, Sponsorships, Events etc.
 ---
 
-## List of Resources
+## tbd
