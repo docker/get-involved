@@ -1,9 +1,9 @@
 ---
 title: "Projects"
-linkTitle: "Projects(Private)"
+linkTitle: "Projects"
 weight: 98
 description: >-
-    Projects maintained by Captains 
+    Projects maintained by Captains (Private)
 ---
 
 
