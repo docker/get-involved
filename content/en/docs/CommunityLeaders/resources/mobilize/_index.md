@@ -1,7 +1,7 @@
 ---
 title: "Mobilize"
 linkTitle: "Mobilize"
-weight: 110
+weight: 95
 description: >-
      Connect and collaborate with your fellow Docker Captains
 ---
