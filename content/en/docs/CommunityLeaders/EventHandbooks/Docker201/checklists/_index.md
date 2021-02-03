@@ -1,6 +1,6 @@
 ---
-title: "Event Checklist"
-linkTitle: "Event Checklist"
+title: "Your Event Checklist"
+linkTitle: "Your Event Checklist"
 weight: 60
 description: >-
      This is an event checklist for you in order to start planning your event.
