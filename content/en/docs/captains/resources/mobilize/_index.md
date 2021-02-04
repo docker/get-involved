@@ -1,6 +1,6 @@
 ---
-title: "Mobilize"
-linkTitle: "Mobilize(Private)"
+title: "Mobilize (Private)"
+linkTitle: "Mobilize"
 weight: 404
 description: >-
      Connect and collaborate with your fellow Docker Captains & Community Leaders
