@@ -1,7 +1,7 @@
 ---
 title: "Projects"
 linkTitle: "Projects"
-weight: 98
+weight: 4
 description: >-
     Projects maintained by Captains 
 ---
