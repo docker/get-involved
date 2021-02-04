@@ -1,7 +1,7 @@
 ---
 title: "How to contribute code"
 linkTitle: "How to contribute code"
-weight: 103
+weight: 502
 description: >-
      Contribute code for Moby project
 ---
