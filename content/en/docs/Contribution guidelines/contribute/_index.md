@@ -1,5 +1,5 @@
 ---
-title: "How to Contribute"
+title: "Contribute to site"
 linkTitle: "How to Contribute "
 weight: 100
 description: >-
