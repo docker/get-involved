@@ -1,5 +1,5 @@
 ---
-title: "Contribute to Docker docs"
+title: "How to contribute to Docker docs"
 linkTitle: "Contribute to Docker docs"
 weight: 51
 description: >-
