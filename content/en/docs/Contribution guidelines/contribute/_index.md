@@ -1,9 +1,9 @@
 ---
-title: "Contribute to site"
-linkTitle: "How to Contribute "
+title: "How to contribute to "Get Involved" site"
+linkTitle: "How to contribute to "Get Involved" site "
 weight: 100
 description: >-
-     How to contribute to this community site
+     How to contribute to "Get Involved Site"
 ---
 
 
