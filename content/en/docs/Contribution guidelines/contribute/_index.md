@@ -1,7 +1,7 @@
 ---
-title: "How to contribute to "Get Involved" site"
+title: "How to contribute to "Get Involved" site
 linkTitle: "How to contribute to "Get Involved" site
-weight: 100
+weight: 503
 description: >-
      How to contribute to "Get Involved" site
 ---
