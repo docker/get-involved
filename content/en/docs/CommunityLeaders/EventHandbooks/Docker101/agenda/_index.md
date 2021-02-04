@@ -10,7 +10,7 @@ description: >-
 | Description | Timing |
 | --- | --- |
 | Welcome | 8:45 AM to 9:00 AM |
-| [Creating a DockerHub Account](../Docker101/prerequisite/) | 9:00 AM to 9:15 AM |
+| [Creating a DockerHub Account](../prerequisite/) | 9:00 AM to 9:15 AM |
 | [Getting Started with Docker Image](#getting-started-with-docker-image---1-hour) | 9:15 AM to 10:15 AM |
 | [Accessing & Managing Docker Container](#accessing--managing-docker-container---1-hour) | 10:15 AM to 11:15 AM |
 | Coffee/Tea Break | 11:15 AM to 11:30 AM |
