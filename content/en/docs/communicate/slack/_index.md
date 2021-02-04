@@ -6,10 +6,9 @@ description: >-
      A Slack for a Docker Enthusiast
 ---
 
-There is a dedicated Slack channel for both Docker Captains as well as Docker Community Leaders. 
-There, other Docker Captains and Docker staff ask questions, share feedback and more.
+We have more than 30,000 community members in our Community Slack, a place where users and contributors can connect and share. 
 
 
 [![Slack Chat](https://img.shields.io/badge/Chat-Slack-ff69b4.svg "Join us. You're welcome!")](http://dockr.ly/slack) ⇦ Join Docker Community Slack today!
 
-In case you face any issue enrolling for Community Slack, reach out to William
+
