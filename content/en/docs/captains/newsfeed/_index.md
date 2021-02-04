@@ -11,7 +11,6 @@ This page is under construction. We are planning to integrate it with Feedly. Un
 ![My Image](under-construction.png)
 
 
-Please Note: This is a private page accessible by Captains only.
 
 ## Captains Blogs/Twitter
   - **Antonis Kalipetis** - [@akalipetis](https://twitter.com/akalipetis) - [Blog](https://www.akalipetis.com)
