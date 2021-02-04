@@ -71,8 +71,13 @@ anchor = "smart"
     name = "News"
     url = "/news/"
     weight = 30
+    
+  [[menu.main]]
+    name = "Events"
+    url = "/events/"
+    weight = 40
 
   [[menu.main]]
     name = "Community"
     url = "/community/"
-    weight = 40
+    weight = 50
