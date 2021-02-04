@@ -1,3 +1,10 @@
+---
+title: "Deploying Your First Ingress Deployment"
+linkTitle: "Deploying Your First Ingress Deployment"
+weight: 90
+description: >-
+     Deploying Your First Ingress Deployment
+---
 
 ## What is an Ingress?
 
@@ -71,16 +78,15 @@ They let you send a request from outside the Kubernetes cluster to a service ins
 ### Creating a Kubernetes Ingress
 
 - First, let’s create two services to demonstrate how the Ingress routes our request. We’ll run two web applications that output a slightly different response.
-
+{{< codenew file="/k8s/ingress101/apple.yaml" >}}
+{{< codenew file="/k8s/ingress101/banana.yaml" >}}
 ```
-git clone https://github.com/collabnix/kubelabs
-cd ingress101
 $ kubectl apply -f apple.yaml
 $ kubectl apply -f banana.yaml
 ```
 
 - Create the Ingress in the cluster
-
+{{< codenew file="/k8s/ingress101/ingress.yaml" >}}
 ```
 kubectl create -f ingress.yaml
 ```
@@ -103,9 +109,3 @@ default backend - 404
 - Kubernetes supports a high level abstraction called Ingress, which allows simple host or URL based HTTP routing. An ingress is a core concept (in beta) of Kubernetes, but is always implemented by a third party proxy. These implementations are known as ingress controllers. An ingress controller is responsible for reading the Ingress Resource information and processing that data accordingly. Different ingress controllers have extended the specification in different ways to support additional use cases.
 
 - Ingress is tightly integrated into Kubernetes, meaning that your existing workflows around kubectl will likely extend nicely to managing ingress. Note that an ingress controller typically doesn’t eliminate the need for an external load balancer — the ingress controller simply adds an additional layer of routing and control behind the load balancer.
-
-
-# Contributors
-
-[Sangam Biradar](https://twitter.com/BiradarSangam)
-
