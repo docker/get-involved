@@ -6,6 +6,5 @@ description: >-
      Follow all the Captain's Feeds right here 
 ---
 
-## Docker Captain's NewsFeed
 
-This page will be integrated with Feedly. Stay tuned !
+This page is under construction. We are working hard to integrate it with Feedly. Stay tuned !
