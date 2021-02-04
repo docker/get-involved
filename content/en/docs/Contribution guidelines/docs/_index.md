@@ -1,9 +1,9 @@
 ---
-title: "How to contribute to Docker docs"
-linkTitle: "Contribute to Docker docs"
+title: "How to contribute to Docker documentation"
+linkTitle: "Contribute to Docker documentation"
 weight: 51
 description: >-
-     Guide to contribute to Docker docs
+     A Guide to contribute to Docker documentation
 ---
 
 
