@@ -1,5 +1,5 @@
 ---
-title: "Briefings(Private)"
+title: "Briefings (Private)"
 linkTitle: "Briefings"
 weight: 401
 description: >-
