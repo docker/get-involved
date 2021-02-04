@@ -1,9 +1,9 @@
 ---
 title: "Briefings"
-linkTitle: "Briefings"
+linkTitle: "Briefings(Private)"
 weight: 401
 description: >-
-     Briefings, Announcements and News (Private)
+     Briefings, Announcements and News 
 ---
 
 
