@@ -1,7 +1,7 @@
 ---
 title: "Resources"
 linkTitle: "Resources"
-weight: 99
+weight: 9
 description: >-
      List of Captain's Resources - Briefings, CFP Schedules, Swim Lanes etc.
 ---
