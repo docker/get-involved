@@ -6,4 +6,4 @@ description: >-
      [Briefings, Announcements and News](https://github.com/docker/captains/blob/master/briefings.md)
 ---
 
-This is a private page and accessible only be Docker Captains.
+This is a private page and accessible only by Docker Captains.
