@@ -3,7 +3,7 @@ title: "Mobilize"
 linkTitle: "Mobilize"
 weight: 404
 description: >-
-     Connect and collaborate with your fellow Docker Captains
+     Connect and collaborate with your fellow Docker Captains & Community Leaders
 ---
 
 Mobilize is a way for you to connect and collaborate with your fellow Docker Captains. The Mobilize platform helps you stay updated on events, activities, and programs happening in the Docker Captains program. It is a useful tool for you to share ideas, best practices (and files) and communicate with the fellow Docker Captains.
