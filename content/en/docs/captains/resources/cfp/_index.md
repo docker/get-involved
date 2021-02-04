@@ -1,6 +1,6 @@
 ---
-title: "CFP Schedule"
-linkTitle: "CFP Schedule(Private)"
+title: "CFP Schedule (Private)"
+linkTitle: "CFP Schedule"
 weight: 403
 description: >-
      Call for Papers Submissions
