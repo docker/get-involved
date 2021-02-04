@@ -11,7 +11,7 @@ description: >-
 | --- | --- |
 | Welcome | 8:45 AM to 9:00 AM |
 | [Creating a DockerHub Account](../prerequisite/) | 9:00 AM to 9:15 AM |
-| [Getting Started with Docker Image](../getting-started/) | 9:15 AM to 10:15 AM |
+| [Getting Started with Docker Image](../gettingstarted/) | 9:15 AM to 10:15 AM |
 | [Accessing & Managing Docker Container](../accessing-and-managing/) | 10:15 AM to 11:15 AM |
 | Coffee/Tea Break | 11:15 AM to 11:30 AM |
 | [Getting Started with Dockerfile - Part 1](../dockerfile/) | 11:30 AM to 1:00 PM|
