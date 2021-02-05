@@ -80,5 +80,5 @@ anchor = "smart"
 
   [[menu.main]]
     name = "Community Tools"
-    url = "/community/"
+    url = "/docs/communicate"
     weight = 60
