@@ -7,7 +7,7 @@ description: >-
 ---
 
 
-This page is under construction. We are planning to integrate it with Feedly. Under Construction<br>
+This page is under construction. We are planning to integrate it with Feedly. Stay tuned!<br>
 ![My Image](under-construction.png)
 
 
