@@ -1,4 +1,4 @@
-# Knative "staging" Site Configuration (adds to or overrides "config/_default")
+# Docker "staging" Site Configuration (adds to or overrides "config/_default")
 
 # Usage notes:
 # To build with these settings, see "scripts/build.sh"
