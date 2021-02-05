@@ -63,8 +63,8 @@ anchor = "smart"
     weight = 10
 
   [[menu.main]]
-    name = "About"
-    url = "/about/"
+    name = "Captains"
+    url = "/docs/captains"
     weight = 20
 
   [[menu.main]]
@@ -73,11 +73,16 @@ anchor = "smart"
     weight = 30
     
   [[menu.main]]
-    name = "Events"
-    url = "/docs/events/"
+    name = "Community Leaders"
+    url = "/docs/communityleaders/"
     weight = 40
 
   [[menu.main]]
-    name = "Community"
-    url = "/community/"
+    name = "Handbooks"
+    url = "/docs/communityleaders/eventhandbooks/"
     weight = 50
+
+  [[menu.main]]
+    name = "Community Tools"
+    url = "/community/"
+    weight = 60
