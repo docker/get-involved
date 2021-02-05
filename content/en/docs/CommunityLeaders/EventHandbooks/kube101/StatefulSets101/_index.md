@@ -1,7 +1,7 @@
 ---
 title: "Deploying Your First Statefulset Application"
 linkTitle: "Deploying Your First Statefulset Application"
-weight: 100
+weight: 90
 description: >-
      Deploying Your First Statefulset Application
 ---
@@ -23,7 +23,7 @@ A Kubernetes Service acts as an abstraction layer. In a stateless application li
 
 # Deploying a Stateful Application Using Kubernetes Statefulset
 
-If you look at [web_stateful.yaml](https://github.com/collabnix/kubelabs/blob/master/StatefulSets101/web_stateful.yaml) file, you will find a snippet around how we are deploying a stateful application. For simplicity, are we using Nginx  as the pod image. The deployment is made up of 2 Nginx web servers; both of them are connected to a persistent volume. For example, look at web_stateful.yaml file under the current location.
+If you look at [web_stateful.yaml](https://github.com/docker-community-leaders/dockercommunity/blob/master/content/en/examples/k8s/statefulset101/web_stateful.yaml) file, you will find a snippet around how we are deploying a stateful application. For simplicity, are we using Nginx  as the pod image. The deployment is made up of 2 Nginx web servers; both of them are connected to a persistent volume. For example, look at web_stateful.yaml file under the current location.
 
 Before we start discussing the details of this definition, notice that the file actually contains two definitions: the storage class that the StatefulSet is using and the StatefulSet itself.
 
@@ -52,7 +52,7 @@ In this scenario, and for demonstration and learning purposes, the role of the N
 Start the NFS using the command:
 
 ```
-docker run -d --net=host \
+$ docker run -d --net=host \
    --privileged --name nfs-server \
    katacoda/contained-nfs-server:centos7 \
    /exports/data-0001 /exports/data-0002
@@ -92,13 +92,14 @@ The spec defines additional metadata about the persistent volume, including how 
 ## Task
 
 Create two new PersistentVolume definitions to point at the two available NFS shares.
+{{< codenew file="/k8s/statefulset101/nfs-0001.yaml" >}}
+```
+$ kubectl create -f nfs-0001.yaml
+```
+{{< codenew file="/k8s/statefulset101/nfs-0002.yaml" >}}
 
 ```
-kubectl create -f nfs-0001.yaml
-```
-
-```
-kubectl create -f nfs-0002.yaml
+$ kubectl create -f nfs-0002.yaml
 ```
 
 View the contents of the files using cat nfs-0001.yaml nfs-0002.yaml
@@ -128,12 +129,15 @@ spec:
 
 Create two claims for two different applications. A MySQL Pod will use one claim, the other used by an HTTP server.
 
-```
-kubectl create -f pvc-mysql.yaml
-```
+{{< codenew file="/k8s/statefulset101/pvc-mysql.yaml" >}}
 
 ```
-kubectl create -f pvc-http.yaml
+$ kubectl create -f pvc-mysql.yaml
+```
+{{< codenew file="/k8s/statefulset101/pvc-http.yaml" >}}
+
+```
+$ kubectl create -f pvc-http.yaml
 ```
 
 View the contents of the files using cat pvc-mysql.yaml pvc-http.yaml
@@ -141,7 +145,7 @@ View the contents of the files using cat pvc-mysql.yaml pvc-http.yaml
 Once created, view all PersistentVolumesClaims in the cluster using 
 
 ```
-kubectl get pvc.
+$ kubectl get pvc.
 ```
 
 The claim will output which Volume the claim is mapped to claim.
@@ -166,24 +170,27 @@ When a deployment is defined, it can assign itself to a previous claim. The foll
    
  Launch two new Pods with Persistent Volume Claims. Volumes are mapped to the correct directory when the Pods start allowing applications to read/write as if it was a local directory.
 
-```
-kubectl create -f pod-mysql.yaml
-```
+{{< codenew file="/k8s/statefulset101/pod-mysql.yaml" >}}
 
 ```
-kubectl create -f pod-www.yaml
+$ kubectl create -f pod-mysql.yaml
+```
+{{< codenew file="/k8s/statefulset101/pod-www.yaml" >}}
+
+```
+$ kubectl create -f pod-www.yaml
 ```
 
 Use the command below to view the definition of the Pods.
 
 ```
-cat pod-mysql.yaml pod-www.yaml
+$ cat pod-mysql.yaml pod-www.yaml
 ```
 
 You can see the status of the Pods starting using 
 
 ```
-kubectl get pods
+$ kubectl get pods
 ```
 
 If a Persistent Volume Claim is not assigned to a Persistent Volume, then the Pod will be in Pending mode until it becomes available. In the next step, we'll read/write data to the volume.
@@ -195,17 +202,17 @@ tore all database changes to the NFS Server while the HTTP Server will serve sta
 To test the HTTP server, write a 'Hello World' index.html homepage. In this scenario, we know the HTTP directory will be based on data-0001 as the volume definition hasn't driven enough space to satisfy the MySQL size requirement.
 
 ```
-docker exec -it nfs-server bash -c "echo 'Hello World' > /exports/data-0001/index.html"
+$ docker exec -it nfs-server bash -c "echo 'Hello World' > /exports/data-0001/index.html"
 ```
 
 Based on the IP of the Pod, when accessing the Pod, it should return the expected response.
 
 ```
-ip=$(kubectl get pod www -o yaml |grep podIP | awk '{split($0,a,":"); print a[2]}'); echo $ip
+$ ip=$(kubectl get pod www -o yaml |grep podIP | awk '{split($0,a,":"); print a[2]}'); echo $ip
 ```
 
 ```
-curl $ip
+$ curl $ip
 ```
 
 ## Update Data
@@ -213,11 +220,11 @@ curl $ip
 When the data on the NFS share changes, then the Pod will read the newly updated data.
 
 ```
-docker exec -it nfs-server bash -c "echo 'Hello NFS World' > /exports/data-0001/index.html"
+$ docker exec -it nfs-server bash -c "echo 'Hello NFS World' > /exports/data-0001/index.html"
 ```
 
 ```
-curl $ip
+$ curl $ip
 ```
 
 
@@ -230,17 +237,16 @@ Because a remote NFS server stores the data, if the Pod or the Host were to go d
 Deleting a Pod will cause it to remove claims to any persistent volumes. New Pods can pick up and re-use the NFS share.
 
 ```
-kubectl delete pod www
+$ kubectl delete pod www
+```
+{{< codenew file="/k8s/statefulset101/pod-www2.yaml" >}}
+
+```
+$ kubectl create -f pod-www2.yaml
 ```
 
 ```
-kubectl create -f pod-www2.yaml
-```
-
-```
-ip=$(kubectl get pod www2 -o yaml |grep podIP | awk '{split($0,a,":"); print a[2]}'); curl $ip
+$ ip=$(kubectl get pod www2 -o yaml |grep podIP | awk '{split($0,a,":"); print a[2]}'); curl $ip
 ```
 
 The applications now use a remote NFS for their data storage. Depending on requirements, this same approach works with other storage engines such as GlusterFS, AWS EBS, GCE storage or OpenStack Cinder.
-
-
