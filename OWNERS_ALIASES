@@ -1,14 +1,11 @@
 aliases:
   eng-approvers:
-  - averikitsch
-  - evankanderson
-  - grantr
-  - markusthoemmes
-  - mattmoor
-  - tcnghia
-  - vaikas
+  - william
+  - sbiradar
+  - ajeetraina
+ 
 
   docs-approvers:
-  - carieshmarie
-  - abrennan89
-  - richieescarez
+  - sbiradar
+  - ajeetraina
+ 
