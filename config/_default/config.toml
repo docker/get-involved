@@ -74,7 +74,7 @@ anchor = "smart"
     
   [[menu.main]]
     name = "Events"
-    url = "/events/"
+    url = "/docs/events/"
     weight = 40
 
   [[menu.main]]
