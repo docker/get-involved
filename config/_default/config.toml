@@ -67,10 +67,6 @@ anchor = "smart"
     url = "/docs/captains"
     weight = 20
 
-  [[menu.main]]
-    name = "News"
-    url = "/news/"
-    weight = 30
     
   [[menu.main]]
     name = "Community Leaders"
