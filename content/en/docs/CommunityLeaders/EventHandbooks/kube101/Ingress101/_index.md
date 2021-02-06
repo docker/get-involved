@@ -3,7 +3,7 @@ title: "Deploying Your First Ingress Deployment"
 linkTitle: "Deploying Your First Ingress Deployment"
 weight: 90
 description: >-
-     Deploying Your First Ingress Deployment
+     Deploying your First Ingress Deployment
 ---
 
 ## What is an Ingress?
