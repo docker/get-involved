@@ -1,9 +1,9 @@
 ---
-title: "GoLang"
-linkTitle: "GoLang"
+title: "Installing Go"
+linkTitle: "Installing Go"
 weight: 606
 description: >-
-     Installing Go
+     Installing Go on Mac, Windows and Linux
 ---
 
 
