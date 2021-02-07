@@ -1,6 +1,5 @@
 baseURL = "/dockercommunity"
-title = "Get Involved"
-canonifyURLs = false
+title = ""
 enableRobotsTXT = true
 
 # Hugo allows theme composition (and inheritance). The precedence is from left to right.
