@@ -1,7 +1,7 @@
 ---
 title: "Addition Resources"
 linkTitle: "Additional Resources"
-weight: 115
+weight: 140
 description: >-
      Additional Resources & Links
 ---
