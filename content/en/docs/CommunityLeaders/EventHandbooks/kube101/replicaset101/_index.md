@@ -1,7 +1,7 @@
 ---
 title: "Deploying Your First Nginx ReplicaSet"
 linkTitle: "Deploying Your First Nginx ReplicaSet"
-weight: 100
+weight: 90
 description: >-
      Deploying Your First Nginx ReplicaSet
 ---
