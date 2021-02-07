@@ -6,7 +6,6 @@ description: >-
      Dockerize your first Golang Application
 ---
 
-# Dockerize your first Golang Application 
 
 
 Create the main.go file with the following content:
