@@ -14,7 +14,7 @@ You can download the latest version of GoLang (Golang 15.7 ) from the below link
 - [Windows](https://golang.org/dl/go1.15.7.windows-amd64.msi)
 - [Apple Macos ](https://golang.org/dl/go1.15.7.darwin-amd64.pkg)
 - [Linux](https://golang.org/dl/go1.15.7.linux-amd64.tar.gz)
-- [github source](https://golang.org/dl/go1.15.7.src.tar.gz)
+- [Using Source](https://golang.org/dl/go1.15.7.src.tar.gz)
 
 
 # Install Golang
