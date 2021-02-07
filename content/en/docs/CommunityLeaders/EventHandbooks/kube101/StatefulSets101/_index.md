@@ -1,7 +1,7 @@
 ---
 title: "Deploying Your First Statefulset Application"
 linkTitle: "Deploying Your First Statefulset Application"
-weight: 90
+weight: 92
 description: >-
      Deploying Your First Statefulset Application
 ---
