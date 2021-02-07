@@ -1,7 +1,7 @@
 ---
 title: "Deploying Your First Nginx Deployment"
 linkTitle: "Deploying Your First Nginx Deployment"
-weight: 100
+weight: 89
 description: >-
      Deploying Your First Nginx Deployment
 ---
