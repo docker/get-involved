@@ -1,6 +1,6 @@
 ---
-title: "Dockerize Multi-Container Go Application Using Docker Compose"
-linkTitle: "Dockerize Multi-Container Go Application Using Docker Compose"
+title: "Dockerize Multi-Container Go App Using Compose"
+linkTitle: "Dockerize Multi-Container Go App using Compose "
 weight: 615
 description: >-
      Dockerize Multi-Container Go Application Using Docker Compose
