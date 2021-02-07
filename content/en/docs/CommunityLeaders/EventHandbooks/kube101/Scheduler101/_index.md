@@ -1,7 +1,7 @@
 ---
 title: "Understand Kubernetes Scheduling"
 linkTitle: "Understand Kubernetes Scheduling"
-weight: 130
+weight: 95
 description: >-
      Understand Kubernetes Scheduling
 ---
