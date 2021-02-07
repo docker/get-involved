@@ -9,7 +9,7 @@ description: >-
 
 
 
-The app fetches the quote of the day from a public API hosted at http://quotes.rest/, then it caches the result in Redis. For subsequent API calls, the app will return the result from Redis cache instead of fetching it from the public API
+The app fetches the quote of the day from a public API hosted at http://quotes.rest then it caches the result in Redis. For subsequent API calls, the app will return the result from Redis cache instead of fetching it from the public API
 
  create following file structure :
  
