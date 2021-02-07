@@ -1,7 +1,7 @@
 ---
 title: "Deploying Your First Ingress Deployment"
 linkTitle: "Deploying Your First Ingress Deployment"
-weight: 120
+weight: 97
 description: >-
      Deploying your First Ingress Deployment
 ---
