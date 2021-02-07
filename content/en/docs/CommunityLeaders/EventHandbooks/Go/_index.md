@@ -3,7 +3,7 @@
 ---
 title: "GoLang"
 linkTitle: "GoLang"
-weight: 70
+weight: 600
 description: >-
      Docker Workshop for Go Developers
 ---
