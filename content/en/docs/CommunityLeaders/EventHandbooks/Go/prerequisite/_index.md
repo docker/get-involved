@@ -1,6 +1,6 @@
 ---
-title: "Installing Go"
-linkTitle: "Installing Go"
+title: "Prerequisite"
+linkTitle: "Prerequisite"
 weight: 606
 description: >-
      Installing Go on Mac, Windows and Linux
