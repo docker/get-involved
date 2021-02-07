@@ -24,7 +24,6 @@ Select the tab for your computer's operating system below, then follow its insta
 
 {{< tabs name="Install Golang" >}}
 {{% tab name="Linux" %}}
-This is **some markdown.**
 
 - 1. if you have a previous version of Go installed, be sure to [remove it]()https://golang.org/doc/manage-install before installing another.
 
