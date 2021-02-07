@@ -3,11 +3,13 @@ title: "Prerequisite"
 linkTitle: "Prerequisite"
 weight: 606
 description: >-
-     Installing Go on Mac, Windows and Linux
+     Installing Go on Linux, Mac and Windows
 ---
 
 
-# Download Golang ( latest version Golang 15.7 )
+# Download Golang 
+
+You can download the latest version of GoLang (Golang 15.7 ) from the below links:
 
 - [Windows](https://golang.org/dl/go1.15.7.windows-amd64.msi)
 - [Apple Macos ](https://golang.org/dl/go1.15.7.darwin-amd64.pkg)
