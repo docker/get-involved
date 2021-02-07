@@ -1,7 +1,7 @@
 ---
 title: "Kubernetes"
 linkTitle: "Kubernetes"
-weight: 80
+weight: 399
 description: >-
      Kubernetes for Beginners
 ---
