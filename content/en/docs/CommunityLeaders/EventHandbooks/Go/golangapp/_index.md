@@ -1,6 +1,6 @@
 ---
-title: "GoLang"
-linkTitle: "GoLang"
+title: "Dockerize Your First Go Application"
+linkTitle: "Dockerize Your First Go Application"
 weight: 608
 description: >-
      Dockerize your first Golang Application
