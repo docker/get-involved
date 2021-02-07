@@ -1,7 +1,7 @@
 ---
 title: "Deploying Your First Nginx Pod"
 linkTitle: "Deploying Your First Nginx Pod"
-weight: 90
+weight: 85
 description: >-
      Deploying Your First Nginx Pod
 ---
