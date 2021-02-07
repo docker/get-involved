@@ -123,7 +123,7 @@ spec:
   resources:
     requests:
       storage: 3Gi
-  ```
+```
   
 ## Task
 
@@ -164,7 +164,7 @@ When a deployment is defined, it can assign itself to a previous claim. The foll
       persistentVolumeClaim:
         claimName: claim-mysql
         
- ```
+```
    
  ## Task
    
