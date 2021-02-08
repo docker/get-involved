@@ -3,7 +3,7 @@ title: "Dockerize Your First Go Application"
 linkTitle: "Dockerize Your First Go Application"
 weight: 609
 description: >-
-     Dockerize your first Golang Application
+     How to containerize your first Golang Application
 ---
 
 
