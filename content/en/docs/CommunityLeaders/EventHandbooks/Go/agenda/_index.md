@@ -11,7 +11,7 @@ description: >-
 | --- | --- |
 | Welcome | 8:45 AM to 9:00 AM |
 | [Installing Go](../prerequisite/) | 9:00 AM to 9:30 AM |
-| [Basics of Docker](../basicsofdocker/) | 9:30 AM to 10:30 AM |
+| [Basics of Docker](../basics/) | 9:30 AM to 10:30 AM |
 | [Building and Running a Docker Container](../building/) | 10:30 AM to 11:30 AM |
 | Coffee/Tea Break | 11:30 AM to 11:45 AM |
 | [Dockerize your first Golang Application - Part 1 ](../golangapp/) |  11:45 AM to 1:00 PM|
