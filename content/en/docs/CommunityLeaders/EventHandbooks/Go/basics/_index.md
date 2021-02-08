@@ -3,7 +3,7 @@ title: "Basics of Docker"
 linkTitle: "Basics of Docker"
 weight: 607
 description: >-
-     Basics of Docker
+     Understanding Basics of Docker
 ---
 
 - [Main Components of Docker System](#main-components-of-docker-system)
