@@ -3,7 +3,7 @@ title: "Working with Go Modules and Docker"
 linkTitle: "Working with Go Modules and Docker"
 weight: 609
 description: >-
-     Working with Go Modules and Docker
+     Step by step guide to Go Modules and Docker
 ---
 
 
