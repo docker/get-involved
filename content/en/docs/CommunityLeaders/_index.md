@@ -8,8 +8,8 @@ description: >
 
 The Community Leader program is designed to empower and support Community Leader with the necessary resources and event platform to plan, organise and host Docker events successfully. In the post-COVID world, we have specifically designed additional tools and resources to make it as simple and straightforward as possible to organise a virtual meetup. 
 
-## Docker Community Events
-Docker Community Events are global, community run gatherings of Docker users, newbies and enthusiasts. The Docker community is founded on principles of respect, inclusion, collaboration and opportunity. Our events are:
+## Docker User Groups
+Docker User Group  (also known as "Chapters") are groups that bring together Docker users, newbies and enthusiasts around the world. Each group has at least one Community Leader to drive acitivitites (eg. virtual events, in-person meetups etc...). The Docker community is founded on principles of respect, inclusion, collaboration and opportunity. Our events are:
 
 * Free to attend and open to the public
 * Inclusive and encouraging of diversity
@@ -17,6 +17,8 @@ Docker Community Events are global, community run gatherings of Docker users, ne
 * Focused on Docker technology and the container ecosystem 
 * A place to connect and meet with other members of the Docker community
 * In accordance with the Docker Community Code of Conduct
+
+Discover Docker's User Groups [here](https://events.docker.com/chapters/)
 
 ## Benefits of joining the program
 
