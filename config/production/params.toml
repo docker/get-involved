@@ -1,4 +1,4 @@
-# Knative "production" Site Params (adds to (or can override) Site "config/_default")
+# Docker "production" Site Params (adds to (or can override) Site "config/_default")
 
 # Only add Google Custom Search and Feedback links to "production"
 
@@ -22,12 +22,12 @@ no = 'Sorry to hear that. Please <a href="https://github.com/docker-community-le
 # Example:
 #   [thisisalink](https://github.com/.../tree/{{< params "ghbranchname" >}}/...)
 #
-# [[versions]] - Defines a single "version" of the Knative docs
+# [[versions]] - Defines a single "version" of the Docker docs
 #   version - Intuitive version label (ie. visible in menus)
 #   ghbranchname - Name of branch of the doc version in GitHub
-#                  (https://github.com/knative/docs/branches)
+#                  (https://github.com/docker/docs/branches)
 #   url - Fully qualified website URL to the doc version
-#         (ie. https://www.knative.dev/[dirpath])
+#         (ie. https://www.docker.dev/[dirpath])
 #   dirpath - The content folder name of the doc version
 #           - Latest release is always set to "docs"
 #           - Past/archived releases change to "v#.#-docs",
@@ -68,7 +68,7 @@ no = 'Sorry to hear that. Please <a href="https://github.com/docker-community-le
 #  [[versions]]
 #   version = "Archives"
 #   ghbranchname = ""
-#  url = "https://github.com/knative/docs/branches"
+#  url = "https://github.com/docker/docs/branches"
 #  dirpath = ""
 
 # Pre-release version
