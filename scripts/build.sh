@@ -4,7 +4,7 @@
 # THIS FILE IS USED BY THE NETLIFY SERVER TO RUN AND PUBLISH DOC BUILDS #
 #########################################################################
 
-# By default, builds all docs releases from the knative/docs repo.
+# By default, builds all docs releases from the docker/docs repo.
 # Will also extract PR details from webhooks and then build and publish
 # content based on the Fork and Branch of the corresponding PR.
 
@@ -13,11 +13,11 @@
 # (https://www.netlify.com/docs/webhooks/)
 
 # Requirement: Your fork must include all releases and maintain the same
-# branch names and structure as the knative/docs repo. Otherwise, set up
+# branch names and structure as the docker/docs repo. Otherwise, set up
 # your build using the flag: BUILDALLRELEASES="FALSE"
 
 # See all options below for configuring this file to work both your own
-# knative/website and knative/docs forks and your own personal Netlify
+# knative/website and docker/docs forks and your own personal Netlify
 # account (to set up your own doc preview builds).
 
 # Quit on error
