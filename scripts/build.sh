@@ -17,7 +17,7 @@
 # your build using the flag: BUILDALLRELEASES="FALSE"
 
 # See all options below for configuring this file to work both your own
-# knative/website and docker/docs forks and your own personal Netlify
+# docker/website and docker/docs forks and your own personal Netlify
 # account (to set up your own doc preview builds).
 
 # Quit on error
@@ -57,7 +57,7 @@ while getopts f:b:a: arg; do
   case $arg in
     f)
       echo 'FORK:' "${OPTARG}"
-      # The GitHub repo name of the knative/docs fork to builb.
+      # The GitHub repo name of the docker/docs fork to builb.
       # Example: myrepo/forkname
       FORK="${OPTARG}"
       # Extract the repo name
@@ -73,7 +73,7 @@ while getopts f:b:a: arg; do
       # True by default. If set to "false" , the build does not clone nor build
       # the docs releases from other branches.
       # REQUIRED: If you specify a fork ($FORK), all of the same branches
-      # (with the same branch names) that are built in knative.dev must
+      # (with the same branch names) that are built in docker.dev must
       # also exist and be available in that $FORK (ie, 'release-0.X').
       # See /config/production/params.toml for the list of the branches
       # their names that are currently built in knative.dev.
@@ -100,11 +100,11 @@ then
     # Get PR number
     PULL_REQUEST=$(echo "$INCOMING_HOOK_BODY" | grep -o -m 1 '\"number\"\:.*\,\"pull_request\"' | sed -e 's/\"number\"\://;s/\,\"pull_request\"//' || true)
     # Retrieve the fork and branch from PR webhook
-    FORK_BRANCH=$(echo "$INCOMING_HOOK_BODY" | grep -o -m 1 '\"label\"\:\".*\"\,\"ref\"' | sed -e 's/\"label\"\:\"knative\:.*//;s/\"label\"\:\"//;s/\"\,\"ref\".*//' || true)
+    FORK_BRANCH=$(echo "$INCOMING_HOOK_BODY" | grep -o -m 1 '\"label\"\:\".*\"\,\"ref\"' | sed -e 's/\"label\"\:\"docker\:.*//;s/\"label\"\:\"//;s/\"\,\"ref\".*//' || true)
     # Extract just the repo name
     REPO=$(echo "$FORK_BRANCH" | sed -e 's/\:.*//')
     # Retrieve the repo fork name from PR webhook
-    FORK=$(echo "$INCOMING_HOOK_BODY" | grep -o -m 1 '\"full_name\"\:\".*\"\,\"private\"' | sed -e 's/\"full_name\"\:\"knative\/.*//;s/\"full_name\"\:\"//;s/\"\,\"private\".*//' || true)
+    FORK=$(echo "$INCOMING_HOOK_BODY" | grep -o -m 1 '\"full_name\"\:\".*\"\,\"private\"' | sed -e 's/\"full_name\"\:\"docker\/.*//;s/\"full_name\"\:\"//;s/\"\,\"private\".*//' || true)
     # If PR was merged, just run default build and deploy production site (www.knative.dev)
     MERGEDPR=$(echo "$INCOMING_HOOK_BODY" | grep -o '\"merged\"\:true\,' || : )
     if [ "$MERGEDPR" = "true" ]
