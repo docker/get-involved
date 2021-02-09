@@ -8,7 +8,7 @@ description: >-
 
 
 
-Community and participation are the backbone of Docker. Whether you're technical or not, we welcome contributions from anyone around the world. This page is intended for people who want to contribute content to this Docker Community repository docs and who don't use Git or GitHub often. The page is basically a quick guide to get going with a GitHub repository, using either Git on CLI or the GitHub web user interface (UI).
+Community and participation are the backbone of Docker. Whether you're technical or not, we welcome contributions from anyone around the world. This page is intended for people who want to contribute content sections of this website and who don't use Git or GitHub often. This will help you get going with a GitHub repository, using either Git on CLI or the GitHub web user interface (UI).
 
 ## Using the command line
 
