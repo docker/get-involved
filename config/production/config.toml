@@ -1,14 +1,14 @@
-# Knative "production" Site Configuration (adds to or overrides "_default")
+# Docker "production" Site Configuration (adds to or overrides "_default")
 
 # Usage notes:
 # To build with these settings, you run: "hugo --config production"
 # Hugo build then uses every setting defined in "config/_default" and then merge
 # all settings defined here for "staging" on top of all those define for "_default".
 
-baseURL = "https://docker-community-leaders.github.io/dockercommunity/"
+baseURL = "https://docker.github.io/get-involved"
 enableRobotsTXT = true
 
 [services]
 [services.googleAnalytics]
 # Comment out the next line to disable GA tracking. Also disables the feature described in [params.ui.feedback].
-id = "UA-148338258-1"
+# id = "UA-148338258-1"
