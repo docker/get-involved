@@ -76,7 +76,7 @@ while getopts f:b:a: arg; do
       # (with the same branch names) that are built in docker.dev must
       # also exist and be available in that $FORK (ie, 'release-0.X').
       # See /config/production/params.toml for the list of the branches
-      # their names that are currently built in knative.dev.
+      # their names that are currently built in docker.dev.
       BUILDALLRELEASES="${OPTARG}"
       ;;
   esac
@@ -86,7 +86,7 @@ done
 if [ "$INCOMING_HOOK_BODY" ] || [ "$INCOMING_HOOK_TITLE" ] || [ "$INCOMING_HOOK_URL" ]
 then
   WEBHOOK="true"
-  echo '------ BUILD REQUEST FROM KNATIVE/DOCS WEBHOOK ------'
+  echo '------ BUILD REQUEST FROM DOCKER/DOCS WEBHOOK ------'
 
   echo 'Webhook Title:' "$INCOMING_HOOK_TITLE"
 
@@ -105,11 +105,11 @@ then
     REPO=$(echo "$FORK_BRANCH" | sed -e 's/\:.*//')
     # Retrieve the repo fork name from PR webhook
     FORK=$(echo "$INCOMING_HOOK_BODY" | grep -o -m 1 '\"full_name\"\:\".*\"\,\"private\"' | sed -e 's/\"full_name\"\:\"docker\/.*//;s/\"full_name\"\:\"//;s/\"\,\"private\".*//' || true)
-    # If PR was merged, just run default build and deploy production site (www.knative.dev)
+    # If PR was merged, just run default build and deploy production site (www.docker.dev)
     MERGEDPR=$(echo "$INCOMING_HOOK_BODY" | grep -o '\"merged\"\:true\,' || : )
     if [ "$MERGEDPR" = "true" ]
     then
-      # For merged PR, do not get branch name (use default: "latest knative release branch")
+      # For merged PR, do not get branch name (use default: "latest docker release branch")
       echo '------ PR' "$PULL_REQUEST" 'MERGED ------'
       echo 'Running production build - publishing new changes'
     else
@@ -121,7 +121,7 @@ then
   else
     # Webhook from "PUSH event"
     # If the event was from someone's fork, then get their branchname
-    if [ "$REPO" != "knative" ]
+    if [ "$REPO" != "docker" ]
     then
       BRANCH=$(echo "$INCOMING_HOOK_BODY" | grep -o -m 1 ':"refs\/heads\/.*\"\,\"before\"' | sed -e 's/.*:\"refs\/heads\///;s/\"\,\"before\".*//' || true)
       # Use "Staging" environment settings (config/staging)
