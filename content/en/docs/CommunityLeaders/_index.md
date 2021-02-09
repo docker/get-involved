@@ -6,12 +6,10 @@ description: >
   A Brief about Community Leader's Program
 ---
 
-At Docker, we believe that developers have the opportunity to change the world, through innovation AND community. We’ve seen amazing examples of this in the more than 7 years since Docker’s introduction, and we are so excited for what is still to come. Community Leaders are an incredible group of individuals passioante about engaging and supporting the Docker community in their part of the world.
+The Community Leader program is designed to empower and support Community Leader with the necessary resources and event platform to plan, organise and host Docker events successfully. In the post-COVID world, we have specifically designed additional tools and resources to make it as simple and straightforward as possible to organise a virtual meetup. 
 
-The Community Leader program was designed to empower and support Community Leader with the necessary resources and event platform to plan, organise and host Docker events successfully. In the post-COVID world, we have specifically designed additional tools and resources to make it as simple and straightforward as possible to organise a virtual meetup. 
-
-## Docker User Groups
-Docker User Groups are global, community run gatherings of Docker users, newbies and enthusiasts. The Docker community is founded on principles of respect, inclusion, collaboration and opportunity. Our events are:
+## Docker Community Events
+Docker Community Events are global, community run gatherings of Docker users, newbies and enthusiasts. The Docker community is founded on principles of respect, inclusion, collaboration and opportunity. Our events are:
 
 * Free to attend and open to the public
 * Inclusive and encouraging of diversity
@@ -20,7 +18,7 @@ Docker User Groups are global, community run gatherings of Docker users, newbies
 * A place to connect and meet with other members of the Docker community
 * In accordance with the Docker Community Code of Conduct
 
-## Benefits
+## Benefits of joining the program
 
 Joining the Community Leader program offers the following benefits: 
 
@@ -47,5 +45,11 @@ Joining the Community Leader program offers the following benefits:
 Note that the Docker Community Leader Program thrives when leaders are active and committed to the goal of bringing Docker knowledge, skills and connections to their cities. 
 
 Program benefits will be tied to the status of the group as well as the contribution of individual Community Leaders. Users groups that have not had an event in 6 months will be considered inactive. If a year goes by without an event, the user group may be deactivated. Benefits like swag and recognition as a Community Leader will be reserved for active Community Leaders in good standing. Violation of the Community Leader Requirements or Docker Code of Conduct may result in being removed from the program.
+
+## Questions?
+
+Don't hesitate to reach out to us on Slack if you have any questions or feedback you want to share. If you're in the Asia-Pacific zone, please reach out to Ajeet Raina on Slack (@ajeetraina) and if you're anywhere else in the world, feel free to ping William Quiviger on Slack (@william). 
+
+Apply to join the program today!
 
 
