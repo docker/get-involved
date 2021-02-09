@@ -40,8 +40,8 @@ WEBHOOK="false"
 
 # Manually specify your fork and branch for all builds.
 #
-# OPTIONAL: Manually configure your knative/website fork to build from your
-#           knative/docs fork by default.
+# OPTIONAL: Manually configure your docker website fork to build from your
+#           docker/docs fork by default.
 #           (For example, if you have a personal Netlify account and want
 #            to easily click the "Deploy" button from the Netlify UI.)
 #
@@ -144,7 +144,7 @@ else
 echo 'Pull Request:' "$PULL_REQUEST"
 fi
 # Only display these values when building other user's forks
-if [ "$REPO" != "knative" ]
+if [ "$REPO" != "docker" ]
 then
 echo 'Building From:' "$FORK"
 echo 'Using Branch:' "$BRANCH"
