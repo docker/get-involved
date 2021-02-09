@@ -1,4 +1,4 @@
-module knative.dev/website/tools/redir-gen
+module docker.dev/website/tools/redir-gen
 
 go 1.15
 
