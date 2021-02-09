@@ -1,4 +1,4 @@
-# Knative "staging" Site Params (adds to (or can override) Site "config/_default")
+# Docker "staging" Site Params (adds to (or can override) Site "config/_default")
 # Use for development, like inflight PR reviews and content testing.
 
 # Usage notes:
