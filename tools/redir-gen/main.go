@@ -1,5 +1,5 @@
 /*
-Copyright 2020 The Knative Authors
+Copyright 2020 The Docker Authors
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
 You may obtain a copy of the License at
@@ -28,7 +28,7 @@ import (
 )
 
 var (
-	knativeOrgs   = []string{"knative", "knative-sandbox"}
+	DockerOrgs   = []string{"Docker", "docker-sandbox"}
 	allowedRepoRe = regexp.MustCompile("^[a-z][-a-z0-9]+$")
 )
 
@@ -38,7 +38,7 @@ type repoInfo struct {
 	// Org is the name of the github organization the repo is in.
 	Org string
 	// Repo is the name of the github repo within the organizatiøon (e.g.
-	// "serving", NOT "knative/serving")
+	// "serving", NOT "docker/serving")
 	Repo string
 	// DefaultBranch is the name of the default branch. This will be changing
 	// from "master" to "main" over time.
@@ -48,7 +48,7 @@ type repoInfo struct {
 type riSlice []repoInfo
 
 func main() {
-	repos, err := fetchRepos(knativeOrgs)
+	repos, err := fetchRepos(dockerOrgs)
 	if err != nil {
 		log.Fatal("Failed to fetch repos: ", err)
 	}
@@ -97,8 +97,8 @@ func fetchRepos(orgs []string) ([]repoInfo, error) {
 
 const (
 	goHTML = `<html><head>
-    <meta name="go-import" content="knative.dev/{{.Repo}} git https://github.com/{{.Org}}/{{.Repo}}">
-    <meta name="go-source" content="knative.dev/{{.Repo}}     https://github.com/{{.Org}}/{{.Repo}} https://github.com/{{.Org}}/{{.Repo}}/tree/{{.DefaultBranch}}{/dir} https://github.com/{{.Org}}/{{.Repo}}/blob/{{.DefaultBranch}}{/dir}/{file}#L{line}">
+    <meta name="go-import" content="docker.dev/{{.Repo}} git https://github.com/{{.Org}}/{{.Repo}}">
+    <meta name="go-source" content="docker.dev/{{.Repo}}     https://github.com/{{.Org}}/{{.Repo}} https://github.com/{{.Org}}/{{.Repo}}/tree/{{.DefaultBranch}}{/dir} https://github.com/{{.Org}}/{{.Repo}}/blob/{{.DefaultBranch}}{/dir}/{file}#L{line}">
 </head></html>
 `
 	redirText = `/{{.Repo}}/* go-get=1 /golang/{{.Repo}}.html 200
@@ -155,7 +155,7 @@ func appendRedirs(ris []repoInfo) error {
 var fileTemplate = template.Must(template.New("gohtml").Parse(goHTML))
 var redirTemplate = template.Must(template.New("redir").Parse(redirText))
 
-// createGoGetFile creates a static HTML file providing a knative.dev mapping
+// createGoGetFile creates a static HTML file providing a docker.dev mapping
 // for the specified org and repo.
 func createGoGetFile(ri repoInfo) error {
 	filename := fmt.Sprintf("static/golang/%s.html", ri.Repo)
