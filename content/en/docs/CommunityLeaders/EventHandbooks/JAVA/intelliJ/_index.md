@@ -23,17 +23,22 @@ This chapter will show you basic Docker tooling with IntelliJ IDEA:
 
 ## Install Docker Plugin in IDEA
 
-Go to "`Preferences`", "`Plugins`", search on "`docker`" and click on "`Install`"
+Go to "`Preferences`", "`Plugins`",  search on "`docker`" and click on "`Install`"
 
 ![My Image](../../../../images/logos/install_plugin.png)
 
 Restart IntelliJ IDEA to active plugin.
 
-Click on "`Create New Project`", select "`Java`", "`Web Application`"
+Click on "`Create New Project`", select "`Java`"
 
-![My Image](docker-intellij-create-java-project.png)
+![My Image](../../../../images/logos/New_project_1.png)
 
-Click on "`Next`", give the project a name "`dockercon`", click on "`Finish`". This will open up the project in IntelliJ window.
+Click on "`Next`",and select  "`Command Line App`"
+![My Image](../../../../images/logos/new_project_2.png)
+
+give the project a name "`Dockertest`", click on "`Finish`". This will open up the project in IntelliJ window.
+
+![My Image](../../../../images/logos/new_project_3.png)
 
 Go to "`Preferences`", "`Clouds`", add a new deployment by clicking on "`+`". Click on "`Import credentials from Docker Machine`", "`Detect`", and see a successful connection. You may have to check the IP address of your Docker Machine. Find the IP address of your Docker Machine as `docker-machine ip <machine-name>` and specify the correct IP address here.
 
@@ -51,7 +56,7 @@ Select top-level node with the name "`Docker`", click on "`Pull image`"
 
 ![My Image](docker-intellij-pull-image.png)
 
-Type an image name, such as `arungupta/couchbase`, and "`OK`"
+Type an image name, such as `wordpress`, and "`OK`"
 
 ![My Image](docker-intellij-repository-name.png)
 
