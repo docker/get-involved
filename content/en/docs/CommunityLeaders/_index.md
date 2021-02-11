@@ -6,7 +6,7 @@ description: >
   A Brief about Community Leader's Program
 ---
 
-<a href="https://docs.google.com/forms/u/3/d/1Ct4hGIvKfwMHDYtAYkvF8tjwfa-d2ic8pfCrHFOwWTU/edit" class="btn btn-primary btn-success">Become a Docker Community Leader today</a>
+
 
 
 The Community Leader program is designed to empower and support Community Leader with the necessary resources and event platform to plan, organise and host Docker events successfully. In the post-COVID world, we have specifically designed additional tools and resources to make it as simple and straightforward as possible to organise a virtual meetup. 
