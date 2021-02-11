@@ -40,25 +40,30 @@ give the project a name "`Dockertest`", click on "`Finish`". This will open up t
 
 ![My Image](../../../../images/logos/new_project_3.png)
 
-Go to "`Preferences`", "`Clouds`", add a new deployment by clicking on "`+`". Click on "`Import credentials from Docker Machine`", "`Detect`", and see a successful connection. You may have to check the IP address of your Docker Machine. Find the IP address of your Docker Machine as `docker-machine ip <machine-name>` and specify the correct IP address here.
+Go to "`Preferences`", "`Docker`", add a new deployment by clicking on "`+`". 
+
+If you want to use remote docker machine Click on "`Import credentials from Docker Machine`", "`Detect`", and see a successful connection. You may have to check the IP address of your Docker Machine. Find the IP address of your Docker Machine as `docker-machine ip <machine-name>` and specify the correct IP address here.
 
 ![My Image](docker-intellij-cloud-connection.png)
 
-Go to "`View`", "`Tool Windows`", "`Docker Tooling Window`". Click on "`Connect`"" to connect with Docker Machine. Make sure Docker Machine is running. 
 
-WARNING: IDEA does not work with "`Docker for Mac`" at this time. (ADD BUG #)
+If you have installed docker in your Mac .Please use "`Docker for Mac`"
+![My Image](../../../../images/logos/connect_to_docker.png)
 
-![My Image](docker-intellij-tool-window.png)
+Go to "`View`", "`Tool Windows`", "`Services`". Click on "`Connect`" to connect with Docker. Make sure Docker is running
+
+![My Image](../../../../images/logos/enable_services.png)
+
 
 ## Pull an Image
 
-Select top-level node with the name "`Docker`", click on "`Pull image`"
+Select top-level node with the name "`Java Example`", click on "`Pull image`"
 
-![My Image](docker-intellij-pull-image.png)
+![My Image](../../../../images/logos/pull_image_wp.png)
 
 Type an image name, such as `wordpress`, and "`OK`"
 
-![My Image](docker-intellij-repository-name.png)
+![My Image](../../../../images/logos/pull_image_progress_wp.png)
 
 Expand "`Containers`" and "`Images`" to see existing running containers and images.
 
