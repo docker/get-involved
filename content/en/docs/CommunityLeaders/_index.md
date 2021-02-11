@@ -57,4 +57,6 @@ Don't hesitate to reach out to us on Slack if you have any questions or feedback
 
 Apply to join the program today!
 
+<a href="https://docs.google.com/forms/u/3/d/1Ct4hGIvKfwMHDYtAYkvF8tjwfa-d2ic8pfCrHFOwWTU/edit" class="btn btn-primary btn-success">Become a Docker Community Leader today</a>
+
 
