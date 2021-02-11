@@ -1,7 +1,7 @@
 ---
 title: "Prerequisite"
 linkTitle: "Prerequisite"
-weight: 606
+weight: 703
 description: >-
      Installing Rust on Linux, Mac and Windows
 ---
