@@ -4,7 +4,7 @@
 
 echo '------ PROCESSING SOURCE FILES ------'
 # Default to a local build. Otherwise, retreives content from the specified source repos.
-# All builds copy or clone the content into the "content" folder of docker/webiste before starting the Hugo build.
+# All builds copy or clone the content into the "content" folder of knative/webiste before starting the Hugo build.
 # A temp directory is used and move files around and prevent git clone errors (fails if directory exists).
 
 # Clean slate: Make sure that nothing from a past build exists in the /content/ or /temp/ folders
@@ -14,9 +14,9 @@ rm -rf temp
 if [ "$BUILDALLRELEASES" = "true" ]
 then
 # PRODUCTION BUILD (ALL RELEASES)
-# Full build for docker.dev (config/production). Contributors can also use this for personal builds.
+# Full build for knative.dev (config/production). Contributors can also use this for personal builds.
   echo '------ BUILDING ALL DOCS BRANCHES/RELEASES ------'
-  # Build docker docs from:
+  # Build Knative docs from:
   # - https://github.com/"$FORK"
   # - https://github.com/"$REPO"/community
 
@@ -62,25 +62,25 @@ then
   LOCALBUILD="false"
 else
 # DEFAULT: LOCAL BUILD
-# Assumes that docker/docs, /community, and /website are cloned to the same directory.
+# Assumes that knative/docs, /community, and /website are cloned to the same directory.
   LOCALBUILD="true"
-  echo '------ BUILDING YOUR LOCAL docker/DOCS CLONE ------'
-  echo 'Copying local clone of docker/docs into the /docs folder under:'
+  echo '------ BUILDING YOUR LOCAL KNATIVE/DOCS CLONE ------'
+  echo 'Copying local clone of knative/docs into the /docs folder under:'
   pwd
   cp -r ../docs content/en/
   if [ -d "../community" ]; then
-    echo 'Also copying the local clone of docker/community into the /community/contributing folder.'
+    echo 'Also copying the local clone of knative/community into the /community/contributing folder.'
     cp -r ../community/* content/en/community/contributing
   else
-    echo 'A local clone of docker/community is not found, skipping that content.'
+    echo 'A local clone of knative/community is not found, skipping that content.'
   fi
 fi
 
-# Build docker/community
+# Build knative/community
 if [ "$LOCALBUILD" = "false" ]
 then
   echo ' - ----- Cloning contributor docs ------'
-  echo 'Getting Docker community and contributor guidelines'
+  echo 'Getting Knative community and contributor guidelines'
   if ! [ "$BUILDENVIRONMENT" = "production" ]
   then
     # Try to build /community from remote or PR
@@ -99,11 +99,11 @@ then
     DEFAULTCOMMUNITY="true"
   fi
 
-  # Build docker/community for production builds and by default
+  # Build knative/community for production builds and by default
   if [ "$DEFAULTCOMMUNITY" = "true" ]
   then
     echo 'Building from the master branch of' "$DEFAULTORG"'/community'
-    # Default to docker/community
+    # Default to knative/community
     git clone --quiet -b master https://github.com/"$DEFAULTORG"/community.git temp/community
   fi
   # Move files into existing "contributing" folder
@@ -118,7 +118,7 @@ rm -rf temp
 
 ###################################################
 # Process fully-qualified hard coded URLs that link
-# between the docker/docs and docker/community repos
+# between the knative/docs and knative/community repos
 source scripts/convert-repo-ulrs.sh
 
 #########################################################
