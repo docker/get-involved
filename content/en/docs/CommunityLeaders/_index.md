@@ -51,10 +51,12 @@ Note that the Docker Community Leader Program thrives when leaders are active an
 
 Program benefits will be tied to the status of the group as well as the contribution of individual Community Leaders. Users groups that have not had an event in 6 months will be considered inactive. If a year goes by without an event, the user group may be deactivated. Benefits like swag and recognition as a Community Leader will be reserved for active Community Leaders in good standing. Violation of the Community Leader Requirements or Docker Code of Conduct may result in being removed from the program.
 
+<a href="https://docs.google.com/forms/u/3/d/1Ct4hGIvKfwMHDYtAYkvF8tjwfa-d2ic8pfCrHFOwWTU/edit" class="btn btn-primary btn-success">Become a Docker Community Leader today</a>
+
 ## Questions?
 
 Don't hesitate to reach out to us on Slack if you have any questions or feedback you want to share. If you're in the Asia-Pacific zone, please reach out to Ajeet Raina on Slack (@ajeetraina) and if you're anywhere else in the world, feel free to ping William Quiviger on Slack (@william). 
 
-<a href="https://docs.google.com/forms/u/3/d/1Ct4hGIvKfwMHDYtAYkvF8tjwfa-d2ic8pfCrHFOwWTU/edit" class="btn btn-primary btn-success">Become a Docker Community Leader today</a>
+
 
 
