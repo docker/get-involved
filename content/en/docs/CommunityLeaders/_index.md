@@ -55,8 +55,6 @@ Program benefits will be tied to the status of the group as well as the contribu
 
 Don't hesitate to reach out to us on Slack if you have any questions or feedback you want to share. If you're in the Asia-Pacific zone, please reach out to Ajeet Raina on Slack (@ajeetraina) and if you're anywhere else in the world, feel free to ping William Quiviger on Slack (@william). 
 
-Apply to join the program today!
-
 <a href="https://docs.google.com/forms/u/3/d/1Ct4hGIvKfwMHDYtAYkvF8tjwfa-d2ic8pfCrHFOwWTU/edit" class="btn btn-primary btn-success">Become a Docker Community Leader today</a>
 
 
