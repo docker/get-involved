@@ -4,7 +4,7 @@
 # THIS FILE IS USED BY THE NETLIFY SERVER TO RUN AND PUBLISH DOC BUILDS #
 #########################################################################
 
-# By default, builds all docs releases from the docker/docs repo.
+# By default, builds all docs releases from the knative/docs repo.
 # Will also extract PR details from webhooks and then build and publish
 # content based on the Fork and Branch of the corresponding PR.
 
@@ -13,11 +13,11 @@
 # (https://www.netlify.com/docs/webhooks/)
 
 # Requirement: Your fork must include all releases and maintain the same
-# branch names and structure as the docker/docs repo. Otherwise, set up
+# branch names and structure as the knative/docs repo. Otherwise, set up
 # your build using the flag: BUILDALLRELEASES="FALSE"
 
 # See all options below for configuring this file to work both your own
-# docker/website and docker/docs forks and your own personal Netlify
+# knative/website and knative/docs forks and your own personal Netlify
 # account (to set up your own doc preview builds).
 
 # Quit on error
@@ -40,8 +40,8 @@ WEBHOOK="false"
 
 # Manually specify your fork and branch for all builds.
 #
-# OPTIONAL: Manually configure your docker website fork to build from your
-#           docker/docs fork by default.
+# OPTIONAL: Manually configure your knative/website fork to build from your
+#           knative/docs fork by default.
 #           (For example, if you have a personal Netlify account and want
 #            to easily click the "Deploy" button from the Netlify UI.)
 #
@@ -57,7 +57,7 @@ while getopts f:b:a: arg; do
   case $arg in
     f)
       echo 'FORK:' "${OPTARG}"
-      # The GitHub repo name of the docker/docs fork to builb.
+      # The GitHub repo name of the knative/docs fork to builb.
       # Example: myrepo/forkname
       FORK="${OPTARG}"
       # Extract the repo name
@@ -73,10 +73,10 @@ while getopts f:b:a: arg; do
       # True by default. If set to "false" , the build does not clone nor build
       # the docs releases from other branches.
       # REQUIRED: If you specify a fork ($FORK), all of the same branches
-      # (with the same branch names) that are built in docker.dev must
+      # (with the same branch names) that are built in knative.dev must
       # also exist and be available in that $FORK (ie, 'release-0.X').
       # See /config/production/params.toml for the list of the branches
-      # their names that are currently built in docker.dev.
+      # their names that are currently built in knative.dev.
       BUILDALLRELEASES="${OPTARG}"
       ;;
   esac
@@ -86,7 +86,7 @@ done
 if [ "$INCOMING_HOOK_BODY" ] || [ "$INCOMING_HOOK_TITLE" ] || [ "$INCOMING_HOOK_URL" ]
 then
   WEBHOOK="true"
-  echo '------ BUILD REQUEST FROM DOCKER/DOCS WEBHOOK ------'
+  echo '------ BUILD REQUEST FROM KNATIVE/DOCS WEBHOOK ------'
 
   echo 'Webhook Title:' "$INCOMING_HOOK_TITLE"
 
@@ -100,16 +100,16 @@ then
     # Get PR number
     PULL_REQUEST=$(echo "$INCOMING_HOOK_BODY" | grep -o -m 1 '\"number\"\:.*\,\"pull_request\"' | sed -e 's/\"number\"\://;s/\,\"pull_request\"//' || true)
     # Retrieve the fork and branch from PR webhook
-    FORK_BRANCH=$(echo "$INCOMING_HOOK_BODY" | grep -o -m 1 '\"label\"\:\".*\"\,\"ref\"' | sed -e 's/\"label\"\:\"docker\:.*//;s/\"label\"\:\"//;s/\"\,\"ref\".*//' || true)
+    FORK_BRANCH=$(echo "$INCOMING_HOOK_BODY" | grep -o -m 1 '\"label\"\:\".*\"\,\"ref\"' | sed -e 's/\"label\"\:\"knative\:.*//;s/\"label\"\:\"//;s/\"\,\"ref\".*//' || true)
     # Extract just the repo name
     REPO=$(echo "$FORK_BRANCH" | sed -e 's/\:.*//')
     # Retrieve the repo fork name from PR webhook
-    FORK=$(echo "$INCOMING_HOOK_BODY" | grep -o -m 1 '\"full_name\"\:\".*\"\,\"private\"' | sed -e 's/\"full_name\"\:\"docker\/.*//;s/\"full_name\"\:\"//;s/\"\,\"private\".*//' || true)
-    # If PR was merged, just run default build and deploy production site (www.docker.dev)
+    FORK=$(echo "$INCOMING_HOOK_BODY" | grep -o -m 1 '\"full_name\"\:\".*\"\,\"private\"' | sed -e 's/\"full_name\"\:\"knative\/.*//;s/\"full_name\"\:\"//;s/\"\,\"private\".*//' || true)
+    # If PR was merged, just run default build and deploy production site (www.knative.dev)
     MERGEDPR=$(echo "$INCOMING_HOOK_BODY" | grep -o '\"merged\"\:true\,' || : )
     if [ "$MERGEDPR" = "true" ]
     then
-      # For merged PR, do not get branch name (use default: "latest docker release branch")
+      # For merged PR, do not get branch name (use default: "latest knative release branch")
       echo '------ PR' "$PULL_REQUEST" 'MERGED ------'
       echo 'Running production build - publishing new changes'
     else
@@ -121,7 +121,7 @@ then
   else
     # Webhook from "PUSH event"
     # If the event was from someone's fork, then get their branchname
-    if [ "$REPO" != "docker" ]
+    if [ "$REPO" != "knative" ]
     then
       BRANCH=$(echo "$INCOMING_HOOK_BODY" | grep -o -m 1 ':"refs\/heads\/.*\"\,\"before\"' | sed -e 's/.*:\"refs\/heads\///;s/\"\,\"before\".*//' || true)
       # Use "Staging" environment settings (config/staging)
@@ -144,7 +144,7 @@ else
 echo 'Pull Request:' "$PULL_REQUEST"
 fi
 # Only display these values when building other user's forks
-if [ "$REPO" != "docker" ]
+if [ "$REPO" != "knative" ]
 then
 echo 'Building From:' "$FORK"
 echo 'Using Branch:' "$BRANCH"
