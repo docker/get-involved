@@ -6,6 +6,8 @@ description: >
   A Brief about Community Leader's Program
 ---
 
+![My Image](joincl.png)
+
 The Community Leader program is designed to empower and support Community Leader with the necessary resources and event platform to plan, organise and host Docker events successfully. In the post-COVID world, we have specifically designed additional tools and resources to make it as simple and straightforward as possible to organise a virtual meetup. 
 
 ## Docker User Groups
