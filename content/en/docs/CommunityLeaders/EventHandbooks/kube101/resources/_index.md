@@ -3,7 +3,7 @@ title: "Additional Resources"
 linkTitle: "Additional Resources"
 weight: 98
 description: >-
-     Page description for further resources
+     Useful links and resources to refer further 
 ---
 
 Follow the below additional resources which you might find useful:
