@@ -1,5 +1,5 @@
 ---
-title: "Deploying Your First DaemonSet"
+title: "How to deploy Your First DaemonSet"
 linkTitle: "Deploying Your First DaemonSet"
 weight: 90
 description: >-
