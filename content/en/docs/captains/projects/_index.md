@@ -27,7 +27,7 @@ description: >-
 | [**Using Docker**](http://shop.oreilly.com/product/0636920035671.do) | Book published by O'Reilly describing how to use Docker to develop, test and deploy software | 
 | [**Image Wolf**](https://github.com/ContainerSolutions/ImageWolf) | Tool that uses BitTorrent to rapidly deploy images onto clusters, increasing the speed at which updates can be rolled out | 
 | [**Integrando Docker a su infraestructura y servicios**](https://www.udemy.com/integrando-docker-a-su-infraestrucutra-y-servicios) | (curso pagado) Aprenda, utilice y adapte Docker desde cero. Despliegue sus servicios de forma rápida y segura utilizando Docker | 
-| [**Quoi d'neuf Docker**](https://www.youtube.com/c/quoideneufdocker) - (French spoken) Youtube channel focussing on Docker ecosystem  | 
+| [**Quoi d'neuf Docker**](https://www.youtube.com/c/quoideneufdocker) | (French spoken) Youtube channel focussing on Docker ecosystem  | 
 | [**The Enterprise Path to Service Mesh Architectures**](https://blog.gingergeek.com/2018/08/now-available-the-enterprise-path-to-service-mesh-architectures/) | Book published by O'Reilly helping answer common questions on service mesh architectures through the lens of a large enterprise |
 | [**Docker Swarm Mastery Video Course on Udemy**](https://bretfisher.com/dockerswarmmastery) | (paid course) 6+ hours of Docker Swarm training |
 | [**Windows Docker Machine**](https://github.com/StefanScherer/windows-docker-machine) | a Vagrant environment that let's you explore Windows Docker containers on your Mac, Linux or Windows computer |
