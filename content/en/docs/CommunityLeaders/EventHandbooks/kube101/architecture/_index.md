@@ -16,10 +16,14 @@ Kubernetes (a.k.a K8s) is an open-source container-orchestration system which ma
 There are multiple Container-Orchestration systems available today but Kubernetes has become more popular as it is cost efficient and provides a lot of options to customize deployments and has support for many different vendors. It is supported on all major public cloud service providers like GCP, Azure, AWS, Oracle Cloud, Digital Ocean etc.&nbsp;</p>
 
 ## Kubernetes Architecture
+
+![My Image](image1.png)
+
 Kubernetes follows the master/slave architecture. So, we have the master nodes and the worker nodes. The master nodes manage the worker nodes and together they form a cluster. A cluster is a set of machines called nodes. A Kubernetes cluster has at least one master node and one worker node. However, there can be multiple clusters too.&nbsp;</p>
 
 ## Kubernetes Master Node/ Control Plane
 
+![My Image](image2.png)
 
 Kubernetes Master Node/Control Plane is the controlling unit of the cluster which manages the cluster, monitors the Nodes and Pods in the cluster, and when a node fails, it moves the workload of the failed node to another working node.
 
@@ -43,7 +47,11 @@ etcd is the open-source persistent, lightweight, distributed key-value database 
 
 ## Worker Node
 
+![My Image](image3.png)
+
 A Worker Node can have one or more Pods, and a Pod can have one or more Containers, and a Cluster can have multiple Worker Nodes as well as Master nodes. Node components (Kube-proxy, kubelet, Container runtime) run on every Worker Node, maintaining the running Pods and providing the Kubernetes run-time environment.
+
+![My Image](image4.png)
 
 The various components of the Kubernetes Worker Node:
 
