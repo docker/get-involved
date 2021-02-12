@@ -11,7 +11,7 @@ description: >-
 | --- | --- |
 | Welcome | 8:45 AM to 9:00 AM |
 | [Introduction to Kubernetes Architecture]() | 9:00 AM to 9:30 AM |
-| [How to deploy your first Nginx Pod](../pods/) | 9:30 AM to 10:30 AM |
+| [How to deploy your first Nginx Pod](../pods101/) | 9:30 AM to 10:30 AM |
 | [How to deploy your first Kubernetes service](../service101/) | 10:30 AM to 11:30 AM |
 | Coffee/Tea Break | 11:30 AM to 11:45 AM |
 | [How to deploy your first Nginx deployment](../deployment101/) | 11:45 AM to 1:00 PM|
