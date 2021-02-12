@@ -3,12 +3,9 @@ title: "Deploying Your First Nginx Pod"
 linkTitle: "Deploying Your First Nginx Pod"
 weight: 85
 description: >-
-     Deploying Your First Nginx Pod
+     How to deploy Your First Nginx Pod
 ---
 
-
-
-# Deploying Your First Nginx Pod
 
 ## What are K8s Pods?
 
