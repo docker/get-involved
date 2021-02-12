@@ -1,5 +1,5 @@
 ---
-title: "Understand Kubernetes Scheduling"
+title: "Getting Started with Kubernetes Scheduling"
 linkTitle: "Understand Kubernetes Scheduling"
 weight: 95
 description: >-
