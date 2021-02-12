@@ -21,4 +21,4 @@ description: >-
 | Coffee/Tea Break | 3:30 PM to 3:45 PM |
 | [Understanding Kubernetes Scheduling](../scheduler101/) | 3:45 PM to 4:45 PM |
 | [How to deploy your first Ingress deployment](../ingress101/) | 4:45 PM to 5:45 PM |
-| [Quick Quiz](../quick-quiz/) | 5:45 PM to 6:00 PM |
+
