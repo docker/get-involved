@@ -1,5 +1,5 @@
 ---
-title: "Deploying Your First Kubernetes Service"
+title: "How to deploy Your First Kubernetes Service"
 linkTitle: "Deploying Your First Kubernetes Service"
 weight: 87
 description: >-
