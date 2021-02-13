@@ -37,7 +37,7 @@ cookie_usage = "/about-analytics-cookies/"
 github_docsrepo = "https://github.com/docker-community-leaders/dockercommunity/blob/master/content/en/docs/_index.md"
 github_communityrepo = "https://github.com/docker-community-leaders/dockercommunity/"
 github_eventingrepo = "https://github.com/docker-community-leaders/dockercommunity/"
-github_servingrepo = "https://github.com/docker-community-leaders/dockercommunity/"
+github_servingrepo = "https://github.com/docker/get-involved"
 
 # User interface configuration
 [ui]
@@ -56,7 +56,7 @@ breadcrumb_disable = false
         desc = "Discussion and help from your fellow users"
 [[links.user]]
   name ="Twitter"
-  url = "https://twitter.com/dockercommunity"
+  url = "https://twitter.com/docker"
   external = "true"
   icon = "fab fa-twitter"
         desc = "Follow us on Twitter to get the latest news!"
@@ -70,7 +70,7 @@ breadcrumb_disable = false
 # Developer relevant links. These will show up on right side of footer and in the community page if you have one.
 [[links.developer]]
   name = "Docker GitHub repo"
-  url = "https://github.com/docker-community-leaders/dockercommunity"
+  url = "https://github.com/docker/get-involved"
   external = "true"
   icon = "fab fa-github"
         desc = "Development takes place here!"
