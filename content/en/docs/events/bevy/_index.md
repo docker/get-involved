@@ -3,7 +3,7 @@ title: "Bevy"
 linkTitle: "Bevy"
 weight: 102
 description: >-
-     Bevy Tool for Events Management https://events.docker.com
+     Bevy Tool for Community Leaders https://events.docker.com
 ---
 
 Bevy (events.docker.com) is the tool that provides the MOST features to your Community, including:
