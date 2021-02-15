@@ -79,11 +79,11 @@ anchor = "smart"
     weight = 50
 
   [[menu.main]]
-    name = "Community Tools"
+    name = "Tools"
     url = "/docs/communicate"
     weight = 60
 
   [[menu.main]]
-    name = "Community Events"
+    name = "Events"
     url = "/docs/events/"
     weight = 70
