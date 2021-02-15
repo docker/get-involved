@@ -82,3 +82,8 @@ anchor = "smart"
     name = "Community Tools"
     url = "/docs/communicate"
     weight = 60
+
+  [[menu.main]]
+    name = "Community Events"
+    url = "/docs/events/"
+    weight = 70
