@@ -3,10 +3,10 @@ title: "Bevy"
 linkTitle: "Bevy"
 weight: 102
 description: >-
-     Bevy Tool for Community Leaders https://events.docker.com
+     Docker's own events management platform (powered by Bevy) https://events.docker.com
 ---
 
-Bevy (events.docker.com) is the tool that provides the MOST features to your Community, including:
+We've chosen Bevy to provide innovative features for event organizers, including:
 
 - 2 way integration with Meetup.com (create your event in Bevy and it posts to your meetup page and RSVPs from your event on meetup sync with your Bevy events.docker.com page).
 
@@ -19,4 +19,4 @@ Note: The RSVP limits you set in Bevy do not translate to meetup. The best way t
 - Automatic Emails (customizable) 
 
 
-For further information, visit https://events.docker.com
+For more information, please visit https://events.docker.com
