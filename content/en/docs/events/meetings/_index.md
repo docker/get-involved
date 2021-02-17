@@ -11,7 +11,7 @@ This page is a work in progress and lists all the past and upcoming community me
 
 ## A Sample Community Calendar
 
-<iframe src="https://calendar.google.com/calendar/embed?src=calendar%40islandviewpta.org&ctz=America%2FLos_Angeles" width="700" height="600" frameborder="0" style="border:0" allowfullscreen></iframe>
+<iframe src="https://calendar.google.com/calendar/render?cid=c_1ojrbiclm13m16thsmfrb9iakk@group.calendar.google.com" width="700" height="600" frameborder="0" style="border:0" allowfullscreen></iframe>
 
 
 
