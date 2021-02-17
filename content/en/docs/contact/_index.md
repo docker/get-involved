@@ -1,7 +1,7 @@
 ---
 title: "Get in touch"
 linkTitle: " Get in touch"
-weight: 100
+weight: 110
 description: >-
      Contact us for more queries
 ---
