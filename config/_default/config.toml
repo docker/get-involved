@@ -87,3 +87,8 @@ anchor = "smart"
     name = "Events"
     url = "/docs/events/"
     weight = 70
+    
+  [[menu.main]]
+    name = "Get In Touch"
+    url = "/docs/contact/"
+    weight = 80
