@@ -9,14 +9,4 @@ description: >-
 | Name    | Chairs      |  Contact | Meetings |
 |-----------|-----------------|----------------|----------------|
 | Engine Maintainers Meeting | Sebastiaan | Slack |
-| [Compose Specification Meeting](https://github.com/compose-spec/community) | [Chris Crone](https://github.com/chris-crone) | Slack | [2021-02-12.md](https://github.com/compose-spec/community/blob/master/meeting-notes/community/2021-02-12.md) 
-<br> [2021-01-28.md](https://github.com/compose-spec/community/blob/master/meeting-notes/community/2021-01-28.md) 
-<br> [2020-12-17.md](https://github.com/compose-spec/community/blob/master/meeting-notes/community/2020-12-17.md) 
-<br> [2020-11-05.md](https://github.com/compose-spec/community/blob/master/meeting-notes/community/2020-11-05.md) 
-<br> [2020-10-08.md](https://github.com/compose-spec/community/blob/master/meeting-notes/community/2020-10-08.md) 
-<br> [2020-09-24.md](https://github.com/compose-spec/community/blob/master/meeting-notes/community/2020-09-24.md) 
-<br> [2020-08-13.md](https://github.com/compose-spec/community/blob/master/meeting-notes/community/2020-08-13.md) 
-<br> [2020-07-30.md](https://github.com/compose-spec/community/blob/master/meeting-notes/community/2020-07-30.md)
-<br> [2020-07-16.md](https://github.com/compose-spec/community/blob/master/meeting-notes/community/2020-07-16.md) 
-<br> [2020-07-02.md](https://github.com/compose-spec/community/blob/master/meeting-notes/community/2020-07-02.md)
-<br>
+| [Compose Specification Meeting](https://github.com/compose-spec/community) | [Chris Crone](https://github.com/chris-crone) | Slack | [2021-02-12.md](https://github.com/compose-spec/community/blob/master/meeting-notes/community/2021-02-12.md)   <br> [2021-01-28.md](https://github.com/compose-spec/community/blob/master/meeting-notes/community/2021-01-28.md) <br> [2020-12-17.md](https://github.com/compose-spec/community/blob/master/meeting-notes/community/2020-12-17.md) <br> [2020-11-05.md](https://github.com/compose-spec/community/blob/master/meeting-notes/community/2020-11-05.md)  <br> [2020-10-08.md](https://github.com/compose-spec/community/blob/master/meeting-notes/community/2020-10-08.md)  <br> [2020-09-24.md](https://github.com/compose-spec/community/blob/master/meeting-notes/community/2020-09-24.md) <br> [2020-08-13.md](https://github.com/compose-spec/community/blob/master/meeting-notes/community/2020-08-13.md)  <br> [2020-07-30.md](https://github.com/compose-spec/community/blob/master/meeting-notes/community/2020-07-30.md) <br> [2020-07-16.md](https://github.com/compose-spec/community/blob/master/meeting-notes/community/2020-07-16.md)  <br> [2020-07-02.md](https://github.com/compose-spec/community/blob/master/meeting-notes/community/2020-07-02.md) <br>
