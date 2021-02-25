@@ -3,7 +3,7 @@ title: "Stackoverflow"
 linkTitle: "Stackoverflow"
 weight: 150
 description: >-
-     Get connected to Docker Developer Community
+     Connect with millions of Docker Developers | Get answered.
 ---
 
 
