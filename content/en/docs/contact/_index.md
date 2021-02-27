@@ -13,9 +13,9 @@ If you’re anywhere else in the world, feel free to ping [William Quiviger](htt
 
 <form action="https://getform.io/f/e73e8558-542b-4957-9741-67b6bfdef43c" method="POST">
 <br>
-  Name <input type="text" name="Name"> <br><br>
-  Email <input type="email" name="Email"><br><br>
-  Message <input type="text" name="Message"><br><br>
-  <button type="submit">Send</button><br>
+  Name <br><input type="text" name="Name"> <br><br>
+  Email <br><input type="email" name="Email"><br><br>
+  Message <br><input type="text" name="Message"><br><br>
+  <br><button type="submit">Send</button><br>
 
 </form>
