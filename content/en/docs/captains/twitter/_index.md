@@ -10,6 +10,7 @@ description: >-
   - **Antonis Kalipetis** - [@akalipetis](https://twitter.com/akalipetis) - [Blog](https://www.akalipetis.com)
   - **Bret Fisher** - [@BretFisher](https://twitter.com/bretfisher) - [Blog](https://www.bretfisher.com) - [YouTube](https://www.youtube.com/c/BretFisherITPro) - [Facebook](https://www.facebook.com/bretfisher.devops)
   - **Brian Christner** [@idomyowntricks](https://twitter.com/idomyowntricks) - [Blog](https://brianchristner.io)
+  - **Brandon Mitchell** [@bmitch](https://twitter.com/sudo_bmitch) - [GitHub](https://github.com/sudo-bmitch)
   - **Gianluca Arbezzano** - [@gianarb](https://twitter.com/gianarb) - [Blog](https://gianarb.it)
   - **Jeff Nickoloff** - [@allingeek](https://twitter.com/allingeek) - [Blog](https://medium.com/@allingeek) - [Blog - On-Docker](https://medium.com/on-docker)
   - **John Lees-Miller** - [@jdleesmiller](https://twitter.com/jdleesmiller) - [Blog](http://jdlm.info/)
@@ -31,3 +32,4 @@ description: >-
   - **Nicolas De Loof** - [@ndeloof](https://twitter.com/ndeloof) - [Blog](http://blog.loof.fr)
   - **Kevin Alvarez (aka CrazyMax)** - [@crazyws](https://twitter.com/crazyws) - [Blog](https://crazymax.dev/)
   - **Ajeet Rania** - [@ajeetsraina](https://twitter.com/ajeetsraina) - [Blog](https://collabnix.com/)
+  
