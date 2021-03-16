@@ -3,7 +3,7 @@ title: "Duties & Responsibilities"
 linkTitle: "Duties  & Responsibilities"
 weight: 100
 description: >-
-     Duties Responsibilites for Docker Community Leaders
+     Duties & Responsibilites for Docker Community Leaders
 ---
 
 Below are the list of duties and responsibilites for each of Docker Community Leaders:
