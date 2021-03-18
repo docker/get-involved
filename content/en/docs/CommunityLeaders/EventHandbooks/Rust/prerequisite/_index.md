@@ -19,14 +19,6 @@ curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
  rustup update
  
  ```
- # Rust Analyzer
- 
-[VS Code MarketPlace](https://marketplace.visualstudio.com/items?itemName=matklad.rust-analyzer) <br> 
- Bringing a great IDE experience to the Rust programming language.
- https://rust-analyzer.github.io/manual.html#installation
- 
- 
- # Create world famous "Hello World!" Rust Application 
  
  
  
