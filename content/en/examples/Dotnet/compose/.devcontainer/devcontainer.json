@@ -1,0 +1,30 @@
+{
+	"name": "dotnet& PostgreSQL",
+	"dockerComposeFile": "docker-compose.yaml",
+	"service": "app",
+	"workspaceFolder": "/workspace",
+
+	// Set *default* container specific settings.json values on container create.
+	"settings": { 
+		"terminal.integrated.shell.linux": "/bin/bash",
+		"sqltools.connections": [{
+			"name": "Container database",
+			"driver": "PostgreSQL",
+			"previewLimit": 50,
+			"server": "db",
+			"port": 5432,
+			"database": "postgres",
+			"username": "postgres",
+			"password": "example"
+		}],
+	},
+
+	// Add the IDs of extensions you want installed when the container is created.
+	"extensions": [
+		// "ms-python.python",
+		"ms-dotnettools.csharp",
+		"mtxr.sqltools",
+		"mtxr.sqltools-driver-pg"
+	],
+	"shutdownAction": "stopCompose"
+}

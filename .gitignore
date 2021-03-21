@@ -1,0 +1,4 @@
+public/
+**/_gen/
+.devcontainer/
+!content/en/examples/Dotnet/compose/.devcontainer/

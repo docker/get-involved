@@ -1,0 +1,1 @@
+This folder contains dockerfile, docker-compose.yaml and devcontainer.json to use VScode remote container extension 
