@@ -1,12 +1,12 @@
 ---
-title: "Dockerize Dotnet Web Application"
-linkTitle: "Dockerize Dotnet Web Application"
+title: "Dockerize .Net Web Application"
+linkTitle: "Dockerize .Net Web Application"
 weight: 810
 description: >-
-     How to containerize your first  Dotnet Web Application 
+     How to containerize your first  .Net Web Application 
 ---
 
-## Create a dotnet application
+## Create a .Net application
 
 1. In your terminal, type the following command
 
