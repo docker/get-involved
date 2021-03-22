@@ -1,9 +1,9 @@
 ---
-title: "Dockerize Multi-Container Go App Using Compose"
-linkTitle: "Dockerize Multi-Container Go App using Compose "
+title: "Dockerize Multi-Container .Net App Using Compose"
+linkTitle: "Dockerize Multi-Container .Net App using Compose "
 weight: 814
 description: >-
-     Learn how to containerize Go Application Using Docker Compose
+     Learn how to containerize .Net Application Using Docker Compose
 ---
 
 - [What is Docker Compose](#what-is-docker-compose)
@@ -36,8 +36,6 @@ An application using Docker containers will typically consist of multiple contai
 | `start` | Start services|
 | `stop` | Stop services|
 | `up` | Create and start containers|
-| `migrate-to-labels  Recreate containers to add labels|
-|====
 
 The application used in this section is built based on myWebapp communicating with a Postgresql database. When the page is loaded, it will query the Student table for the record with ID and display the name of student on the page.
 
