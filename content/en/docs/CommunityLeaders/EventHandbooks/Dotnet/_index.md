@@ -1,8 +1,8 @@
 ---
-title: "Docker for .Net Developer"
-linkTitle: "Docker for .Net Developer "
+title: "Docker for .Net Developers"
+linkTitle: "Docker for .Net Developers "
 weight: 800
 description: >-
-     Docker for .Net Developer
+     Docker for .Net Developers
 ---
 
