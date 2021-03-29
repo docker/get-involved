@@ -3,7 +3,7 @@ title: "Prerequisite"
 linkTitle: "Prerequisite"
 weight: 804
 description: >-
-     Installing Dotnet on Linux, Mac and Windows
+     Installing .Net on Linux, Mac and Windows
 ---
 
 
