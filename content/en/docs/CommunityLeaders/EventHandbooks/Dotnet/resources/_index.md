@@ -10,6 +10,6 @@ description: >-
 Follow the below additional resources which you might find useful:
 
 * [Play with Docker Training Classroom](https://training.play-with-docker.com/)
-* [Dotne ](https://training.https://docs.microsoft.com/en-us/dotnet/)
+* [.Net ](https://docs.microsoft.com/en-us/dotnet/)
 
 
