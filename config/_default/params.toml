@@ -49,7 +49,7 @@ breadcrumb_disable = false
 [links]
 # End user relevant links. These will show up on left side of footer and in the community page if you have one.
 [[links.user]]
-  name = "Docker users Group"
+  name = "Docker Users Group"
   url = "https://groups.google.com/g/docker-dev"
   external = "true"
   icon = "fa fa-users"
@@ -81,7 +81,7 @@ breadcrumb_disable = false
   icon = "fab fa-slack"
         desc = "Chat with other project developers"
 [[links.developer]]
-  name = "Docker developers Group"
+  name = "Docker Developer Tools"
   url = "https://www.docker.com/products/developer-tools"
   external = "true"
   icon = "fa fa-users"

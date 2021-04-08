@@ -64,7 +64,7 @@ title = "Docker Community"
 		  class="card-img-top"
 		  draggable="false"
           style="padding: 2rem;"
-          alt="Comunity Leaders"
+          alt="Community Leaders"
         />
         <div class="card-body bg-primary-dark">
           <h5 class="card-title text-white section-head">
