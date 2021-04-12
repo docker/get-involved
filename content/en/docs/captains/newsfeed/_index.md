@@ -11,7 +11,7 @@ This page is under construction. We are planning to integrate it with Feedly. St
 ![My Image](under-construction.png)
 
 
-<a class="twitter-timeline" data-width="300" data-height="250" data-dnt="true" href="https://twitter.com/dockercommunity/lists/dockercaptains-55156?ref_src=twsrc%5Etfw">A Twitter List by dockercommunity</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+<a class="twitter-timeline" data-width="300" data-height="300" data-dnt="false" href="https://twitter.com/dockercommunity/lists/dockercaptains-55156?ref_src=twsrc%5Etfw">A Twitter List by dockercommunity</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 
 
