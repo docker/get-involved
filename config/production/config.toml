@@ -5,7 +5,7 @@
 # Hugo build then uses every setting defined in "config/_default" and then merge
 # all settings defined here for "staging" on top of all those define for "_default".
 
-baseURL = "https://docker.github.io/get-involved"
+baseURL = "https://contribute.docker.com"
 enableRobotsTXT = true
 
 [services]
