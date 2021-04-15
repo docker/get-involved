@@ -12,7 +12,7 @@ This page lists all the past and upcoming community meetings hosted by Docker st
 
 
 
-<iframe src="https://www.youtube.com/watch?v=BJPCnXGo_Pc" style="border:solid 1px #777" width="813" height="623" frameborder="0" scrolling="no"></iframe>
+<iframe src="https://www.youtube.com/watch?v=IIShRTzF9fk" style="border:solid 1px #777" width="813" height="623" frameborder="0" scrolling="no"></iframe>
 
 
 
