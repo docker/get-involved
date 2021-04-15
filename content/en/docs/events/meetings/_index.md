@@ -3,7 +3,7 @@ title: "Community Meetings"
 linkTitle: "Community Meetings"
 weight: 106
 description: >-
-     Community Meetings conducted by Docker working groups, SIGs and task forces 
+     Community Meetings conducted by Docker Community leaders, SIGs and task forces 
 ---
 
 This page lists all the past and upcoming community meetings hosted by Docker staff and contributors. 
