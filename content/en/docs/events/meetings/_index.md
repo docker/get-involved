@@ -8,7 +8,7 @@ description: >-
 
 This page lists all the past and upcoming community meetings hosted by Docker staff and contributors. 
 
-<div class="-bg-primary p-3 display-4">Docker Community Groups: Kick-Off! Meeting</div>
+<div class="-bg-primary p-3 display-4">Docker Community Groups: Kick-Off! Meeting ( April 15 2021)</div>
 
 {{< youtube IIShRTzF9fk >}}
 
