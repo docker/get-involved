@@ -8,14 +8,9 @@ description: >-
 
 This page lists all the past and upcoming community meetings hosted by Docker staff and contributors. 
 
-<div align="center">
-      <a href="https://www.youtube.com/watch?v=IIShRTzF9fk">
-     <img 
-      src="https://github.com/docker/get-involved/blob/master/content/en/docs/events/meetings/communityleaderss.jpeg" 
-      alt="Docker Community Groups: Kick-Off! " 
-      style="width:5%;">
-      </a>
-    </div>
+<div class="-bg-primary p-3 display-4">Docker Community Groups: Kick-Off! Meeting - April 2021 Primary</div>
+
+https://www.youtube.com/watch?v=IIShRTzF9fk
 
 
 
