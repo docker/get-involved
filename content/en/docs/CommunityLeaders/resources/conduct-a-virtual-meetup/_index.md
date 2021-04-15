@@ -38,7 +38,7 @@ Next, make yourself familiar with the three most relevant tools:
 
 As you go through the organizing process, you can use the following phases to structure your planning for a successful event:
 
-![](Images_for_meetup_guide/Project_Phases.png)
+
 
 Start with a scoping phase that shapes the general purpose of your meetup series. In this phase, you answer questions like: Do I want to organize simple, open discussions about Docker or I want to invite speakers? All the remaining phases belong to a single meetup, i.e. for each meetup you start with planning and finish up with the closing phase. Following this guide will make it easy for you to always have an overview what's important now and next.
 
@@ -60,16 +60,14 @@ Start with a scoping phase that shapes the general purpose of your meetup series
 We recommend to create a single planning document, i.e. a Markdown file for each meetup. Using Github for that eases file versioning and eases editing since Github is a familiar platform.
 This planning document should gather all relevant information for the particular meetup, divided in categories and tasks. See the following slide as example (it's in German, but you'll get the general idea):
 
-<img src="Images_for_meetup_guide/Planning_Categories_Tasks.png" width="600">
+
 
 Each category contains a set of associated tasks. Thereby, each tasks ideally has:
 - a checkbox to track the progress
 - the name of the one who is responsible for the tasks
 - a deadline, if appropriate
 
-See the following as example:
 
-<img src="Images_for_meetup_guide/Screenshot_Tasks.png" width="480">
 
 
 
