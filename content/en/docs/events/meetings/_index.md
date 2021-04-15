@@ -10,7 +10,9 @@ This page lists all the past and upcoming community meetings hosted by Docker st
 
 <div class="-bg-primary p-3 display-4">Docker Community Groups: Kick-Off! Meeting</div>
 
-https://www.youtube.com/watch?v=IIShRTzF9fk
+[![SC2 Video](https://github.com/docker/get-involved/blob/master/content/en/docs/events/meetings/communityleaderss.jpeg)](https://www.youtube.com/watch?v=IIShRTzF9fk)
+
+
 
 
 
