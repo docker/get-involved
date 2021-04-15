@@ -17,7 +17,7 @@ This page lists all the past and upcoming community meetings hosted by Docker st
      <img 
       src="https://github.com/docker/get-involved/blob/master/content/en/docs/events/meetings/communityleaderss.jpeg" 
       alt="Docker Community Groups: Kick-Off! " 
-      style="width:5%;height=5%">
+      style="width:5%;">
       </a>
     </div>
 
