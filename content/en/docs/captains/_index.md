@@ -53,4 +53,4 @@ We ask that you agree to the following:
 
 
 
-To find out more about how to join the Docker Captains Program, contact [William](william.quiviger@docker.com).
+To find out more about how to join the Docker Captains Program, contact [William](mailto:william.quiviger@docker.com).
