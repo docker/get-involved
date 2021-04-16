@@ -12,6 +12,12 @@ description: >-
 
 {{< youtube IIShRTzF9fk >}}
 
+<div class="-bg-primary p-3 display-4">Docker Community Groups: Bevy Training and Q&A! ( April 15 2021)</div>
+
+
+{{< youtube 7VsEmbUlfxE >}}
+
+
 
 
 
