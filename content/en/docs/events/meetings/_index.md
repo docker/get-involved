@@ -8,10 +8,12 @@ description: >-
 
 ---
 
-| Name of Event    |  Organizer     |    Date | Links & References |
+| Name of Event    |  Organizer     |    Contact | Links & References |
 |-----------|-----------------|----------------|----------------|
-| Docker Community Groups: Kick-Off! Meeting | Bevy Team | 14-April-2021 | Link
-| Docker Community Groups: Bevy Training and Q&A!  | Bevy Team | 15-April-202 | Link
+| Docker Community Groups: Kick-Off! Meeting | Bevy Team | William & Ajeet | Docker Community Groups: 100 Day Re-Activation (April - June 2021):<br> Docker Community Groups: Kick-Off! Meeting: [2021-04-14.md]()<br> Docker Community Groups: Bevy Training and Q&A! : [2021-04-15.md]() 
+
+
+
 
 
 
