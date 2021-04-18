@@ -11,7 +11,7 @@ Building and running the site locally requires a recent extended version of Hugo
 
 ```
 git clone --recurse-submodules --depth 1 https://github.com/docker/get-involved
-cd getting-started
+cd get-involved
 ```
 
 
