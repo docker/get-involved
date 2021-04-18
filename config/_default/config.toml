@@ -59,7 +59,7 @@ anchor = "smart"
 
   [[menu.main]]
     name = "Home"
-    url = "/"
+    url = "https://contribute.docker.com"
     weight = 10
 
   [[menu.main]]
