@@ -64,31 +64,31 @@ anchor = "smart"
 
   [[menu.main]]
     name = "Captains"
-    url = "https://contribute.docker.com/docs/captains"
+    url = "/docs/captains"
     weight = 20
 
     
   [[menu.main]]
     name = "Community Leaders"
-    url = "https://contribute.docker.com/docs/communityleaders/"
+    url = "/docs/communityleaders/"
     weight = 40
 
   [[menu.main]]
     name = "Handbooks"
-    url = "https://contribute.docker.com/docs/communityleaders/eventhandbooks/"
+    url = "/docs/communityleaders/eventhandbooks/"
     weight = 50
 
   [[menu.main]]
     name = "Tools"
-    url = "https://contribute.com/docs/communicate"
+    url = "/docs/communicate"
     weight = 60
 
   [[menu.main]]
     name = "Events"
-    url = "https://contribute.docker.com/docs/events/"
+    url = "/docs/events/"
     weight = 70
     
   [[menu.main]]
     name = "Get In Touch"
-    url = "https://contribute.docker.com/docs/contact/"
+    url = "/docs/contact/"
     weight = 80
