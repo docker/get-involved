@@ -1,4 +1,3 @@
-
 ---
 title: "Docker Captains"
 linkTitle: "Docker Captains"
