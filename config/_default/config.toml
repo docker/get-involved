@@ -64,7 +64,7 @@ anchor = "smart"
 
   [[menu.main]]
     name = "Captains"
-    url = "/docs/captains"
+    url = "/docs/captains/"
     weight = 20
 
     
@@ -80,7 +80,7 @@ anchor = "smart"
 
   [[menu.main]]
     name = "Tools"
-    url = "/docs/communicate"
+    url = "/docs/communicate/"
     weight = 60
 
   [[menu.main]]
