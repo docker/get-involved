@@ -2,7 +2,7 @@
 title: "Docker Captains"
 linkTitle: "Docker Captains"
 weight: 3
-date: 2017-01-05
+date: 2020-01-05
 description: >
  A dedicated space for Docker Captains' Projects, Resources and Newsfeeds.
 ---
