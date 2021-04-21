@@ -34,9 +34,9 @@ cookieUsage = "Cookie Usage"
 cookie_usage = "/about-analytics-cookies/"
 
 # GitHub repositories
-github_docsrepo = "https://github.com/docker-community-leaders/dockercommunity/blob/master/content/en/docs/_index.md"
-github_communityrepo = "https://github.com/docker-community-leaders/dockercommunity/"
-github_eventingrepo = "https://github.com/docker-community-leaders/dockercommunity/"
+github_docsrepo = "https://github.com/docker/get-involved/blob/master/content/en/docs/_index.md"
+github_communityrepo = "https://github.com/docker/get-involved/"
+github_eventingrepo = "https://github.com/docker/get-involved/"
 github_servingrepo = "https://github.com/docker/get-involved"
 
 # User interface configuration
