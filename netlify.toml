@@ -1,3 +1,6 @@
 [build]
-publish = "public"
-command = "git submodule update --init --recursive --depth 1 && hugo"
+  command = "hugo"
+  publish = "public"
+
+[build.environment]
+  HUGO_VERSION = "0.80.0"
