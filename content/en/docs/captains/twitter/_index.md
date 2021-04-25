@@ -3,7 +3,7 @@ title: "Blogs & Twitter"
 linkTitle: "Blogs & Twitter"
 weight: 100
 description: >-
-     List of Captains Blogs and Twitter Accounts to Follow
+     List of Captains Blogs & Twitter Accounts to Follow
 ---
 
 ## Captains Blogs/Twitter
