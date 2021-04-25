@@ -1,13 +1,13 @@
+# Hugo build configuration for Netlify 
+# (https://gohugo.io/hosting-and-deployment/hosting-on-netlify/#configure-hugo-version-in-netlify)
+
+# Default build settings
 [build]
   publish = "public"
-  command = "hugo"
+  command = "git submodule update -f --init --recursive && npm install postcss-cli && hugo"
 
-[context.deploy-preview.environment]
-  HUGO_VERSION = "0.68.3"
+[build.environment]
+  HUGO_VERSION = "0.66.0"
 
 [context.production.environment]
-  HUGO_VERSION = "0.68.3"
   HUGO_ENV = "production"
-
-[context.branch-deploy.environment]
-  HUGO_VERSION = "0.68.3"
