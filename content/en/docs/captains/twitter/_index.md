@@ -29,4 +29,5 @@ description: >-
   - **Kevin Alvarez (aka CrazyMax)** - [@crazyws](https://twitter.com/crazyws) - [Blog](https://crazymax.dev/)
   - **Ajeet Rania** - [@ajeetsraina](https://twitter.com/ajeetsraina) - [Blog](https://collabnix.com/)
   - **Michael Irwin** - [@mikesir87](https://twitter.com/mikesir87) - [Blog](https://blog.mikesir87.io)
+  - **Thomas Shaw** - [@tomwillfixit](https://twitter.com/tomwillfixit) - [Blog](https://tomwillfixit.com)
   
