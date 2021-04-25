@@ -1,4 +1,4 @@
-baseURL = "/"
+baseURL = "https://contribute.docker.com"
 title = "Contribute to Docker"
 enableRobotsTXT = true
 
