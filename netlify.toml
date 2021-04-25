@@ -4,7 +4,7 @@
 # DO NOT REMOVE THIS (contact @kubernetes/sig-docs-leads)
 publish = "public"
 functions = "functions"
-command = "git submodule update --init --recursive --depth 1 && make non-production-build"
+command = "cd themes/docsy && git submodule update -f --init && cd ../.. && hugo"
 [build.environment]
 HUGO_VERSION = "0.82.0"
 NODE_VERSION = "10.20.0"
