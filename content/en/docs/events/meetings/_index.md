@@ -18,9 +18,9 @@ description: >-
 
 | S. No. | Title of Event   |  Chapter Name | Date | 
 |----|-------|-----------------|----------------|
-| 1 | [Docker Bangalore Joint Meetup with OSCONF Community and Docker Pune](https://events.docker.com/events/details/docker-pune-presents-a-joint-meetup-with-open-source-community-conference-osconf-2021-online-virtual-event/) | Docker Bangalore | 10-April 2021 | 
-| 2 | [KroqueCon: Kubernetes, pero en español](https://events.docker.com/events/details/docker-madrid-presents-kroquecon-kubernetes-pero-en-espanol/) | Docker Madrid | 29-April 2021 |
-| 3 | [Kong API Gateway e Docker](https://events.docker.com/events/details/docker-rio-de-janeiro-presents-kong-api-gateway-e-docker/) | Docker RIO DE JANEIRO | 29-April 2021 |
+| 1 | [Docker Bangalore Joint Meetup with OSCONF Community and Docker Pune](https://events.docker.com/events/details/docker-pune-presents-a-joint-meetup-with-open-source-community-conference-osconf-2021-online-virtual-event/) | Docker Bangalore | 10-April | 
+| 2 | [KroqueCon: Kubernetes, pero en español](https://events.docker.com/events/details/docker-madrid-presents-kroquecon-kubernetes-pero-en-espanol/) | Docker Madrid | 29-April |
+| 3 | [Kong API Gateway e Docker](https://events.docker.com/events/details/docker-rio-de-janeiro-presents-kong-api-gateway-e-docker/) | Docker RIO DE JANEIRO | 29-April |
 
 
 
