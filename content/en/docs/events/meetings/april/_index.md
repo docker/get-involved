@@ -3,7 +3,7 @@ title: "April 2021"
 linkTitle: "Community Meetings in April"
 weight: 107
 description: >-
-     Events held during April 2021
+     Events held during the month of April 2021
 ---
 
 ### Community Meetings
