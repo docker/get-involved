@@ -1,6 +1,6 @@
 ---
 title: "April 2021"
-linkTitle: "Community Meetings in April"
+linkTitle: "April"
 weight: 107
 description: >-
      Events held during April 2021
