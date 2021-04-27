@@ -1,5 +1,5 @@
 ---
-title: "Community Meetings in April 2021"
+title: "April 2021"
 linkTitle: "Community Meetings in April 2021"
 weight: 107
 description: >-
