@@ -6,8 +6,6 @@ description: >-
      Events held during April 2021
 ---
 
-## April 2021
-
 ### Community Meetings
 
 | Name of Event    |  Organizers  | Meetings | 
