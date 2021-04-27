@@ -37,3 +37,4 @@ Do not discuss any topic that is confidential or proprietary. Our policy is that
 Avoid content which may make people uncomfortable, for example, jokes with sexual connotations.
 
 
+<a href="https://github.com/docker/get-involved/discussions/categories/call-for-speakers" class="btn btn-primary btn-success"><span class="align-middle">Speak at an event </span></a>
