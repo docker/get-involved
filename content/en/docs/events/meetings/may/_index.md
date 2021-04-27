@@ -3,7 +3,7 @@ title: "May 2021"
 linkTitle: "Community Meetings in May"
 weight: 120
 description: >-
-     Events held during the month of May 2021
+     Events held during May 2021
 ---
 
 ## May 2021
