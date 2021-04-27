@@ -20,3 +20,49 @@ Note: The RSVP limits you set in Bevy do not translate to meetup. The best way t
 
 
 For more information, please visit https://events.docker.com
+
+### FAQs:
+
+#### 1. What is the maximum number of users that can join event if it is hosted over Bevy Virtual?
+
+Ans: The maximum number of attendees who can watch a live session is variable, averaging around 500 (see below). Pre-recorded sessions are not subject to the aforementioned attendee limits. Depending on the number of people on screen, the presenter and attendee max looks like:
+
+Speakers (presenters) x viewers (attendees) >= 3000
+
+```
+1 presenter: 3000 viewers maximum
+2 presenters: 1500 viewers maximum
+3 presenters: 1000 viewers maximum
+4 presenters: 750 viewers maximum
+5 presenters: 600 viewers maximum
+10 presenters: 300 viewers maximum
+20 presenters: 150 viewers maximum
+```
+This is a third party limit that ensures optimal performance and stability.The above maximum # of viewers also applies to standard Bevy Virtual events.
+Further Reference: https://help.bevylabs.com/article/554-max-limits
+
+#### 2. Can I stream Bevy Virtual directly over the social media platform like YouTube and Twitter?
+
+Ans: No, today it is not possible with Bevy Virtual. Bevy Labs have such capabilities with Bevy Virtual Conference which is a seperate product. 
+Bevy Virtual and Bevy Conference are 2 separate products and are separately enabled on your Bevy Dashboard. Docker Community Leaders have just access to Bevy Virtual(and not for Bevy Conference)
+
+With Bevy Conference, you can Livestream to FB, Twitch, YouTube, etc.(upto 4 services at the same time).
+Further Reference: https://help.bevylabs.com/article/503-bevyvirtual-vs-bevyvirtualconferencing
+
+#### 3. Is it possible to stream Bevy Virtual LIVE under 720p?
+
+Ans: Yes, it is possible to do Unlimited 720p HD Video Calls with Bevy Virtual.
+
+#### 4. Does Bevy Virtual support screen sharing and breakout Rooms?
+
+Ans: Yes, both of these features are supported in Bevy Virtual.
+
+#### 5. Does Bevy Virtual support recording the session?
+
+Ans: Ofcourse ! Once the event is completed, you can go to Wrap-Up section under the event and find the recordings.
+
+
+
+
+
+
