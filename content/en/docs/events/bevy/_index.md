@@ -39,6 +39,7 @@ Speakers (presenters) x viewers (attendees) >= 3000
 20 presenters: 150 viewers maximum
 ```
 This is a third party limit that ensures optimal performance and stability.The above maximum # of viewers also applies to standard Bevy Virtual events.
+
 Further Reference: https://help.bevylabs.com/article/554-max-limits
 
 #### 2. Can I stream Bevy Virtual directly over the social media platform like YouTube and Twitter?
@@ -47,6 +48,7 @@ Ans: No, today it is not possible with Bevy Virtual. Bevy Labs have such capabil
 Bevy Virtual and Bevy Conference are 2 separate products and are separately enabled on your Bevy Dashboard. Docker Community Leaders have just access to Bevy Virtual(and not for Bevy Conference)
 
 With Bevy Conference, you can Livestream to FB, Twitch, YouTube, etc.(upto 4 services at the same time).
+
 Further Reference: https://help.bevylabs.com/article/503-bevyvirtual-vs-bevyvirtualconferencing
 
 #### 3. Is it possible to stream Bevy Virtual LIVE under 720p?
