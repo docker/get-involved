@@ -1,7 +1,7 @@
 ---
 title: "Special Interest Groups"
 linkTitle: "Special Interest Groups"
-weight: 108
+weight: 130
 description: >-
      A list of Special Interest Groups, User Groups and Committees.
 ---
