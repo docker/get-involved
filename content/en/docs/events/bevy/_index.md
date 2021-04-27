@@ -25,20 +25,7 @@ For more information, please visit https://events.docker.com
 
 #### 1. What is the maximum number of users that can join event if it is hosted over Bevy Virtual?
 
-Ans: The maximum number of attendees who can watch a live session is variable, averaging around 500 (see below). Pre-recorded sessions are not subject to the aforementioned attendee limits. Depending on the number of people on screen, the presenter and attendee max looks like:
-
-Speakers (presenters) x viewers (attendees) >= 3000
-
-```
-1 presenter: 3000 viewers maximum
-2 presenters: 1500 viewers maximum
-3 presenters: 1000 viewers maximum
-4 presenters: 750 viewers maximum
-5 presenters: 600 viewers maximum
-10 presenters: 300 viewers maximum
-20 presenters: 150 viewers maximum
-```
-This is a third party limit that ensures optimal performance and stability.The above maximum # of viewers also applies to standard Bevy Virtual events.
+Ans: The maximum number of attendees who can watch a live session is variable, averaging around 500 
 
 Further Reference: https://help.bevylabs.com/article/554-max-limits
 
