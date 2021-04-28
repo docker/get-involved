@@ -189,5 +189,65 @@ description: >-
 - Drain a node and reschedule the containers
 - Cleaning Up
 
+## Chap 11. Introduction to Docker Security
 
+- Introduction to Docker Content Trust
+- Pulling images by tag
+- Pulling images by digest
+- Docker Content Trust
+- Official Images
+- Extra for experts
+- Enable Docker Content Trust
+- Push & Sign an Image
+- Cleaning Up
+
+## Chap 12.  Docker Secrets Management
+
+- Create a Secret
+- Manage Secrets
+- Access the secret within an app
+- Clean-up
+
+## Chap 13.  Docker Network Security
+- Create an encrypted overlay network
+- List networks
+- Deploy a service
+- Clean-up
+
+## Chap 14.  Docker Security Scanning
+
+- Create a private Hub repo
+- Pull an image
+- Tag and push an image
+- View scan results
+- Clean-up
+
+## Chap 15.  Docker Swarm Mode Security
+
+- Create a new Swarm
+- Add a new Manager
+- Add a new Worker
+- Rotate Join Keys
+- View certificates
+- Rotate certificates
+
+## Chap 16.  Using Docker Desktop
+
+- Running Nginx application on Docker Desktop
+- Running Kubernetes on Docker Desktop
+- Running Elastic Slack on Docker Desktop
+- Setting up Google Kubernetes Engine using Docker Desktop
+- Building a spring boot application using Docker Desktop
+- NFS volume sharing using Docker Desktop
+
+## Chap 17.  Building Multi-architecture Docker Images using buildx
+
+- What is buildx?
+
+## Chap 18.  Use cases of Docker
+
+- Building a WordPress application using Docker
+- Building a sample voting application using Docker
+- Building a CCTV camera using Docker on Raspberry Pi
+- Running a visualizer tool using Docker
 
