@@ -21,7 +21,7 @@ All Docker community members should strive to follow our community [Code of Cond
 
 ## Understand Docker beyond containers.
 
-As a community leader, you understand that Docker is an evolving platform. Ideally, you have a good understanding of all the products including Docker EE. You may feature Docker ecosystem tools at the local meetups you organize, but you are still enthusiastic about Docker as a whole technology and platform.
+As a community leader, you understand that Docker is an evolving platform. Ideally, you have a good understanding of all the products including Docker Desktop. You may feature Docker ecosystem tools at the local meetups you organize, but you are still enthusiastic about Docker as a whole technology and platform.
 
 ## Be a force for good in the community
 
