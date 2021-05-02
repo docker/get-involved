@@ -23,7 +23,7 @@ description: >-
 
 ### Office Hours
 
-| S.No. | Title of Event   |  Chapter Name | Date | 
+| S.No. | Title of Event   |  Type of Event | Date | 
 |----|-------|-----------------|----------------|
 | 1 | [Docker Community Groups: Office Hours](https://events.docker.com/events/details/docker-docker-community-leaders-presents-docker-community-groups-office-hours/) | Virtual Online/Slack | 04-May |
 | 2 | [Docker Community Groups: Office Hours](https://events.docker.com/events/details/docker-docker-community-leaders-presents-docker-community-groups-office-hours-4/) | Virtual Online/Slack | 11-May |
