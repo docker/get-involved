@@ -11,7 +11,7 @@ description: >-
 
 | Name of Event    |  Organizers  | Meetings | 
 |-----------|-----------------|----------------|
-| Docker Community 100 Days Re-activation Meeting |  Bevy Team | Docker Community Groups: 100 Days Re-Activation (April - June 2021):<br>  
+| Docker Community 100 Days Re-activation Meeting |  Bevy Team | Docker Community Groups: 100 Days Re-Activation (April - June 2021):<br>  1. Bevy Training and Q&A! : [2021-05-06](https://events.docker.com/events/details/docker-docker-community-leaders-presents-docker-community-groups-bevy-training-and-qa-4/)<br> 2. Bevy Training and Q&A! : [2021-05-20](https://events.docker.com/events/details/docker-docker-community-leaders-presents-docker-community-groups-bevy-training-and-qa-3/)<br>
 
 ### Virtual Events
 
