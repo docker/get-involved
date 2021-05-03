@@ -20,7 +20,7 @@ The Docker community has gathered together to create a book called "The Docker C
 
 
 
-## Chap 1.  Getting Started
+## [Chap 1.  Getting Started](https://github.com/docker/get-involved/tree/master/content/en/docs/communicate/ebook/chap1)
 
 - What are containers & what are they used for?
 - What is Docker?
