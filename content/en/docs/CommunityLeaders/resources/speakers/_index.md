@@ -30,7 +30,7 @@ While you should submit a topic that is broad enough to cover a range of interes
 ### A Sales Pitch
 Keep in mind this is a community event with attendees who are interested in learning, not hearing a sales pitch. It’s acceptable to mention your company’s product during a presentation but it should never be the focus of your talk. 
 
-### Sharing content that is not for public consumption
+### Sharing contents that is not for public consumption
 Do not discuss any topic that is confidential or proprietary. Our policy is that all presentations and discussions are public and can be freely disclosed with and among the attendees. 
 
 ### Make people uncomfortable
@@ -38,6 +38,7 @@ Avoid content which may make people uncomfortable, for example, jokes with sexua
 
 
 <a href="https://github.com/docker/get-involved/discussions/categories/call-for-speakers" class="btn btn-primary btn-success"><span class="align-middle">Speak at an event </span></a>
+
 
 
 {{< typeform qxqZcxv1 USER_NAME 100 200 >}} 
