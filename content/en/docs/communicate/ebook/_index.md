@@ -6,6 +6,8 @@ description: >-
      A Docker Book built by the Community
 ---
 
+The Docker community has gathered together to create a book called "The Docker Community Book". This book is targeted at Beginners, intermediate as well as advanced users of Docker. It's not owned by a single author or any publisher. It's an open community book and dedicated to all Docker community members, contributors as well as community influencers.
+
 ## Table of Contents
 
 ## Introduction
