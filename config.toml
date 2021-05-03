@@ -72,7 +72,7 @@ weight = 1
 copyright = "Docker Inc"
 privacy_policy = "https://www.docker.com/legal/docker-privacy-policy"
 rss_sections = ["blog"]
-typeformid = "qxqZcxv1" 
+
 
 # First one is picked as the Twitter card image if not set on page.
 # images = ["images/project-illustration.png"]
