@@ -31,7 +31,7 @@ The Docker community has gathered together to create a book called "The Docker C
 - How do I install Docker
 - Running the first “Hello World” container
 
-## [Chap 2.   Installing, Upgrading, and Maintaining Docker](https://github.com/docker/get-involved/tree/master/content/en/docs/communicate/ebook/chap2))
+## [Chap 2.Installing, Upgrading, and Maintaining Docker](https://github.com/docker/get-involved/tree/master/content/en/docs/communicate/ebook/chap2)
 
 - Installing Docker on Linux
   - Ubuntu 
@@ -54,7 +54,7 @@ The Docker community has gathered together to create a book called "The Docker C
 - Installing Docker Desktop for Windows 
 - Installing Docker on Windows Server
 
-## [Chap 3.  Understanding Docker components](https://github.com/docker/get-involved/tree/master/content/en/docs/communicate/ebook/chap3))
+## [Chap 3.  Understanding Docker components](https://github.com/docker/get-involved/tree/master/content/en/docs/communicate/ebook/chap3)
 
 - Docker Client-Server architecture
 - Docker Daemon
@@ -66,7 +66,7 @@ The Docker community has gathered together to create a book called "The Docker C
 - How to build a local private Docker registry?
 
 
-## [Chap 4.  Working with Docker Image and container](https://github.com/docker/get-involved/tree/master/content/en/docs/communicate/ebook/chap4))
+## [Chap 4.  Working with Docker Image and container](https://github.com/docker/get-involved/tree/master/content/en/docs/communicate/ebook/chap4)
 
 - Listing the Docker images
 - Listing the Docker images by names and tags
