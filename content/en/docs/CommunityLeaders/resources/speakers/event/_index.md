@@ -1,7 +1,7 @@
-+++
+---
 title = "Contact"
 id = "typeform"
-+++
+---
 
 
 
