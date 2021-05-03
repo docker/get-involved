@@ -41,4 +41,4 @@ Avoid content which may make people uncomfortable, for example, jokes with sexua
 
 
 
-{{< typeform qxqZcxv1 USER_NAME 100 200 >}} 
+{{< typeform qxqZcxv1 william.quiviger@docker.com 800px 100% >}} 
