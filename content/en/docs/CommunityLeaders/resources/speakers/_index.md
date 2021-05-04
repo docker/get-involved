@@ -6,6 +6,7 @@ description: >-
      A Quick Guidelines for Meetup speakers
 ---
 
+<a href="https://form.typeform.com/to/qxqZcxv1?typeform-medium=embed-snippet" class="btn btn-primary btn-success"><span class="align-middle">Speak at an event </span></a>
 
 Thank you for volunteering to speak at a Docker Meetup! To make your talk a success, we offer some guidelines.  Please let the local Docker Community Leadership Team know of any other requirements you may have. We look forward to your talk.
 
@@ -37,6 +38,6 @@ Do not discuss any topic that is confidential or proprietary. Our policy is that
 Avoid content which may make people uncomfortable, for example, jokes with sexual connotations.
 
 
-<a href="https://github.com/docker/get-involved/discussions/categories/call-for-speakers" class="btn btn-primary btn-success"><span class="align-middle">Speak at an event </span></a>
+<a href="https://form.typeform.com/to/qxqZcxv1?typeform-medium=embed-snippet" class="btn btn-primary btn-success"><span class="align-middle">Speak at an event </span></a>
 
 
