@@ -37,8 +37,10 @@ The Docker community has gathered together to create a book called "The Docker C
   - Ubuntu 
   - Debian
   - Red Hat Enterprise Linux
+  - CentOS
   - OpenSUSE
 - Alpine OS
+- Arch Linux
 - Installing Docker on Cloud
   - AWS
   - Google Cloud
