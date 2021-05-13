@@ -12,118 +12,62 @@ Community and participation are the backbone of Docker. Whether you're technical
 
 ## Using the command line
 
-- Fork/Clone the docker-community-leaders/community repository:
+# Clone the repository
 
-- Go to the docker-community-leaders/dockercommunity on GitHub.
-- Click Fork to make your own copy of the repository. GitHub creates a copy at https://github.com/<your-github-username>/community.
+To start contributing you need to clone [this](https://github.com/docker/get-involved) repository.
+Use the following command that will also clone the submodules used. 
 
-- Open a terminal on your local machine.
-
-- Clone your forked repository, to copy the files down to your local machine. This example creates a directory called community and uses SSH cloning to download the files:
-
-```
-mkdir community
-cd community/
-git clone git@github.com:<your-github-username>/dockercommunity.git
-cd dockercommunity/
+```sh
+git clone --recurse-submodules --depth 1 https://github.com/docker/get-involved
 ```
 
-## Add the upstream repository as a Git remote repository:
+## Running the website locally
+
+Building and running the site locally requires a recent extended version of Hugo.
+You can find out more about how to install Hugo for your environment in our Getting started guide.
+
+You need a [recent **extended** version](https://github.com/gohugoio/hugo/releases) of 
+[Hugo](https://gohugo.io/) to do local builds and preview the website. 
+We recommend using version `0.75.0` or later.
+If you install from the release page, make sure to get the `extended` Hugo version.
+The extended versions support [SCSS](https://sass-lang.com/documentation/file.SCSS_FOR_SASS_USERS.html); 
+you may need to scroll down the list of releases to see it. 
+
+For comprehensive Hugo documentation, see [gohugo.io](https://gohugo.io/).
+
+Once you've made your working copy of the site repo, from the repo root folder, run:
 
 ```
-git remote add upstream https://github.com/docker-community-leaders/dockercommunity.git
+hugo server
+```   
+
+## Troubleshooting
+
+If you have not cloned this repository as suggested above, you may face the following error during the run:
+
+```sh
+➜ hugo server -D
+Start building sites … 
+Built in 1079 ms
+Error: Error building site: "/home/get-involved/content/en/_index.html:7:1": failed to extract shortcode: template for shortcode "blocks/cover" not found
 ```
 
-## Check your remotes:
+This is primarily because you have not yet cloned the submodules used in the repository.
+In order to fix the issue run the following command and retry:
 
-```
-git remote -vv
-```
-
-You should have 2 remote repositories:
-
-- origin - points to your own fork of the repository on gitHub - that is, the one you cloned your local repository from.
-- upstream - points to the actual repository on gitHub.
-
-Create a branch. In this example, replace documentupdates with any branch name you like. Choose a branch name that helps you recognize the updates you plan to make in that branch:
-
-```
-git checkout -b documentupdates
+```sh
+git submodule update --init --recursive
 ```
 
-Add and edit the files as you like. The doc pages are in the /community/content/docs/ directory.
+## Code reviews
 
-Run git status at any time, to check the status of your local files. Git tells you which files need adding or committing to your local repository.
+All submissions, including submissions by project members, require review. We
+use GitHub pull requests for this purpose. Consult
+[GitHub Help](https://help.github.com/articles/about-pull-requests/) for more
+information on using pull requests.
 
-Commit your updated files to your local Git repository. Example commit:
+## Community Guidelines
 
-```
-git commit -a -m "Fixed some doc errors."
-```
+This project follows
+[Google's Open Source Community Guidelines](https://opensource.google.com/conduct/).
 
-Or:
-
-```
-git add add-this-doc.md
-git commit -a -m "Added a shiny new doc."
-```
-
-Push from your branch (for example, updates) to the relevant branch on your fork on GitHub:
-
-```
-git checkout documentupdates
-git push origin documentsupdates
-```
-
-When you're ready to start the review process, create a pull request (PR) in the branch on your fork on the GitHub UI, based on the above push. The PR is auto-sent to the upstream repository - that is, the one you forked from.
-
-If you need to change the files in your PR, continue changing them locally in the same branch, then push them again in the same way. GitHub automatically sends them through to the same PR on the upstream repository!
-
-Hint: If you're authenticating to GitHub via SSH, use ssh-add to add your SSH key passphrase to the managing agent, so that you don't have to keep authenticating to GitHub. You need to do this again after every reboot.
-
-## Using the GitHub web UI
-
-Note: The GitHub web UI is suitable for quick updates to a single file. If your update is more complex or you need to update more than one file within one pull request (PR), then the command line provides a better experience.
-
-Follow these steps to edit a page using the GitHub UI:
-
-- Sign in to GitHub if you haven't yet done so.
-
-- Go to the page that you want to edit on the Docker Community Site.
-
-- Click Edit this page.
-
-If this is the first time you're updating a file in the Community site repository, a screen opens asking you to fork the repository. A fork is a copy of the repository where you can make your updates before submitting them for review. You only have to fork the repository once:
-
-- Click Fork this repository.
-
-If GitHub asks you Where should we fork the site and offers your username as an option, click the link on your username.
-Wait a few seconds while GitHub makes a copy of the repository at https://github.com/yourusername/community. This copy is your fork of the docker-community-leaders/community repository.
-
-The GitHub editor interface opens for the selected page. Make your updates to the content.
-
-
-- Click Preview changes at the top of the editing area to see the effect of your changes.
-
-If you need to make more changes, click Edit file at the top of the preview area.
-
-When you are ready to submit your changes, scroll down to the Propose file change section at the bottom of the editing area.
-
-Enter a short description of your update. This short description becomes the title of your pull request (PR).
-
-In the second text box (for the extended description), enter a more detailed description.
-
-Click Propose file change. A new screen appears, offering you the opportunity to open a pull request.
-
-Click Create pull request.
-
-Optionally, edit the pull request title and description.
-
-Make sure Allow edits from maintainers remains checked.
-
-Click Create pull request again. You have now sent a request to the repository maintainers to review your change.
-
-Check the online preview of your changes:
-
-Wait for the automated PR workflow to do some checks. When it's ready, you should see a comment like this: deploy/netlify — Deploy preview ready!
-Click Details to the right of "Deploy preview ready" to see a preview of your updates.
