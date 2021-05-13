@@ -12,7 +12,7 @@ Community and participation are the backbone of Docker. Whether you're technical
 
 ## Using the command line
 
-# Clone the repository
+## Clone the repository
 
 To start contributing you need to clone [this](https://github.com/docker/get-involved) repository.
 Use the following command that will also clone the submodules used. 
