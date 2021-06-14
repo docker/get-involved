@@ -1,14 +1,28 @@
 ---
-title: "Speaker Guidelines"
-linkTitle: "Speaker Guidelines"
+title: "Docker Speakers"
+linkTitle: "Docker Speakers"
 weight: 100
 description: >-
-     A Quick Guidelines for Meetup speakers
+     Meet Docker Speakers
 ---
+
+<a href="https://form.typeform.com/to/A4kl2plD?typeform-medium=embed-snippet" class="btn btn-primary btn-success"><span class="align-middle">Become a Docker Speaker </span></a>
+
+Thank you for volunteering to become a Docker speaker! Docker speakers are a group of elite Docker community members and expert speakers who like to share their expertise in Docker. It’s a great platform to increase visibility as a Docker expert speaker. It help community speakers to educate the Docker community on Docker ecosystem and related technology stack.
+
+This page is useful for Meetup event organizers to hunt for the right speakers for their events. Docker speakers who are willing to speak at events on the topics they are proficient in. Event organizers are encouraged to reach out to speakers to invite them to participate in events.
+
+Registration is currently open to Docker Captains, Docker Community Leaders and Meetup organisers. It’s open to open source contributors, project maintainers and cross-community speakers too.
+
+
+
+
+# Speak at an event
+
 
 <a href="https://form.typeform.com/to/qxqZcxv1?typeform-medium=embed-snippet" class="btn btn-primary btn-success"><span class="align-middle">Speak at an event </span></a>
 
-Thank you for volunteering to speak at a Docker Meetup! To make your talk a success, we offer some guidelines.  Please let the local Docker Community Leadership Team know of any other requirements you may have. We look forward to your talk.
+To make your talk a success, we offer some guidelines.  Please let the local Docker Community Leadership Team know of any other requirements you may have. We look forward to your talk.
 
 Speak at a local chapter or university event and give concrete, first-hand examples which tell attendees about your Docker usage and challenges. By sharing your learnings, you can give attendees take-aways for using Docker to accomplish real tasks. You can also share your code and do a demo heavy deep-dive talk on what you have been able to transform with your use of the Docker stack. Entice your audience by going deeply technical and teach them how to do something they haven’t done. 
 
