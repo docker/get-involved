@@ -6,7 +6,7 @@ description: >-
      Page description for Docker Speakers
 ---
 
-Docker speakers are a group of elite Docker community members and expert speakers who like to share their expertise in Docker.
+Docker speakers are a group of elite Docker community members and expert speakers who like to share their expertise in Docker via speaking.
 It's a great platform to increase visibility as a Docker expert speaker. It help community speakers to educate the Docker community on Docker ecosystem and related technology stack.
 
 This page is useful for  Meetup event organizers to hunt for the right speakers for their events. Docker speakers  who are willing to speak at events on the topics
