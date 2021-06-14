@@ -16,7 +16,4 @@ they are proficient in. Event organizers are encouraged to reach out to speakers
 Registration is currently open to Docker Captains, Docker Community Leaders and Meetup organisers. It's open to open source contributors, project maintainers and cross-community speakers too.
 
 
-
-
-
-
+<a href="https://dockercommunity.typeform.com/to/A4kl2plD" class="btn btn-primary btn-success"><span class="align-middle">Become a Docker Speaker </span></a>
