@@ -1,6 +1,6 @@
 ---
-title: "Docker Speakers"
-linkTitle: "Docker Speakers"
+title: "Docker Speaker Network"
+linkTitle: "Docker Speaker Network"
 weight: 5
 description: >-
      Meet Docker Speakers
@@ -8,9 +8,9 @@ description: >-
 
 <a href="https://form.typeform.com/to/A4kl2plD?typeform-medium=embed-snippet" class="btn btn-primary btn-success"><span class="align-middle">Become a Docker Speaker </span></a>
 
-Thank you for volunteering to become a Docker speaker! Docker speakers are a group of elite Docker community members and expert speakers who like to share their expertise in Docker. It’s a great platform to increase visibility as a Docker expert speaker. It help community speakers to educate the Docker community on Docker ecosystem and related technology stack.
+Thanks for your interest in joining our Docker Speaker Network. Joining the network makes it easier for you to find events to speak at and for event organisers to invite you to speak. Please fill out this short form to submit your application.
 
-This page is useful for Meetup event organizers to hunt for the right speakers for their events. Docker speakers who are willing to speak at events on the topics they are proficient in. Event organizers are encouraged to reach out to speakers to invite them to participate in events.
+This page is useful for Meetup event organizers to hunt for the right speakers for their events. Docker speakers are those individuals who are willing to speak at events on the topics they are proficient in. Event organizers are encouraged to reach out to speakers to invite them to participate in events.
 
 Registration is currently open to Docker Captains, Docker Community Leaders and Meetup organisers. It’s open to open source contributors, project maintainers and cross-community speakers too.
 
