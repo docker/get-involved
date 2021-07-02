@@ -1,7 +1,7 @@
 ---
 title: "Getting Started with Docker Compose"
 linkTitle: "Getting Started with Docker Compose"
-weight: 100
+weight: 90
 description: >-
      Page description for Docker Compose 101
 ---
