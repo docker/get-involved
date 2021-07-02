@@ -1,7 +1,7 @@
 ---
 title: "Getting Started with Docker Swarm"
 linkTitle: "Getting Started with Docker Swarm"
-weight: 100
+weight: 97
 description: >-
      Page description for Getting Started with Docker Swarm
 ---
