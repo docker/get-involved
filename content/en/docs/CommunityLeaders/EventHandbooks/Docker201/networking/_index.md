@@ -274,7 +274,7 @@ $ docker service update --network-rm myoverlay0 testApp
 ```
 
 
-# Lab #5: Test Service Discovery
+# Lab #4: Test Service Discovery
 Service Discovery which allows containers on the <b>same network</b> can access each other by name. Service Discovery is achive through Docker’s embedded DNS server(DNS IP 127.0.0.11). Embedded DNS server which provides built-in service discovery for any container created with a <b>valid name</b>(--name) or net-alias(--network-alias) or aliased by link. Service discovery which wont work on default networks.
 
 ## Pre-requisite:
@@ -377,7 +377,7 @@ $ docker exec -it <Container_ID> curl myWeb
 Now you will get response of nginx home page 
 
 
-# Lab #6: Test Routing Mesh
+# Lab #5: Test Routing Mesh
 
 Docker swarm by default use ingress mode layer 4 routing mesh. The routing mesh enables each node in the swarm to accept connections on published ports for any service running in the swarm, even if there’s no task running on the node. You can bypass the routing mesh, using <b>host mode</b> when you create the service. Then you will able to access the service only from the node where task is running.
 
@@ -430,7 +430,7 @@ $ docker service inspect --format "{{json .Endpoint.Ports}}" bypassRM
 [{"Protocol":"tcp","TargetPort":80,"PublishedPort":8080,"PublishMode":"host"}
 ```
 
-# Lab #7: Test standalone containers in Overlay Network
+# Lab #6: Test standalone containers in Overlay Network
 The overlay network driver creates a distributed network among multiple Docker daemon hosts and which are used commonly in docker swarm.
 In this lab we are going to attach containers in Overlay network make them to communicate with container in another host.
 
