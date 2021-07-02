@@ -1,7 +1,7 @@
 ---
 title: "Building Wordpress application using Docker Swarm"
 linkTitle: "Building Wordpress application using Docker Swarm"
-weight: 100
+weight: 110
 description: >-
      How to build Wordpress application using Docker Swarm
 ---
