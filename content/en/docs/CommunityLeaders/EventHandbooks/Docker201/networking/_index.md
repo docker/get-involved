@@ -1,7 +1,7 @@
 ---
 title: "Introduction to Docker Networking"
 linkTitle: "Introduction to Docker Networking"
-weight: 100
+weight: 120
 description: >-
      Page description for Introduction to Docker Networking
 ---
