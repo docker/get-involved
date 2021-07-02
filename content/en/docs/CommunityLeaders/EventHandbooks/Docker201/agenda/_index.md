@@ -11,7 +11,7 @@ description: >-
 | --- | --- |
 | Welcome | 8:45 AM to 9:00 AM |
 | [Getting Started with Docker Compose ](../gettingstarted) | 9:00 AM to 10:00 AM |
-| [Create WordPress app using Docker Compose](../create-docker-compose/) | 10:00 AM to 11:00 AM |
+| [Create WordPress app using Docker Compose](../wordpress/) | 10:00 AM to 11:00 AM |
 | Coffee/Tea Break | 11:00 AM to 11:15 AM |
 | [Getting Started with Docker Swarm - Part 1](../swarm/) | 11:15 AM to 12:45 PM
 | Lunch | 12:45 PM to 1:45 PM |
