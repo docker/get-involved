@@ -3,10 +3,10 @@ title: "Building Wordpress application using Docker Swarm"
 linkTitle: "Building Wordpress application using Docker Swarm"
 weight: 100
 description: >-
-     Page description for Building Wordpress application using Docker Swarm
+     How to build Wordpress application using Docker Swarm
 ---
 
-# Running Dockerized WordPress Application in 5-Node Docker Swarm Mode Cluster
+
 
 
 ## Tested Infrastructure
