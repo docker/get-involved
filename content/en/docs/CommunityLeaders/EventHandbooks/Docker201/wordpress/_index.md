@@ -1,7 +1,7 @@
 ---
 title: "Creating WordPress app using Docker Compose"
 linkTitle: "Creating WordPress app using Docker Compose"
-weight: 100
+weight: 95
 description: >-
      Page description for Creating WordPress app using Docker Compose
 ---
