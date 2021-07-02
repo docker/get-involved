@@ -1,5 +1,5 @@
 ---
-title: "Getting Started with Docker Swarm - Part 1"
+title: "Getting Started with Docker Swarm"
 linkTitle: "Getting Started with Docker Swarm"
 weight: 100
 description: >-
