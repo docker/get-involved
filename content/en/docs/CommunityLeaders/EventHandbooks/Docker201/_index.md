@@ -7,6 +7,5 @@ description: >-
 ---
 
 
-![My Image](under-construction.png)
 
 
