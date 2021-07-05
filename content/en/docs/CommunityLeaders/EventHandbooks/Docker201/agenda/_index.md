@@ -19,6 +19,6 @@ description: >-
 | [Building WordPress application using Docker Swarm](../swarm-wordpress/) | 3:30 PM to 4:00 PM|
 | [Introduction to Docker Networking - Part 1](../networking) | 4:00 PM to 4:30 PM |
 | Coffee/Tea Break | 4:00 PM to 4:30 PM |
-| [Introduction to Docker Networking - Part 2](../networking/) | 4:45 PM to 5:45 PM |
+| [Introduction to Docker Networking - Part 2](../networking/#lab-4-test-service-discovery) | 4:45 PM to 5:45 PM |
 | Quiz/Prize/Certificate Distribution | 5:45 PM to 6:00 PM |
 
