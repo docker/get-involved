@@ -15,7 +15,7 @@ description: >-
 | [Understanding Docker Dashboard](../dockerdashboard/) | 9:45 AM to 11:15 AM |
 | Coffee/Tea Break | 11:15 AM to 11:30 AM |
 | [Exploring Docker Images and Containers](../exploringdocker/) | 11:30 AM to 12:00 PM|
-| [Docker Swarm under Docker Desktop](../enablek8s/) | 12:00 PM to 1:00 PM|
+| [Docker Swarm under Docker Desktop](../enableswarm/) | 12:00 PM to 1:00 PM|
 | Lunch | 1:00 PM to 2:00 PM |
 | [Enabling Kubernetes under Docker Desktop](../enablek8s/)| 2:00 PM to 2:30 PM |
 | [Running K8s Pods under Docker Desktop](../runningk8s/) | 2:30 PM to 3:00 PM |
