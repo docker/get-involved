@@ -11,8 +11,8 @@ description: >-
 | --- | --- |
 | Welcome | 8:45 AM to 9:00 AM |
 | [Creating a DockerHub Account](../prerequisite/) | 9:00 AM to 9:15 AM |
-| [Installing Docker Desktop](../installingdockerdesktop/) | 9:15 AM to 9:30 AM |
-| [Understanding Docker Dashboard](../dockerdashboard/) | 9:30 AM to 10:00 AM |
+| [Installing Docker Desktop](../installingdockerdesktop/) | 9:15 AM to 9:45 AM |
+| [Understanding Docker Dashboard](../dockerdashboard/) | 9:45 AM to 11:15 AM |
 | Coffee/Tea Break | 11:15 AM to 11:30 AM |
 | [Exploring Docker Images and Containers](../exploringdocker/) | 11:30 AM to 12:00 PM|
 | [Docker Swarm under Docker Desktop](../enablek8s/) | 12:00 PM to 1:00 PM|
