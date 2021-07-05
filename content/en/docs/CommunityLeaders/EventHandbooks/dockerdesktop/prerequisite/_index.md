@@ -20,9 +20,6 @@ Enter your username as DockerID and provide your email address( I would suggest 
 
 ![My image](dockerhub2.png)
 
-### Example:
-
-I have added ajeetraina as my userID as shown below. Please note that we will require this userID at the later point of time during the workshop. Hence, do keep it handy.
 
 ![My image](dockerhub3.png)
 
