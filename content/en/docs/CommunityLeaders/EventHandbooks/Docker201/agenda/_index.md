@@ -15,7 +15,7 @@ description: >-
 | Coffee/Tea Break | 11:00 AM to 11:15 AM |
 | [Getting Started with Docker Swarm - Part 1](../swarm/) | 11:15 AM to 12:45 PM
 | Lunch | 12:45 PM to 1:45 PM |
-| [Getting Started with Docker Swarm - Part 2](../swarm/)| 1:45 PM to 3:30 PM |
+| [Getting Started with Docker Swarm - Part 2](../swarm/#lab03---inspecting-state)| 1:45 PM to 3:30 PM |
 | [Building WordPress application using Docker Swarm](../swarm-wordpress/) | 3:30 PM to 4:00 PM|
 | [Introduction to Docker Networking - Part 1](../networking) | 4:00 PM to 4:30 PM |
 | Coffee/Tea Break | 4:00 PM to 4:30 PM |
