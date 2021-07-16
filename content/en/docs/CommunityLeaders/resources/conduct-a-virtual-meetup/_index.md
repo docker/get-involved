@@ -11,7 +11,7 @@ description: >-
 Docker Chapter events and meetups are social events organized by community members who are interested in talking and learning about Docker.
 
 Anyone who is interested in meeting with others to discuss about Docker is welcome to organize virtualchapter events. 
-The first step is to read and understand our [Code of Conduct](https://github.com/docker/code-of-conduct) and then to [apply to the program here](https://community.docker.com/registrations/groups/1865) to be formally onboarded by a member of the Docker Community Team. 
+The first step is to read and understand our [Code of Conduct](https://github.com/docker/code-of-conduct) and then to [apply to the program here](https://contribute.docker.com/docs/communityleaders/) to be formally onboarded by a member of the Docker Community Team. 
 
 This guide helps you to successfully organize Docker Chapter Events. It provides tips, checklists, and concepts to do your planning effectively.
 
@@ -26,7 +26,7 @@ At first, make sure you answer the following questions:
 
 
 ## Structure Your Meetup Project
-If you decided to start, [apply to the program here](https://community.docker.com/registrations/groups/1865) and a member of the Community Team will be in touch. The Community Team can help with things like finding venues, sponsors and speakers and can provide swag for your event.
+If you decided to start, [apply to the program here](https://contribute.docker.com/docs/communityleaders/) and a member of the Community Team will be in touch. The Community Team can help with things like finding venues, sponsors and speakers and can provide swag for your event.
 
 Once the group is launched, we recommend scheduling the first meetup with enough lead time for successful promotion.
 
