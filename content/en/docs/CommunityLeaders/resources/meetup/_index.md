@@ -3,7 +3,7 @@ title: "Meetup"
 linkTitle: "Meetup"
 weight: 97
 description: >-
-     Docker's events management platform (powered by https://meetup.com) 
+     Docker's events management platform powered by [Meetup](https://www.meetup.com/pro/docker) 
 ---
 
 We've chosen Meetup to provide innovative features for event organizers, including:
@@ -15,7 +15,7 @@ We've chosen Meetup to provide innovative features for event organizers, includi
 - Automatic Emails (customizable) 
 
 
-For more information, please visit https://help.meetup.com/
+For more information, please visit https://www.meetup.com/pro/docker
 
 
 
