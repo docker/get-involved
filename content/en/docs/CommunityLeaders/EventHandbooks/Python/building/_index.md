@@ -8,7 +8,7 @@ description: >-
 
 - [Build a Docker Image](#build-a-docker-image)
 - [Running a Docker Container](#run-a-docker-container)
-- [Example Go Application](#example-go-application)
+- [Example Python Application](#example-python-application)
  
 ## Build a Docker Image
 
@@ -122,17 +122,21 @@ busybox             latest              54511612f1c4        9 days ago          
 
 `helloworld:2` is the format that allows to specify the image name and assign a tag/version to it separated by `:`.
 
-## Example Go Application
+## Example Python Application
 
-Create a `app.py` file with the following content:
+Create a file `app.py` file with the following content:
 {{< codenew file="/Python/simple-app/app.py" >}}
+
+The above file needs python flask to run. Add flask to requirements.txt file
+
+{{< codenew file="/Python/simple-app/requirements.txt" >}}
 
 Now that we have our server, let’s set about writing our Dockerfile and construct a container in which our Go application will live.
 
 Create Dockerfile with following content:
 {{< codenew file="/Python/simple-app/Dockerfile" >}}
 
-Now that we have defined everything we need for our Go application to run in our Dockerfile we can now build an image using this file. In order to do that, we’ll need to run the following command:
+Now that we have defined everything we need for our Python application to run in our Dockerfile we can now build an image using this file. In order to do that, we’ll need to run the following command:
 
 ```
 $ docker build -t my-python-app .
@@ -148,16 +152,16 @@ Step 4/6 : WORKDIR /app
  ---> Running in d623a88e4a00
 Removing intermediate container d623a88e4a00
  ---> ffc439c5bec5
-Step 5/6 : RUN go build -o main .
+Step 5/6 : RUN pip install -r requirements.txt  
  ---> Running in 15805f4f7685
 Removing intermediate container 15805f4f7685
  ---> 31828faf8ae4
-Step 6/6 : CMD ["/app/main"]
+Step 6/6 : CMD ["python", "./app.py"]
  ---> Running in 9d54463b7e84
 Removing intermediate container 9d54463b7e84
  ---> 3f9244a1a240
 Successfully built 3f9244a1a240
-Successfully tagged my-go-app:latest
+Successfully tagged my-python-app:latest
 ```
 
 We can now verify that our image exists on our machine by using `docker images` command:
@@ -165,21 +169,21 @@ We can now verify that our image exists on our machine by using `docker images` 
 ```
 $ docker images
 REPOSITORY                                 TAG                 IMAGE ID            CREATED             SIZE
-my-python-app                             latest              3f9244a1a240        2 minutes ago       355MB$ docker images
+my-python-app                             latest              3f9244a1a240        2 minutes ago       355MB$
 ```
 
 In order to run this newly created image, we can use the docker run command and pass in the ports we want to map to and the image we wish to run.
 
 ```
-$ docker run -p 8080:8081 -it my-python-app
+$ docker run -p 8000:5000 -it my-python-app
 ```
 
-- `-p 8080:8081` - This exposes our application which is running on port 8081 within our container on http://localhost:8080 on our local machine.
+- `-p 8000:5000` - This exposes our application which is running on port 5000 within our container on http://localhost:8000 on our local machine.
 - `-it` - This flag specifies that we want to run this image in interactive mode with a tty for this container process.
 - `my-python-app ` - This is the name of the image that we want to run in a container.
 
 
-Awesome! Now if you go to [http://localhost:8080](http://localhost:8080) in your browser, you should see that the application is responds with `Hello, "/".`
+Awesome! Now if you go to [http://localhost:8000](http://localhost:8000) in your browser, you should see that the application is responds with `Hello World`
 
 ### Run Container in Background
 
