@@ -181,7 +181,7 @@ If applicable, write a blog post about the meetup with pictures and its highligh
 
 ## Online Resources available to Meetup organizers
 
-#### [The Docker Community Directory](tps://community.docker.com)
+#### [The Docker Community Directory](https://contribute.docker.com)
 The Docker Community Directory is a simple communication & directory tool for us to share events, activities, and programs with groups of active community members. All our members can easily reach one another. You can open discussions among selected members, send direct messages, share ideas and experiences, get help finding sponsors and speakers and help other members succeed and run great meetup events. When the community supports each other, everyone wins!
 The Docker Community page.
 
