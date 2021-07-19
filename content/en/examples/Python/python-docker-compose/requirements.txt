@@ -1,0 +1,4 @@
+flask==1.0.1
+redis==3.5.3
+python-dotenv==0.18.0
+requests==2.25.1
