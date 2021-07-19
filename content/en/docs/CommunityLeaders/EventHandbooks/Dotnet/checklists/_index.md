@@ -13,7 +13,7 @@ description: >-
 
 Step # | Name of Objectives | Status | 
 :------------ | :-------------| :-------------|
-1 | [Getting Familiar with Bevy Virtual](#getting-familiar-with-bevy-virtual) |  ☑️ |
+1 | [Getting Familiar with Meetup Platform](#getting-familiar-with-bevy-virtual) |  ☑️ |
 2 | [Planning an Event Agenda](#planning-an-event-agenda) |  ☑️ |
 3 | [Setting up Event Registration Page](#setting-up-event-registration-page) | ☑️ |
 4 | [Sending confirmation email for workshop](#sending-confirmation-email-for-workshop) |  ☑️ |
@@ -32,46 +32,32 @@ Step # | Name of Objectives | Status |
 7 | [Community Leader Survey](#community-leader-survey)  |  ☑️ |
 8 | [Attendee Survey](#attendee-survey)  |  ☑️ |
 
-## Getting Familiar with Bevy Virtual
+## Getting Familiar with Meetup 
 
-Docker community leaders uses Bevy (https://events.docker.com) tool to conduct virtual Meetup events. Bevy is the tool that provides the MOST features to your Community, including:
-
-- 2 way integration with Meetup.com (create your event in Bevy and it posts to your meetup page and RSVPs from your event on meetup sync with your Bevy events.docker.com page).
-Note: The RSVP limits you set in Bevy do not translate to meetup. The best way to handle this is to keep a watchful eye on both platforms or communicate that seats are first come first serve. 
+Docker community leaders uses Meetup (https://meetup.com/pro/docker) tool to conduct virtual Meetup events. We’ve chosen Meetup to provide innovative features for event organizers, including:
 
 - Ability to check in guests.
 - Mobile App
 - RSVP as Guest
-- Forms / Surveys
-- Automatic Emails (customizable) 
+- Automatic Emails (customizable)
 
-It's important for all community leaders to be familiar with this tool to conduct virtual events successfully.
+For more information, please visit https://www.meetup.com/pro/docker
 
 
 ### Events |  Analytics
 
 
-- [Create a new event](https://help.bevylabs.com/article/344-create-a-new-event)
-- [Virtual Event Type](https://help.bevylabs.com/article/428-virtual-event-type)
-- [Manage chapter members](https://help.bevylabs.com/article/389-manage-chapter-members)
+- [Create a new event](https://help.meetup.com/hc/en-us/articles/360002881251-Creating-an-event)
+- [Download Attendees List](https://help.meetup.com/hc/en-us/articles/360004373231-How-do-I-download-print-my-event-attendee-list-)
+- [How to email members?](https://help.meetup.com/hc/en-us/articles/360002879371-How-do-I-email-my-members-)
+- [How to enable a waiting list for a Meetup event](https://help.meetup.com/hc/en-us/articles/360003883411-Enable-a-waitlist-for-a-Meetup-event)
 
-
-
-### Bevy Virtual 
-
-- [Using Bevy Virtual](https://help.bevylabs.com/article/457-using-bevy-virtual)
-- [How to create a test event in Bevy Virtual](https://help.bevylabs.com/article/496-test-event-in-bevy-virtual)
-- [Record in Bevy Virtual](https://help.bevylabs.com/article/470-record-in-bevy-virtual)
-- [Screensharing in Bevy Virtual](https://help.bevylabs.com/article/492-screensharing-in-bevy-virtual)
-- [Breakout Rooms](https://help.bevylabs.com/article/495-breakout-rooms)
-- [Chat, DM's & Features](https://help.bevylabs.com/article/519-chat-features)
 
 
 ## Planning an Event Agenda
 
-- Your event must be posted on your [city’s Chapter page](https://events.docker.com/chapters/)
+- Your event must be posted on your [city’s Chapter page](https://meetup.com/)
 - Try to create event 1 month before the event
-- If you are unsure of how to use your chapter page [please watch this video](https://drive.google.com/file/d/1ld54sqzTTBMiygUzsjRD7B10XzWozbMl/view?usp=sharing)
 - If you are having issues with your page, do not have a page or need admin permissions please contact William over Docker community Slack or send email to william.quiviger(AT)docker.com
 
 
