@@ -12,7 +12,7 @@ description: >-
 
 Step # | Name of Objectives | Status | 
 :------------ | :-------------| :-------------|
-1 | [Getting Familiar with Meetup Platform](#getting-familiar-with-bevy-virtual) |  ☑️ |
+1 | [Getting Familiar with Meetup Platform](#getting-familiar-with-meetup) |  ☑️ |
 2 | [Planning an Event Agenda](#planning-an-event-agenda) |  ☑️ |
 3 | [Setting up Event Registration Page](#setting-up-event-registration-page) | ☑️ |
 4 | [Sending confirmation email for workshop](#sending-confirmation-email-for-workshop) |  ☑️ |
