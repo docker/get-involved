@@ -11,7 +11,7 @@ description: >-
 Create the app.py file with the following content:
 {{< codenew file="/Python/pythonapp/app.py" >}}
 
-Now that we have our server, let’s set about writing our Dockerfile and constructing the container in which our newly born Go application will live.
+Now that we have our server, let’s set about writing our Dockerfile and constructing the container in where our newly born Python application will live.
 
 create dockerfile with following content:
 {{< codenew file="/Python/pythonapp/Dockerfile" >}}

@@ -3,7 +3,7 @@ title: "Prerequisite"
 linkTitle: "Prerequisite"
 weight: 606
 description: >-
-     Installing Go on Linux, Mac and Windows
+     Installing Python on Linux, Mac and Windows
 ---
 
 
@@ -28,22 +28,6 @@ _NOTE_: Docker CE requires a fairly recent operating system version.
 If your machine does not meet the requirements, then you need to install [Docker Toolbox](https://www.docker.com/products/docker-toolbox).
 
 This workshop is tested with Docker Community Edition `19.03.13-ce-rc10, build fec3683` on Ubuntu `20.04.1 LTS`.
-
-### Docker Images
-
-This tutorial uses a few Docker images and software.
-Let's download them before we start the tutorial.
-
-In order to download the Docker images we will be using `docker-compose`.
-You can install `docker-compose` following the instructions provided in the doc [here](https://docs.docker.com/compose/install/).
-
-Now, download the [docker-compose-pull-images.yml](https://raw.githubusercontent.com/docker-community-leaders/dockercommunity/master/content/en/docs/CommunityLeaders/EventHandbooks/Go/prerequisite/docker-compose-pull-images.yml) file and use the following command to pull the required images:
-
-```
-curl -O https://raw.githubusercontent.com/docker-community-leaders/alphasite/master/pages/handbooks/go/scripts/docker-compose-pull-images.yml
-docker-compose -f docker-compose-pull-images.yml pull --parallel
-```
-
 ### Other Software
 
 The softwares in this section are specific to certain parts of the workshop.
@@ -56,7 +40,7 @@ Install them only if you plan to attempt them.
    - [PyCharm](https://www.jetbrains.com/pycharm/download/)
    - [Sublime Text](https://www.sublimetext.com/3)
 
-- Download and install Java IDE of your choice:
+- Download and install Python IDE of your choice:
 
 S.No. | Name of Software | Link to Follow | 
 :------------ | :-------------| :-------------|
@@ -68,12 +52,12 @@ S.No. | Name of Software | Link to Follow |
 
 # Download Python 
 
-You can download the latest version of Python (Python 15.7 ) from the below links:
+You can download the latest version of Python from the below links:
 
-- [Windows](https://golang.org/dl/go1.15.7.windows-amd64.msi)
-- [MacOS ](https://golang.org/dl/go1.15.7.darwin-amd64.pkg)
-- [Linux](https://golang.org/dl/go1.15.7.linux-amd64.tar.gz)
-- [Using Source](https://golang.org/dl/go1.15.7.src.tar.gz)
+- [Windows](https://www.python.org/downloads/windows/)
+- [MacOS ](https://www.python.org/downloads/mac-osx/)
+- [Linux](https://www.python.org/downloads/source/)
+- [Using Source](https://www.python.org/downloads/source/)
 
 
 # Install Python

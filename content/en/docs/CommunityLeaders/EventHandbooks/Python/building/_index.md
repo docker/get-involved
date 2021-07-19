@@ -131,7 +131,7 @@ The above file needs python flask to run. Add flask to requirements.txt file
 
 {{< codenew file="/Python/simple-app/requirements.txt" >}}
 
-Now that we have our server, let’s set about writing our Dockerfile and construct a container in which our Go application will live.
+Now that we have our server, let’s set about writing our Dockerfile and construct a container in where our Python application will live.
 
 Create Dockerfile with following content:
 {{< codenew file="/Python/simple-app/Dockerfile" >}}

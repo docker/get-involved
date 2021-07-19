@@ -11,7 +11,7 @@ description: >-
 Docker Chapter events and meetups are social events organized by community members who are interested in talking and learning about Docker.
 
 Anyone who is interested in meeting with others to discuss about Docker is welcome to organize virtualchapter events. 
-The first step is to read and understand our [Code of Conduct](https://github.com/docker/code-of-conduct) and then to [apply to the program here](https://community.docker.com/registrations/groups/1865) to be formally onboarded by a member of the Docker Community Team. 
+The first step is to read and understand our [Code of Conduct](https://github.com/docker/code-of-conduct) and then to [apply to the program here](https://contribute.docker.com/docs/communityleaders/) to be formally onboarded by a member of the Docker Community Team. 
 
 This guide helps you to successfully organize Docker Chapter Events. It provides tips, checklists, and concepts to do your planning effectively.
 
@@ -19,19 +19,19 @@ This guide helps you to successfully organize Docker Chapter Events. It provides
 ## Preparation
 At first, make sure you answer the following questions:
 
-  - **Bootstrap or contribute:** Anyone can start a Docker Chapter as long as there is not an existing Docker user group in your city. Check out the [Docker community page](https://events.docker.com/chapters/) to make sure a group does not already exist in your city. If one does exist and you would like to help out please click the contact us button on the chapter page to email the local team.
+  - **Bootstrap or contribute:** Anyone can start a Docker Chapter as long as there is not an existing Docker user group in your city. Check out the [Docker community page](https://www.meetup.com/pro/docker) to make sure a group does not already exist in your city. If one does exist and you would like to help out please click the contact us button on the chapter page to email the local team.
   - **Team up!**
   Try go get others involved. Spread the tasks across several shoulders, but make sure there is not just a single person responsible who manages all the important information and tasks. Life happens, it's nice to know you have someone who can help out when you're busy from time to time. 
   - **Check: Commitment**: Ask yourself: Are you willing to make a long term commitment to your community? Starting a chapter is a long term responsibility and goes far beyond your first event. Organizing events is very rewarding in several aspects but building and maintaining a community requires a commitment. We set a goal of 1 event per quarter. Can you commit to that? 
 
 
 ## Structure Your Meetup Project
-If you decided to start, [apply to the program here](https://community.docker.com/registrations/groups/1865) and a member of the Community Team will be in touch. The Community Team can help with things like finding venues, sponsors and speakers and can provide swag for your event.
+If you decided to start, [apply to the program here](https://contribute.docker.com/docs/communityleaders/) and a member of the Community Team will be in touch. The Community Team can help with things like finding venues, sponsors and speakers and can provide swag for your event.
 
 Once the group is launched, we recommend scheduling the first meetup with enough lead time for successful promotion.
 
 Next, make yourself familiar with the three most relevant tools:
-  - [The Docker Community Directory](https://community.docker.com): This is where you applied to the community leaders program, but it also acts as a Docker Community Directory and its built-in messaging system is the main method of communication from the Docker Team. Subscribing to the community leaders mailing list is imperative as all Docker and community information is sent to organizers this way. 
+  - [The Docker Community Directory](https://contribute.docker.com): This is where you applied to the community leaders program, but it also acts as a Docker Community Directory and its built-in messaging system is the main method of communication from the Docker Team. Subscribing to the community leaders mailing list is imperative as all Docker and community information is sent to organizers this way. 
   - Github.com: Resources, slide decks, sponsorship resources
   - Events.docker.com: Publish events and track attendees
   - Community Leader Private Slack Channel: Great place to interact with other community leaders, make sure you have access
@@ -181,7 +181,7 @@ If applicable, write a blog post about the meetup with pictures and its highligh
 
 ## Online Resources available to Meetup organizers
 
-#### [The Docker Community Directory](tps://community.docker.com)
+#### [The Docker Community Directory](https://contribute.docker.com)
 The Docker Community Directory is a simple communication & directory tool for us to share events, activities, and programs with groups of active community members. All our members can easily reach one another. You can open discussions among selected members, send direct messages, share ideas and experiences, get help finding sponsors and speakers and help other members succeed and run great meetup events. When the community supports each other, everyone wins!
 The Docker Community page.
 

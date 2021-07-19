@@ -44,7 +44,7 @@ The free soul is rare, but you know it when you see it - basically because you f
  {{< codenew file="/Python/python-docker-compose/Dockerfile" >}}
 
 
-# application;s services via Docker Compose 
+# Application services via Docker Compose 
 
 Our application consists of two services -
 
