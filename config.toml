@@ -17,14 +17,14 @@ enableMissingTranslationPlaceholders = true
 
 disableKinds = ["taxonomy", "taxonomyTerm"]
 
-# Highlighting config
+# Highlighting config.
 pygmentsCodeFences = true
 pygmentsUseClasses = false
 # Use the new Chroma Go highlighter in Hugo.
 pygmentsUseClassic = false
 #pygmentsOptions = "linenos=table"
 # See https://help.farbox.com/pygments.html
-pygmentsStyle = "tango"
+pygmentsStyle = "emacs"
 
 # Configure how URLs look like per section.
 [permalinks]
