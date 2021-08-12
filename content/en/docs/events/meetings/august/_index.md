@@ -11,7 +11,7 @@ description: >-
 
 | S. No. | Name of Event    |  Chapter Name | Organizers  | RSVPs | 
 |-----------|-----------------|----------------|----------------|----------------|
-| 1 | [Money As A Cloud](https://www.meetup.com/Docker-Myanmar/events/279882232/) | Docker Myanmar |  Ko Ko Ye` | 156 | <br>
+| 1 | [Money As A Cloud](https://www.meetup.com/Docker-Myanmar/events/279882232/) | Docker Myanmar |  Ko Ko Ye |  156 | <br>
 | 2 | [Docker Manila August 2021 Online Meetup](https://www.meetup.com/Docker-Manila/events/279902012/) | Docker Manila |  Zak Elep | 26 | <br>
 | 3 | [DevOps India Conference 2021](https://www.meetup.com/Docker-Bangalore/events/279022938/) |  Docker Bangalore | Ajeet S Raina, Sangam Biradar | 133 | <br>
 | 4 | [Prática de pipelines de CI/CD](https://www.meetup.com/Docker-Sobral/events/279912009/) | Docker Sobral | Edson Celio | 2 | <br>
