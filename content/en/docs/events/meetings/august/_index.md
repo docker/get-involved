@@ -1,7 +1,7 @@
 ---
 title: "August 2021"
 linkTitle: "August"
-weight: 124
+weight: 127
 description: >-
      Events held during Aug 2021
 ---
