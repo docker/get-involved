@@ -82,7 +82,7 @@ For more examples and ideas, visit:
  https://docs.docker.com/get-started/
 ```
 
-###  If You Are Facing This Error 
+## Troubleshooting
   ```
 $ docker run hello-world
 ```
