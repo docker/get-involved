@@ -1,6 +1,6 @@
 ---
-title: "Docker Speaker Network"
-linkTitle: "Docker Speaker Network"
+title: "Docker Speakers Bureau"
+linkTitle: "Docker Speakers Bureau"
 weight: 5
 description: >-
      Meet Docker Speakers
