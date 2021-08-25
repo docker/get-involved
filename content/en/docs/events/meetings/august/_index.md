@@ -17,6 +17,6 @@ description: >-
 | 4 | [Prática de pipelines de CI/CD](https://www.meetup.com/Docker-Sobral/events/279912009/) | Docker Sobral | Aug 27 | Edson Celio | 2 | <br>
 | 5 | [Docker for Beginners](https://www.meetup.com/Docker-Dehradun/events/279967746/) | Docker Dehradun | Aug 25 |  Sarthak Jain | 118 | <br>
 | 6 | [Dockerfile security best practices & Docker Updates](https://events.docker.com/events/details/docker-penang-presents-dockerfile-security-best-practices-docker-updates/)| Docker Penang| Aug 23 | Sujay Pillai | 5 | <br>
-| 7 | [All Things Observability & LitmusChaos 2.0: The Evolution of K8S Chaos Eng](https://www.meetup.com/Melbourne-Docker-User-Group/events/280047109/) | Docker Melbourne  | Aug 20 | Stephen J Wallace (wb) | 5 | <br>
-| 8 | [Introducción al maravilloso mundo de Docker](https://www.meetup.com/docker-colombia/events/280008519/) | Docker Colombia | Aug 17 | Johan Giraldo | 28 | <br>
-| 9 | [Getting Started with Docker, DevOps and Cloud-Native Technology](https://www.meetup.com/Docker-Mumbai/events/279841076/) | Docker Mumbai | Aug 14 | Ayush Pattnaik | 43 | <br>
+| 7 | [All Things Observability & LitmusChaos 2.0: The Evolution of K8S Chaos Eng](https://www.meetup.com/Melbourne-Docker-User-Group/events/280047109/) | Docker Melbourne  | Aug 20 | Stephen J Wallace (wb) | 11 | <br>
+| 8 | [Introducción al maravilloso mundo de Docker](https://www.meetup.com/docker-colombia/events/280008519/) | Docker Colombia | Aug 17 | Johan Giraldo | 65 | <br>
+| 9 | [Getting Started with Docker, DevOps and Cloud-Native Technology](https://www.meetup.com/Docker-Mumbai/events/279841076/) | Docker Mumbai | Aug 14 | Ayush Pattnaik | 55 | <br>
