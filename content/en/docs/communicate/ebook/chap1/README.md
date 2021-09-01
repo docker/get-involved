@@ -2,10 +2,7 @@
 
 ## What is Docker?
 
-![My Image](https://raw.githubusercontent.com/collabnix/dockerlabs/master/beginners/docker/images/dockerinc.jpg)
-
-
-In 2019, "DOCKER" refers to several things. This includes an open source community project which started in 2013; tools from the open source project; Docker Inc., the company that is the primary supporter of that project; and the tools that the company formally supports. 
+Docker is a container technology technology launched for the first time in 2013 as an open source Docker Engine. In 2021, "DOCKER" refers to several things. This includes an open source community project which started in 2013; tools from the open source project; Docker Inc., the company that is the primary supporter of that project; and the tools that the company formally supports. 
 
 ![My Image](https://raw.githubusercontent.com/collabnix/dockerlabs/master/beginners/docker/images/docker_facebook_share.png)
 
