@@ -41,7 +41,7 @@ enableMissingTranslationPlaceholders = true
 algolia_docsearch = false
 
 # Will give values to .Lastmod etc.
-enableGitInfo = false
+enableGitInfo = true
 
 disableKinds = ["taxonomy", "taxonomyTerm"]
 
