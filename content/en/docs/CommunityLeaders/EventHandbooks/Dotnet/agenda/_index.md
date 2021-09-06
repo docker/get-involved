@@ -14,8 +14,8 @@ description: >-
 | [Basics of Docker](../basics/) | 9:30 AM to 10:30 AM |
 | [Building and Running a Docker Container](../building/) | 10:30 AM to 11:30 AM |
 | Coffee/Tea Break | 11:30 AM to 11:45 AM |
-| [Dockerize your first Dotnet Application - Part 1 ](../dotnetwebapp/) |  11:45 AM to 1:00 PM|
+| [Dockerize .Net Web Application - Part 1 ](../dotnetwebapp/) |  11:45 AM to 1:00 PM|
 | Lunch | 1:00 PM to 2:00 PM |
-| [Dockerize your first Dotnet Application - Part 2 ](../dotnetwebapp/) |  2:00 PM to 2:30 PM |
+| [Dockerize .Net Web Application - Part 2 ](../dotnetwebapp/) |  2:00 PM to 2:30 PM |
 | [Dockerize Multi-Container .Net App Using Compose](../compose/) | 2:30 PM to 3:00 PM |
 | Quiz/Prize/Certificate Distribution | 3:00 PM to 5:30 PM |
