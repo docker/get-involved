@@ -17,5 +17,5 @@ description: >-
 | [Dockerize your first Dotnet Application - Part 1 ](../dotnetwebapp/) |  11:45 AM to 1:00 PM|
 | Lunch | 1:00 PM to 2:00 PM |
 | [Dockerize your first Dotnet Application - Part 2 ](../dotnetwebapp/) |  2:00 PM to 2:30 PM |
-| [Dockerize Multi-Container Go Application Using Docker Compose](../compose/) | 2:30 PM to 3:00 PM |
+| [Dockerize Multi-Container .Net App Using Compose](../compose/) | 2:30 PM to 3:00 PM |
 | Quiz/Prize/Certificate Distribution | 3:00 PM to 5:30 PM |
