@@ -17,5 +17,6 @@ description: >-
 | 4 | [Docker Community All-Hands #3](https://www.meetup.com/Docker-Online-Meetup/events/280169730/) | Docker Online Meetup | Sep 16 | William Quiviger | 56 | <br>
 | 5 | [Docker in Hindi](https://www.meetup.com/Docker-Bangalore/events/280259077/)  | Docker Bangalore | Sep 16 | Ajeet Singh Raina | 20 | <br>
 | 6 | [Docker Workshop for Beginners 线上新手入](https://www.meetup.com/Docker-Shanghai/events/280159985/) | Docker Shanghai | Sep 18 | Peng Xiao | 11 | <br>
-| 7 | [Docker Images Optimization Workshop](https://www.meetup.com/Docker-Switzerland/events/280186771/) |  Docker Switzerland |  Sep 27 | Cristovao Cordeiro & Mohammad-Ali A'râbi |   | <br>
+| 7 | [Docker Images Optimization Workshop](https://www.meetup.com/Docker-Switzerland/events/280186771/) |  Docker Switzerland |  Sep 27 | Cristovao Cordeiro & Mohammad-Ali A'râbi |   |
+| 8 | [Docker For .Net Developers Workshop](https://www.meetup.com/Docker-Mobile/events/280556207/) |  Docker Mobile |  Sep 30 | Xiangdong Zhang |   |<br>
 
