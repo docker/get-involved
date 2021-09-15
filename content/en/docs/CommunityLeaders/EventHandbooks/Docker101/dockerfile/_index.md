@@ -1089,7 +1089,7 @@ $ docker container inspect -f '{{ (index .Mounts 0).Source }}' volume-test
 /var/lib/docker/volumes/ed09456a448934218f03acbdaa31f465ebbb92e0d45e8284527a2c538cc6b016/_data
 ```
 
-### Testing mount working as exepected
+### Testing mount working as expected
 #### Create a file in this folder
 ```
 $ touch /var/lib/docker/volumes/ed09456a448934218f03acbdaa31f465ebbb92e0d45e8284527a2c538cc6b016/_data/mytestfile.txt
