@@ -780,8 +780,8 @@ $ docker run -it workdir:v4 pwd
 
 ## Lab #7: Create an image with RUN instruction
 
-The `RUN` instruction execute command on top of the below layer and create a new layer. <br>
-RUN instruction can be wrote in two forms:
+The `RUN` instruction executes a command on top of the layer below and creates a new layer. <br>
+The RUN instruction can be wrote in two forms:
 - RUN <command> (shell form)
 - RUN ["executable", "param1", "param2"] (exec form)
 
