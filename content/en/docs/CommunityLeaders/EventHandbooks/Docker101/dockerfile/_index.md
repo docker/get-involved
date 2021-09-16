@@ -419,7 +419,7 @@ ADD Command lets you to add a tar directly from a link and explode to the contai
 
 ## Lab #3: Create an image with COPY instruction
 
-The COPY instruction copies files or directories from source and adds them to the filesystem of the container at destinatio.
+The COPY instruction copies files or directories from source and adds them to the filesystem of the container at destination.
 
 Two form of COPY instruction
 ```
