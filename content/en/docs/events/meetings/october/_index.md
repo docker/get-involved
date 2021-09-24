@@ -9,7 +9,7 @@ description: >-
 
 ### Meetup Events
 
-| S. No. | Name of Event    |  Chapter Name | Date | Organizers  | RSVPs | 
+| S. No. | Name of Event    |  Chapter Name | Date | Organizer  | RSVPs | 
 |-----------|-----------|-------------|----------------|-------------|------------|
 | 1 | [Level-up Your DevOps with GitHub Actions and Kubernetes](https://www.meetup.com/Docker-Las-Vegas/events/280923134/) | Docker Las Vegas | Oct 21 | Lee Gelb | 20 | <br>
 | 2 | [An Open Source Community Conference 2021](https://www.meetup.com/Docker-Bangalore/events/280618190/) | Docker Bangalore | Oct 9 | Ajeet S Raina | 39 | <br>
