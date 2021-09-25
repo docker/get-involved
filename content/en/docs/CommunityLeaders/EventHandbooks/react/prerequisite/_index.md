@@ -3,7 +3,7 @@ title: "Prerequisite"
 linkTitle: "Prerequisite"
 weight: 1006
 description: >-
-  Installing Node JS on Linux, Mac and Windows
+  Installing NodeJS on Linux, Mac and Windows
 ---
 
 ## Setup Environment
@@ -49,7 +49,7 @@ Install them only if you plan to attempt them.
 | 4     | Webstorm           | [Link](https://www.jetbrains.com/webstorm/)    |
 | 5     | Sublime Text 3     | [Link](https://www.sublimetext.com/3)          |
 
-# Download Node JS
+# Download NodeJS
 
 You can download the latest version of Node JS from the below links:
 
@@ -57,7 +57,7 @@ You can download the latest version of Node JS from the below links:
 - [MacOS ](https://nodejs.org/en/)
 - [Linux](https://nodejs.org/en/)
 
-# Install Node JS
+# Install NodeJS
 
 Select the tab for your computer's operating system below, then follow its installation instructions.
 
@@ -70,13 +70,13 @@ Select the tab for your computer's operating system below, then follow its insta
 node --version
 ```
 
-- 2. Install Node JS using apt-get
+- 2. Install NodeJS using apt-get
 
 ```
 sudo apt-get install nodejs
 ```
 
-- 3. Verify that you've installed Node JS by opening a command prompt and typing the following command:
+- 3. Verify that you've installed NodeJS by opening a command prompt and typing the following command:
 
 ```bash
 
@@ -96,7 +96,7 @@ $ node --version
 node --version
 ```
 
-- 2. Go to [Node JS's official downlaod page](https://nodejs.org/en/) and click on download.
+- 2. Go to [NodeJS's official downlaod page](https://nodejs.org/en/) and click on download.
 - 3. Once the pkg file is downloaded open it and follow the installation steps
 - 4. On completetion open terminal to verify if the installation is successful using the following command
 
