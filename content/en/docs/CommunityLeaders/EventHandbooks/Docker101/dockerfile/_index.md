@@ -419,7 +419,7 @@ ADD Command lets you to add a tar directly from a link and explode to the contai
 
 ## Lab #3: Create an image with COPY instruction
 
-The COPY instruction copies files or directories from source and adds them to the filesystem of the container at destinatio.
+The COPY instruction copies files or directories from source and adds them to the filesystem of the container at destination.
 
 Two form of COPY instruction
 ```
@@ -780,8 +780,8 @@ $ docker run -it workdir:v4 pwd
 
 ## Lab #7: Create an image with RUN instruction
 
-The `RUN` instruction execute command on top of the below layer and create a new layer. <br>
-RUN instruction can be wrote in two forms:
+The `RUN` instruction executes a command on top of the layer below and creates a new layer. <br>
+The RUN instruction can be wrote in two forms:
 - RUN <command> (shell form)
 - RUN ["executable", "param1", "param2"] (exec form)
 
@@ -1089,7 +1089,7 @@ $ docker container inspect -f '{{ (index .Mounts 0).Source }}' volume-test
 /var/lib/docker/volumes/ed09456a448934218f03acbdaa31f465ebbb92e0d45e8284527a2c538cc6b016/_data
 ```
 
-### Testing mount working as exepected
+### Testing mount working as expected
 #### Create a file in this folder
 ```
 $ touch /var/lib/docker/volumes/ed09456a448934218f03acbdaa31f465ebbb92e0d45e8284527a2c538cc6b016/_data/mytestfile.txt
