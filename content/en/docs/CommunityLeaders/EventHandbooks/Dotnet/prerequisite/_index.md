@@ -50,10 +50,8 @@ The softwares in this section are specific to certain parts of the workshop.
 Install them only if you plan to attempt them.
 
 - Install [git](https://git-scm.com)
-- Install [Go](https://dotnet.microsoft.com)
 - Download and install a code editor of your choice:
    - [Visual Studio Code](https://code.visualstudio.com/download)
-   - [GoLand](https://www.jetbrains.com/go/download/)
    - [Sublime Text](https://www.sublimetext.com/3)
 
 - Download and install Java IDE of your choice:
@@ -63,8 +61,7 @@ S.No. | Name of Software | Link to Follow |
 1 |  Git | [Link](https://git-scm.com)  |
 2 |  Dotnet | [Link](https://dotnet.microsoft.com)  |
 3 |  Visual Studio Code | [Link](https://code.visualstudio.com/download)  |
-4 |  GoLand | [Link](https://www.jetbrains.com/go/download/)  |
-5 |  Sublime Text 3 | [Link](https://www.sublimetext.com/3)  |
+4 |  Sublime Text 3 | [Link](https://www.sublimetext.com/3)  |
 
 # Download Dotnet 
 

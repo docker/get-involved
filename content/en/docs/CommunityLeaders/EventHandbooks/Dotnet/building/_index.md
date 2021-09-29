@@ -31,7 +31,6 @@ Dockerfile is usually called Dockerfile. The complete list of commands that can 
 | RUN | Executes a command | `RUN apt-get update`
 | CMD | Defaults for an executing container | `CMD ["/bin/echo", "hello world"]`
 | EXPOSE | Informs the network ports that the container will listen on | `EXPOSE 8093`
-|==================
 
 ## Create your first image
 
