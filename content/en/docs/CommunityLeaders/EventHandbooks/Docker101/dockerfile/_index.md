@@ -1315,7 +1315,7 @@ You won't see me until later
 Successfully built ca6f025712d4
 ```
 
-### Ubutu Rails 
+### Ubuntu Rails 
 
 ```
 FROM ubuntu:12.04
