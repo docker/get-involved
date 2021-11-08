@@ -12,24 +12,17 @@ description: >-
 
 Step # | Name of Objectives | Status | 
 :------------ | :-------------| :-------------|
-1 | [Getting Familiar with Meetup Platform](#getting-familiar-with-bevy-virtual) |  ☑️ |
+1 | [Getting Familiar with Meetup Platform](#getting-familiar-with-meetup) |  ☑️ |
 2 | [Planning an Event Agenda](#planning-an-event-agenda) |  ☑️ |
 3 | [Setting up Event Registration Page](#setting-up-event-registration-page) | ☑️ |
 4 | [Sending confirmation email for workshop](#sending-confirmation-email-for-workshop) |  ☑️ |
 
-### During the workshop
-
-Step # | Name of Objectives | Status | 
-:------------ | :-------------| :-------------|
-5 | [Conducting Attendee Survey](#conducting-attendee-survey) |  ☑️ |
 
 ### After the workshop
 
 Step # | Name of Objectives | Status | 
 :------------ | :-------------| :-------------|
-6 | [Post-Event FollowUp](#post-event-followup) |  ☑️ |
-7 | [Community Leader Survey](#community-leader-survey)  |  ☑️ |
-8 | [Attendee Survey](#attendee-survey)  |  ☑️ |
+5 | [Post-Event FollowUp](#post-event-followup) |  ☑️ |
 
 ## Getting Familiar with Meetup 
 
@@ -42,22 +35,19 @@ Docker community leaders uses Meetup (https://meetup.com/pro/docker) tool to con
 
 For more information, please visit https://www.meetup.com/pro/docker
 
-
-### Events |  Analytics
-
+### Events | Analytics
 
 - [Create a new event](https://help.meetup.com/hc/en-us/articles/360002881251-Creating-an-event)
 - [Download Attendees List](https://help.meetup.com/hc/en-us/articles/360004373231-How-do-I-download-print-my-event-attendee-list-)
 - [How to email members?](https://help.meetup.com/hc/en-us/articles/360002879371-How-do-I-email-my-members-)
 - [How to enable a waiting list for a Meetup event](https://help.meetup.com/hc/en-us/articles/360003883411-Enable-a-waitlist-for-a-Meetup-event)
 
-
 ## Planning an Event Agenda
 
 - Your event must be posted on your [city’s Chapter page](https://meetup.com/)
 - Try to create event 1 month before the event
-- If you are having issues with your page, do not have a page or need admin permissions please contact William over Docker community Slack or send email to william.quiviger(AT)docker.com
-- 
+- If you are having issues with your page, do not have a page or need admin permissions please contact Eva Bojorges over Docker community Slack.
+
 ## Setting up Event Registration Page
 
 Every Community leader is expected to set up event registration page. While building an event registration page, ensure that the below list of information are captured:
@@ -85,8 +75,6 @@ Once the user register for the event, Community Leaders need to ensure that the 
 - The email should carry workshop title and date of the workshop
 - Gentle reminder as the date of workshop come closer
 
-### Sample Confirmation email for the workshop
-
 ## Post-Event Followup
 
 ### #1  Send a Thank You email 
@@ -111,7 +99,6 @@ S.No. | Name of Objectives | Status |
 5 | Sit down with your team for a debrief session where you discuss how the event went |  ☑️ |
 
 
-
 ### #3 Ask for feedback
 
 S.No. | Name of Objectives | Status | 
@@ -130,7 +117,6 @@ S.No. | Name of Objectives | Status |
 2 |Follow the conversation and jump in where it make sense to chip in with your input, thank the guests, or answer questions.  |  ☑️ |
 3 |Engaging in post-event social media chatter and keeping the buzz going will also help you build audience for your next event.  |  ☑️ |
 4 |Online chatter about your event won’t immediately quiet down after the event is over. |  ☑️ |
-
 
 
 ### #5 Start planning your next event

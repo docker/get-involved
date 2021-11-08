@@ -56,19 +56,9 @@ Install them only if you plan to attempt them.
    - [GoLand](https://www.jetbrains.com/go/download/)
    - [Sublime Text](https://www.sublimetext.com/3)
 
-- Download and install Java IDE of your choice:
+## Download Go
 
-S.No. | Name of Software | Link to Follow | 
-:------------ | :-------------| :-------------|
-1 |  Git | [Link](https://git-scm.com)  |
-2 |  Go | [Link](https://golang.org/doc/install)  |
-3 |  Visual Studio Code | [Link](https://code.visualstudio.com/download)  |
-4 |  GoLand | [Link](https://www.jetbrains.com/go/download/)  |
-5 |  Sublime Text 3 | [Link](https://www.sublimetext.com/3)  |
-
-# Download Golang 
-
-You can download the latest version of GoLang (Golang 15.7 ) from the below links:
+You can download the latest version of Go (Go 15.7) from the below links:
 
 - [Windows](https://golang.org/dl/go1.15.7.windows-amd64.msi)
 - [MacOS ](https://golang.org/dl/go1.15.7.darwin-amd64.pkg)
@@ -76,12 +66,12 @@ You can download the latest version of GoLang (Golang 15.7 ) from the below link
 - [Using Source](https://golang.org/dl/go1.15.7.src.tar.gz)
 
 
-# Install Golang
+## Install Go
 
 Select the tab for your computer's operating system below, then follow its installation instructions.
 
 
-{{< tabs name="Install Golang" >}}
+{{< tabs name="Install Go" >}}
 {{% tab name="Linux" %}}
 
 - 1. if you have a previous version of Go installed, be sure to [remove it]()https://golang.org/doc/manage-install before installing another.
