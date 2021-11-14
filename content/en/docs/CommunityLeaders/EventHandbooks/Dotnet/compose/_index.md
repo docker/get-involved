@@ -98,21 +98,8 @@ namespace myWebApp.Data
 }
 ```
 
-4. Regsister SchoolContext to DI in Startup.cs
 
-```
-
-        public void ConfigureServices(IServiceCollection services)
-        {
-            services.AddDbContext<myWebApp.Data.SchoolContext>(options =>
-            options.UseNpgsql(Configuration.GetConnectionString("SchoolContext")));
-
-            services.AddRazorPages();
-        }
-
-```
-
-5. Adding database connectionstring to appsettings.json
+4. Adding database connectionstring to appsettings.json
 
 ```
 {
@@ -129,33 +116,42 @@ namespace myWebApp.Data
   }
 }
 ```
-6. Boostrap the table if it does not exist in Program.cs
+5. Boostrap the table if it does not exist in Program.cs
 
 ```
- public static void Main(string[] args)
-        {
-           var host= CreateHostBuilder(args).Build();
-           CreateDbIfNotExists(host);
-           host.Run();
-        }
-      private static void CreateDbIfNotExists(IHost host)
-        {
-            using (var scope = host.Services.CreateScope())
-            {
-                var services = scope.ServiceProvider;
-                try
-                {
-                    var context = services.GetRequiredService<Data.SchoolContext>();
-                    context.Database.EnsureCreated();
-                    // DbInitializer.Initialize(context);
-                }
-                catch (Exception ex)
-                {
-                    var logger = services.GetRequiredService<ILogger<Program>>();
-                    logger.LogError(ex, "An error occurred creating the DB.");
-                }
-            }
-        }
+ using Microsoft.EntityFrameworkCore;
+var builder = WebApplication.CreateBuilder(args);
+
+// Add services to the container.
+
+builder.Services.AddRazorPages();
+builder.Services.AddDbContext<myWebApp.Data.SchoolContext>(options =>
+  options.UseNpgsql(builder.Configuration.GetConnectionString("SchoolContext")));
+var app = builder.Build();
+using (var scope = app.Services.CreateScope())
+{
+    var services = scope.ServiceProvider;
+
+    var context = services.GetRequiredService<myWebApp.Data.SchoolContext>();
+    context.Database.EnsureCreated();
+    // DbInitializer.Initialize(context);
+}
+// Configure the HTTP request pipeline.
+if (!app.Environment.IsDevelopment())
+{
+    app.UseExceptionHandler("/Error");
+}else{
+    //  app.UseDeveloperExceptionPage();
+}
+app.UseStaticFiles();
+
+app.UseRouting();
+
+app.UseAuthorization();
+
+app.MapRazorPages();
+
+app.Run();
 ```
 let update the UI
 
