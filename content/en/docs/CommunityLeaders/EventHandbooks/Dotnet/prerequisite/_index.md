@@ -166,3 +166,28 @@ The path to an application .dll file to execute.
 
 {{< /tabs >}}
 
+# Using image for the workshop
+
+You can use the workshop image based in dind (docker in docker), dotnet and openvscode to buddle docker, dotnet and vscode editor in a package.
+
+1. pull the image
+
+```
+docker pull ghcr.io/zhangxd6/dockerfornetworkshop:main
+```
+
+2. start the workshop
+
+```
+docker run -p 3000:3000 -p 5027:5027 -p 5000:5000 -p 8080:8080 --privileged -v "$(pwd):/home/workspace:cached"  ghcr.io/zhangxd6/dockerfornetworkshop:main
+```
+
+3. access the vscode server
+
+you will have to check the container log to find the url with token like 
+
+```
+Web UI available at http://localhost:3000/?tkn=ed93033e-e343-4e52-840a-8a7560de8c11
+```
+
+4. Once you open the vscode, you should be able to access the instruction.md buddled in image and intergated termial for the workshop

@@ -341,7 +341,7 @@ now open another tab with address http://localhost:8080 and you will be asked to
 
 ![login](adminerlogin.png)
 
-use **postegres** and **example** as username/passowrd to login my_db.
+use **postgres** and **example** as username/passowrd to login my_db.
 
 once you are logged in, you can create a new student record
 
