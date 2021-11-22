@@ -1,7 +1,7 @@
 ---
 title: "November 2021"
 linkTitle: "November"
-weight: 180
+weight: 182
 description: >-
      Events held during Nov 2021
 ---
