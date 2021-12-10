@@ -1,12 +1,10 @@
 ---
-title: "Pre-requisite"
-linkTitle: "Pre-requisite"
+title: "Prerequisite"
+linkTitle: "Prerequisite"
 weight: 910
 description: >-
-     Pre-requisite
+     Prerequisite
 ---
-
-
 
 - [Creating Your DockerHub Account](#creating-your-dockerhub-account) - 15 min
 
