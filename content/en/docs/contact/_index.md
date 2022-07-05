@@ -6,16 +6,4 @@ description: >-
      Contact us for any queries!
 ---
 
-
-If you’re in the Asia-Pacific zone, please reach out to [Ajeet Raina](https://twitter.com/ajeetsraina) on Slack (@ajeetraina) <br>
-If you’re anywhere else in the world, feel free to ping [William Quiviger](https://twitter.com/wquiviger) on Slack (@william).
-
-
-<form action="https://getform.io/f/e73e8558-542b-4957-9741-67b6bfdef43c" method="POST">
-<br>
-  Name <br><input type="text" name="Name"> <br><br>
-  Email <br><input type="email" name="Email"><br><br>
-  Message <br><input type="text" name="Message"><br><br>
-  <br><button type="submit">Send</button><br>
-
-</form>
+Please reach out to Eva Jordana for questions related to the Captains Program, Alba Roza for Community Leaders Program and Ajeet Raina for the Content Contributor Program. We are all in the [Community Slack](dockr.ly/Slack)
