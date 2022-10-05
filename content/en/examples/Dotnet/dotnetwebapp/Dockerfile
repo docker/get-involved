@@ -4,7 +4,7 @@ WORKDIR /src
 RUN dotnet build -o /app
 RUN dotnet publish -o /publish
 
-FROM mcr.microsoft.com/dotnet/aspnet as base
+FROM mcr.microsoft.com/dotnet/aspnet:latest@sha256:99d7ef1ce989ace31dfef826a3e702606f19774665acd1d00cd3d29f3e6e3149 as base
 COPY --from=build  /publish /app
 WORKDIR /app
 EXPOSE 80
